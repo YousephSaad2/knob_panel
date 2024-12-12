@@ -2574,3 +2574,2981 @@ V (10812) spi_master: polling trans[0m
 V (10812) spi_master: polling trans done[0m
 V (10816) spi_master: polling trans[0m
 V (10820) spi_master: polling trans done[0m
+D (10824) spi_master: device0 release bus[0m
+V (10828) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (10834) spi_master: device0 locked the bus[0m
+V (10838) spi_master: polling trans[0m
+V (10842) spi_master: polling trans done[0m
+V (10846) spi_master: polling trans[0m
+V (10849) spi_master: polling trans done[0m
+D (10853) spi_master: device0 release bus[0m
+V (10857) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (10863) spi_master: device0 locked the bus[0m
+V (10868) spi_master: polling trans[0m
+V (10871) spi_master: polling trans done[0m
+D (10876) spi_master: device0 release bus[0m
+V (10880) bus_lock: dev 0 released.[0m
+V (10887) bus_lock: dev 0 served from bg.[0m
+V bus_lock: dev 0 acquired.
+D (10896) spi_master: device0 locked the bus[0m
+V (10897) spi_master: polling trans[0m
+V (10898) spi_master: polling trans done[0m
+V (10902) spi_master: polling trans[0m
+V (10905) spi_master: polling trans done[0m
+D (10909) spi_master: device0 release bus[0m
+V (10913) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (10919) spi_master: device0 locked the bus[0m
+V (10924) spi_master: polling trans[0m
+V (10927) spi_master: polling trans done[0m
+V (10931) spi_master: polling trans[0m
+V (10935) spi_master: polling trans done[0m
+D (10939) spi_master: device0 release bus[0m
+V (10943) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (10949) spi_master: device0 locked the bus[0m
+V (10953) spi_master: polling trans[0m
+V (10957) spi_master: polling trans done[0m
+D (10961) spi_master: device0 release bus[0m
+V (10965) bus_lock: dev 0 released.[0m
+V (10972) bus_lock: dev 0 served from bg.[0m
+V bus_lock: dev 0 acquired.
+D (10981) spi_master: device0 locked the bus[0m
+V (10981) spi_master: polling trans[0m
+V (10983) spi_master: polling trans done[0m
+V (10987) spi_master: polling trans[0m
+V (10990) spi_master: polling trans done[0m
+D (10994) spi_master: device0 release bus[0m
+V (10999) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (11004) spi_master: device0 locked the bus[0m
+V (11009) spi_master: polling trans[0m
+V (11013) spi_master: polling trans done[0m
+V (11016) spi_master: polling trans[0m
+V (11020) spi_master: polling trans done[0m
+D (11024) spi_master: device0 release bus[0m
+V (11028) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (11034) spi_master: device0 locked the bus[0m
+V (11039) spi_master: polling trans[0m
+V (11042) spi_master: polling trans done[0m
+D (11046) spi_master: device0 release bus[0m
+V (11050) bus_lock: dev 0 released.[0m
+V (11057) bus_lock: dev 0 served from bg.[0m
+V bus_lock: dev 0 acquired.
+D (11066) spi_master: device0 locked the bus[0m
+V (11066) spi_master: polling trans[0m
+V (11068) spi_master: polling trans done[0m
+V (11072) spi_master: polling trans[0m
+V (11076) spi_master: polling trans done[0m
+D (11080) spi_master: device0 release bus[0m
+V (11084) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (11090) spi_master: device0 locked the bus[0m
+V (11094) spi_master: polling trans[0m
+V (11098) spi_master: polling trans done[0m
+V (11102) spi_master: polling trans[0m
+V (11105) spi_master: polling trans done[0m
+D (11109) spi_master: device0 release bus[0m
+V (11113) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (11119) spi_master: device0 locked the bus[0m
+V (11124) spi_master: polling trans[0m
+V (11127) spi_master: polling trans done[0m
+D (11131) spi_master: device0 release bus[0m
+V (11135) bus_lock: dev 0 released.[0m
+V (11143) bus_lock: dev 0 served from bg.[0m
+V bus_lock: dev 0 acquired.
+D (11151) spi_master: device0 locked the bus[0m
+V (11151) spi_master: polling trans[0m
+V (11154) spi_master: polling trans done[0m
+V (11158) spi_master: polling trans[0m
+V (11161) spi_master: polling trans done[0m
+D (11165) spi_master: device0 release bus[0m
+V (11169) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (11175) spi_master: device0 locked the bus[0m
+V (11180) spi_master: polling trans[0m
+V (11183) spi_master: polling trans done[0m
+V (11187) spi_master: polling trans[0m
+V (11191) spi_master: polling trans done[0m
+D (11195) spi_master: device0 release bus[0m
+V (11199) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (11205) spi_master: device0 locked the bus[0m
+V (11209) spi_master: polling trans[0m
+V (11213) spi_master: polling trans done[0m
+D (11217) spi_master: device0 release bus[0m
+V (11221) bus_lock: dev 0 released.[0m
+V (11228) bus_lock: dev 0 served from bg.[0m
+V bus_lock: dev 0 acquired.
+D (11236) spi_master: device0 locked the bus[0m
+V (11236) spi_master: polling trans[0m
+V (11239) spi_master: polling trans done[0m
+V (11243) spi_master: polling trans[0m
+V (11246) spi_master: polling trans done[0m
+D (11250) spi_master: device0 release bus[0m
+V (11254) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (11260) spi_master: device0 locked the bus[0m
+V (11265) spi_master: polling trans[0m
+V (11268) spi_master: polling trans done[0m
+V (11272) spi_master: polling trans[0m
+V (11276) spi_master: polling trans done[0m
+D (11280) spi_master: device0 release bus[0m
+V (11284) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (11290) spi_master: device0 locked the bus[0m
+V (11295) spi_master: polling trans[0m
+V (11298) spi_master: polling trans done[0m
+D (11302) spi_master: device0 release bus[0m
+V (11306) bus_lock: dev 0 released.[0m
+V (11313) bus_lock: dev 0 served from bg.[0m
+V bus_lock: dev 0 acquired.
+D (11321) spi_master: device0 locked the bus[0m
+V (11321) spi_master: polling trans[0m
+V (11324) spi_master: polling trans done[0m
+V (11328) spi_master: polling trans[0m
+V (11332) spi_master: polling trans done[0m
+D (11336) spi_master: device0 release bus[0m
+V (11340) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (11346) spi_master: device0 locked the bus[0m
+V (11350) spi_master: polling trans[0m
+V (11354) spi_master: polling trans done[0m
+V (11358) spi_master: polling trans[0m
+V (11361) spi_master: polling trans done[0m
+D (11365) spi_master: device0 release bus[0m
+V (11369) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (11375) spi_master: device0 locked the bus[0m
+V (11380) spi_master: polling trans[0m
+V (11383) spi_master: polling trans done[0m
+D (11387) spi_master: device0 release bus[0m
+V (11391) bus_lock: dev 0 released.[0m
+V (11399) bus_lock: dev 0 served from bg.[0m
+V bus_lock: dev 0 acquired.
+D (11401) spi_master: device0 locked the bus[0m
+V (11406) spi_master: polling trans[0m
+V (11410) spi_master: polling trans done[0m
+V (11414) spi_master: polling trans[0m
+V (11417) spi_master: polling trans done[0m
+D (11421) spi_master: device0 release bus[0m
+V (11425) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (11431) spi_master: device0 locked the bus[0m
+V (11436) spi_master: polling trans[0m
+V (11439) spi_master: polling trans done[0m
+V (11443) spi_master: polling trans[0m
+V (11447) spi_master: polling trans done[0m
+D (11451) spi_master: device0 release bus[0m
+V (11455) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (11461) spi_master: device0 locked the bus[0m
+V (11465) spi_master: polling trans[0m
+V (11469) spi_master: polling trans done[0m
+D (11473) spi_master: device0 release bus[0m
+V (11477) bus_lock: dev 0 released.[0m
+V (11484) bus_lock: dev 0 served from bg.[0m
+V bus_lock: dev 0 acquired.
+V (11620) spi_master: polling trans[0m
+V (11621) spi_master: polling trans done[0m
+V (11623) spi_master: polling trans[0m
+V (11627) spi_master: polling trans done[0m
+D (11631) spi_master: device0 release bus[0m
+V (11635) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (11641) spi_master: device0 locked the bus[0m
+V (11645) spi_master: polling trans[0m
+V (11649) spi_master: polling trans done[0m
+V (11653) spi_master: polling trans[0m
+V (11656) spi_master: polling trans done[0m
+D (11660) spi_master: device0 release bus[0m
+V (11664) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (11670) spi_master: device0 locked the bus[0m
+V (11675) spi_master: polling trans[0m
+V (11678) spi_master: polling trans done[0m
+D (11682) spi_master: device0 release bus[0m
+V (11686) bus_lock: dev 0 released.[0m
+V (11694) bus_lock: dev 0 served from bg.[0m
+[0;32mI (13251) main_menu: Invalid Enter factory[0m
+V bus_lock: dev 0 acquired.
+D (13286) spi_master: device0 locked the bus[0m
+V (13287) spi_master: polling trans[0m
+V (13287) spi_master: polling trans done[0m
+V (13290) spi_master: polling trans[0m
+V (13293) spi_master: polling trans done[0m
+D (13297) spi_master: device0 release bus[0m
+V (13301) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (13307) spi_master: device0 locked the bus[0m
+V (13312) spi_master: polling trans[0m
+V (13315) spi_master: polling trans done[0m
+V (13319) spi_master: polling trans[0m
+V (13323) spi_master: polling trans done[0m
+D (13327) spi_master: device0 release bus[0m
+V (13331) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (13337) spi_master: device0 locked the bus[0m
+V (13341) spi_master: polling trans[0m
+V (13345) spi_master: polling trans done[0m
+D (13349) spi_master: device0 release bus[0m
+V (13353) bus_lock: dev 0 released.[0m
+V (13360) bus_lock: dev 0 served from bg.[0m
+V bus_lock: dev 0 acquired.
+V (14429) spi_master: polling trans[0m
+V (14429) spi_master: polling trans done[0m
+V (14432) spi_master: polling trans[0m
+V (14436) spi_master: polling trans done[0m
+D (14440) spi_master: device0 release bus[0m
+V (14444) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (14450) spi_master: device0 locked the bus[0m
+V (14454) spi_master: polling trans[0m
+V (14458) spi_master: polling trans done[0m
+V (14462) spi_master: polling trans[0m
+V (14465) spi_master: polling trans done[0m
+D (14469) spi_master: device0 release bus[0m
+V (14473) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (14479) spi_master: device0 locked the bus[0m
+V (14484) spi_master: polling trans[0m
+V (14487) spi_master: polling trans done[0m
+D (14491) spi_master: device0 release bus[0m
+V (14495) bus_lock: dev 0 released.[0m
+V (14503) bus_lock: dev 0 served from bg.[0m
+V bus_lock: dev 0 acquired.
+D (14543) spi_master: device0 locked the bus[0m
+V (14543) spi_master: polling trans[0m
+V (14543) spi_master: polling trans done[0m
+V (14546) spi_master: polling trans[0m
+V (14550) spi_master: polling trans done[0m
+D (14554) spi_master: device0 release bus[0m
+V (14558) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (14564) spi_master: device0 locked the bus[0m
+V (14568) spi_master: polling trans[0m
+V (14572) spi_master: polling trans done[0m
+V (14576) spi_master: polling trans[0m
+V (14579) spi_master: polling trans done[0m
+D (14583) spi_master: device0 release bus[0m
+V (14587) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (14593) spi_master: device0 locked the bus[0m
+V (14598) spi_master: polling trans[0m
+V (14601) spi_master: polling trans done[0m
+D (14605) spi_master: device0 release bus[0m
+V (14609) bus_lock: dev 0 released.[0m
+V (14617) bus_lock: dev 0 served from bg.[0m
+V bus_lock: dev 0 acquired.
+D (16169) spi_master: device0 locked the bus[0m
+V (16170) spi_master: polling trans[0m
+V (16170) spi_master: polling trans done[0m
+V (16173) spi_master: polling trans[0m
+V (16176) spi_master: polling trans done[0m
+D (16180) spi_master: device0 release bus[0m
+V (16184) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (16190) spi_master: device0 locked the bus[0m
+V (16195) spi_master: polling trans[0m
+V (16198) spi_master: polling trans done[0m
+V (16202) spi_master: polling trans[0m
+V (16206) spi_master: polling trans done[0m
+D (16210) spi_master: device0 release bus[0m
+V (16214) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (16220) spi_master: device0 locked the bus[0m
+V (16224) spi_master: polling trans[0m
+V (16228) spi_master: polling trans done[0m
+D (16232) spi_master: device0 release bus[0m
+V (16236) bus_lock: dev 0 released.[0m
+V (16243) bus_lock: dev 0 served from bg.[0m
+V bus_lock: dev 0 acquired.
+D (17241) spi_master: device0 locked the bus[0m
+V (17242) spi_master: polling trans[0m
+V (17242) spi_master: polling trans done[0m
+V (17245) spi_master: polling trans[0m
+V (17248) spi_master: polling trans done[0m
+D (17252) spi_master: device0 release bus[0m
+V (17256) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (17262) spi_master: device0 locked the bus[0m
+V (17267) spi_master: polling trans[0m
+V (17270) spi_master: polling trans done[0m
+V (17274) spi_master: polling trans[0m
+V (17278) spi_master: polling trans done[0m
+D (17282) spi_master: device0 release bus[0m
+V (17286) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (17292) spi_master: device0 locked the bus[0m
+V (17296) spi_master: polling trans[0m
+V (17300) spi_master: polling trans done[0m
+D (17304) spi_master: device0 release bus[0m
+V (17308) bus_lock: dev 0 released.[0m
+V (17316) bus_lock: dev 0 served from bg.[0m
+V bus_lock: dev 0 acquired.
+D (20434) spi_master: device0 locked the bus[0m
+V (20435) spi_master: polling trans[0m
+V (20435) spi_master: polling trans done[0m
+V (20438) spi_master: polling trans[0m
+V (20441) spi_master: polling trans done[0m
+D (20445) spi_master: device0 release bus[0m
+V (20449) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (20455) spi_master: device0 locked the bus[0m
+V (20460) spi_master: polling trans[0m
+V (20463) spi_master: polling trans done[0m
+V (20467) spi_master: polling trans[0m
+V (20471) spi_master: polling trans done[0m
+D (20475) spi_master: device0 release bus[0m
+V (20479) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (20485) spi_master: device0 locked the bus[0m
+V (20489) spi_master: polling trans[0m
+V (20493) spi_master: polling trans done[0m
+D (20497) spi_master: device0 release bus[0m
+V (20501) bus_lock: dev 0 released.[0m
+V (20508) bus_lock: dev 0 served from bg.[0m
+V bus_lock: dev 0 acquired.
+D (417694) spi_master: device0 locked the bus[0m
+V (417695) spi_master: polling trans[0m
+V (417695) spi_master: polling trans done[0m
+V (417698) spi_master: polling trans[0m
+V (417701) spi_master: polling trans done[0m
+D (417705) spi_master: device0 release bus[0m
+V (417710) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (417716) spi_master: device0 locked the bus[0m
+V (417720) spi_master: polling trans[0m
+V (417724) spi_master: polling trans done[0m
+V (417728) spi_master: polling trans[0m
+V (417732) spi_master: polling trans done[0m
+D (417736) spi_master: device0 release bus[0m
+V (417740) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (417746) spi_master: device0 locked the bus[0m
+V (417750) spi_master: polling trans[0m
+V (417754) spi_master: polling trans done[0m
+D (417758) spi_master: device0 release bus[0m
+V (417762) bus_lock: dev 0 released.[0m
+V (417770) bus_lock: dev 0 served from bg.[0m
+[0;32mI (442506) WAKEUP: code:14[0m
+V bus_lock: dev 0 acquired.
+D (442546) spi_master: device0 locked the bus[0m
+V (442546) spi_master: polling trans[0m
+V (442547) spi_master: polling trans done[0m
+V (442549) spi_master: polling trans[0m
+V (442553) spi_master: polling trans done[0m
+D (442557) spi_master: device0 release bus[0m
+V (442561) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (442567) spi_master: device0 locked the bus[0m
+V (442572) spi_master: polling trans[0m
+V (442575) spi_master: polling trans done[0m
+V (442580) spi_master: polling trans[0m
+V (442583) spi_master: polling trans done[0m
+D (442587) spi_master: device0 release bus[0m
+V (442591) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (442597) spi_master: device0 locked the bus[0m
+V (442602) spi_master: polling trans[0m
+V (442606) spi_master: polling trans done[0m
+D (442610) spi_master: device0 release bus[0m
+V (442614) bus_lock: dev 0 released.[0m
+V (442621) bus_lock: dev 0 served from bg.[0m
+V bus_lock: dev 0 acquired.
+D (442637) spi_master: device0 locked the bus[0m
+V (442638) spi_master: polling trans[0m
+V (442638) spi_master: polling trans done[0m
+V (442641) spi_master: polling trans[0m
+V (442644) spi_master: polling trans done[0m
+D (442648) spi_master: device0 release bus[0m
+V (442653) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (442659) spi_master: device0 locked the bus[0m
+V (442663) spi_master: polling trans[0m
+V (442667) spi_master: polling trans done[0m
+V (442671) spi_master: polling trans[0m
+V (442675) spi_master: polling trans done[0m
+D (442679) spi_master: device0 release bus[0m
+V (442683) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (442689) spi_master: device0 locked the bus[0m
+V (442693) spi_master: polling trans[0m
+V (442697) spi_master: polling trans done[0m
+V (442704) bus_lock: dev 0 served from bg.[0m
+D (442701) spi_master: device0 release bus[0m
+V (442709) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (442719) spi_master: device0 locked the bus[0m
+V (442720) spi_master: polling trans[0m
+V (442724) spi_master: polling trans done[0m
+V (442728) spi_master: polling trans[0m
+V (442731) spi_master: polling trans done[0m
+D (442735) spi_master: device0 release bus[0m
+V (442740) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (442746) spi_master: device0 locked the bus[0m
+V (442750) spi_master: polling trans[0m
+V (442754) spi_master: polling trans done[0m
+V (442758) spi_master: polling trans[0m
+V (442762) spi_master: polling trans done[0m
+D (442766) spi_master: device0 release bus[0m
+V (442770) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (442776) spi_master: device0 locked the bus[0m
+V (442780) spi_master: polling trans[0m
+V (442784) spi_master: polling trans done[0m
+V (442789) bus_lock: dev 0 served from bg.[0m
+D (442788) spi_master: device0 release bus[0m
+V (442797) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (442810) spi_master: device0 locked the bus[0m
+V (442811) spi_master: polling trans[0m
+V (442811) spi_master: polling trans done[0m
+V (442815) spi_master: polling trans[0m
+V (442818) spi_master: polling trans done[0m
+D (442823) spi_master: device0 release bus[0m
+V (442827) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (442833) spi_master: device0 locked the bus[0m
+V (442837) spi_master: polling trans[0m
+V (442841) spi_master: polling trans done[0m
+V (442845) spi_master: polling trans[0m
+V (442849) spi_master: polling trans done[0m
+D (442853) spi_master: device0 release bus[0m
+V (442857) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (442863) spi_master: device0 locked the bus[0m
+V (442868) spi_master: polling trans[0m
+V (442871) spi_master: polling trans done[0m
+V (442878) bus_lock: dev 0 served from bg.[0m
+D (442875) spi_master: device0 release bus[0m
+V (442884) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (442893) spi_master: device0 locked the bus[0m
+V (442894) spi_master: polling trans[0m
+V (442898) spi_master: polling trans done[0m
+V (442902) spi_master: polling trans[0m
+V (442906) spi_master: polling trans done[0m
+D (442910) spi_master: device0 release bus[0m
+V (442914) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (442920) spi_master: device0 locked the bus[0m
+V (442924) spi_master: polling trans[0m
+V (442928) spi_master: polling trans done[0m
+V (442932) spi_master: polling trans[0m
+V (442936) spi_master: polling trans done[0m
+D (442940) spi_master: device0 release bus[0m
+V (442944) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (442950) spi_master: device0 locked the bus[0m
+V (442955) spi_master: polling trans[0m
+V (442958) spi_master: polling trans done[0m
+V (442963) bus_lock: dev 0 served from bg.[0m
+D (442962) spi_master: device0 release bus[0m
+V (442971) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (442978) spi_master: device0 locked the bus[0m
+V (442981) spi_master: polling trans[0m
+V (442985) spi_master: polling trans done[0m
+V (442989) spi_master: polling trans[0m
+V (442993) spi_master: polling trans done[0m
+D (442997) spi_master: device0 release bus[0m
+V (443001) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443007) spi_master: device0 locked the bus[0m
+V (443011) spi_master: polling trans[0m
+V (443015) spi_master: polling trans done[0m
+V (443019) spi_master: polling trans[0m
+V (443023) spi_master: polling trans done[0m
+D (443027) spi_master: device0 release bus[0m
+V (443031) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443037) spi_master: device0 locked the bus[0m
+V (443042) spi_master: polling trans[0m
+V (443045) spi_master: polling trans done[0m
+V (443050) bus_lock: dev 0 served from bg.[0m
+D (443049) spi_master: device0 release bus[0m
+V (443058) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443067) spi_master: device0 locked the bus[0m
+V (443068) spi_master: polling trans[0m
+V (443072) spi_master: polling trans done[0m
+V (443076) spi_master: polling trans[0m
+V (443080) spi_master: polling trans done[0m
+D (443084) spi_master: device0 release bus[0m
+V (443088) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443094) spi_master: device0 locked the bus[0m
+V (443098) spi_master: polling trans[0m
+V (443102) spi_master: polling trans done[0m
+V (443106) spi_master: polling trans[0m
+V (443110) spi_master: polling trans done[0m
+D (443114) spi_master: device0 release bus[0m
+V (443118) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443124) spi_master: device0 locked the bus[0m
+V (443129) spi_master: polling trans[0m
+V (443132) spi_master: polling trans done[0m
+V (443137) bus_lock: dev 0 served from bg.[0m
+D (443136) spi_master: device0 release bus[0m
+V (443145) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443152) spi_master: device0 locked the bus[0m
+V (443155) spi_master: polling trans[0m
+V (443159) spi_master: polling trans done[0m
+V (443163) spi_master: polling trans[0m
+V (443167) spi_master: polling trans done[0m
+D (443171) spi_master: device0 release bus[0m
+V (443175) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443181) spi_master: device0 locked the bus[0m
+V (443186) spi_master: polling trans[0m
+V (443189) spi_master: polling trans done[0m
+V (443193) spi_master: polling trans[0m
+V (443197) spi_master: polling trans done[0m
+D (443201) spi_master: device0 release bus[0m
+V (443205) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443211) spi_master: device0 locked the bus[0m
+V (443216) spi_master: polling trans[0m
+V (443219) spi_master: polling trans done[0m
+V (443224) bus_lock: dev 0 served from bg.[0m
+D (443224) spi_master: device0 release bus[0m
+V (443232) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443241) spi_master: device0 locked the bus[0m
+V (443242) spi_master: polling trans[0m
+V (443246) spi_master: polling trans done[0m
+V (443250) spi_master: polling trans[0m
+V (443254) spi_master: polling trans done[0m
+D (443258) spi_master: device0 release bus[0m
+V (443262) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443268) spi_master: device0 locked the bus[0m
+V (443273) spi_master: polling trans[0m
+V (443276) spi_master: polling trans done[0m
+V (443280) spi_master: polling trans[0m
+V (443284) spi_master: polling trans done[0m
+D (443288) spi_master: device0 release bus[0m
+V (443292) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443298) spi_master: device0 locked the bus[0m
+V (443303) spi_master: polling trans[0m
+V (443306) spi_master: polling trans done[0m
+V (443311) bus_lock: dev 0 served from bg.[0m
+D (443311) spi_master: device0 release bus[0m
+V (443319) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443326) spi_master: device0 locked the bus[0m
+V (443330) spi_master: polling trans[0m
+V (443333) spi_master: polling trans done[0m
+V (443337) spi_master: polling trans[0m
+V (443341) spi_master: polling trans done[0m
+D (443345) spi_master: device0 release bus[0m
+V (443349) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443355) spi_master: device0 locked the bus[0m
+V (443360) spi_master: polling trans[0m
+V (443363) spi_master: polling trans done[0m
+V (443367) spi_master: polling trans[0m
+V (443371) spi_master: polling trans done[0m
+D (443375) spi_master: device0 release bus[0m
+V (443379) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443385) spi_master: device0 locked the bus[0m
+V (443390) spi_master: polling trans[0m
+V (443394) spi_master: polling trans done[0m
+V (443398) bus_lock: dev 0 served from bg.[0m
+D (443398) spi_master: device0 release bus[0m
+V (443406) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443415) spi_master: device0 locked the bus[0m
+V (443417) spi_master: polling trans[0m
+V (443420) spi_master: polling trans done[0m
+V (443424) spi_master: polling trans[0m
+V (443428) spi_master: polling trans done[0m
+D (443432) spi_master: device0 release bus[0m
+V (443436) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443442) spi_master: device0 locked the bus[0m
+V (443447) spi_master: polling trans[0m
+V (443450) spi_master: polling trans done[0m
+V (443454) spi_master: polling trans[0m
+V (443458) spi_master: polling trans done[0m
+D (443462) spi_master: device0 release bus[0m
+V (443466) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443472) spi_master: device0 locked the bus[0m
+V (443477) spi_master: polling trans[0m
+V (443481) spi_master: polling trans done[0m
+V (443485) bus_lock: dev 0 served from bg.[0m
+D (443485) spi_master: device0 release bus[0m
+V (443493) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443500) spi_master: device0 locked the bus[0m
+V (443504) spi_master: polling trans[0m
+V (443507) spi_master: polling trans done[0m
+V (443511) spi_master: polling trans[0m
+V (443515) spi_master: polling trans done[0m
+D (443519) spi_master: device0 release bus[0m
+V (443523) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443529) spi_master: device0 locked the bus[0m
+V (443534) spi_master: polling trans[0m
+V (443537) spi_master: polling trans done[0m
+V (443541) spi_master: polling trans[0m
+V (443545) spi_master: polling trans done[0m
+D (443549) spi_master: device0 release bus[0m
+V (443553) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443559) spi_master: device0 locked the bus[0m
+V (443564) spi_master: polling trans[0m
+V (443568) spi_master: polling trans done[0m
+V (443572) bus_lock: dev 0 served from bg.[0m
+D (443572) spi_master: device0 release bus[0m
+V (443580) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443589) spi_master: device0 locked the bus[0m
+V (443591) spi_master: polling trans[0m
+V (443594) spi_master: polling trans done[0m
+V (443598) spi_master: polling trans[0m
+V (443602) spi_master: polling trans done[0m
+D (443606) spi_master: device0 release bus[0m
+V (443610) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443616) spi_master: device0 locked the bus[0m
+V (443621) spi_master: polling trans[0m
+V (443624) spi_master: polling trans done[0m
+V (443629) spi_master: polling trans[0m
+V (443632) spi_master: polling trans done[0m
+D (443636) spi_master: device0 release bus[0m
+V (443640) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443646) spi_master: device0 locked the bus[0m
+V (443651) spi_master: polling trans[0m
+V (443655) spi_master: polling trans done[0m
+V (443659) bus_lock: dev 0 served from bg.[0m
+D (443659) spi_master: device0 release bus[0m
+V (443667) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443674) spi_master: device0 locked the bus[0m
+V (443678) spi_master: polling trans[0m
+V (443681) spi_master: polling trans done[0m
+V (443685) spi_master: polling trans[0m
+V (443689) spi_master: polling trans done[0m
+D (443693) spi_master: device0 release bus[0m
+V (443697) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443703) spi_master: device0 locked the bus[0m
+V (443708) spi_master: polling trans[0m
+V (443712) spi_master: polling trans done[0m
+V (443716) spi_master: polling trans[0m
+V (443719) spi_master: polling trans done[0m
+D (443723) spi_master: device0 release bus[0m
+V (443727) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443733) spi_master: device0 locked the bus[0m
+V (443738) spi_master: polling trans[0m
+V (443742) spi_master: polling trans done[0m
+V (443746) bus_lock: dev 0 served from bg.[0m
+D (443746) spi_master: device0 release bus[0m
+V (443754) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443763) spi_master: device0 locked the bus[0m
+V (443765) spi_master: polling trans[0m
+V (443768) spi_master: polling trans done[0m
+V (443772) spi_master: polling trans[0m
+V (443776) spi_master: polling trans done[0m
+D (443780) spi_master: device0 release bus[0m
+V (443784) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443790) spi_master: device0 locked the bus[0m
+V (443795) spi_master: polling trans[0m
+V (443799) spi_master: polling trans done[0m
+V (443803) spi_master: polling trans[0m
+V (443806) spi_master: polling trans done[0m
+D (443810) spi_master: device0 release bus[0m
+V (443815) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443821) spi_master: device0 locked the bus[0m
+V (443825) spi_master: polling trans[0m
+V (443829) spi_master: polling trans done[0m
+V (443833) bus_lock: dev 0 served from bg.[0m
+D (443833) spi_master: device0 release bus[0m
+V (443841) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443848) spi_master: device0 locked the bus[0m
+V (443852) spi_master: polling trans[0m
+V (443856) spi_master: polling trans done[0m
+V (443860) spi_master: polling trans[0m
+V (443863) spi_master: polling trans done[0m
+D (443867) spi_master: device0 release bus[0m
+V (443871) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443877) spi_master: device0 locked the bus[0m
+V (443882) spi_master: polling trans[0m
+V (443886) spi_master: polling trans done[0m
+V (443890) spi_master: polling trans[0m
+V (443893) spi_master: polling trans done[0m
+D (443897) spi_master: device0 release bus[0m
+V (443902) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443908) spi_master: device0 locked the bus[0m
+V (443912) spi_master: polling trans[0m
+V (443916) spi_master: polling trans done[0m
+V (443920) bus_lock: dev 0 served from bg.[0m
+D (443920) spi_master: device0 release bus[0m
+V (443928) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443937) spi_master: device0 locked the bus[0m
+V (443939) spi_master: polling trans[0m
+V (443943) spi_master: polling trans done[0m
+V (443947) spi_master: polling trans[0m
+V (443950) spi_master: polling trans done[0m
+D (443954) spi_master: device0 release bus[0m
+V (443958) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443964) spi_master: device0 locked the bus[0m
+V (443969) spi_master: polling trans[0m
+V (443973) spi_master: polling trans done[0m
+V (443977) spi_master: polling trans[0m
+V (443980) spi_master: polling trans done[0m
+D (443984) spi_master: device0 release bus[0m
+V (443989) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (443995) spi_master: device0 locked the bus[0m
+V (443999) spi_master: polling trans[0m
+V (444003) spi_master: polling trans done[0m
+V (444007) bus_lock: dev 0 served from bg.[0m
+D (444007) spi_master: device0 release bus[0m
+V (444015) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444023) spi_master: device0 locked the bus[0m
+V (444026) spi_master: polling trans[0m
+V (444030) spi_master: polling trans done[0m
+V (444034) spi_master: polling trans[0m
+V (444037) spi_master: polling trans done[0m
+D (444041) spi_master: device0 release bus[0m
+V (444046) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444052) spi_master: device0 locked the bus[0m
+V (444056) spi_master: polling trans[0m
+V (444060) spi_master: polling trans done[0m
+V (444064) spi_master: polling trans[0m
+V (444067) spi_master: polling trans done[0m
+D (444072) spi_master: device0 release bus[0m
+V (444076) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444082) spi_master: device0 locked the bus[0m
+V (444086) spi_master: polling trans[0m
+V (444090) spi_master: polling trans done[0m
+V (444094) bus_lock: dev 0 served from bg.[0m
+D (444094) spi_master: device0 release bus[0m
+V (444102) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444112) spi_master: device0 locked the bus[0m
+V (444113) spi_master: polling trans[0m
+V (444117) spi_master: polling trans done[0m
+V (444121) spi_master: polling trans[0m
+V (444124) spi_master: polling trans done[0m
+D (444128) spi_master: device0 release bus[0m
+V (444133) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444139) spi_master: device0 locked the bus[0m
+V (444143) spi_master: polling trans[0m
+V (444147) spi_master: polling trans done[0m
+V (444151) spi_master: polling trans[0m
+V (444155) spi_master: polling trans done[0m
+D (444159) spi_master: device0 release bus[0m
+V (444163) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444169) spi_master: device0 locked the bus[0m
+V (444173) spi_master: polling trans[0m
+V (444177) spi_master: polling trans done[0m
+V (444181) bus_lock: dev 0 served from bg.[0m
+D (444181) spi_master: device0 release bus[0m
+V (444189) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444197) spi_master: device0 locked the bus[0m
+V (444200) spi_master: polling trans[0m
+V (444204) spi_master: polling trans done[0m
+V (444208) spi_master: polling trans[0m
+V (444211) spi_master: polling trans done[0m
+D (444215) spi_master: device0 release bus[0m
+V (444220) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444226) spi_master: device0 locked the bus[0m
+V (444230) spi_master: polling trans[0m
+V (444234) spi_master: polling trans done[0m
+V (444238) spi_master: polling trans[0m
+V (444242) spi_master: polling trans done[0m
+D (444246) spi_master: device0 release bus[0m
+V (444250) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444256) spi_master: device0 locked the bus[0m
+V (444260) spi_master: polling trans[0m
+V (444264) spi_master: polling trans done[0m
+V (444269) bus_lock: dev 0 served from bg.[0m
+D (444268) spi_master: device0 release bus[0m
+V (444276) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444286) spi_master: device0 locked the bus[0m
+V (444287) spi_master: polling trans[0m
+V (444291) spi_master: polling trans done[0m
+V (444295) spi_master: polling trans[0m
+V (444298) spi_master: polling trans done[0m
+D (444303) spi_master: device0 release bus[0m
+V (444307) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444313) spi_master: device0 locked the bus[0m
+V (444317) spi_master: polling trans[0m
+V (444321) spi_master: polling trans done[0m
+V (444325) spi_master: polling trans[0m
+V (444329) spi_master: polling trans done[0m
+D (444333) spi_master: device0 release bus[0m
+V (444337) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444343) spi_master: device0 locked the bus[0m
+V (444347) spi_master: polling trans[0m
+V (444351) spi_master: polling trans done[0m
+V (444356) bus_lock: dev 0 served from bg.[0m
+D (444355) spi_master: device0 release bus[0m
+V (444364) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444371) spi_master: device0 locked the bus[0m
+V (444374) spi_master: polling trans[0m
+V (444378) spi_master: polling trans done[0m
+V (444382) spi_master: polling trans[0m
+V (444386) spi_master: polling trans done[0m
+D (444390) spi_master: device0 release bus[0m
+V (444394) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444400) spi_master: device0 locked the bus[0m
+V (444404) spi_master: polling trans[0m
+V (444408) spi_master: polling trans done[0m
+V (444412) spi_master: polling trans[0m
+V (444416) spi_master: polling trans done[0m
+D (444420) spi_master: device0 release bus[0m
+V (444424) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444430) spi_master: device0 locked the bus[0m
+V (444435) spi_master: polling trans[0m
+V (444438) spi_master: polling trans done[0m
+V (444443) bus_lock: dev 0 served from bg.[0m
+D (444442) spi_master: device0 release bus[0m
+V (444451) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444460) spi_master: device0 locked the bus[0m
+V (444461) spi_master: polling trans[0m
+V (444465) spi_master: polling trans done[0m
+V (444469) spi_master: polling trans[0m
+V (444473) spi_master: polling trans done[0m
+D (444477) spi_master: device0 release bus[0m
+V (444481) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444487) spi_master: device0 locked the bus[0m
+V (444491) spi_master: polling trans[0m
+V (444495) spi_master: polling trans done[0m
+V (444499) spi_master: polling trans[0m
+V (444503) spi_master: polling trans done[0m
+D (444507) spi_master: device0 release bus[0m
+V (444511) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444517) spi_master: device0 locked the bus[0m
+V (444522) spi_master: polling trans[0m
+V (444525) spi_master: polling trans done[0m
+V (444530) bus_lock: dev 0 served from bg.[0m
+D (444529) spi_master: device0 release bus[0m
+V (444538) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444545) spi_master: device0 locked the bus[0m
+V (444548) spi_master: polling trans[0m
+V (444552) spi_master: polling trans done[0m
+V (444556) spi_master: polling trans[0m
+V (444560) spi_master: polling trans done[0m
+D (444564) spi_master: device0 release bus[0m
+V (444568) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444574) spi_master: device0 locked the bus[0m
+V (444578) spi_master: polling trans[0m
+V (444582) spi_master: polling trans done[0m
+V (444586) spi_master: polling trans[0m
+V (444590) spi_master: polling trans done[0m
+D (444594) spi_master: device0 release bus[0m
+V (444598) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444604) spi_master: device0 locked the bus[0m
+V (444609) spi_master: polling trans[0m
+V (444612) spi_master: polling trans done[0m
+V (444617) bus_lock: dev 0 served from bg.[0m
+D (444616) spi_master: device0 release bus[0m
+V (444625) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444634) spi_master: device0 locked the bus[0m
+V (444635) spi_master: polling trans[0m
+V (444639) spi_master: polling trans done[0m
+V (444643) spi_master: polling trans[0m
+V (444647) spi_master: polling trans done[0m
+D (444651) spi_master: device0 release bus[0m
+V (444655) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444661) spi_master: device0 locked the bus[0m
+V (444666) spi_master: polling trans[0m
+V (444669) spi_master: polling trans done[0m
+V (444673) spi_master: polling trans[0m
+V (444677) spi_master: polling trans done[0m
+D (444681) spi_master: device0 release bus[0m
+V (444685) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444691) spi_master: device0 locked the bus[0m
+V (444696) spi_master: polling trans[0m
+V (444699) spi_master: polling trans done[0m
+V (444704) bus_lock: dev 0 served from bg.[0m
+D (444703) spi_master: device0 release bus[0m
+V (444712) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444719) spi_master: device0 locked the bus[0m
+V (444722) spi_master: polling trans[0m
+V (444726) spi_master: polling trans done[0m
+V (444730) spi_master: polling trans[0m
+V (444734) spi_master: polling trans done[0m
+D (444738) spi_master: device0 release bus[0m
+V (444742) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444748) spi_master: device0 locked the bus[0m
+V (444753) spi_master: polling trans[0m
+V (444756) spi_master: polling trans done[0m
+V (444760) spi_master: polling trans[0m
+V (444764) spi_master: polling trans done[0m
+D (444768) spi_master: device0 release bus[0m
+V (444772) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444778) spi_master: device0 locked the bus[0m
+V (444783) spi_master: polling trans[0m
+V (444786) spi_master: polling trans done[0m
+V (444791) bus_lock: dev 0 served from bg.[0m
+D (444791) spi_master: device0 release bus[0m
+V (444799) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444808) spi_master: device0 locked the bus[0m
+V (444809) spi_master: polling trans[0m
+V (444813) spi_master: polling trans done[0m
+V (444817) spi_master: polling trans[0m
+V (444821) spi_master: polling trans done[0m
+D (444825) spi_master: device0 release bus[0m
+V (444829) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444835) spi_master: device0 locked the bus[0m
+V (444840) spi_master: polling trans[0m
+V (444843) spi_master: polling trans done[0m
+V (444847) spi_master: polling trans[0m
+V (444851) spi_master: polling trans done[0m
+D (444855) spi_master: device0 release bus[0m
+V (444859) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444865) spi_master: device0 locked the bus[0m
+V (444870) spi_master: polling trans[0m
+V (444873) spi_master: polling trans done[0m
+V (444878) bus_lock: dev 0 served from bg.[0m
+D (444878) spi_master: device0 release bus[0m
+V (444886) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444893) spi_master: device0 locked the bus[0m
+V (444897) spi_master: polling trans[0m
+V (444900) spi_master: polling trans done[0m
+V (444904) spi_master: polling trans[0m
+V (444908) spi_master: polling trans done[0m
+D (444912) spi_master: device0 release bus[0m
+V (444916) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444922) spi_master: device0 locked the bus[0m
+V (444927) spi_master: polling trans[0m
+V (444930) spi_master: polling trans done[0m
+V (444934) spi_master: polling trans[0m
+V (444938) spi_master: polling trans done[0m
+D (444942) spi_master: device0 release bus[0m
+V (444946) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444952) spi_master: device0 locked the bus[0m
+V (444957) spi_master: polling trans[0m
+V (444961) spi_master: polling trans done[0m
+V (444965) bus_lock: dev 0 served from bg.[0m
+D (444965) spi_master: device0 release bus[0m
+V (444973) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (444982) spi_master: device0 locked the bus[0m
+V (444984) spi_master: polling trans[0m
+V (444987) spi_master: polling trans done[0m
+V (444991) spi_master: polling trans[0m
+V (444995) spi_master: polling trans done[0m
+D (444999) spi_master: device0 release bus[0m
+V (445003) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445009) spi_master: device0 locked the bus[0m
+V (445014) spi_master: polling trans[0m
+V (445017) spi_master: polling trans done[0m
+V (445021) spi_master: polling trans[0m
+V (445025) spi_master: polling trans done[0m
+D (445029) spi_master: device0 release bus[0m
+V (445033) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445039) spi_master: device0 locked the bus[0m
+V (445044) spi_master: polling trans[0m
+V (445048) spi_master: polling trans done[0m
+V (445052) bus_lock: dev 0 served from bg.[0m
+D (445052) spi_master: device0 release bus[0m
+V (445060) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445067) spi_master: device0 locked the bus[0m
+V (445071) spi_master: polling trans[0m
+V (445074) spi_master: polling trans done[0m
+V (445078) spi_master: polling trans[0m
+V (445082) spi_master: polling trans done[0m
+D (445086) spi_master: device0 release bus[0m
+V (445090) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445096) spi_master: device0 locked the bus[0m
+V (445101) spi_master: polling trans[0m
+V (445104) spi_master: polling trans done[0m
+V (445109) spi_master: polling trans[0m
+V (445112) spi_master: polling trans done[0m
+D (445116) spi_master: device0 release bus[0m
+V (445120) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445126) spi_master: device0 locked the bus[0m
+V (445131) spi_master: polling trans[0m
+V (445135) spi_master: polling trans done[0m
+V (445139) bus_lock: dev 0 served from bg.[0m
+D (445139) spi_master: device0 release bus[0m
+V (445147) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445156) spi_master: device0 locked the bus[0m
+V (445158) spi_master: polling trans[0m
+V (445161) spi_master: polling trans done[0m
+V (445165) spi_master: polling trans[0m
+V (445169) spi_master: polling trans done[0m
+D (445173) spi_master: device0 release bus[0m
+V (445177) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445183) spi_master: device0 locked the bus[0m
+V (445188) spi_master: polling trans[0m
+V (445192) spi_master: polling trans done[0m
+V (445196) spi_master: polling trans[0m
+V (445199) spi_master: polling trans done[0m
+D (445203) spi_master: device0 release bus[0m
+V (445207) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445213) spi_master: device0 locked the bus[0m
+V (445218) spi_master: polling trans[0m
+V (445222) spi_master: polling trans done[0m
+V (445226) bus_lock: dev 0 served from bg.[0m
+D (445226) spi_master: device0 release bus[0m
+V (445234) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445241) spi_master: device0 locked the bus[0m
+V (445245) spi_master: polling trans[0m
+V (445248) spi_master: polling trans done[0m
+V (445252) spi_master: polling trans[0m
+V (445256) spi_master: polling trans done[0m
+D (445260) spi_master: device0 release bus[0m
+V (445264) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445270) spi_master: device0 locked the bus[0m
+V (445275) spi_master: polling trans[0m
+V (445279) spi_master: polling trans done[0m
+V (445283) spi_master: polling trans[0m
+V (445286) spi_master: polling trans done[0m
+D (445290) spi_master: device0 release bus[0m
+V (445295) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445301) spi_master: device0 locked the bus[0m
+V (445305) spi_master: polling trans[0m
+V (445309) spi_master: polling trans done[0m
+V (445313) bus_lock: dev 0 served from bg.[0m
+D (445313) spi_master: device0 release bus[0m
+V (445321) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445330) spi_master: device0 locked the bus[0m
+V (445332) spi_master: polling trans[0m
+V (445335) spi_master: polling trans done[0m
+V (445340) spi_master: polling trans[0m
+V (445343) spi_master: polling trans done[0m
+D (445347) spi_master: device0 release bus[0m
+V (445351) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445357) spi_master: device0 locked the bus[0m
+V (445362) spi_master: polling trans[0m
+V (445366) spi_master: polling trans done[0m
+V (445370) spi_master: polling trans[0m
+V (445373) spi_master: polling trans done[0m
+D (445377) spi_master: device0 release bus[0m
+V (445382) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445388) spi_master: device0 locked the bus[0m
+V (445392) spi_master: polling trans[0m
+V (445396) spi_master: polling trans done[0m
+V (445400) bus_lock: dev 0 served from bg.[0m
+D (445400) spi_master: device0 release bus[0m
+V (445408) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445416) spi_master: device0 locked the bus[0m
+V (445419) spi_master: polling trans[0m
+V (445423) spi_master: polling trans done[0m
+V (445427) spi_master: polling trans[0m
+V (445430) spi_master: polling trans done[0m
+D (445434) spi_master: device0 release bus[0m
+V (445438) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445444) spi_master: device0 locked the bus[0m
+V (445449) spi_master: polling trans[0m
+V (445453) spi_master: polling trans done[0m
+V (445457) spi_master: polling trans[0m
+V (445460) spi_master: polling trans done[0m
+D (445464) spi_master: device0 release bus[0m
+V (445469) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445475) spi_master: device0 locked the bus[0m
+V (445479) spi_master: polling trans[0m
+V (445483) spi_master: polling trans done[0m
+V (445487) bus_lock: dev 0 served from bg.[0m
+D (445487) spi_master: device0 release bus[0m
+V (445495) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445504) spi_master: device0 locked the bus[0m
+V (445506) spi_master: polling trans[0m
+V (445510) spi_master: polling trans done[0m
+V (445514) spi_master: polling trans[0m
+V (445517) spi_master: polling trans done[0m
+D (445521) spi_master: device0 release bus[0m
+V (445525) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445531) spi_master: device0 locked the bus[0m
+V (445536) spi_master: polling trans[0m
+V (445540) spi_master: polling trans done[0m
+V (445544) spi_master: polling trans[0m
+V (445547) spi_master: polling trans done[0m
+D (445552) spi_master: device0 release bus[0m
+V (445556) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445562) spi_master: device0 locked the bus[0m
+V (445566) spi_master: polling trans[0m
+V (445570) spi_master: polling trans done[0m
+V (445574) bus_lock: dev 0 served from bg.[0m
+D (445574) spi_master: device0 release bus[0m
+V (445582) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445590) spi_master: device0 locked the bus[0m
+V (445593) spi_master: polling trans[0m
+V (445597) spi_master: polling trans done[0m
+V (445601) spi_master: polling trans[0m
+V (445604) spi_master: polling trans done[0m
+D (445608) spi_master: device0 release bus[0m
+V (445613) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445619) spi_master: device0 locked the bus[0m
+V (445623) spi_master: polling trans[0m
+V (445627) spi_master: polling trans done[0m
+V (445631) spi_master: polling trans[0m
+V (445635) spi_master: polling trans done[0m
+D (445639) spi_master: device0 release bus[0m
+V (445643) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445649) spi_master: device0 locked the bus[0m
+V (445653) spi_master: polling trans[0m
+V (445657) spi_master: polling trans done[0m
+V (445661) bus_lock: dev 0 served from bg.[0m
+D (445661) spi_master: device0 release bus[0m
+V (445669) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445679) spi_master: device0 locked the bus[0m
+V (445680) spi_master: polling trans[0m
+V (445684) spi_master: polling trans done[0m
+V (445688) spi_master: polling trans[0m
+V (445691) spi_master: polling trans done[0m
+D (445695) spi_master: device0 release bus[0m
+V (445700) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445706) spi_master: device0 locked the bus[0m
+V (445710) spi_master: polling trans[0m
+V (445714) spi_master: polling trans done[0m
+V (445718) spi_master: polling trans[0m
+V (445722) spi_master: polling trans done[0m
+D (445726) spi_master: device0 release bus[0m
+V (445730) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445736) spi_master: device0 locked the bus[0m
+V (445740) spi_master: polling trans[0m
+V (445744) spi_master: polling trans done[0m
+V (445748) bus_lock: dev 0 served from bg.[0m
+D (445748) spi_master: device0 release bus[0m
+V (445756) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445764) spi_master: device0 locked the bus[0m
+V (445767) spi_master: polling trans[0m
+V (445771) spi_master: polling trans done[0m
+V (445775) spi_master: polling trans[0m
+V (445778) spi_master: polling trans done[0m
+D (445782) spi_master: device0 release bus[0m
+V (445787) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445793) spi_master: device0 locked the bus[0m
+V (445797) spi_master: polling trans[0m
+V (445801) spi_master: polling trans done[0m
+V (445805) spi_master: polling trans[0m
+V (445809) spi_master: polling trans done[0m
+D (445813) spi_master: device0 release bus[0m
+V (445817) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445823) spi_master: device0 locked the bus[0m
+V (445827) spi_master: polling trans[0m
+V (445831) spi_master: polling trans done[0m
+V (445836) bus_lock: dev 0 served from bg.[0m
+D (445835) spi_master: device0 release bus[0m
+V (445844) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445853) spi_master: device0 locked the bus[0m
+V (445854) spi_master: polling trans[0m
+V (445858) spi_master: polling trans done[0m
+V (445862) spi_master: polling trans[0m
+V (445865) spi_master: polling trans done[0m
+D (445870) spi_master: device0 release bus[0m
+V (445874) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445880) spi_master: device0 locked the bus[0m
+V (445884) spi_master: polling trans[0m
+V (445888) spi_master: polling trans done[0m
+V (445892) spi_master: polling trans[0m
+V (445896) spi_master: polling trans done[0m
+D (445900) spi_master: device0 release bus[0m
+V (445904) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445910) spi_master: device0 locked the bus[0m
+V (445915) spi_master: polling trans[0m
+V (445918) spi_master: polling trans done[0m
+V (445923) bus_lock: dev 0 served from bg.[0m
+D (445922) spi_master: device0 release bus[0m
+V (445931) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445938) spi_master: device0 locked the bus[0m
+V (445941) spi_master: polling trans[0m
+V (445945) spi_master: polling trans done[0m
+V (445949) spi_master: polling trans[0m
+V (445953) spi_master: polling trans done[0m
+D (445957) spi_master: device0 release bus[0m
+V (445961) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445967) spi_master: device0 locked the bus[0m
+V (445971) spi_master: polling trans[0m
+V (445975) spi_master: polling trans done[0m
+V (445979) spi_master: polling trans[0m
+V (445983) spi_master: polling trans done[0m
+D (445987) spi_master: device0 release bus[0m
+V (445991) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (445997) spi_master: device0 locked the bus[0m
+V (446002) spi_master: polling trans[0m
+V (446005) spi_master: polling trans done[0m
+V (446010) bus_lock: dev 0 served from bg.[0m
+D (446009) spi_master: device0 release bus[0m
+V (446018) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446027) spi_master: device0 locked the bus[0m
+V (446028) spi_master: polling trans[0m
+V (446032) spi_master: polling trans done[0m
+V (446036) spi_master: polling trans[0m
+V (446040) spi_master: polling trans done[0m
+D (446044) spi_master: device0 release bus[0m
+V (446048) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446054) spi_master: device0 locked the bus[0m
+V (446058) spi_master: polling trans[0m
+V (446062) spi_master: polling trans done[0m
+V (446066) spi_master: polling trans[0m
+V (446070) spi_master: polling trans done[0m
+D (446074) spi_master: device0 release bus[0m
+V (446078) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446084) spi_master: device0 locked the bus[0m
+V (446089) spi_master: polling trans[0m
+V (446092) spi_master: polling trans done[0m
+V (446097) bus_lock: dev 0 served from bg.[0m
+D (446096) spi_master: device0 release bus[0m
+V (446105) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446112) spi_master: device0 locked the bus[0m
+V (446115) spi_master: polling trans[0m
+V (446119) spi_master: polling trans done[0m
+V (446123) spi_master: polling trans[0m
+V (446127) spi_master: polling trans done[0m
+D (446131) spi_master: device0 release bus[0m
+V (446135) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446141) spi_master: device0 locked the bus[0m
+V (446146) spi_master: polling trans[0m
+V (446149) spi_master: polling trans done[0m
+V (446153) spi_master: polling trans[0m
+V (446157) spi_master: polling trans done[0m
+D (446161) spi_master: device0 release bus[0m
+V (446165) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446171) spi_master: device0 locked the bus[0m
+V (446176) spi_master: polling trans[0m
+V (446179) spi_master: polling trans done[0m
+V (446184) bus_lock: dev 0 served from bg.[0m
+D (446183) spi_master: device0 release bus[0m
+V (446192) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446201) spi_master: device0 locked the bus[0m
+V (446202) spi_master: polling trans[0m
+V (446206) spi_master: polling trans done[0m
+V (446210) spi_master: polling trans[0m
+V (446214) spi_master: polling trans done[0m
+D (446218) spi_master: device0 release bus[0m
+V (446222) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446228) spi_master: device0 locked the bus[0m
+V (446233) spi_master: polling trans[0m
+V (446236) spi_master: polling trans done[0m
+V (446240) spi_master: polling trans[0m
+V (446244) spi_master: polling trans done[0m
+D (446248) spi_master: device0 release bus[0m
+V (446252) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446258) spi_master: device0 locked the bus[0m
+V (446263) spi_master: polling trans[0m
+V (446266) spi_master: polling trans done[0m
+V (446271) bus_lock: dev 0 served from bg.[0m
+D (446271) spi_master: device0 release bus[0m
+V (446279) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446286) spi_master: device0 locked the bus[0m
+V (446289) spi_master: polling trans[0m
+V (446293) spi_master: polling trans done[0m
+V (446297) spi_master: polling trans[0m
+V (446301) spi_master: polling trans done[0m
+D (446305) spi_master: device0 release bus[0m
+V (446309) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446315) spi_master: device0 locked the bus[0m
+V (446320) spi_master: polling trans[0m
+V (446323) spi_master: polling trans done[0m
+V (446327) spi_master: polling trans[0m
+V (446331) spi_master: polling trans done[0m
+D (446335) spi_master: device0 release bus[0m
+V (446339) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446345) spi_master: device0 locked the bus[0m
+V (446350) spi_master: polling trans[0m
+V (446353) spi_master: polling trans done[0m
+V (446358) bus_lock: dev 0 served from bg.[0m
+D (446358) spi_master: device0 release bus[0m
+V (446366) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446375) spi_master: device0 locked the bus[0m
+V (446377) spi_master: polling trans[0m
+V (446380) spi_master: polling trans done[0m
+V (446384) spi_master: polling trans[0m
+V (446388) spi_master: polling trans done[0m
+D (446392) spi_master: device0 release bus[0m
+V (446396) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446402) spi_master: device0 locked the bus[0m
+V (446407) spi_master: polling trans[0m
+V (446410) spi_master: polling trans done[0m
+V (446414) spi_master: polling trans[0m
+V (446418) spi_master: polling trans done[0m
+D (446422) spi_master: device0 release bus[0m
+V (446426) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446432) spi_master: device0 locked the bus[0m
+V (446437) spi_master: polling trans[0m
+V (446441) spi_master: polling trans done[0m
+V (446445) bus_lock: dev 0 served from bg.[0m
+D (446445) spi_master: device0 release bus[0m
+V (446453) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446460) spi_master: device0 locked the bus[0m
+V (446464) spi_master: polling trans[0m
+V (446467) spi_master: polling trans done[0m
+V (446471) spi_master: polling trans[0m
+V (446475) spi_master: polling trans done[0m
+D (446479) spi_master: device0 release bus[0m
+V (446483) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446489) spi_master: device0 locked the bus[0m
+V (446494) spi_master: polling trans[0m
+V (446497) spi_master: polling trans done[0m
+V (446501) spi_master: polling trans[0m
+V (446505) spi_master: polling trans done[0m
+D (446509) spi_master: device0 release bus[0m
+V (446513) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446519) spi_master: device0 locked the bus[0m
+V (446524) spi_master: polling trans[0m
+V (446528) spi_master: polling trans done[0m
+V (446532) bus_lock: dev 0 served from bg.[0m
+D (446532) spi_master: device0 release bus[0m
+V (446540) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446549) spi_master: device0 locked the bus[0m
+V (446551) spi_master: polling trans[0m
+V (446554) spi_master: polling trans done[0m
+V (446558) spi_master: polling trans[0m
+V (446562) spi_master: polling trans done[0m
+D (446566) spi_master: device0 release bus[0m
+V (446570) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446576) spi_master: device0 locked the bus[0m
+V (446581) spi_master: polling trans[0m
+V (446584) spi_master: polling trans done[0m
+V (446588) spi_master: polling trans[0m
+V (446592) spi_master: polling trans done[0m
+D (446596) spi_master: device0 release bus[0m
+V (446600) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446606) spi_master: device0 locked the bus[0m
+V (446611) spi_master: polling trans[0m
+V (446615) spi_master: polling trans done[0m
+V (446619) bus_lock: dev 0 served from bg.[0m
+D (446619) spi_master: device0 release bus[0m
+V (446627) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446634) spi_master: device0 locked the bus[0m
+V (446638) spi_master: polling trans[0m
+V (446641) spi_master: polling trans done[0m
+V (446645) spi_master: polling trans[0m
+V (446649) spi_master: polling trans done[0m
+D (446653) spi_master: device0 release bus[0m
+V (446657) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446663) spi_master: device0 locked the bus[0m
+V (446668) spi_master: polling trans[0m
+V (446671) spi_master: polling trans done[0m
+V (446676) spi_master: polling trans[0m
+V (446679) spi_master: polling trans done[0m
+D (446683) spi_master: device0 release bus[0m
+V (446687) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446693) spi_master: device0 locked the bus[0m
+V (446698) spi_master: polling trans[0m
+V (446702) spi_master: polling trans done[0m
+V (446706) bus_lock: dev 0 served from bg.[0m
+D (446706) spi_master: device0 release bus[0m
+V (446714) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446723) spi_master: device0 locked the bus[0m
+V (446725) spi_master: polling trans[0m
+V (446728) spi_master: polling trans done[0m
+V (446732) spi_master: polling trans[0m
+V (446736) spi_master: polling trans done[0m
+D (446740) spi_master: device0 release bus[0m
+V (446744) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446750) spi_master: device0 locked the bus[0m
+V (446755) spi_master: polling trans[0m
+V (446759) spi_master: polling trans done[0m
+V (446763) spi_master: polling trans[0m
+V (446766) spi_master: polling trans done[0m
+D (446770) spi_master: device0 release bus[0m
+V (446774) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446780) spi_master: device0 locked the bus[0m
+V (446785) spi_master: polling trans[0m
+V (446789) spi_master: polling trans done[0m
+V (446793) bus_lock: dev 0 served from bg.[0m
+D (446793) spi_master: device0 release bus[0m
+V (446801) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446808) spi_master: device0 locked the bus[0m
+V (446812) spi_master: polling trans[0m
+V (446815) spi_master: polling trans done[0m
+V (446819) spi_master: polling trans[0m
+V (446823) spi_master: polling trans done[0m
+D (446827) spi_master: device0 release bus[0m
+V (446831) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446837) spi_master: device0 locked the bus[0m
+V (446842) spi_master: polling trans[0m
+V (446846) spi_master: polling trans done[0m
+V (446850) spi_master: polling trans[0m
+V (446853) spi_master: polling trans done[0m
+D (446857) spi_master: device0 release bus[0m
+V (446862) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446868) spi_master: device0 locked the bus[0m
+V (446872) spi_master: polling trans[0m
+V (446876) spi_master: polling trans done[0m
+V (446880) bus_lock: dev 0 served from bg.[0m
+D (446880) spi_master: device0 release bus[0m
+V (446888) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446897) spi_master: device0 locked the bus[0m
+V (446899) spi_master: polling trans[0m
+V (446903) spi_master: polling trans done[0m
+V (446907) spi_master: polling trans[0m
+V (446910) spi_master: polling trans done[0m
+D (446914) spi_master: device0 release bus[0m
+V (446918) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446924) spi_master: device0 locked the bus[0m
+V (446929) spi_master: polling trans[0m
+V (446933) spi_master: polling trans done[0m
+V (446937) spi_master: polling trans[0m
+V (446940) spi_master: polling trans done[0m
+D (446944) spi_master: device0 release bus[0m
+V (446949) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446955) spi_master: device0 locked the bus[0m
+V (446959) spi_master: polling trans[0m
+V (446963) spi_master: polling trans done[0m
+V (446967) bus_lock: dev 0 served from bg.[0m
+D (446967) spi_master: device0 release bus[0m
+V (446975) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (446982) spi_master: device0 locked the bus[0m
+V (446986) spi_master: polling trans[0m
+V (446990) spi_master: polling trans done[0m
+V (446994) spi_master: polling trans[0m
+V (446997) spi_master: polling trans done[0m
+D (447001) spi_master: device0 release bus[0m
+V (447005) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447011) spi_master: device0 locked the bus[0m
+V (447016) spi_master: polling trans[0m
+V (447020) spi_master: polling trans done[0m
+V (447024) spi_master: polling trans[0m
+V (447027) spi_master: polling trans done[0m
+D (447032) spi_master: device0 release bus[0m
+V (447036) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447042) spi_master: device0 locked the bus[0m
+V (447046) spi_master: polling trans[0m
+V (447050) spi_master: polling trans done[0m
+V (447054) bus_lock: dev 0 served from bg.[0m
+D (447054) spi_master: device0 release bus[0m
+V (447062) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447071) spi_master: device0 locked the bus[0m
+V (447073) spi_master: polling trans[0m
+V (447077) spi_master: polling trans done[0m
+V (447081) spi_master: polling trans[0m
+V (447084) spi_master: polling trans done[0m
+D (447088) spi_master: device0 release bus[0m
+V (447093) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447099) spi_master: device0 locked the bus[0m
+V (447103) spi_master: polling trans[0m
+V (447107) spi_master: polling trans done[0m
+V (447111) spi_master: polling trans[0m
+V (447114) spi_master: polling trans done[0m
+D (447119) spi_master: device0 release bus[0m
+V (447123) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447129) spi_master: device0 locked the bus[0m
+V (447133) spi_master: polling trans[0m
+V (447137) spi_master: polling trans done[0m
+V (447141) bus_lock: dev 0 served from bg.[0m
+D (447141) spi_master: device0 release bus[0m
+V (447149) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447157) spi_master: device0 locked the bus[0m
+V (447160) spi_master: polling trans[0m
+V (447164) spi_master: polling trans done[0m
+V (447168) spi_master: polling trans[0m
+V (447171) spi_master: polling trans done[0m
+D (447175) spi_master: device0 release bus[0m
+V (447180) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447186) spi_master: device0 locked the bus[0m
+V (447190) spi_master: polling trans[0m
+V (447194) spi_master: polling trans done[0m
+V (447198) spi_master: polling trans[0m
+V (447202) spi_master: polling trans done[0m
+D (447206) spi_master: device0 release bus[0m
+V (447210) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447216) spi_master: device0 locked the bus[0m
+V (447220) spi_master: polling trans[0m
+V (447224) spi_master: polling trans done[0m
+V (447228) bus_lock: dev 0 served from bg.[0m
+D (447228) spi_master: device0 release bus[0m
+V (447236) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447246) spi_master: device0 locked the bus[0m
+V (447247) spi_master: polling trans[0m
+V (447251) spi_master: polling trans done[0m
+V (447255) spi_master: polling trans[0m
+V (447258) spi_master: polling trans done[0m
+D (447262) spi_master: device0 release bus[0m
+V (447267) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447273) spi_master: device0 locked the bus[0m
+V (447277) spi_master: polling trans[0m
+V (447281) spi_master: polling trans done[0m
+V (447285) spi_master: polling trans[0m
+V (447289) spi_master: polling trans done[0m
+D (447293) spi_master: device0 release bus[0m
+V (447297) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447303) spi_master: device0 locked the bus[0m
+V (447307) spi_master: polling trans[0m
+V (447311) spi_master: polling trans done[0m
+V (447315) bus_lock: dev 0 served from bg.[0m
+D (447315) spi_master: device0 release bus[0m
+V (447323) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447331) spi_master: device0 locked the bus[0m
+V (447334) spi_master: polling trans[0m
+V (447338) spi_master: polling trans done[0m
+V (447342) spi_master: polling trans[0m
+V (447345) spi_master: polling trans done[0m
+D (447350) spi_master: device0 release bus[0m
+V (447354) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447360) spi_master: device0 locked the bus[0m
+V (447364) spi_master: polling trans[0m
+V (447368) spi_master: polling trans done[0m
+V (447372) spi_master: polling trans[0m
+V (447376) spi_master: polling trans done[0m
+D (447380) spi_master: device0 release bus[0m
+V (447384) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447390) spi_master: device0 locked the bus[0m
+V (447395) spi_master: polling trans[0m
+V (447398) spi_master: polling trans done[0m
+V (447403) bus_lock: dev 0 served from bg.[0m
+D (447402) spi_master: device0 release bus[0m
+V (447411) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447420) spi_master: device0 locked the bus[0m
+V (447421) spi_master: polling trans[0m
+V (447425) spi_master: polling trans done[0m
+V (447429) spi_master: polling trans[0m
+V (447433) spi_master: polling trans done[0m
+D (447437) spi_master: device0 release bus[0m
+V (447441) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447447) spi_master: device0 locked the bus[0m
+V (447451) spi_master: polling trans[0m
+V (447455) spi_master: polling trans done[0m
+V (447459) spi_master: polling trans[0m
+V (447463) spi_master: polling trans done[0m
+D (447467) spi_master: device0 release bus[0m
+V (447471) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447477) spi_master: device0 locked the bus[0m
+V (447482) spi_master: polling trans[0m
+V (447485) spi_master: polling trans done[0m
+V (447490) bus_lock: dev 0 served from bg.[0m
+D (447489) spi_master: device0 release bus[0m
+V (447498) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447505) spi_master: device0 locked the bus[0m
+V (447508) spi_master: polling trans[0m
+V (447512) spi_master: polling trans done[0m
+V (447516) spi_master: polling trans[0m
+V (447520) spi_master: polling trans done[0m
+D (447524) spi_master: device0 release bus[0m
+V (447528) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447534) spi_master: device0 locked the bus[0m
+V (447538) spi_master: polling trans[0m
+V (447542) spi_master: polling trans done[0m
+V (447546) spi_master: polling trans[0m
+V (447550) spi_master: polling trans done[0m
+D (447554) spi_master: device0 release bus[0m
+V (447558) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447564) spi_master: device0 locked the bus[0m
+V (447569) spi_master: polling trans[0m
+V (447572) spi_master: polling trans done[0m
+V (447577) bus_lock: dev 0 served from bg.[0m
+D (447576) spi_master: device0 release bus[0m
+V (447585) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447594) spi_master: device0 locked the bus[0m
+V (447595) spi_master: polling trans[0m
+V (447599) spi_master: polling trans done[0m
+V (447603) spi_master: polling trans[0m
+V (447607) spi_master: polling trans done[0m
+D (447611) spi_master: device0 release bus[0m
+V (447615) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447621) spi_master: device0 locked the bus[0m
+V (447625) spi_master: polling trans[0m
+V (447629) spi_master: polling trans done[0m
+V (447633) spi_master: polling trans[0m
+V (447637) spi_master: polling trans done[0m
+D (447641) spi_master: device0 release bus[0m
+V (447645) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447651) spi_master: device0 locked the bus[0m
+V (447656) spi_master: polling trans[0m
+V (447659) spi_master: polling trans done[0m
+V (447664) bus_lock: dev 0 served from bg.[0m
+D (447663) spi_master: device0 release bus[0m
+V (447672) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447679) spi_master: device0 locked the bus[0m
+V (447682) spi_master: polling trans[0m
+V (447686) spi_master: polling trans done[0m
+V (447690) spi_master: polling trans[0m
+V (447694) spi_master: polling trans done[0m
+D (447698) spi_master: device0 release bus[0m
+V (447702) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447708) spi_master: device0 locked the bus[0m
+V (447713) spi_master: polling trans[0m
+V (447716) spi_master: polling trans done[0m
+V (447720) spi_master: polling trans[0m
+V (447724) spi_master: polling trans done[0m
+D (447728) spi_master: device0 release bus[0m
+V (447732) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447738) spi_master: device0 locked the bus[0m
+V (447743) spi_master: polling trans[0m
+V (447746) spi_master: polling trans done[0m
+V (447751) bus_lock: dev 0 served from bg.[0m
+D (447751) spi_master: device0 release bus[0m
+V (447759) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447768) spi_master: device0 locked the bus[0m
+V (447769) spi_master: polling trans[0m
+V (447773) spi_master: polling trans done[0m
+V (447777) spi_master: polling trans[0m
+V (447781) spi_master: polling trans done[0m
+D (447785) spi_master: device0 release bus[0m
+V (447789) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447795) spi_master: device0 locked the bus[0m
+V (447800) spi_master: polling trans[0m
+V (447803) spi_master: polling trans done[0m
+V (447807) spi_master: polling trans[0m
+V (447811) spi_master: polling trans done[0m
+D (447815) spi_master: device0 release bus[0m
+V (447819) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447825) spi_master: device0 locked the bus[0m
+V (447830) spi_master: polling trans[0m
+V (447833) spi_master: polling trans done[0m
+V (447838) bus_lock: dev 0 served from bg.[0m
+D (447838) spi_master: device0 release bus[0m
+V (447846) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447855) spi_master: device0 locked the bus[0m
+V (447857) spi_master: polling trans[0m
+V (447860) spi_master: polling trans done[0m
+V (447864) spi_master: polling trans[0m
+V (447868) spi_master: polling trans done[0m
+D (447872) spi_master: device0 release bus[0m
+V (447876) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447882) spi_master: device0 locked the bus[0m
+V (447887) spi_master: polling trans[0m
+V (447890) spi_master: polling trans done[0m
+V (447894) spi_master: polling trans[0m
+V (447898) spi_master: polling trans done[0m
+D (447902) spi_master: device0 release bus[0m
+V (447906) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447912) spi_master: device0 locked the bus[0m
+V (447917) spi_master: polling trans[0m
+V (447920) spi_master: polling trans done[0m
+V (447925) bus_lock: dev 0 served from bg.[0m
+D (447925) spi_master: device0 release bus[0m
+V (447933) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447940) spi_master: device0 locked the bus[0m
+V (447944) spi_master: polling trans[0m
+V (447947) spi_master: polling trans done[0m
+V (447951) spi_master: polling trans[0m
+V (447955) spi_master: polling trans done[0m
+D (447959) spi_master: device0 release bus[0m
+V (447963) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447969) spi_master: device0 locked the bus[0m
+V (447974) spi_master: polling trans[0m
+V (447977) spi_master: polling trans done[0m
+V (447981) spi_master: polling trans[0m
+V (447985) spi_master: polling trans done[0m
+D (447989) spi_master: device0 release bus[0m
+V (447993) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (447999) spi_master: device0 locked the bus[0m
+V (448004) spi_master: polling trans[0m
+V (448008) spi_master: polling trans done[0m
+V (448012) bus_lock: dev 0 served from bg.[0m
+D (448012) spi_master: device0 release bus[0m
+V (448020) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448029) spi_master: device0 locked the bus[0m
+V (448031) spi_master: polling trans[0m
+V (448034) spi_master: polling trans done[0m
+V (448038) spi_master: polling trans[0m
+V (448042) spi_master: polling trans done[0m
+D (448046) spi_master: device0 release bus[0m
+V (448050) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448056) spi_master: device0 locked the bus[0m
+V (448061) spi_master: polling trans[0m
+V (448064) spi_master: polling trans done[0m
+V (448068) spi_master: polling trans[0m
+V (448072) spi_master: polling trans done[0m
+D (448076) spi_master: device0 release bus[0m
+V (448080) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448086) spi_master: device0 locked the bus[0m
+V (448091) spi_master: polling trans[0m
+V (448095) spi_master: polling trans done[0m
+V (448099) bus_lock: dev 0 served from bg.[0m
+D (448099) spi_master: device0 release bus[0m
+V (448107) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448114) spi_master: device0 locked the bus[0m
+V (448118) spi_master: polling trans[0m
+V (448121) spi_master: polling trans done[0m
+V (448125) spi_master: polling trans[0m
+V (448129) spi_master: polling trans done[0m
+D (448133) spi_master: device0 release bus[0m
+V (448137) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448143) spi_master: device0 locked the bus[0m
+V (448148) spi_master: polling trans[0m
+V (448151) spi_master: polling trans done[0m
+V (448156) spi_master: polling trans[0m
+V (448159) spi_master: polling trans done[0m
+D (448163) spi_master: device0 release bus[0m
+V (448167) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448173) spi_master: device0 locked the bus[0m
+V (448178) spi_master: polling trans[0m
+V (448182) spi_master: polling trans done[0m
+V (448186) bus_lock: dev 0 served from bg.[0m
+D (448186) spi_master: device0 release bus[0m
+V (448194) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448203) spi_master: device0 locked the bus[0m
+V (448205) spi_master: polling trans[0m
+V (448208) spi_master: polling trans done[0m
+V (448212) spi_master: polling trans[0m
+V (448216) spi_master: polling trans done[0m
+D (448220) spi_master: device0 release bus[0m
+V (448224) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448230) spi_master: device0 locked the bus[0m
+V (448235) spi_master: polling trans[0m
+V (448239) spi_master: polling trans done[0m
+V (448243) spi_master: polling trans[0m
+V (448246) spi_master: polling trans done[0m
+D (448250) spi_master: device0 release bus[0m
+V (448254) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448260) spi_master: device0 locked the bus[0m
+V (448265) spi_master: polling trans[0m
+V (448269) spi_master: polling trans done[0m
+V (448273) bus_lock: dev 0 served from bg.[0m
+D (448273) spi_master: device0 release bus[0m
+V (448281) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448288) spi_master: device0 locked the bus[0m
+V (448292) spi_master: polling trans[0m
+V (448295) spi_master: polling trans done[0m
+V (448299) spi_master: polling trans[0m
+V (448303) spi_master: polling trans done[0m
+D (448307) spi_master: device0 release bus[0m
+V (448311) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448317) spi_master: device0 locked the bus[0m
+V (448322) spi_master: polling trans[0m
+V (448326) spi_master: polling trans done[0m
+V (448330) spi_master: polling trans[0m
+V (448333) spi_master: polling trans done[0m
+D (448337) spi_master: device0 release bus[0m
+V (448342) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448348) spi_master: device0 locked the bus[0m
+V (448352) spi_master: polling trans[0m
+V (448356) spi_master: polling trans done[0m
+V (448360) bus_lock: dev 0 served from bg.[0m
+D (448360) spi_master: device0 release bus[0m
+V (448368) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448377) spi_master: device0 locked the bus[0m
+V (448379) spi_master: polling trans[0m
+V (448382) spi_master: polling trans done[0m
+V (448387) spi_master: polling trans[0m
+V (448390) spi_master: polling trans done[0m
+D (448394) spi_master: device0 release bus[0m
+V (448398) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448404) spi_master: device0 locked the bus[0m
+V (448409) spi_master: polling trans[0m
+V (448413) spi_master: polling trans done[0m
+V (448417) spi_master: polling trans[0m
+V (448420) spi_master: polling trans done[0m
+D (448424) spi_master: device0 release bus[0m
+V (448429) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448435) spi_master: device0 locked the bus[0m
+V (448439) spi_master: polling trans[0m
+V (448443) spi_master: polling trans done[0m
+V (448447) bus_lock: dev 0 served from bg.[0m
+D (448447) spi_master: device0 release bus[0m
+V (448455) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448463) spi_master: device0 locked the bus[0m
+V (448466) spi_master: polling trans[0m
+V (448470) spi_master: polling trans done[0m
+V (448474) spi_master: polling trans[0m
+V (448477) spi_master: polling trans done[0m
+D (448481) spi_master: device0 release bus[0m
+V (448485) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448491) spi_master: device0 locked the bus[0m
+V (448496) spi_master: polling trans[0m
+V (448500) spi_master: polling trans done[0m
+V (448504) spi_master: polling trans[0m
+V (448507) spi_master: polling trans done[0m
+D (448511) spi_master: device0 release bus[0m
+V (448516) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448522) spi_master: device0 locked the bus[0m
+V (448526) spi_master: polling trans[0m
+V (448530) spi_master: polling trans done[0m
+V (448534) bus_lock: dev 0 served from bg.[0m
+D (448534) spi_master: device0 release bus[0m
+V (448542) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448551) spi_master: device0 locked the bus[0m
+V (448553) spi_master: polling trans[0m
+V (448557) spi_master: polling trans done[0m
+V (448561) spi_master: polling trans[0m
+V (448564) spi_master: polling trans done[0m
+D (448568) spi_master: device0 release bus[0m
+V (448572) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448578) spi_master: device0 locked the bus[0m
+V (448583) spi_master: polling trans[0m
+V (448587) spi_master: polling trans done[0m
+V (448591) spi_master: polling trans[0m
+V (448594) spi_master: polling trans done[0m
+D (448599) spi_master: device0 release bus[0m
+V (448603) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448609) spi_master: device0 locked the bus[0m
+V (448613) spi_master: polling trans[0m
+V (448617) spi_master: polling trans done[0m
+V (448621) bus_lock: dev 0 served from bg.[0m
+D (448621) spi_master: device0 release bus[0m
+V (448629) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448637) spi_master: device0 locked the bus[0m
+V (448640) spi_master: polling trans[0m
+V (448644) spi_master: polling trans done[0m
+V (448648) spi_master: polling trans[0m
+V (448651) spi_master: polling trans done[0m
+D (448655) spi_master: device0 release bus[0m
+V (448660) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448666) spi_master: device0 locked the bus[0m
+V (448670) spi_master: polling trans[0m
+V (448674) spi_master: polling trans done[0m
+V (448678) spi_master: polling trans[0m
+V (448682) spi_master: polling trans done[0m
+D (448686) spi_master: device0 release bus[0m
+V (448690) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448696) spi_master: device0 locked the bus[0m
+V (448700) spi_master: polling trans[0m
+V (448704) spi_master: polling trans done[0m
+V (448708) bus_lock: dev 0 served from bg.[0m
+D (448708) spi_master: device0 release bus[0m
+V (448716) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448726) spi_master: device0 locked the bus[0m
+V (448727) spi_master: polling trans[0m
+V (448731) spi_master: polling trans done[0m
+V (448735) spi_master: polling trans[0m
+V (448738) spi_master: polling trans done[0m
+D (448742) spi_master: device0 release bus[0m
+V (448747) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448753) spi_master: device0 locked the bus[0m
+V (448757) spi_master: polling trans[0m
+V (448761) spi_master: polling trans done[0m
+V (448765) spi_master: polling trans[0m
+V (448769) spi_master: polling trans done[0m
+D (448773) spi_master: device0 release bus[0m
+V (448777) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448783) spi_master: device0 locked the bus[0m
+V (448787) spi_master: polling trans[0m
+V (448791) spi_master: polling trans done[0m
+V (448795) bus_lock: dev 0 served from bg.[0m
+D (448795) spi_master: device0 release bus[0m
+V (448803) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448811) spi_master: device0 locked the bus[0m
+V (448814) spi_master: polling trans[0m
+V (448818) spi_master: polling trans done[0m
+V (448822) spi_master: polling trans[0m
+V (448825) spi_master: polling trans done[0m
+D (448829) spi_master: device0 release bus[0m
+V (448834) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448840) spi_master: device0 locked the bus[0m
+V (448844) spi_master: polling trans[0m
+V (448848) spi_master: polling trans done[0m
+V (448852) spi_master: polling trans[0m
+V (448856) spi_master: polling trans done[0m
+D (448860) spi_master: device0 release bus[0m
+V (448864) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448870) spi_master: device0 locked the bus[0m
+V (448874) spi_master: polling trans[0m
+V (448878) spi_master: polling trans done[0m
+V (448883) bus_lock: dev 0 served from bg.[0m
+D (448882) spi_master: device0 release bus[0m
+V (448891) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448900) spi_master: device0 locked the bus[0m
+V (448901) spi_master: polling trans[0m
+V (448905) spi_master: polling trans done[0m
+V (448909) spi_master: polling trans[0m
+V (448912) spi_master: polling trans done[0m
+D (448917) spi_master: device0 release bus[0m
+V (448921) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448927) spi_master: device0 locked the bus[0m
+V (448931) spi_master: polling trans[0m
+V (448935) spi_master: polling trans done[0m
+V (448939) spi_master: polling trans[0m
+V (448943) spi_master: polling trans done[0m
+D (448947) spi_master: device0 release bus[0m
+V (448951) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448957) spi_master: device0 locked the bus[0m
+V (448962) spi_master: polling trans[0m
+V (448965) spi_master: polling trans done[0m
+V (448970) bus_lock: dev 0 served from bg.[0m
+D (448969) spi_master: device0 release bus[0m
+V (448978) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (448987) spi_master: device0 locked the bus[0m
+V (448988) spi_master: polling trans[0m
+V (448992) spi_master: polling trans done[0m
+V (448996) spi_master: polling trans[0m
+V (449000) spi_master: polling trans done[0m
+D (449004) spi_master: device0 release bus[0m
+V (449008) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449014) spi_master: device0 locked the bus[0m
+V (449018) spi_master: polling trans[0m
+V (449022) spi_master: polling trans done[0m
+V (449026) spi_master: polling trans[0m
+V (449030) spi_master: polling trans done[0m
+D (449034) spi_master: device0 release bus[0m
+V (449038) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449044) spi_master: device0 locked the bus[0m
+V (449049) spi_master: polling trans[0m
+V (449052) spi_master: polling trans done[0m
+V (449057) bus_lock: dev 0 served from bg.[0m
+D (449056) spi_master: device0 release bus[0m
+V (449065) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449074) spi_master: device0 locked the bus[0m
+V (449075) spi_master: polling trans[0m
+V (449079) spi_master: polling trans done[0m
+V (449083) spi_master: polling trans[0m
+V (449087) spi_master: polling trans done[0m
+D (449091) spi_master: device0 release bus[0m
+V (449095) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449101) spi_master: device0 locked the bus[0m
+V (449105) spi_master: polling trans[0m
+V (449109) spi_master: polling trans done[0m
+V (449113) spi_master: polling trans[0m
+V (449117) spi_master: polling trans done[0m
+D (449121) spi_master: device0 release bus[0m
+V (449125) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449131) spi_master: device0 locked the bus[0m
+V (449136) spi_master: polling trans[0m
+V (449139) spi_master: polling trans done[0m
+V (449144) bus_lock: dev 0 served from bg.[0m
+D (449143) spi_master: device0 release bus[0m
+V (449152) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449159) spi_master: device0 locked the bus[0m
+V (449162) spi_master: polling trans[0m
+V (449166) spi_master: polling trans done[0m
+V (449170) spi_master: polling trans[0m
+V (449174) spi_master: polling trans done[0m
+D (449178) spi_master: device0 release bus[0m
+V (449182) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449188) spi_master: device0 locked the bus[0m
+V (449192) spi_master: polling trans[0m
+V (449196) spi_master: polling trans done[0m
+V (449200) spi_master: polling trans[0m
+V (449204) spi_master: polling trans done[0m
+D (449208) spi_master: device0 release bus[0m
+V (449212) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449218) spi_master: device0 locked the bus[0m
+V (449223) spi_master: polling trans[0m
+V (449226) spi_master: polling trans done[0m
+V (449231) bus_lock: dev 0 served from bg.[0m
+D (449230) spi_master: device0 release bus[0m
+V (449239) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449248) spi_master: device0 locked the bus[0m
+V (449249) spi_master: polling trans[0m
+V (449253) spi_master: polling trans done[0m
+V (449257) spi_master: polling trans[0m
+V (449261) spi_master: polling trans done[0m
+D (449265) spi_master: device0 release bus[0m
+V (449269) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449275) spi_master: device0 locked the bus[0m
+V (449280) spi_master: polling trans[0m
+V (449283) spi_master: polling trans done[0m
+V (449287) spi_master: polling trans[0m
+V (449291) spi_master: polling trans done[0m
+D (449295) spi_master: device0 release bus[0m
+V (449299) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449305) spi_master: device0 locked the bus[0m
+V (449310) spi_master: polling trans[0m
+V (449313) spi_master: polling trans done[0m
+V (449318) bus_lock: dev 0 served from bg.[0m
+D (449318) spi_master: device0 release bus[0m
+V (449326) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449333) spi_master: device0 locked the bus[0m
+V (449336) spi_master: polling trans[0m
+V (449340) spi_master: polling trans done[0m
+V (449344) spi_master: polling trans[0m
+V (449348) spi_master: polling trans done[0m
+D (449352) spi_master: device0 release bus[0m
+V (449356) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449362) spi_master: device0 locked the bus[0m
+V (449367) spi_master: polling trans[0m
+V (449370) spi_master: polling trans done[0m
+V (449374) spi_master: polling trans[0m
+V (449378) spi_master: polling trans done[0m
+D (449382) spi_master: device0 release bus[0m
+V (449386) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449392) spi_master: device0 locked the bus[0m
+V (449397) spi_master: polling trans[0m
+V (449400) spi_master: polling trans done[0m
+V (449405) bus_lock: dev 0 served from bg.[0m
+D (449405) spi_master: device0 release bus[0m
+V (449413) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449422) spi_master: device0 locked the bus[0m
+V (449424) spi_master: polling trans[0m
+V (449427) spi_master: polling trans done[0m
+V (449431) spi_master: polling trans[0m
+V (449435) spi_master: polling trans done[0m
+D (449439) spi_master: device0 release bus[0m
+V (449443) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449449) spi_master: device0 locked the bus[0m
+V (449454) spi_master: polling trans[0m
+V (449457) spi_master: polling trans done[0m
+V (449461) spi_master: polling trans[0m
+V (449465) spi_master: polling trans done[0m
+D (449469) spi_master: device0 release bus[0m
+V (449473) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449479) spi_master: device0 locked the bus[0m
+V (449484) spi_master: polling trans[0m
+V (449488) spi_master: polling trans done[0m
+V (449492) bus_lock: dev 0 served from bg.[0m
+D (449492) spi_master: device0 release bus[0m
+V (449500) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449507) spi_master: device0 locked the bus[0m
+V (449511) spi_master: polling trans[0m
+V (449514) spi_master: polling trans done[0m
+V (449518) spi_master: polling trans[0m
+V (449522) spi_master: polling trans done[0m
+D (449526) spi_master: device0 release bus[0m
+V (449530) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449536) spi_master: device0 locked the bus[0m
+V (449541) spi_master: polling trans[0m
+V (449544) spi_master: polling trans done[0m
+V (449548) spi_master: polling trans[0m
+V (449552) spi_master: polling trans done[0m
+D (449556) spi_master: device0 release bus[0m
+V (449560) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449566) spi_master: device0 locked the bus[0m
+V (449571) spi_master: polling trans[0m
+V (449575) spi_master: polling trans done[0m
+V (449579) bus_lock: dev 0 served from bg.[0m
+D (449579) spi_master: device0 release bus[0m
+V (449587) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449596) spi_master: device0 locked the bus[0m
+V (449598) spi_master: polling trans[0m
+V (449601) spi_master: polling trans done[0m
+V (449605) spi_master: polling trans[0m
+V (449609) spi_master: polling trans done[0m
+D (449613) spi_master: device0 release bus[0m
+V (449617) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449623) spi_master: device0 locked the bus[0m
+V (449628) spi_master: polling trans[0m
+V (449631) spi_master: polling trans done[0m
+V (449635) spi_master: polling trans[0m
+V (449639) spi_master: polling trans done[0m
+D (449643) spi_master: device0 release bus[0m
+V (449647) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449653) spi_master: device0 locked the bus[0m
+V (449658) spi_master: polling trans[0m
+V (449662) spi_master: polling trans done[0m
+V (449666) bus_lock: dev 0 served from bg.[0m
+D (449666) spi_master: device0 release bus[0m
+V (449674) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449681) spi_master: device0 locked the bus[0m
+V (449685) spi_master: polling trans[0m
+V (449688) spi_master: polling trans done[0m
+V (449692) spi_master: polling trans[0m
+V (449696) spi_master: polling trans done[0m
+D (449700) spi_master: device0 release bus[0m
+V (449704) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449710) spi_master: device0 locked the bus[0m
+V (449715) spi_master: polling trans[0m
+V (449718) spi_master: polling trans done[0m
+V (449723) spi_master: polling trans[0m
+V (449726) spi_master: polling trans done[0m
+D (449730) spi_master: device0 release bus[0m
+V (449734) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449740) spi_master: device0 locked the bus[0m
+V (449745) spi_master: polling trans[0m
+V (449749) spi_master: polling trans done[0m
+V (449753) bus_lock: dev 0 served from bg.[0m
+D (449753) spi_master: device0 release bus[0m
+V (449761) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449770) spi_master: device0 locked the bus[0m
+V (449772) spi_master: polling trans[0m
+V (449775) spi_master: polling trans done[0m
+V (449779) spi_master: polling trans[0m
+V (449783) spi_master: polling trans done[0m
+D (449787) spi_master: device0 release bus[0m
+V (449791) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449797) spi_master: device0 locked the bus[0m
+V (449802) spi_master: polling trans[0m
+V (449806) spi_master: polling trans done[0m
+V (449810) spi_master: polling trans[0m
+V (449813) spi_master: polling trans done[0m
+D (449817) spi_master: device0 release bus[0m
+V (449821) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449828) spi_master: device0 locked the bus[0m
+V (449832) spi_master: polling trans[0m
+V (449836) spi_master: polling trans done[0m
+V (449840) bus_lock: dev 0 served from bg.[0m
+D (449840) spi_master: device0 release bus[0m
+V (449848) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449855) spi_master: device0 locked the bus[0m
+V (449859) spi_master: polling trans[0m
+V (449862) spi_master: polling trans done[0m
+V (449866) spi_master: polling trans[0m
+V (449870) spi_master: polling trans done[0m
+D (449874) spi_master: device0 release bus[0m
+V (449878) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449884) spi_master: device0 locked the bus[0m
+V (449889) spi_master: polling trans[0m
+V (449893) spi_master: polling trans done[0m
+V (449897) spi_master: polling trans[0m
+V (449900) spi_master: polling trans done[0m
+D (449904) spi_master: device0 release bus[0m
+V (449909) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449915) spi_master: device0 locked the bus[0m
+V (449919) spi_master: polling trans[0m
+V (449923) spi_master: polling trans done[0m
+V (449927) bus_lock: dev 0 served from bg.[0m
+D (449927) spi_master: device0 release bus[0m
+V (449935) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449944) spi_master: device0 locked the bus[0m
+V (449946) spi_master: polling trans[0m
+V (449950) spi_master: polling trans done[0m
+V (449954) spi_master: polling trans[0m
+V (449957) spi_master: polling trans done[0m
+D (449961) spi_master: device0 release bus[0m
+V (449965) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (449971) spi_master: device0 locked the bus[0m
+V (449976) spi_master: polling trans[0m
+V (449980) spi_master: polling trans done[0m
+V (449984) spi_master: polling trans[0m
+V (449987) spi_master: polling trans done[0m
+D (449991) spi_master: device0 release bus[0m
+V (449996) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450002) spi_master: device0 locked the bus[0m
+V (450006) spi_master: polling trans[0m
+V (450010) spi_master: polling trans done[0m
+V (450014) bus_lock: dev 0 served from bg.[0m
+D (450014) spi_master: device0 release bus[0m
+V (450022) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450029) spi_master: device0 locked the bus[0m
+V (450033) spi_master: polling trans[0m
+V (450037) spi_master: polling trans done[0m
+V (450041) spi_master: polling trans[0m
+V (450044) spi_master: polling trans done[0m
+D (450048) spi_master: device0 release bus[0m
+V (450052) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450058) spi_master: device0 locked the bus[0m
+V (450063) spi_master: polling trans[0m
+V (450067) spi_master: polling trans done[0m
+V (450071) spi_master: polling trans[0m
+V (450074) spi_master: polling trans done[0m
+D (450079) spi_master: device0 release bus[0m
+V (450083) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450089) spi_master: device0 locked the bus[0m
+V (450093) spi_master: polling trans[0m
+V (450097) spi_master: polling trans done[0m
+V (450101) bus_lock: dev 0 served from bg.[0m
+D (450101) spi_master: device0 release bus[0m
+V (450109) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450118) spi_master: device0 locked the bus[0m
+V (450120) spi_master: polling trans[0m
+V (450124) spi_master: polling trans done[0m
+V (450128) spi_master: polling trans[0m
+V (450131) spi_master: polling trans done[0m
+D (450135) spi_master: device0 release bus[0m
+V (450140) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450146) spi_master: device0 locked the bus[0m
+V (450150) spi_master: polling trans[0m
+V (450154) spi_master: polling trans done[0m
+V (450158) spi_master: polling trans[0m
+V (450161) spi_master: polling trans done[0m
+D (450166) spi_master: device0 release bus[0m
+V (450170) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450176) spi_master: device0 locked the bus[0m
+V (450180) spi_master: polling trans[0m
+V (450184) spi_master: polling trans done[0m
+V (450188) bus_lock: dev 0 served from bg.[0m
+D (450188) spi_master: device0 release bus[0m
+V (450196) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450204) spi_master: device0 locked the bus[0m
+V (450207) spi_master: polling trans[0m
+V (450211) spi_master: polling trans done[0m
+V (450215) spi_master: polling trans[0m
+V (450218) spi_master: polling trans done[0m
+D (450222) spi_master: device0 release bus[0m
+V (450227) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450233) spi_master: device0 locked the bus[0m
+V (450237) spi_master: polling trans[0m
+V (450241) spi_master: polling trans done[0m
+V (450245) spi_master: polling trans[0m
+V (450249) spi_master: polling trans done[0m
+D (450253) spi_master: device0 release bus[0m
+V (450257) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450263) spi_master: device0 locked the bus[0m
+V (450267) spi_master: polling trans[0m
+V (450271) spi_master: polling trans done[0m
+V (450275) bus_lock: dev 0 served from bg.[0m
+D (450275) spi_master: device0 release bus[0m
+V (450283) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450293) spi_master: device0 locked the bus[0m
+V (450294) spi_master: polling trans[0m
+V (450298) spi_master: polling trans done[0m
+V (450302) spi_master: polling trans[0m
+V (450305) spi_master: polling trans done[0m
+D (450309) spi_master: device0 release bus[0m
+V (450314) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450320) spi_master: device0 locked the bus[0m
+V (450324) spi_master: polling trans[0m
+V (450328) spi_master: polling trans done[0m
+V (450332) spi_master: polling trans[0m
+V (450336) spi_master: polling trans done[0m
+D (450340) spi_master: device0 release bus[0m
+V (450344) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450350) spi_master: device0 locked the bus[0m
+V (450354) spi_master: polling trans[0m
+V (450358) spi_master: polling trans done[0m
+V (450363) bus_lock: dev 0 served from bg.[0m
+D (450362) spi_master: device0 release bus[0m
+V (450370) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450378) spi_master: device0 locked the bus[0m
+V (450381) spi_master: polling trans[0m
+V (450385) spi_master: polling trans done[0m
+V (450389) spi_master: polling trans[0m
+V (450392) spi_master: polling trans done[0m
+D (450397) spi_master: device0 release bus[0m
+V (450401) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450407) spi_master: device0 locked the bus[0m
+V (450411) spi_master: polling trans[0m
+V (450415) spi_master: polling trans done[0m
+V (450419) spi_master: polling trans[0m
+V (450423) spi_master: polling trans done[0m
+D (450427) spi_master: device0 release bus[0m
+V (450431) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450437) spi_master: device0 locked the bus[0m
+V (450442) spi_master: polling trans[0m
+V (450445) spi_master: polling trans done[0m
+V (450450) bus_lock: dev 0 served from bg.[0m
+D (450449) spi_master: device0 release bus[0m
+V (450458) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450467) spi_master: device0 locked the bus[0m
+V (450468) spi_master: polling trans[0m
+V (450472) spi_master: polling trans done[0m
+V (450476) spi_master: polling trans[0m
+V (450480) spi_master: polling trans done[0m
+D (450484) spi_master: device0 release bus[0m
+V (450488) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450494) spi_master: device0 locked the bus[0m
+V (450498) spi_master: polling trans[0m
+V (450502) spi_master: polling trans done[0m
+V (450506) spi_master: polling trans[0m
+V (450510) spi_master: polling trans done[0m
+D (450514) spi_master: device0 release bus[0m
+V (450518) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450524) spi_master: device0 locked the bus[0m
+V (450529) spi_master: polling trans[0m
+V (450532) spi_master: polling trans done[0m
+V (450537) bus_lock: dev 0 served from bg.[0m
+D (450536) spi_master: device0 release bus[0m
+V (450545) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450552) spi_master: device0 locked the bus[0m
+V (450555) spi_master: polling trans[0m
+V (450559) spi_master: polling trans done[0m
+V (450563) spi_master: polling trans[0m
+V (450567) spi_master: polling trans done[0m
+D (450571) spi_master: device0 release bus[0m
+V (450575) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450581) spi_master: device0 locked the bus[0m
+V (450585) spi_master: polling trans[0m
+V (450589) spi_master: polling trans done[0m
+V (450593) spi_master: polling trans[0m
+V (450597) spi_master: polling trans done[0m
+D (450601) spi_master: device0 release bus[0m
+V (450605) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450611) spi_master: device0 locked the bus[0m
+V (450616) spi_master: polling trans[0m
+V (450619) spi_master: polling trans done[0m
+V (450624) bus_lock: dev 0 served from bg.[0m
+D (450623) spi_master: device0 release bus[0m
+V (450632) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450641) spi_master: device0 locked the bus[0m
+V (450642) spi_master: polling trans[0m
+V (450646) spi_master: polling trans done[0m
+V (450650) spi_master: polling trans[0m
+V (450654) spi_master: polling trans done[0m
+D (450658) spi_master: device0 release bus[0m
+V (450662) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450668) spi_master: device0 locked the bus[0m
+V (450672) spi_master: polling trans[0m
+V (450676) spi_master: polling trans done[0m
+V (450680) spi_master: polling trans[0m
+V (450684) spi_master: polling trans done[0m
+D (450688) spi_master: device0 release bus[0m
+V (450692) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450698) spi_master: device0 locked the bus[0m
+V (450703) spi_master: polling trans[0m
+V (450706) spi_master: polling trans done[0m
+V (450711) bus_lock: dev 0 served from bg.[0m
+D (450710) spi_master: device0 release bus[0m
+V (450719) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450726) spi_master: device0 locked the bus[0m
+V (450729) spi_master: polling trans[0m
+V (450733) spi_master: polling trans done[0m
+V (450737) spi_master: polling trans[0m
+V (450741) spi_master: polling trans done[0m
+D (450745) spi_master: device0 release bus[0m
+V (450749) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450755) spi_master: device0 locked the bus[0m
+V (450760) spi_master: polling trans[0m
+V (450763) spi_master: polling trans done[0m
+V (450767) spi_master: polling trans[0m
+V (450771) spi_master: polling trans done[0m
+D (450775) spi_master: device0 release bus[0m
+V (450779) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450785) spi_master: device0 locked the bus[0m
+V (450790) spi_master: polling trans[0m
+V (450793) spi_master: polling trans done[0m
+V (450798) bus_lock: dev 0 served from bg.[0m
+D (450798) spi_master: device0 release bus[0m
+V (450806) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450816) spi_master: device0 locked the bus[0m
+V (450816) spi_master: polling trans[0m
+V (450820) spi_master: polling trans done[0m
+V (450824) spi_master: polling trans[0m
+V (450828) spi_master: polling trans done[0m
+D (450832) spi_master: device0 release bus[0m
+V (450836) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450842) spi_master: device0 locked the bus[0m
+V (450847) spi_master: polling trans[0m
+V (450850) spi_master: polling trans done[0m
+V (450854) spi_master: polling trans[0m
+V (450858) spi_master: polling trans done[0m
+D (450862) spi_master: device0 release bus[0m
+V (450866) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450872) spi_master: device0 locked the bus[0m
+V (450877) spi_master: polling trans[0m
+V (450880) spi_master: polling trans done[0m
+V (450885) bus_lock: dev 0 served from bg.[0m
+D (450885) spi_master: device0 release bus[0m
+V (450893) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450901) spi_master: device0 locked the bus[0m
+V (450904) spi_master: polling trans[0m
+V (450907) spi_master: polling trans done[0m
+V (450911) spi_master: polling trans[0m
+V (450915) spi_master: polling trans done[0m
+D (450919) spi_master: device0 release bus[0m
+V (450923) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450929) spi_master: device0 locked the bus[0m
+V (450934) spi_master: polling trans[0m
+V (450937) spi_master: polling trans done[0m
+V (450941) spi_master: polling trans[0m
+V (450945) spi_master: polling trans done[0m
+D (450949) spi_master: device0 release bus[0m
+V (450953) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450959) spi_master: device0 locked the bus[0m
+V (450964) spi_master: polling trans[0m
+V (450967) spi_master: polling trans done[0m
+V (450972) bus_lock: dev 0 served from bg.[0m
+D (450972) spi_master: device0 release bus[0m
+V (450980) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (450999) spi_master: device0 locked the bus[0m
+V (450999) spi_master: polling trans[0m
+V (451000) spi_master: polling trans done[0m
+V (451003) spi_master: polling trans[0m
+V (451006) spi_master: polling trans done[0m
+D (451010) spi_master: device0 release bus[0m
+V (451014) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451020) spi_master: device0 locked the bus[0m
+V (451025) spi_master: polling trans[0m
+V (451029) spi_master: polling trans done[0m
+V (451033) spi_master: polling trans[0m
+V (451036) spi_master: polling trans done[0m
+D (451040) spi_master: device0 release bus[0m
+V (451045) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451051) spi_master: device0 locked the bus[0m
+V (451055) spi_master: polling trans[0m
+V (451059) spi_master: polling trans done[0m
+V (451066) bus_lock: dev 0 served from bg.[0m
+D (451063) spi_master: device0 release bus[0m
+V (451071) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451080) spi_master: device0 locked the bus[0m
+V (451082) spi_master: polling trans[0m
+V (451086) spi_master: polling trans done[0m
+V (451090) spi_master: polling trans[0m
+V (451093) spi_master: polling trans done[0m
+D (451097) spi_master: device0 release bus[0m
+V (451102) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451108) spi_master: device0 locked the bus[0m
+V (451112) spi_master: polling trans[0m
+V (451116) spi_master: polling trans done[0m
+V (451120) spi_master: polling trans[0m
+V (451123) spi_master: polling trans done[0m
+D (451128) spi_master: device0 release bus[0m
+V (451132) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451138) spi_master: device0 locked the bus[0m
+V (451142) spi_master: polling trans[0m
+V (451146) spi_master: polling trans done[0m
+V (451150) bus_lock: dev 0 served from bg.[0m
+D (451150) spi_master: device0 release bus[0m
+V (451158) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451177) spi_master: device0 locked the bus[0m
+V (451178) spi_master: polling trans[0m
+V (451178) spi_master: polling trans done[0m
+V (451181) spi_master: polling trans[0m
+V (451185) spi_master: polling trans done[0m
+D (451189) spi_master: device0 release bus[0m
+V (451193) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451199) spi_master: device0 locked the bus[0m
+V (451204) spi_master: polling trans[0m
+V (451207) spi_master: polling trans done[0m
+V (451211) spi_master: polling trans[0m
+V (451215) spi_master: polling trans done[0m
+D (451219) spi_master: device0 release bus[0m
+V (451223) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451229) spi_master: device0 locked the bus[0m
+V (451234) spi_master: polling trans[0m
+V (451237) spi_master: polling trans done[0m
+V (451245) bus_lock: dev 0 served from bg.[0m
+D (451242) spi_master: device0 release bus[0m
+V (451250) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451260) spi_master: device0 locked the bus[0m
+V (451261) spi_master: polling trans[0m
+V (451264) spi_master: polling trans done[0m
+V (451268) spi_master: polling trans[0m
+V (451272) spi_master: polling trans done[0m
+D (451276) spi_master: device0 release bus[0m
+V (451280) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451286) spi_master: device0 locked the bus[0m
+V (451291) spi_master: polling trans[0m
+V (451294) spi_master: polling trans done[0m
+V (451298) spi_master: polling trans[0m
+V (451302) spi_master: polling trans done[0m
+D (451306) spi_master: device0 release bus[0m
+V (451310) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451316) spi_master: device0 locked the bus[0m
+V (451321) spi_master: polling trans[0m
+V (451324) spi_master: polling trans done[0m
+V (451329) bus_lock: dev 0 served from bg.[0m
+D (451329) spi_master: device0 release bus[0m
+V (451337) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451345) spi_master: device0 locked the bus[0m
+V (451348) spi_master: polling trans[0m
+V (451351) spi_master: polling trans done[0m
+V (451355) spi_master: polling trans[0m
+V (451359) spi_master: polling trans done[0m
+D (451363) spi_master: device0 release bus[0m
+V (451367) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451373) spi_master: device0 locked the bus[0m
+V (451378) spi_master: polling trans[0m
+V (451381) spi_master: polling trans done[0m
+V (451385) spi_master: polling trans[0m
+V (451389) spi_master: polling trans done[0m
+D (451393) spi_master: device0 release bus[0m
+V (451397) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451403) spi_master: device0 locked the bus[0m
+V (451408) spi_master: polling trans[0m
+V (451412) spi_master: polling trans done[0m
+V (451416) bus_lock: dev 0 served from bg.[0m
+D (451416) spi_master: device0 release bus[0m
+V (451424) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451443) spi_master: device0 locked the bus[0m
+V (451443) spi_master: polling trans[0m
+V (451444) spi_master: polling trans done[0m
+V (451447) spi_master: polling trans[0m
+V (451450) spi_master: polling trans done[0m
+D (451454) spi_master: device0 release bus[0m
+V (451458) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451464) spi_master: device0 locked the bus[0m
+V (451469) spi_master: polling trans[0m
+V (451473) spi_master: polling trans done[0m
+V (451477) spi_master: polling trans[0m
+V (451480) spi_master: polling trans done[0m
+D (451485) spi_master: device0 release bus[0m
+V (451489) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451495) spi_master: device0 locked the bus[0m
+V (451499) spi_master: polling trans[0m
+V (451503) spi_master: polling trans done[0m
+V (451510) bus_lock: dev 0 served from bg.[0m
+D (451507) spi_master: device0 release bus[0m
+V (451515) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451525) spi_master: device0 locked the bus[0m
+V (451526) spi_master: polling trans[0m
+V (451530) spi_master: polling trans done[0m
+V (451534) spi_master: polling trans[0m
+V (451537) spi_master: polling trans done[0m
+D (451541) spi_master: device0 release bus[0m
+V (451546) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451552) spi_master: device0 locked the bus[0m
+V (451556) spi_master: polling trans[0m
+V (451560) spi_master: polling trans done[0m
+V (451564) spi_master: polling trans[0m
+V (451568) spi_master: polling trans done[0m
+D (451572) spi_master: device0 release bus[0m
+V (451576) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451582) spi_master: device0 locked the bus[0m
+V (451586) spi_master: polling trans[0m
+V (451590) spi_master: polling trans done[0m
+V (451594) bus_lock: dev 0 served from bg.[0m
+D (451594) spi_master: device0 release bus[0m
+V (451602) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451611) spi_master: device0 locked the bus[0m
+V (451613) spi_master: polling trans[0m
+V (451617) spi_master: polling trans done[0m
+V (451621) spi_master: polling trans[0m
+V (451624) spi_master: polling trans done[0m
+D (451628) spi_master: device0 release bus[0m
+V (451633) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451639) spi_master: device0 locked the bus[0m
+V (451643) spi_master: polling trans[0m
+V (451647) spi_master: polling trans done[0m
+V (451651) spi_master: polling trans[0m
+V (451655) spi_master: polling trans done[0m
+D (451659) spi_master: device0 release bus[0m
+V (451663) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451669) spi_master: device0 locked the bus[0m
+V (451673) spi_master: polling trans[0m
+V (451677) spi_master: polling trans done[0m
+V (451682) bus_lock: dev 0 served from bg.[0m
+D (451681) spi_master: device0 release bus[0m
+V (451689) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451709) spi_master: device0 locked the bus[0m
+V (451709) spi_master: polling trans[0m
+V (451710) spi_master: polling trans done[0m
+V (451712) spi_master: polling trans[0m
+V (451716) spi_master: polling trans done[0m
+D (451720) spi_master: device0 release bus[0m
+V (451724) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451730) spi_master: device0 locked the bus[0m
+V (451735) spi_master: polling trans[0m
+V (451738) spi_master: polling trans done[0m
+V (451742) spi_master: polling trans[0m
+V (451746) spi_master: polling trans done[0m
+D (451750) spi_master: device0 release bus[0m
+V (451754) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451760) spi_master: device0 locked the bus[0m
+V (451765) spi_master: polling trans[0m
+V (451768) spi_master: polling trans done[0m
+V (451776) bus_lock: dev 0 served from bg.[0m
+D (451773) spi_master: device0 release bus[0m
+V (451781) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451791) spi_master: device0 locked the bus[0m
+V (451792) spi_master: polling trans[0m
+V (451795) spi_master: polling trans done[0m
+V (451799) spi_master: polling trans[0m
+V (451803) spi_master: polling trans done[0m
+D (451807) spi_master: device0 release bus[0m
+V (451811) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451817) spi_master: device0 locked the bus[0m
+V (451822) spi_master: polling trans[0m
+V (451825) spi_master: polling trans done[0m
+V (451829) spi_master: polling trans[0m
+V (451833) spi_master: polling trans done[0m
+D (451837) spi_master: device0 release bus[0m
+V (451841) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451847) spi_master: device0 locked the bus[0m
+V (451852) spi_master: polling trans[0m
+V (451856) spi_master: polling trans done[0m
+V (451860) bus_lock: dev 0 served from bg.[0m
+D (451860) spi_master: device0 release bus[0m
+V (451868) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451876) spi_master: device0 locked the bus[0m
+V (451879) spi_master: polling trans[0m
+V (451882) spi_master: polling trans done[0m
+V (451886) spi_master: polling trans[0m
+V (451890) spi_master: polling trans done[0m
+D (451894) spi_master: device0 release bus[0m
+V (451898) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451904) spi_master: device0 locked the bus[0m
+V (451909) spi_master: polling trans[0m
+V (451912) spi_master: polling trans done[0m
+V (451916) spi_master: polling trans[0m
+V (451920) spi_master: polling trans done[0m
+D (451924) spi_master: device0 release bus[0m
+V (451928) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451934) spi_master: device0 locked the bus[0m
+V (451939) spi_master: polling trans[0m
+V (451943) spi_master: polling trans done[0m
+V (451947) bus_lock: dev 0 served from bg.[0m
+D (451947) spi_master: device0 release bus[0m
+V (451955) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451974) spi_master: device0 locked the bus[0m
+V (451975) spi_master: polling trans[0m
+V (451975) spi_master: polling trans done[0m
+V (451978) spi_master: polling trans[0m
+V (451981) spi_master: polling trans done[0m
+D (451985) spi_master: device0 release bus[0m
+V (451990) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (451996) spi_master: device0 locked the bus[0m
+V (452000) spi_master: polling trans[0m
+V (452004) spi_master: polling trans done[0m
+V (452008) spi_master: polling trans[0m
+V (452011) spi_master: polling trans done[0m
+D (452016) spi_master: device0 release bus[0m
+V (452020) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (452026) spi_master: device0 locked the bus[0m
+V (452030) spi_master: polling trans[0m
+V (452034) spi_master: polling trans done[0m
+V (452041) bus_lock: dev 0 served from bg.[0m
+D (452038) spi_master: device0 release bus[0m
+V (452046) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (452057) spi_master: device0 locked the bus[0m
+V (452057) spi_master: polling trans[0m
+V (452061) spi_master: polling trans done[0m
+V (452065) spi_master: polling trans[0m
+V (452068) spi_master: polling trans done[0m
+D (452072) spi_master: device0 release bus[0m
+V (452077) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (452083) spi_master: device0 locked the bus[0m
+V (452087) spi_master: polling trans[0m
+V (452091) spi_master: polling trans done[0m
+V (452095) spi_master: polling trans[0m
+V (452099) spi_master: polling trans done[0m
+D (452103) spi_master: device0 release bus[0m
+V (452107) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (452113) spi_master: device0 locked the bus[0m
+V (452117) spi_master: polling trans[0m
+V (452121) spi_master: polling trans done[0m
+V (452125) bus_lock: dev 0 served from bg.[0m
+D (452125) spi_master: device0 release bus[0m
+V (452133) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (452141) spi_master: device0 locked the bus[0m
+V (452144) spi_master: polling trans[0m
+V (452148) spi_master: polling trans done[0m
+V (452152) spi_master: polling trans[0m
+V (452155) spi_master: polling trans done[0m
+D (452159) spi_master: device0 release bus[0m
+V (452164) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (452170) spi_master: device0 locked the bus[0m
+V (452174) spi_master: polling trans[0m
+V (452178) spi_master: polling trans done[0m
+V (452182) spi_master: polling trans[0m
+V (452186) spi_master: polling trans done[0m
+D (452190) spi_master: device0 release bus[0m
+V (452194) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (452200) spi_master: device0 locked the bus[0m
+V (452204) spi_master: polling trans[0m
+V (452208) spi_master: polling trans done[0m
+V (452213) bus_lock: dev 0 served from bg.[0m
+D (452212) spi_master: device0 release bus[0m
+V (452221) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (452240) spi_master: device0 locked the bus[0m
+V (452240) spi_master: polling trans[0m
+V (452240) spi_master: polling trans done[0m
+V (452243) spi_master: polling trans[0m
+V (452247) spi_master: polling trans done[0m
+D (452251) spi_master: device0 release bus[0m
+V (452255) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (452261) spi_master: device0 locked the bus[0m
+V (452266) spi_master: polling trans[0m
+V (452269) spi_master: polling trans done[0m
+V (452273) spi_master: polling trans[0m
+V (452277) spi_master: polling trans done[0m
+D (452281) spi_master: device0 release bus[0m
+V (452285) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (452291) spi_master: device0 locked the bus[0m
+V (452296) spi_master: polling trans[0m
+V (452300) spi_master: polling trans done[0m
+V (452307) bus_lock: dev 0 served from bg.[0m
+D (452304) spi_master: device0 release bus[0m
+V (452312) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (452321) spi_master: device0 locked the bus[0m
+V (452323) spi_master: polling trans[0m
+V (452326) spi_master: polling trans done[0m
+V (452330) spi_master: polling trans[0m
+V (452334) spi_master: polling trans done[0m
+D (452338) spi_master: device0 release bus[0m
+V (452342) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (452348) spi_master: device0 locked the bus[0m
+V (452353) spi_master: polling trans[0m
+V (452356) spi_master: polling trans done[0m
+V (452360) spi_master: polling trans[0m
+V (452364) spi_master: polling trans done[0m
+D (452368) spi_master: device0 release bus[0m
+V (452372) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (452378) spi_master: device0 locked the bus[0m
+V (452383) spi_master: polling trans[0m
+V (452387) spi_master: polling trans done[0m
+V (452391) bus_lock: dev 0 served from bg.[0m
+D (452391) spi_master: device0 release bus[0m
+V (452399) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (452418) spi_master: device0 locked the bus[0m
+V (452419) spi_master: polling trans[0m
+V (452419) spi_master: polling trans done[0m
+V (452422) spi_master: polling trans[0m
+V (452425) spi_master: polling trans done[0m
+D (452429) spi_master: device0 release bus[0m
+V (452434) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.
+D (452440) spi_master: device0 locked the bus[0m
+V (452444) spi_master: polling trans[0m
+V (452448) spi_master: polling trans done[0m
+V (452452) spi_master: polling trans[0m
+V (452456) spi_master: polling trans done[0m
+D (452460) spi_master: device0 release bus[0m
+V (452464) bus_lock: dev 0 released.[0m
+V bus_lock: dev 0 acquired.

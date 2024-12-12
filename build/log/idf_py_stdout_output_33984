@@ -1,0 +1,60 @@
+[1/56] Linking C static library esp-idf\espressif__esp_lvgl_port\libespressif__esp_lvgl_port.a
+[2/56] Linking C static library esp-idf\espressif__esp32_c3_lcdkit\libespressif__esp32_c3_lcdkit.a
+[3/56] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.3.1\esp-dev-kits-master\esp32-c3-lcdkit\examples\knob_panel\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Espressif/frameworks/esp-idf-v5.3.1/esp-dev-kits-master/esp32-c3-lcdkit/examples/knob_panel/build/bootloader/bootloader.bin"
+Bootloader binary size 0x55b0 bytes. 0x2a50 bytes (33%) free.
+[4/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_standby/standby_eye_left.c.obj
+[5/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_standby/standby_eye_1.c.obj
+[6/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_standby/standby_eye_1_fade.c.obj
+[7/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_wash/img_washing_stand.c.obj
+[8/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_standby/standby_mouth_1.c.obj
+[9/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_wash/img_washing_shirt.c.obj
+[10/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_standby/standby_eye_right.c.obj
+[11/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_standby/standby_eye_3.c.obj
+[12/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_wash/img_washing_bubble1.c.obj
+[13/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_standby/standby_eye_close.c.obj
+[14/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_wash/img_washing_underwear.c.obj
+[15/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_standby/standby_eye_2.c.obj
+[16/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_standby/standby_mouth_2.c.obj
+[17/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_light/light_warm_25.c.obj
+[18/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_wash/img_washing_bubble2.c.obj
+[19/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_wash/img_washing_bg.c.obj
+[20/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_wash/img_washing_wave.c.obj
+[21/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_light/light_warm_50.c.obj
+[22/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_light/light_warm_75.c.obj
+[23/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_light/light_warm_100.c.obj
+[24/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_standby/standby_eye_open.c.obj
+[25/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_wash/img_washing_wave1.c.obj
+[26/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_standby/standby_face.c.obj
+[27/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_wash/img_washing_wave2.c.obj
+[28/54] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.3.1\esp-dev-kits-master\esp32-c3-lcdkit\examples\knob_panel\build\esp-idf\main && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/spiffs/spiffsgen.py 0x26000 C:/Espressif/frameworks/esp-idf-v5.3.1/esp-dev-kits-master/esp32-c3-lcdkit/examples/knob_panel/spiffs C:/Espressif/frameworks/esp-idf-v5.3.1/esp-dev-kits-master/esp32-c3-lcdkit/examples/knob_panel/build/storage.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len"
+[29/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_light/light_warm_bg.c.obj
+[30/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/voice_announcement.c.obj
+[31/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_wash/wash_blouse.c.obj
+[32/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_wash/wash_basic.c.obj
+[33/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_wash/wash_briefs.c.obj
+[34/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_wash/wash_underwear2.c.obj
+[35/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_wash/wash_shirt.c.obj
+[36/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/imgs/image_wash/wash_underwear1.c.obj
+[37/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/ui_language.c.obj
+[38/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/ui_thermostat.c.obj
+[39/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/ui_washing.c.obj
+[40/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ir_nec/ir_nec_encoder.c.obj
+[41/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/ui_light_2color.c.obj
+[42/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/ui_boot_animate.c.obj
+[43/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/layer_manage/lv_schedule_basic.c.obj
+[44/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/ui_menu_new.c.obj
+[45/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ir_nec/ir_nec_test.c.obj
+[46/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/layer_manage/lv_example_pub.c.obj
+[47/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/ui_clockScreen.c.obj
+[48/54] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/ui_factory.c.obj
+[49/54] Linking C static library esp-idf\main\libmain.a
+[50/54] Generating ld/sections.ld
+[51/54] Building C object CMakeFiles/c3_knob_panel.elf.dir/project_elf_src_esp32c3.c.obj
+[52/54] Linking CXX executable c3_knob_panel.elf
+FAILED: c3_knob_panel.elf 
+cmd.exe /C "cd . && C:\Espressif\tools\riscv32-esp-elf\esp-13.2.0_20240530\riscv32-esp-elf\bin\riscv32-esp-elf-g++.exe -march=rv32imc_zicsr_zifencei -nostartfiles -march=rv32imc_zicsr_zifencei --specs=nosys.specs    -Wl,--cref -Wl,--defsym=IDF_TARGET_ESP32C3=0 -Wl,--Map=C:/Espressif/frameworks/esp-idf-v5.3.1/esp-dev-kits-master/esp32-c3-lcdkit/examples/knob_panel/build/c3_knob_panel.map -Wl,--no-warn-rwx-segments -fno-rtti -fno-lto -Wl,--gc-sections -Wl,--warn-common -T rom.api.ld -T esp32c3.peripherals.ld -T esp32c3.rom.ld -T esp32c3.rom.api.ld -T esp32c3.rom.libgcc.ld -T esp32c3.rom.version.ld -T esp32c3.rom.eco3.ld -T esp32c3.rom.newlib.ld -T memory.ld -T sections.ld @CMakeFiles\c3_knob_panel.elf.rsp -o c3_knob_panel.elf  && cd ."
+C:/Espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/../lib/gcc/riscv32-esp-elf/13.2.0/../../../../riscv32-esp-elf/bin/ld.exe: esp-idf/main/libmain.a(voice_announcement.c.obj): in function `update_brightness':
+C:/Espressif/frameworks/esp-idf-v5.3.1/esp-dev-kits-master/esp32-c3-lcdkit/examples/knob_panel/main/voice_announcement.c:22: multiple definition of `update_brightness'; esp-idf/main/libmain.a(app_main.c.obj):C:/Espressif/frameworks/esp-idf-v5.3.1/esp-dev-kits-master/esp32-c3-lcdkit/examples/knob_panel/main/app_main.c:31: first defined here
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.

@@ -18,21 +18,15 @@ static const char* TAG = "voice_announcement";
 
 static int current_brightness = 0;
 
-// Function to update brightness level (to be called in the lighting control code)
-void update_brightness(int brightness) {
-    if (brightness != current_brightness) {
-        current_brightness = brightness;
-        ESP_LOGI(TAG, "Brightness updated to %d", brightness);
-        xEventGroupSetBits(event_group, EVENT_BIT_BRIGHTNESS_CHANGED);
-    }
-}
-
 // Task for voice announcements
 void voice_announcement_task(void* arg) {
+    ESP_LOGI(TAG, "Voice Announcement Task started");
+
     static TickType_t last_announcement_time = 0;
 
     while (1) {
         // Wait for the brightness change event
+        ESP_LOGI(TAG, "Waiting for EVENT_BIT_BRIGHTNESS_CHANGED...");
         xEventGroupWaitBits(event_group, EVENT_BIT_BRIGHTNESS_CHANGED, pdTRUE, pdFALSE, portMAX_DELAY);
 
         TickType_t now = xTaskGetTickCount();
@@ -57,7 +51,8 @@ void voice_announcement_task(void* arg) {
             ESP_LOGE(TAG, "Failed to play audio file: %s, error code: %d", filepath, ret);
         }
 
-        vTaskDelay(pdMS_TO_TICKS(100)); // Short delay to avoid looping immediately
+        // Add a delay to avoid immediate looping
+        vTaskDelay(pdMS_TO_TICKS(100));
     }
 }
 

@@ -26,6 +26,14 @@
 
 static const char *TAG = "main";
 
+int current_brightness = 50;  // Example default brightness level
+
+void update_brightness(int brightness) {
+    current_brightness = brightness;  // Update the brightness level
+    ESP_LOGI("Brightness", "Updated brightness to: %d", brightness);
+    xEventGroupSetBits(event_group, EVENT_BIT_BRIGHTNESS_CHANGED);  // Notify tasks
+}
+
 void list_files_in_spiffs(void) {
     ESP_LOGI(TAG, "Listing files in /spiffs:");
 

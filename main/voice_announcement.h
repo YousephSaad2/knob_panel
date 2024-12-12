@@ -7,7 +7,7 @@
 extern EventGroupHandle_t event_group;
 
 // Task stack size and priority
-#define TASK_STACK_SIZE 2048  // Define the stack size here
+#define TASK_STACK_SIZE 4096  // Define the stack size here
 #define TASK_PRIORITY 5
 
 void update_brightness(int brightness);

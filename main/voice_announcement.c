@@ -13,7 +13,7 @@
 static const char* TAG = "voice_announcement";
 
 #define EVENT_BIT_BRIGHTNESS_CHANGED (1 << 0)
-#define TASK_STACK_SIZE              2048
+#define TASK_STACK_SIZE              4096
 #define TASK_PRIORITY                5
 
 static int current_brightness = 0;
@@ -29,9 +29,18 @@ void update_brightness(int brightness) {
 
 // Task for voice announcements
 void voice_announcement_task(void* arg) {
+    static TickType_t last_announcement_time = 0;
+
     while (1) {
         // Wait for the brightness change event
         xEventGroupWaitBits(event_group, EVENT_BIT_BRIGHTNESS_CHANGED, pdTRUE, pdFALSE, portMAX_DELAY);
+
+        TickType_t now = xTaskGetTickCount();
+        if ((now - last_announcement_time) < pdMS_TO_TICKS(1000)) {
+            ESP_LOGI(TAG, "Skipping rapid announcements.");
+            continue; // Debounce to avoid rapid announcements
+        }
+        last_announcement_time = now;
 
         // Announce the current brightness level
         ESP_LOGI(TAG, "Announcing brightness level: %d", current_brightness);
@@ -39,24 +48,16 @@ void voice_announcement_task(void* arg) {
         char filepath[50];
         sprintf(filepath, "/spiffs/brightness_%d.mp3", current_brightness);
 
-        // Check if the file exists
-        FILE* file = fopen(filepath, "r");
-        if (!file) {
-            ESP_LOGE(TAG, "Audio file not found: %s", filepath);
-            continue;
-        }
-        fclose(file);
-
-        // Play the audio file for the current brightness level
-        esp_err_t ret = play_audio_file(filepath); // Call the function from app_audio
+        // Attempt to play the audio file directly
+        esp_err_t ret = play_audio_file(filepath);
         if (ret == ESP_OK) {
             ESP_LOGI(TAG, "Brightness level %d announced successfully", current_brightness);
         }
         else {
-            ESP_LOGE(TAG, "Failed to play audio file: %s", filepath);
+            ESP_LOGE(TAG, "Failed to play audio file: %s, error code: %d", filepath, ret);
         }
 
-        vTaskDelay(pdMS_TO_TICKS(100)); // Short delay to avoid rapid announcements
+        vTaskDelay(pdMS_TO_TICKS(100)); // Short delay to avoid looping immediately
     }
 }
 

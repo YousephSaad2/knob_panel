@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "c3_knob_panel",
-    "project_version":    "v5.3.1-dirty",
+    "project_version":    "34a07d9-dirty",
     "project_path":       "C:/Espressif/frameworks/esp-idf-v5.3.1/esp-dev-kits-master/esp32-c3-lcdkit/examples/knob_panel",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.3.1",
     "build_dir":          "C:/Espressif/frameworks/esp-idf-v5.3.1/esp-dev-kits-master/esp32-c3-lcdkit/examples/knob_panel/build",
@@ -11,7 +11,7 @@
     "app_elf":            "c3_knob_panel.elf",
     "app_bin":            "c3_knob_panel.bin",
     "build_type":         "flash_app",
-    "git_revision":       "v5.3.1-dirty",
+    "git_revision":       "HEAD-HASH-NOTFOUND",
     "target":             "esp32c3",
     "rev":                "",
     "min_rev":            "3",

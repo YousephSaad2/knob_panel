@@ -1,0 +1,14 @@
+dependencies:
+  cmake_utilities:
+    version: 0.*
+  idf:
+    version: '>=4.4.1'
+description: Knob driver implemented through software pcnt
+documentation: https://docs.espressif.com/projects/esp-iot-solution/en/latest/input_device/knob.html
+issues: https://github.com/espressif/esp-iot-solution/issues
+repository: git://github.com/espressif/esp-iot-solution.git
+repository_info:
+  commit_sha: 593e59bdf36a27d3e6e30dac51a8fd5ae8f2b8ef
+  path: components/knob
+url: https://github.com/espressif/esp-iot-solution/tree/master/components/knob
+version: 0.1.5

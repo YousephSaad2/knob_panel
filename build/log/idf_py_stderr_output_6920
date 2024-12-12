@@ -1,0 +1,31 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM3 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x4004c724: recv_packet in ROM
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x4038081a: panic_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x40387384: __ubsan_include at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/ubsan.c:311
+[0m
+[0;33m0x40380001: _vector_table at C:/Espressif/frameworks/esp-idf-v5.3.1/components/riscv/vectors_intc.S:54
+[0m
+[0;33mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Espressif\\frameworks\\esp-idf-v5.3.1\\esp-dev-kits-master\\esp32-c3-lcdkit\\examples\\knob_panel\\build\\c3_knob_panel.elf', '-ex', 'target remote | "C:\\Espressif\\python_env\\idf5.3_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\ysaad\\AppData\\Local\\Temp\\tmp1qt64dhy"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Espressif\\python_env\\idf5.3_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\ysaad\\AppData\\Local\\Temp\\tmp1qt64dhy': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x403807d2: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/soc/esp32c3/system_internal.c:110
+[0m
+[0;33mStack dump detected[0m
+[0;33m0x4038081a: panic_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x40387384: __ubsan_include at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/ubsan.c:311
+[0m
+[0;33m0x40380001: _vector_table at C:/Espressif/frameworks/esp-idf-v5.3.1/components/riscv/vectors_intc.S:54
+[0m
+[0;33mFailed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Espressif\\frameworks\\esp-idf-v5.3.1\\esp-dev-kits-master\\esp32-c3-lcdkit\\examples\\knob_panel\\build\\c3_knob_panel.elf', '-ex', 'target remote | "C:\\Espressif\\python_env\\idf5.3_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\ysaad\\AppData\\Local\\Temp\\tmpkzzsaswb"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Espressif\\python_env\\idf5.3_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\ysaad\\AppData\\Local\\Temp\\tmpkzzsaswb': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m0x403807d2: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/soc/esp32c3/system_internal.c:110
+[0m
+[0m

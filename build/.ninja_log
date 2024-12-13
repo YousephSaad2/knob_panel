@@ -1574,3 +1574,5 @@
 146	242	7557610931485680	C:/Espressif/frameworks/esp-idf-v5.3.1/esp-dev-kits-master/esp32-c3-lcdkit/examples/knob_panel/build/bootloader/bootloader.elf	eb7eb5b4cfb4329
 146	242	7557610931485680	C:/Espressif/frameworks/esp-idf-v5.3.1/esp-dev-kits-master/esp32-c3-lcdkit/examples/knob_panel/build/bootloader/bootloader.bin	eb7eb5b4cfb4329
 146	242	7557610931485680	C:/Espressif/frameworks/esp-idf-v5.3.1/esp-dev-kits-master/esp32-c3-lcdkit/examples/knob_panel/build/bootloader/bootloader.map	eb7eb5b4cfb4329
+242	252491	0	CMakeFiles/flash	9962776b5775748d
+242	252491	0	C:/Espressif/frameworks/esp-idf-v5.3.1/esp-dev-kits-master/esp32-c3-lcdkit/examples/knob_panel/build/CMakeFiles/flash	9962776b5775748d

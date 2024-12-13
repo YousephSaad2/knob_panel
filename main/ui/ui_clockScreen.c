@@ -17,42 +17,43 @@
 #define MIN_MOUTH_ZOOM      128
 #define MAX_MOUTH_ZOOM      365
 
-static bool clock_screen_layer_enter_cb(void *layer);
-static bool clock_screen_layer_exit_cb(void *layer);
-static void clock_screen_layer_timer_cb(lv_timer_t *tmr);
+static bool clock_screen_layer_enter_cb(void* layer);
+static bool clock_screen_layer_exit_cb(void* layer);
+static void clock_screen_layer_timer_cb(lv_timer_t* tmr);
 
 lv_layer_t clock_screen_layer = {
-    .lv_obj_name    = "clock_screen_layer",
-    .lv_obj_layer   = NULL,
-    .enter_cb       = clock_screen_layer_enter_cb,
-    .exit_cb        = clock_screen_layer_exit_cb,
-    .timer_cb       = clock_screen_layer_timer_cb,
+    .lv_obj_name = "clock_screen_layer",
+    .lv_obj_layer = NULL,
+    .enter_cb = clock_screen_layer_enter_cb,
+    .exit_cb = clock_screen_layer_exit_cb,
+    .timer_cb = clock_screen_layer_timer_cb,
 };
 
 static uint16_t flash_sub_step = 0;
 static uint8_t flash_main_step = 0;
 
-static lv_obj_t *page;
-static lv_obj_t *img_face, *img_eye_bg, *img_eye, * img_mouth, *img_eye_fade;
-static lv_obj_t *img_eye_left, * img_eye_right;
+static lv_obj_t* page;
+static lv_obj_t* img_face, * img_eye_bg, * img_eye, * img_mouth, * img_eye_fade;
+static lv_obj_t* img_eye_left, * img_eye_right;
 
 static time_out_count time_50ms;
 
-static void wakeup_event_cb(lv_event_t *e)
+static void wakeup_event_cb(lv_event_t* e)
 {
     lv_event_code_t code = lv_event_get_code(e);
 
     ESP_LOGI("WAKEUP", "code:%d", code);
     if (LV_EVENT_FOCUSED == code) {
         lv_group_set_editing(lv_group_get_default(), true);
-    } else if ((LV_EVENT_LONG_PRESSED == code) || (LV_EVENT_CLICKED == code) || (LV_EVENT_KEY == code)) {
+    }
+    else if ((LV_EVENT_LONG_PRESSED == code) || (LV_EVENT_CLICKED == code) || (LV_EVENT_KEY == code)) {
         lv_indev_wait_release(lv_indev_get_next(NULL));
         ui_remove_all_objs_from_encoder_group();
         lv_func_goto_layer(&menu_layer);
     }
 }
 
-static void set_mouth_zoom(void *img, int32_t v)
+static void set_mouth_zoom(void* img, int32_t v)
 {
     if (2 == flash_main_step) {
         lv_img_set_zoom(img, v);
@@ -62,7 +63,7 @@ static void set_mouth_zoom(void *img, int32_t v)
     }
 }
 
-void ui_flash_face_init(lv_obj_t *parent)
+void ui_flash_face_init(lv_obj_t* parent)
 {
     page = lv_obj_create(parent);
     lv_obj_set_size(page, LV_HOR_RES, LV_VER_RES);
@@ -117,12 +118,12 @@ void ui_flash_face_init(lv_obj_t *parent)
     ui_add_obj_to_encoder_group(page);
 }
 
-static bool clock_screen_layer_enter_cb(void *layer)
+static bool clock_screen_layer_enter_cb(void* layer)
 {
     bool ret = false;
 
     LV_LOG_USER("");
-    lv_layer_t *create_layer = layer;
+    lv_layer_t* create_layer = layer;
     if (NULL == create_layer->lv_obj_layer) {
         ret = true;
 
@@ -141,28 +142,28 @@ static bool clock_screen_layer_enter_cb(void *layer)
     return ret;
 }
 
-static bool clock_screen_layer_exit_cb(void *layer)
+static bool clock_screen_layer_exit_cb(void* layer)
 {
     LV_LOG_USER("");
     audio_force_quite(true);
     return true;
 }
 
-static void set_anim_left_eye(void *obj, int32_t v)
+static void set_anim_left_eye(void* obj, int32_t v)
 {
     if (0 == flash_main_step) {
         lv_obj_set_x(img_eye_left, v);
     }
 }
 
-static void set_anim_right_eye(void *obj, int32_t v)
+static void set_anim_right_eye(void* obj, int32_t v)
 {
     if (0 == flash_main_step) {
         lv_obj_set_x(img_eye_right, v);
     }
 }
 
-static void clock_screen_layer_timer_cb(lv_timer_t *tmr)
+static void clock_screen_layer_timer_cb(lv_timer_t* tmr)
 {
     static lv_anim_t anim_eye;
     feed_clock_time();
@@ -197,14 +198,17 @@ static void clock_screen_layer_timer_cb(lv_timer_t *tmr)
                 lv_anim_set_exec_cb(&anim_eye, set_anim_right_eye);
                 lv_anim_start(&anim_eye);
                 flash_sub_step += 1;
-            } else {
+            }
+            else {
                 if (flash_sub_step++ < 80) { //0-400
                     if ((flash_sub_step / 50) % 2) {
                         lv_obj_clear_flag(img_eye_fade, LV_OBJ_FLAG_HIDDEN);
-                    } else {
+                    }
+                    else {
                         lv_obj_add_flag(img_eye_fade, LV_OBJ_FLAG_HIDDEN);
                     }
-                } else {
+                }
+                else {
                     flash_sub_step = 0;
                     flash_main_step += 1;
                 }

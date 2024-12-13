@@ -14,13 +14,13 @@
 #include "bsp/esp-bsp.h"
 #include "settings.h"
 
-static const char *TAG = "settings";
+static const char* TAG = "settings";
 
 #define NAME_SPACE      "sys_param"
 #define KEY             "param"
 #define MAGIC_HEAD      0xAA
 
-static sys_param_t g_sys_param = {0};
+static sys_param_t g_sys_param = { 0 };
 
 static const sys_param_t g_default_sys_param = {
     .magic = MAGIC_HEAD,
@@ -28,7 +28,7 @@ static const sys_param_t g_default_sys_param = {
     .language = LANGUAGE_EN,
 };
 
-static esp_err_t settings_check(sys_param_t *param)
+static esp_err_t settings_check(sys_param_t* param)
 {
     esp_err_t ret;
     ESP_GOTO_ON_FALSE(param->magic == MAGIC_HEAD, ESP_ERR_INVALID_ARG, reset, TAG, "magic incorrect");
@@ -71,11 +71,12 @@ esp_err_t settings_write_parameter_to_nvs(void)
 {
     ESP_LOGI(TAG, "Saving settings");
     settings_check(&g_sys_param);
-    nvs_handle_t my_handle = {0};
+    nvs_handle_t my_handle = { 0 };
     esp_err_t err = nvs_open(NAME_SPACE, NVS_READWRITE, &my_handle);
     if (err != ESP_OK) {
         ESP_LOGI(TAG, "Error (%s) opening NVS handle!\n", esp_err_to_name(err));
-    } else {
+    }
+    else {
         err = nvs_set_blob(my_handle, KEY, &g_sys_param, sizeof(sys_param_t));
         err |= nvs_commit(my_handle);
         nvs_close(my_handle);
@@ -83,7 +84,7 @@ esp_err_t settings_write_parameter_to_nvs(void)
     return ESP_OK == err ? ESP_OK : ESP_FAIL;
 }
 
-sys_param_t *settings_get_parameter(void)
+sys_param_t* settings_get_parameter(void)
 {
     return &g_sys_param;
 }

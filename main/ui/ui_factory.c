@@ -16,9 +16,9 @@
 #include "lv_example_image.h"
 #include "bsp/esp-bsp.h"
 
-static const char *TAG = "factory";
+static const char* TAG = "factory";
 
-typedef void (* lv_obj_func_create)(lv_obj_t *parent, uint8_t event);
+typedef void (*lv_obj_func_create)(lv_obj_t* parent, uint8_t event);
 
 typedef enum {
     FACTORY_STEP_ENCODE,
@@ -56,16 +56,16 @@ typedef enum {
 } factory_LED_substep_t;
 
 typedef struct {
-    const char *test_name;
+    const char* test_name;
     lv_obj_func_create sprite_create_func;
     lv_obj_func_create sprite_event_detect;
     uint8_t max_steps;
-    lv_obj_t *sprite_parent;
+    lv_obj_t* sprite_parent;
 } sprite_create_func_t;
 
-static lv_obj_t *page;
-static lv_obj_t *label_EN, *label_CN;
-static lv_obj_t *imgbtn_TEST_FAILED, *imgbtn_TEST_OK;
+static lv_obj_t* page;
+static lv_obj_t* label_EN, * label_CN;
+static lv_obj_t* imgbtn_TEST_FAILED, * imgbtn_TEST_OK;
 
 static time_out_count time_500ms;
 static factory_step_t factory_test_step = FACTORY_STEP_MAX;
@@ -73,25 +73,25 @@ static uint8_t factory_sub_step;
 
 static uint8_t factory_test_result;
 
-static bool factory_Layer_enter_cb(void *layer);
-static bool factory_Layer_exit_cb(void *layer);
-static void factory_Layer_timer_cb(lv_timer_t *tmr);
+static bool factory_Layer_enter_cb(void* layer);
+static bool factory_Layer_exit_cb(void* layer);
+static void factory_Layer_timer_cb(lv_timer_t* tmr);
 
-static void lv_create_test_encode(lv_obj_t *factory_bg, uint8_t event);
-static void lv_create_test_LCD(lv_obj_t *factory_bg, uint8_t event);
-static void lv_create_test_Sound(lv_obj_t *factory_bg, uint8_t event);
-static void lv_create_test_LED(lv_obj_t *factory_bg, uint8_t event);
-static void lv_create_test_IR(lv_obj_t *factory_bg, uint8_t event);
-static void lv_create_test_Result(lv_obj_t *factory_bg, uint8_t event);
+static void lv_create_test_encode(lv_obj_t* factory_bg, uint8_t event);
+static void lv_create_test_LCD(lv_obj_t* factory_bg, uint8_t event);
+static void lv_create_test_Sound(lv_obj_t* factory_bg, uint8_t event);
+static void lv_create_test_LED(lv_obj_t* factory_bg, uint8_t event);
+static void lv_create_test_IR(lv_obj_t* factory_bg, uint8_t event);
+static void lv_create_test_Result(lv_obj_t* factory_bg, uint8_t event);
 
 lv_layer_t factory_Layer = {
-    .lv_obj_name    = "factory_Layer",
-    .lv_obj_parent  = NULL,
-    .lv_obj_layer   = NULL,
-    .lv_show_layer  = NULL,
-    .enter_cb       = factory_Layer_enter_cb,
-    .exit_cb        = factory_Layer_exit_cb,
-    .timer_cb       = factory_Layer_timer_cb,
+    .lv_obj_name = "factory_Layer",
+    .lv_obj_parent = NULL,
+    .lv_obj_layer = NULL,
+    .lv_show_layer = NULL,
+    .enter_cb = factory_Layer_enter_cb,
+    .exit_cb = factory_Layer_exit_cb,
+    .timer_cb = factory_Layer_timer_cb,
 };
 
 static sprite_create_func_t sprite_test_list[] = {
@@ -109,7 +109,8 @@ void factory_result_save(factory_step_t step)
         if (lv_obj_has_state(imgbtn_TEST_OK, LV_STATE_CHECKED) == true) {
             factory_test_result |= (0x01 << step);
         }
-    } else {
+    }
+    else {
         factory_test_result |= (0x01 << step);
     }
 }
@@ -121,7 +122,7 @@ bool factory_result_get(factory_step_t step)
 
 static uint8_t factory_test_step_goto(uint8_t sprite)
 {
-    lv_obj_t *parent;
+    lv_obj_t* parent;
     if (sprite ^ factory_test_step) {
         factory_test_step = sprite;
         factory_sub_step = 0;
@@ -146,13 +147,13 @@ static uint8_t factory_test_step_goto(uint8_t sprite)
     return factory_test_step;
 }
 
-void lv_create_factory_title(lv_obj_t *parent, const char *title_name, factory_step_t page)
+void lv_create_factory_title(lv_obj_t* parent, const char* title_name, factory_step_t page)
 {
     lv_obj_set_size(parent, LV_HOR_RES, LV_VER_RES);
     lv_obj_set_style_radius(parent, 0, 0);
     lv_obj_set_style_bg_color(parent, lv_color_hex(COLOUR_GREY_2F), LV_PART_MAIN);
 
-    lv_obj_t *label_title = lv_label_create(parent);
+    lv_obj_t* label_title = lv_label_create(parent);
     lv_obj_set_style_text_color(label_title, lv_color_white(), 0);
     lv_obj_set_style_text_font(label_title, &font_SourceHanSansCN_20, 0);
     lv_label_set_text(label_title, title_name);
@@ -160,7 +161,7 @@ void lv_create_factory_title(lv_obj_t *parent, const char *title_name, factory_s
     lv_obj_align(label_title, LV_ALIGN_TOP_MID, 0, 10);
 }
 
-void lv_create_rst_select(lv_obj_t *parent)
+void lv_create_rst_select(lv_obj_t* parent)
 {
     page = parent;
 
@@ -197,7 +198,8 @@ void lv_create_rst_select(lv_obj_t *parent)
         lv_img_set_src(imgbtn_TEST_FAILED, &language_unselect);
         lv_obj_clear_state(imgbtn_TEST_FAILED, LV_STATE_CHECKED);
         lv_obj_set_style_text_opa(label_CN, LV_OPA_40, 0);
-    } else {
+    }
+    else {
         lv_img_set_src(imgbtn_TEST_FAILED, &language_select);
         lv_obj_add_state(imgbtn_TEST_FAILED, LV_STATE_CHECKED);
         lv_obj_set_style_text_opa(label_CN, LV_OPA_COVER, 0);
@@ -208,10 +210,10 @@ void lv_create_rst_select(lv_obj_t *parent)
     }
 }
 
-static void lv_create_test_encode(lv_obj_t *factory_bg, uint8_t event)
+static void lv_create_test_encode(lv_obj_t* factory_bg, uint8_t event)
 {
     uint8_t focused = FACTORY_STEP_ENCODE;
-    static lv_obj_t *label_guide = NULL;
+    static lv_obj_t* label_guide = NULL;
 
     ESP_LOGI(TAG, "[Encode], event:%d, sub_step:%d", event, factory_sub_step);
 
@@ -224,7 +226,7 @@ static void lv_create_test_encode(lv_obj_t *factory_bg, uint8_t event)
         lv_obj_align(label_guide, LV_ALIGN_CENTER, 0, 0);
         lv_label_set_text(label_guide, "左旋");
 
-        lv_obj_t *label_version = lv_label_create(factory_bg);
+        lv_obj_t* label_version = lv_label_create(factory_bg);
         lv_obj_set_style_text_align(label_version, LV_TEXT_ALIGN_CENTER, 0);
         lv_obj_set_style_text_color(label_version, lv_color_white(), 0);
         lv_obj_set_style_text_font(label_version, &font_SourceHanSansCN_20, 0);
@@ -235,7 +237,8 @@ static void lv_create_test_encode(lv_obj_t *factory_bg, uint8_t event)
         lv_create_factory_title(factory_bg, sprite_test_list[focused].test_name, focused);
 
         factory_sub_step = FACTORY_ENCODE_STEP_LEFT;
-    } else {
+    }
+    else {
         audio_handle_info(SOUND_TYPE_KNOB);
     }
 
@@ -269,11 +272,11 @@ static void lv_create_test_encode(lv_obj_t *factory_bg, uint8_t event)
     }
 }
 
-static void lv_create_test_LCD(lv_obj_t *factory_bg, uint8_t event)
+static void lv_create_test_LCD(lv_obj_t* factory_bg, uint8_t event)
 {
     uint8_t focused = FACTORY_STEP_LCD;
-    static lv_obj_t *obj_BG = NULL;
-    static lv_obj_t *label_guide;
+    static lv_obj_t* obj_BG = NULL;
+    static lv_obj_t* label_guide;
 
     ESP_LOGI(TAG, "[LCD] event:%d, sub_step:%d", event, factory_sub_step);
 
@@ -330,19 +333,20 @@ static void lv_create_test_LCD(lv_obj_t *factory_bg, uint8_t event)
             focused++;
             ESP_LOGI(TAG, "FACTORY_STEP_LCD++:%d", focused);
             factory_test_step_goto(focused);
-        } else {
+        }
+        else {
             lv_create_rst_select(obj_BG);
         }
         break;
     }
 }
 
-static void lv_create_test_Sound(lv_obj_t *factory_bg, uint8_t event)
+static void lv_create_test_Sound(lv_obj_t* factory_bg, uint8_t event)
 {
     ESP_LOGI(TAG, "[Sound] event:%d, sub_step:%d", event, factory_sub_step);
 
     uint8_t focused = FACTORY_STEP_PDM;
-    static lv_obj_t *obj_BG = NULL;
+    static lv_obj_t* obj_BG = NULL;
 
     if (NULL == obj_BG) {
         obj_BG = lv_obj_create(factory_bg);
@@ -352,7 +356,7 @@ static void lv_create_test_Sound(lv_obj_t *factory_bg, uint8_t event)
 
         lv_create_factory_title(factory_bg, sprite_test_list[focused].test_name, focused);
 
-        lv_obj_t *label_guide = lv_label_create(obj_BG);
+        lv_obj_t* label_guide = lv_label_create(obj_BG);
         lv_obj_set_style_text_color(label_guide, lv_color_white(), 0);
         lv_obj_set_style_text_font(label_guide, &font_SourceHanSansCN_20, 0);
         lv_obj_center(label_guide);
@@ -360,7 +364,8 @@ static void lv_create_test_Sound(lv_obj_t *factory_bg, uint8_t event)
         lv_label_set_text(label_guide, "喇叭正常?");
 
         audio_handle_info(SOUND_TYPE_FACTORY);
-    } else {
+    }
+    else {
         audio_handle_info(SOUND_TYPE_FACTORY);
     }
 
@@ -372,20 +377,21 @@ static void lv_create_test_Sound(lv_obj_t *factory_bg, uint8_t event)
             focused++;
             ESP_LOGI(TAG, "FACTORY_STEP_SOUND++:%d", focused);
             factory_test_step_goto(focused);
-        } else {
+        }
+        else {
             lv_create_rst_select(obj_BG);
         }
         break;
     }
 }
 
-static void lv_create_test_LED(lv_obj_t *factory_bg, uint8_t event)
+static void lv_create_test_LED(lv_obj_t* factory_bg, uint8_t event)
 {
     ESP_LOGI(TAG, "[LED] event:%d, sub_step:%d", event, factory_sub_step);
 
     uint8_t focused = FACTORY_STEP_LED;
-    static lv_obj_t *obj_BG = NULL;
-    static lv_obj_t *label_guide = NULL;
+    static lv_obj_t* obj_BG = NULL;
+    static lv_obj_t* label_guide = NULL;
     static uint8_t light = 51;
 
     if (NULL == obj_BG) {
@@ -404,7 +410,8 @@ static void lv_create_test_LED(lv_obj_t *factory_bg, uint8_t event)
         lv_label_set_text(label_guide, "左旋:暗\n右旋:亮\n按下:下一步");
 
         bsp_led_rgb_set(light, light, light);
-    } else {
+    }
+    else {
         audio_handle_info(SOUND_TYPE_KNOB);
     }
 
@@ -416,13 +423,15 @@ static void lv_create_test_LED(lv_obj_t *factory_bg, uint8_t event)
             }
             ESP_LOGI(TAG, "pwm:%d", light);
             bsp_led_rgb_set(light, light, light);
-        } else if (LV_KEY_RIGHT == event) {
+        }
+        else if (LV_KEY_RIGHT == event) {
             if (light < 200) {
                 light += 10;
             }
             ESP_LOGI(TAG, "pwm:%d", light);
             bsp_led_rgb_set(light, light, light);
-        } else if (LV_KEY_DOWN == event) {
+        }
+        else if (LV_KEY_DOWN == event) {
             factory_sub_step++;
             bsp_led_rgb_set(0x00, 0x00, 0x00);
             lv_obj_align(label_guide, LV_ALIGN_CENTER, 0, -20);
@@ -433,19 +442,20 @@ static void lv_create_test_LED(lv_obj_t *factory_bg, uint8_t event)
     case FACTORY_LED_STEP_MAX:
         if (LV_KEY_DOWN == event) {
             factory_result_save(focused);
-            focused ++;
+            focused++;
             ESP_LOGI(TAG, "FACTORY_STEP_LED++:%d", focused);
             factory_test_step_goto(focused);
-        } else {
+        }
+        else {
             lv_create_rst_select(obj_BG);
         }
         break;
     }
 }
 
-static void lv_create_test_IR(lv_obj_t *factory_bg, uint8_t event)
+static void lv_create_test_IR(lv_obj_t* factory_bg, uint8_t event)
 {
-    static lv_obj_t *label_guide = NULL;
+    static lv_obj_t* label_guide = NULL;
 
     uint8_t focused = FACTORY_STEP_IR;
     if (0xFF == event) {
@@ -459,13 +469,15 @@ static void lv_create_test_IR(lv_obj_t *factory_bg, uint8_t event)
         lv_obj_center(label_guide);
         lv_obj_align(label_guide, LV_ALIGN_CENTER, 0, 0);
         lv_label_set_text(label_guide, "1:跳帽先接 IR_TX\n 2:2S后再接 IR_RX\n 3:等待结果");
-    } else {
+    }
+    else {
         if (LV_KEY_DOWN == event) {
             factory_result_save(focused);
             focused++;
             ESP_LOGI(TAG, "FACTORY_STEP_IR++:%d", focused);
             factory_test_step_goto(focused);
-        } else if (0xFE == event) {
+        }
+        else if (0xFE == event) {
             if (nec_test_result()) {
                 lv_label_set_text(label_guide, "成功\n按下结束");
             }
@@ -473,7 +485,7 @@ static void lv_create_test_IR(lv_obj_t *factory_bg, uint8_t event)
     }
 }
 
-static void lv_create_test_Result(lv_obj_t *factory_bg, uint8_t event)
+static void lv_create_test_Result(lv_obj_t* factory_bg, uint8_t event)
 {
     char test_Result[100];
     ESP_LOGI(TAG, "[Result] event:%d, sub_step:%d", event, factory_sub_step);
@@ -483,23 +495,23 @@ static void lv_create_test_Result(lv_obj_t *factory_bg, uint8_t event)
         lv_create_factory_title(factory_bg, sprite_test_list[focused].test_name, focused);
 
         sprintf(test_Result, "%s: #%x %s# \n%s: #%x %s# \n%s: #%x %s# \n%s: #%x %s# \n%s: #%x %s#",
-                sprite_test_list[FACTORY_STEP_ENCODE].test_name,
-                factory_result_get(FACTORY_STEP_ENCODE) ? 0xFF00 : 0xFF0000,
-                factory_result_get(FACTORY_STEP_ENCODE) ? "OK" : "Fail",
-                sprite_test_list[FACTORY_STEP_LCD].test_name,
-                factory_result_get(FACTORY_STEP_LCD) ? 0xFF00 : 0xFF0000,
-                factory_result_get(FACTORY_STEP_LCD) ? "OK" : "Fail",
-                sprite_test_list[FACTORY_STEP_PDM].test_name,
-                factory_result_get(FACTORY_STEP_PDM) ? 0xFF00 : 0xFF0000,
-                factory_result_get(FACTORY_STEP_PDM) ? "OK" : "Fail",
-                sprite_test_list[FACTORY_STEP_LED].test_name,
-                factory_result_get(FACTORY_STEP_LED) ? 0xFF00 : 0xFF0000,
-                factory_result_get(FACTORY_STEP_LED) ? "OK" : "Fail",
-                sprite_test_list[FACTORY_STEP_IR].test_name,
-                factory_result_get(FACTORY_STEP_IR) ? 0xFF00 : 0xFF0000,
-                factory_result_get(FACTORY_STEP_IR) ? "OK" : "Fail");
+            sprite_test_list[FACTORY_STEP_ENCODE].test_name,
+            factory_result_get(FACTORY_STEP_ENCODE) ? 0xFF00 : 0xFF0000,
+            factory_result_get(FACTORY_STEP_ENCODE) ? "OK" : "Fail",
+            sprite_test_list[FACTORY_STEP_LCD].test_name,
+            factory_result_get(FACTORY_STEP_LCD) ? 0xFF00 : 0xFF0000,
+            factory_result_get(FACTORY_STEP_LCD) ? "OK" : "Fail",
+            sprite_test_list[FACTORY_STEP_PDM].test_name,
+            factory_result_get(FACTORY_STEP_PDM) ? 0xFF00 : 0xFF0000,
+            factory_result_get(FACTORY_STEP_PDM) ? "OK" : "Fail",
+            sprite_test_list[FACTORY_STEP_LED].test_name,
+            factory_result_get(FACTORY_STEP_LED) ? 0xFF00 : 0xFF0000,
+            factory_result_get(FACTORY_STEP_LED) ? "OK" : "Fail",
+            sprite_test_list[FACTORY_STEP_IR].test_name,
+            factory_result_get(FACTORY_STEP_IR) ? 0xFF00 : 0xFF0000,
+            factory_result_get(FACTORY_STEP_IR) ? "OK" : "Fail");
 
-        lv_obj_t *label_guide = lv_label_create(factory_bg);
+        lv_obj_t* label_guide = lv_label_create(factory_bg);
         lv_label_set_recolor(label_guide, true);
         lv_obj_set_style_base_dir(label_guide, LV_BASE_DIR_LTR, 0);
         lv_obj_set_style_text_color(label_guide, lv_color_white(), 0);
@@ -512,21 +524,23 @@ static void lv_create_test_Result(lv_obj_t *factory_bg, uint8_t event)
     }
 }
 
-static void factory_event_cb(lv_event_t *e)
+static void factory_event_cb(lv_event_t* e)
 {
     lv_event_code_t code = lv_event_get_code(e);
 
     if (LV_EVENT_FOCUSED == code) {
         lv_group_set_editing(lv_group_get_default(), true);
-    } else if ((LV_EVENT_KEY == code) || (LV_EVENT_CLICKED == code)) {
+    }
+    else if ((LV_EVENT_KEY == code) || (LV_EVENT_CLICKED == code)) {
 
         uint32_t key;
         factory_step_t focus = factory_test_step;
-        lv_obj_t *parent = sprite_test_list[focus].sprite_parent;
+        lv_obj_t* parent = sprite_test_list[focus].sprite_parent;
 
         if (LV_EVENT_KEY == code) {
             key = lv_event_get_key(e);
-        } else {
+        }
+        else {
             key = LV_KEY_DOWN;
         }
 
@@ -535,17 +549,18 @@ static void factory_event_cb(lv_event_t *e)
                 sprite_test_list[focus].sprite_event_detect(parent, key);
             }
         }
-    } else if (LV_EVENT_LONG_PRESSED == code) {
+    }
+    else if (LV_EVENT_LONG_PRESSED == code) {
     }
 }
 
-static bool factory_Layer_enter_cb(void *layer)
+static bool factory_Layer_enter_cb(void* layer)
 {
     bool ret = false;
 
     LV_LOG_USER("");
 
-    lv_layer_t *create_layer = layer;
+    lv_layer_t* create_layer = layer;
     if (NULL == create_layer->lv_obj_layer) {
         ret = true;
         create_layer->lv_obj_layer = lv_obj_create(lv_scr_act());
@@ -566,18 +581,18 @@ static bool factory_Layer_enter_cb(void *layer)
     return ret;
 }
 
-static bool factory_Layer_exit_cb(void *layer)
+static bool factory_Layer_exit_cb(void* layer)
 {
     LV_LOG_USER("");
     return true;
 }
 
-static void factory_Layer_timer_cb(lv_timer_t *tmr)
+static void factory_Layer_timer_cb(lv_timer_t* tmr)
 {
     feed_clock_time();
 
     if (FACTORY_STEP_IR == factory_test_step) {
-        lv_obj_t *parent = sprite_test_list[FACTORY_STEP_IR].sprite_parent;
+        lv_obj_t* parent = sprite_test_list[FACTORY_STEP_IR].sprite_parent;
         if (sprite_test_list[FACTORY_STEP_IR].sprite_event_detect) {
             sprite_test_list[FACTORY_STEP_IR].sprite_event_detect(parent, 0xFE);
         }

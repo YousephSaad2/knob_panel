@@ -22,5 +22,4 @@ typedef struct {
 
 esp_err_t settings_read_parameter_from_nvs(void);
 esp_err_t settings_write_parameter_to_nvs(void);
-sys_param_t *settings_get_parameter(void);
-
+sys_param_t* settings_get_parameter(void);

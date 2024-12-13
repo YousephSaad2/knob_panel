@@ -11,26 +11,26 @@
 #include "lv_example_pub.h"
 #include "lv_example_image.h"
 
-static lv_obj_t *temp_arc;
-static lv_obj_t *page;
-static lv_obj_t *temp_wheel;
+static lv_obj_t* temp_arc;
+static lv_obj_t* page;
+static lv_obj_t* temp_wheel;
 static time_out_count time_500ms;
 
-static bool thermostat_layer_enter_cb(void *layer);
-static bool thermostat_layer_exit_cb(void *layer);
-static void thermostat_layer_timer_cb(lv_timer_t *tmr);
+static bool thermostat_layer_enter_cb(void* layer);
+static bool thermostat_layer_exit_cb(void* layer);
+static void thermostat_layer_timer_cb(lv_timer_t* tmr);
 
 lv_layer_t thermostat_Layer = {
-    .lv_obj_name    = "thermostat_Layer",
-    .lv_obj_parent  = NULL,
-    .lv_obj_layer   = NULL,
-    .lv_show_layer  = NULL,
-    .enter_cb       = thermostat_layer_enter_cb,
-    .exit_cb        = thermostat_layer_exit_cb,
-    .timer_cb       = thermostat_layer_timer_cb,
+    .lv_obj_name = "thermostat_Layer",
+    .lv_obj_parent = NULL,
+    .lv_obj_layer = NULL,
+    .lv_show_layer = NULL,
+    .enter_cb = thermostat_layer_enter_cb,
+    .exit_cb = thermostat_layer_exit_cb,
+    .timer_cb = thermostat_layer_timer_cb,
 };
 
-static void thermostat_event_cb(lv_event_t *e)
+static void thermostat_event_cb(lv_event_t* e)
 {
     uint8_t current;
 
@@ -38,7 +38,8 @@ static void thermostat_event_cb(lv_event_t *e)
 
     if (LV_EVENT_FOCUSED == code) {
         lv_group_set_editing(lv_group_get_default(), true);
-    } else if (LV_EVENT_KEY == code) {
+    }
+    else if (LV_EVENT_KEY == code) {
 
         if (is_time_out(&time_500ms)) {
             uint32_t key = lv_event_get_key(e);
@@ -47,7 +48,8 @@ static void thermostat_event_cb(lv_event_t *e)
                 if (current < lv_arc_get_max_value(temp_arc)) {
                     current++;
                 }
-            } else {
+            }
+            else {
                 if (current > lv_arc_get_min_value(temp_arc)) {
                     current--;
                 }
@@ -56,30 +58,33 @@ static void thermostat_event_cb(lv_event_t *e)
             lv_roller_set_selected(temp_wheel, (current - 19), LV_ANIM_ON);
         }
 
-    } else if (LV_EVENT_LONG_PRESSED == code) {
+    }
+    else if (LV_EVENT_LONG_PRESSED == code) {
         lv_indev_wait_release(lv_indev_get_next(NULL));
         ui_remove_all_objs_from_encoder_group();
         lv_func_goto_layer(&menu_layer);
     }
 }
 
-static void mask_event_cb(lv_event_t *e)
+static void mask_event_cb(lv_event_t* e)
 {
     lv_event_code_t code = lv_event_get_code(e);
-    lv_obj_t *obj = lv_event_get_target(e);
+    lv_obj_t* obj = lv_event_get_target(e);
 
     static int16_t mask_top_id = -1;
     static int16_t mask_bottom_id = -1;
 
     if (code == LV_EVENT_COVER_CHECK) {
         lv_event_set_cover_res(e, LV_COVER_RES_MASKED);
-    } else if (code == LV_EVENT_VALUE_CHANGED) {
+    }
+    else if (code == LV_EVENT_VALUE_CHANGED) {
         char buf[32];
         lv_roller_get_selected_str(obj, buf, sizeof(buf));
         LV_LOG_USER("Selected value: %s", buf);
-    } else if (code == LV_EVENT_DRAW_MAIN_BEGIN) {
+    }
+    else if (code == LV_EVENT_DRAW_MAIN_BEGIN) {
         /* add mask */
-        const lv_font_t *font = lv_obj_get_style_text_font(obj, LV_PART_MAIN);
+        const lv_font_t* font = lv_obj_get_style_text_font(obj, LV_PART_MAIN);
         lv_coord_t line_space = lv_obj_get_style_text_line_space(obj, LV_PART_MAIN);
         lv_coord_t font_h = lv_font_get_line_height(font);
 
@@ -92,20 +97,21 @@ static void mask_event_cb(lv_event_t *e)
         rect_area.y1 = roller_coords.y1;
         rect_area.y2 = roller_coords.y1 + (lv_obj_get_height(obj) - font_h - line_space) / 2;
 
-        lv_draw_mask_fade_param_t *fade_mask_top = lv_mem_buf_get(sizeof(lv_draw_mask_fade_param_t));
+        lv_draw_mask_fade_param_t* fade_mask_top = lv_mem_buf_get(sizeof(lv_draw_mask_fade_param_t));
         lv_draw_mask_fade_init(fade_mask_top, &rect_area, LV_OPA_TRANSP, rect_area.y1, LV_OPA_COVER, rect_area.y2);
         mask_top_id = lv_draw_mask_add(fade_mask_top, NULL);
 
         rect_area.y1 = rect_area.y2 + font_h + line_space - 1;
         rect_area.y2 = roller_coords.y2;
 
-        lv_draw_mask_fade_param_t *fade_mask_bottom = lv_mem_buf_get(sizeof(lv_draw_mask_fade_param_t));
+        lv_draw_mask_fade_param_t* fade_mask_bottom = lv_mem_buf_get(sizeof(lv_draw_mask_fade_param_t));
         lv_draw_mask_fade_init(fade_mask_bottom, &rect_area, LV_OPA_COVER, rect_area.y1, LV_OPA_TRANSP, rect_area.y2);
         mask_bottom_id = lv_draw_mask_add(fade_mask_bottom, NULL);
 
-    } else if (code == LV_EVENT_DRAW_POST_END) {
-        lv_draw_mask_fade_param_t *fade_mask_top = lv_draw_mask_remove_id(mask_top_id);
-        lv_draw_mask_fade_param_t *fade_mask_bottom = lv_draw_mask_remove_id(mask_bottom_id);
+    }
+    else if (code == LV_EVENT_DRAW_POST_END) {
+        lv_draw_mask_fade_param_t* fade_mask_top = lv_draw_mask_remove_id(mask_top_id);
+        lv_draw_mask_fade_param_t* fade_mask_bottom = lv_draw_mask_remove_id(mask_bottom_id);
         lv_draw_mask_free_param(fade_mask_top);
         lv_draw_mask_free_param(fade_mask_bottom);
         lv_mem_buf_release(fade_mask_top);
@@ -118,7 +124,7 @@ static void mask_event_cb(lv_event_t *e)
 /**
  * Add a fade mask to roller.
  */
-void lv_create_obj_roller(lv_obj_t *parent)
+void lv_create_obj_roller(lv_obj_t* parent)
 {
     static lv_style_t style;
     lv_style_init(&style);
@@ -140,26 +146,26 @@ void lv_create_obj_roller(lv_obj_t *parent)
     lv_obj_set_style_text_font(temp_wheel, &lv_font_montserrat_48, LV_PART_SELECTED);
 #endif
     lv_roller_set_options(temp_wheel,
-                          "19\n"
-                          "20\n"
-                          "21\n"
-                          "22\n"
-                          "23\n"
-                          "24\n"
-                          "25\n"
-                          "26\n"
-                          "27\n"
-                          "28\n"
-                          "29\n"
-                          "30",
-                          LV_ROLLER_MODE_NORMAL);
+        "19\n"
+        "20\n"
+        "21\n"
+        "22\n"
+        "23\n"
+        "24\n"
+        "25\n"
+        "26\n"
+        "27\n"
+        "28\n"
+        "29\n"
+        "30",
+        LV_ROLLER_MODE_NORMAL);
 
     lv_obj_align(temp_wheel, LV_ALIGN_CENTER, 5, 10);
     lv_roller_set_visible_row_count(temp_wheel, 3);
     lv_obj_add_event_cb(temp_wheel, mask_event_cb, LV_EVENT_ALL, NULL);
 }
 
-void ui_thermostat_init(lv_obj_t *parent)
+void ui_thermostat_init(lv_obj_t* parent)
 {
     page = lv_obj_create(parent);
     lv_obj_set_size(page, LV_HOR_RES, LV_VER_RES);
@@ -169,11 +175,11 @@ void ui_thermostat_init(lv_obj_t *parent)
     lv_obj_clear_flag(page, LV_OBJ_FLAG_SCROLLABLE);
     lv_obj_center(page);
 
-    lv_obj_t *img_thermostat_bg = lv_img_create(page);
+    lv_obj_t* img_thermostat_bg = lv_img_create(page);
     lv_img_set_src(img_thermostat_bg, &AC_BG);
     lv_obj_align(img_thermostat_bg, LV_ALIGN_CENTER, 0, 0);
 
-    lv_obj_t *img_thermostat_temp = lv_img_create(page);
+    lv_obj_t* img_thermostat_temp = lv_img_create(page);
     lv_img_set_src(img_thermostat_temp, &AC_temper);
     lv_obj_align(img_thermostat_temp, LV_ALIGN_CENTER, 0, 20);
 
@@ -206,7 +212,7 @@ void ui_thermostat_init(lv_obj_t *parent)
     //lv_obj_clear_flag(temp_arc, LV_OBJ_FLAG_CLICKABLE);  /*To not allow adjusting by click*/
     lv_obj_align(temp_arc, LV_ALIGN_TOP_MID, 0, 15);
 
-    lv_obj_t *img_temp_unit = lv_img_create(page);
+    lv_obj_t* img_temp_unit = lv_img_create(page);
     lv_img_set_src(img_temp_unit, &AC_unit);
     lv_obj_align(img_temp_unit, LV_ALIGN_CENTER, 50, -10);
 
@@ -240,12 +246,12 @@ void ui_thermostat_init(lv_obj_t *parent)
     ui_add_obj_to_encoder_group(page);
 }
 
-static bool thermostat_layer_enter_cb(void *layer)
+static bool thermostat_layer_enter_cb(void* layer)
 {
     bool ret = false;
 
     LV_LOG_USER("");
-    lv_layer_t *create_layer = layer;
+    lv_layer_t* create_layer = layer;
     if (NULL == create_layer->lv_obj_layer) {
         ret = true;
         create_layer->lv_obj_layer = lv_obj_create(lv_scr_act());
@@ -258,13 +264,13 @@ static bool thermostat_layer_enter_cb(void *layer)
     return ret;
 }
 
-static bool thermostat_layer_exit_cb(void *layer)
+static bool thermostat_layer_exit_cb(void* layer)
 {
     LV_LOG_USER("");
     return true;
 }
 
-static void thermostat_layer_timer_cb(lv_timer_t *tmr)
+static void thermostat_layer_timer_cb(lv_timer_t* tmr)
 {
     feed_clock_time();
 }

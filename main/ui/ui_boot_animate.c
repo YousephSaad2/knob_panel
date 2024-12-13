@@ -20,28 +20,28 @@
 #define PI  (3.14159f)
 #endif
 
-static bool boot_layer_enter_cb(void *layer);
-static bool boot_layer_exit_cb(void *layer);
-static void boot_layer_timer_cb(lv_timer_t *tmr);
+static bool boot_layer_enter_cb(void* layer);
+static bool boot_layer_exit_cb(void* layer);
+static void boot_layer_timer_cb(lv_timer_t* tmr);
 
 lv_layer_t boot_Layer = {
-    .lv_obj_name    = "boot_Layer",
-    .lv_obj_parent  = NULL,
-    .lv_obj_layer   = NULL,
-    .lv_show_layer  = NULL,
-    .enter_cb       = boot_layer_enter_cb,
-    .exit_cb        = boot_layer_exit_cb,
-    .timer_cb       = boot_layer_timer_cb,
+    .lv_obj_name = "boot_Layer",
+    .lv_obj_parent = NULL,
+    .lv_obj_layer = NULL,
+    .lv_show_layer = NULL,
+    .enter_cb = boot_layer_enter_cb,
+    .exit_cb = boot_layer_exit_cb,
+    .timer_cb = boot_layer_timer_cb,
 };
 
-static lv_obj_t *arc[3];
+static lv_obj_t* arc[3];
 static time_out_count time_20ms;
 
-static void anim_timer_handle(lv_obj_t *parent)
+static void anim_timer_handle(lv_obj_t* parent)
 {
     static int32_t count = -90;
-    lv_obj_t *page = parent;
-    static lv_obj_t *img_logo = NULL;
+    lv_obj_t* page = parent;
+    static lv_obj_t* img_logo = NULL;
 
     if (-90 == count) {
         img_logo = lv_img_create(page);
@@ -66,18 +66,19 @@ static void anim_timer_handle(lv_obj_t *parent)
     }
 
     if ((count += 2) >= 100) {
-        sys_param_t *param = settings_get_parameter();
+        sys_param_t* param = settings_get_parameter();
         if (param->need_hint) {
             param->need_hint = 0;
             settings_write_parameter_to_nvs();
             lv_func_goto_layer(&language_Layer);
-        } else {
+        }
+        else {
             lv_func_goto_layer(&menu_layer);
         }
     }
 }
 
-void boot_animate_start(lv_obj_t *parent)
+void boot_animate_start(lv_obj_t* parent)
 {
     lv_obj_clear_flag(parent, LV_OBJ_FLAG_SCROLLABLE);
     lv_obj_set_style_radius(parent, 0, LV_PART_MAIN);
@@ -101,12 +102,12 @@ void boot_animate_start(lv_obj_t *parent)
     }
 }
 
-static bool boot_layer_enter_cb(void *layer)
+static bool boot_layer_enter_cb(void* layer)
 {
     bool ret = false;
 
     LV_LOG_USER("");
-    lv_layer_t *create_layer = layer;
+    lv_layer_t* create_layer = layer;
     if (NULL == create_layer->lv_obj_layer) {
         ret = true;
         create_layer->lv_obj_layer = lv_obj_create(lv_scr_act());
@@ -120,13 +121,13 @@ static bool boot_layer_enter_cb(void *layer)
     return ret;
 }
 
-static bool boot_layer_exit_cb(void *layer)
+static bool boot_layer_exit_cb(void* layer)
 {
     LV_LOG_USER("");
     return true;
 }
 
-static void boot_layer_timer_cb(lv_timer_t *tmr)
+static void boot_layer_timer_cb(lv_timer_t* tmr)
 {
     if (is_time_out(&time_20ms)) {
         anim_timer_handle(boot_Layer.lv_obj_layer);

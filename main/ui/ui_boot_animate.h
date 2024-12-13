@@ -16,7 +16,7 @@ extern "C" {
 #endif
 
 
-void boot_animate_start(void (*fn)(void));
+    void boot_animate_start(void (*fn)(void));
 
 
 #ifdef __cplusplus

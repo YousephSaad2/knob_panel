@@ -15,24 +15,24 @@
 #include "lv_example_pub.h"
 #include "lv_example_image.h"
 
-static bool washing_layer_enter_cb(void *layer);
-static bool washing_layer_exit_cb(void *layer);
-static void washing_layer_timer_cb(lv_timer_t *tmr);
+static bool washing_layer_enter_cb(void* layer);
+static bool washing_layer_exit_cb(void* layer);
+static void washing_layer_timer_cb(lv_timer_t* tmr);
 
 lv_layer_t washing_Layer = {
-    .lv_obj_name    = "washing_Layer",
-    .lv_obj_parent  = NULL,
-    .lv_obj_layer   = NULL,
-    .lv_show_layer  = NULL,
-    .enter_cb       = washing_layer_enter_cb,
-    .exit_cb        = washing_layer_exit_cb,
-    .timer_cb       = washing_layer_timer_cb,
+    .lv_obj_name = "washing_Layer",
+    .lv_obj_parent = NULL,
+    .lv_obj_layer = NULL,
+    .lv_show_layer = NULL,
+    .enter_cb = washing_layer_enter_cb,
+    .exit_cb = washing_layer_exit_cb,
+    .timer_cb = washing_layer_timer_cb,
 };
 
 #define FUNC_NUM 3
 typedef struct {
-    const lv_img_dsc_t *wash_funcs_CN;
-    const lv_img_dsc_t *wash_funcs_EN;
+    const lv_img_dsc_t* wash_funcs_CN;
+    const lv_img_dsc_t* wash_funcs_EN;
     uint8_t wash_time;
 } wash_cycle_t;
 
@@ -54,16 +54,16 @@ static lv_coord_t cycle_init_y_axis[FUNC_NUM];
 static lv_coord_t cycle_init_x_axis[FUNC_NUM];
 
 static lv_anim_t anmi_run_wave;
-static lv_obj_t *label_wash_time;
-static lv_obj_t *img_funcs[FUNC_NUM];
+static lv_obj_t* label_wash_time;
+static lv_obj_t* img_funcs[FUNC_NUM];
 
-static lv_obj_t *page_background, *page_standby, *page_run;
-static lv_obj_t *img_bg_wash;
-static lv_obj_t *img_wave1, *img_wave2;
-static lv_obj_t *img_run_wave1, *img_run_wave2;
+static lv_obj_t* page_background, * page_standby, * page_run;
+static lv_obj_t* img_bg_wash;
+static lv_obj_t* img_wave1, * img_wave2;
+static lv_obj_t* img_run_wave1, * img_run_wave2;
 static lv_coord_t img_wave1_x, img_wave2_x, img_run_wave1_x, img_run_wave2_x;
-static lv_obj_t *img_anmi_shirt, *img_anmi_underwear1, *img_anmi_underwear2;
-static lv_obj_t *label_leftTimeH, *label_leftTimeL, *label_leftTime_unit;
+static lv_obj_t* img_anmi_shirt, * img_anmi_underwear1, * img_anmi_underwear2;
+static lv_obj_t* label_leftTimeH, * label_leftTimeL, * label_leftTime_unit;
 
 static WASH_MODE_T wash_mode, wash_mode_xor;
 static uint8_t item_central;
@@ -80,7 +80,8 @@ static uint32_t get_cycle_position(uint32_t num, int32_t max, int32_t offset)
     uint32_t i;
     if (offset >= 0) {
         i = (num + offset) % max;
-    } else {
+    }
+    else {
         offset = max + (offset % max);
         i = (num + offset) % max;
     }
@@ -106,11 +107,13 @@ static void menu_position_reset()
             abs_t = 33;
             x_axis = 20;
             y_axis = (0 - 80);
-        } else if (i == item_central) {
+        }
+        else if (i == item_central) {
             abs_t = 0;
             x_axis = 60;
             y_axis = (0);
-        } else if (i == item_bottom) {
+        }
+        else if (i == item_bottom) {
             abs_t = 33;
             x_axis = 20;
             y_axis = (0 + 80);
@@ -129,13 +132,14 @@ static void menu_position_reset()
         if (2 == item_central) {
             lv_obj_clear_flag(img_anmi_underwear1, LV_OBJ_FLAG_HIDDEN);
             lv_obj_clear_flag(img_anmi_underwear2, LV_OBJ_FLAG_HIDDEN);
-        } else if (1 == item_central) {
+        }
+        else if (1 == item_central) {
             lv_obj_clear_flag(img_anmi_shirt, LV_OBJ_FLAG_HIDDEN);
         }
     }
 }
 
-static void func_anim_cb(void *args, int32_t v)
+static void func_anim_cb(void* args, int32_t v)
 {
     int dir = (int)args;
     uint8_t follow_up = 0;
@@ -144,12 +148,14 @@ static void func_anim_cb(void *args, int32_t v)
     follow_up = get_next_cycle_position(dir);
     for (int i = 0; i < FUNC_NUM; i++) {
 
-        y_axis = cycle_init_y_axis[i] - (dir) * v;
+        y_axis = cycle_init_y_axis[i] - (dir)*v;
         if (i == item_central) {
             x_axis = cycle_init_x_axis[i] - v / 2;
-        } else if (i == follow_up) {
+        }
+        else if (i == follow_up) {
             x_axis = cycle_init_x_axis[i] + v / 2;
-        } else {
+        }
+        else {
             /*40 - 80*/
             if (v > 40) {
                 x_axis = 0 + v / 4;
@@ -174,7 +180,7 @@ static void func_anim_cb(void *args, int32_t v)
     }
 }
 
-static void func_anim_ready_cb(lv_anim_t *a)
+static void func_anim_ready_cb(lv_anim_t* a)
 {
     int extra_icon_index = (int)lv_anim_get_user_data(a);
     int8_t dir = extra_icon_index > 0 ? 1 : -1;
@@ -183,7 +189,7 @@ static void func_anim_ready_cb(lv_anim_t *a)
     menu_position_reset();
 }
 
-static void washing_event_cb(lv_event_t *e)
+static void washing_event_cb(lv_event_t* e)
 {
     static uint8_t forbidden_sec_trigger = false;
 
@@ -191,17 +197,20 @@ static void washing_event_cb(lv_event_t *e)
 
     if (LV_EVENT_FOCUSED == code) {
         lv_group_set_editing(lv_group_get_default(), true);
-    } else if (LV_EVENT_KEY == code) {
+    }
+    else if (LV_EVENT_KEY == code) {
         uint32_t key = lv_event_get_key(e);
         int changed = 0;
         if (LV_KEY_LEFT == key) {
             changed = 1;
-        } else if (LV_KEY_RIGHT == key) {
+        }
+        else if (LV_KEY_RIGHT == key) {
             changed = -1;
         }
         if (lv_obj_get_y_aligned(img_funcs[item_central]) != 0) {
             changed = 0;
-        } else {
+        }
+        else {
             for (size_t i = 0; i < FUNC_NUM; i++) {
                 cycle_init_y_axis[i] = lv_obj_get_y_aligned(img_funcs[i]);
                 cycle_init_x_axis[i] = lv_obj_get_x_aligned(img_funcs[i]);
@@ -211,47 +220,54 @@ static void washing_event_cb(lv_event_t *e)
         if (changed) {
             lv_anim_t a1;
             lv_anim_init(&a1);
-            lv_anim_set_var(&a1, (void *)changed);
+            lv_anim_set_var(&a1, (void*)changed);
             lv_anim_set_delay(&a1, 0);
             //lv_anim_set_values(&a1, 0, 45);
             lv_anim_set_values(&a1, 0, 80 - LV_ABS(cycle_init_y_axis[item_central]));
             lv_anim_set_exec_cb(&a1, func_anim_cb);
             lv_anim_set_path_cb(&a1, lv_anim_path_ease_in_out);
             lv_anim_set_ready_cb(&a1, func_anim_ready_cb);
-            lv_anim_set_user_data(&a1, (void *)changed);
+            lv_anim_set_user_data(&a1, (void*)changed);
             lv_anim_set_time(&a1, 350);
             lv_anim_start(&a1);
         }
 
-    } else if (LV_EVENT_LONG_PRESSED == code) {
+    }
+    else if (LV_EVENT_LONG_PRESSED == code) {
         forbidden_sec_trigger = true;
         if (WASH_MODE_STANDBY == wash_mode) {
             lv_indev_wait_release(lv_indev_get_next(NULL));
             ui_remove_all_objs_from_encoder_group();
             lv_func_goto_layer(&menu_layer);
-        } else if ((WASH_MODE_RUN == wash_mode) || (WASH_MODE_PAUSE == wash_mode)) {
+        }
+        else if ((WASH_MODE_RUN == wash_mode) || (WASH_MODE_PAUSE == wash_mode)) {
             wash_mode = WASH_MODE_EOC;
-        } else if (WASH_MODE_EOC == wash_mode) {
+        }
+        else if (WASH_MODE_EOC == wash_mode) {
             wash_mode = WASH_MODE_STANDBY;
         }
-    } else if (LV_EVENT_CLICKED == code) {
-        if(false == forbidden_sec_trigger) {
+    }
+    else if (LV_EVENT_CLICKED == code) {
+        if (false == forbidden_sec_trigger) {
             if (WASH_MODE_STANDBY == wash_mode) {
                 wash_mode = WASH_MODE_RUN;
-            } else if (WASH_MODE_RUN == wash_mode) {
+            }
+            else if (WASH_MODE_RUN == wash_mode) {
                 wash_mode = WASH_MODE_PAUSE;
-            } else if (WASH_MODE_PAUSE == wash_mode) {
+            }
+            else if (WASH_MODE_PAUSE == wash_mode) {
                 wash_mode = WASH_MODE_RUN;
             }
-        } else {
+        }
+        else {
             forbidden_sec_trigger = false;
         }
     }
 }
 
-static void bub1_anim_cb(void *args, int32_t v)
+static void bub1_anim_cb(void* args, int32_t v)
 {
-    lv_obj_t *img_bub = (lv_obj_t *)args;
+    lv_obj_t* img_bub = (lv_obj_t*)args;
     lv_coord_t y = lv_obj_get_y_aligned(img_bub);
     int opa = 0;
     if (y > -60) {
@@ -261,13 +277,13 @@ static void bub1_anim_cb(void *args, int32_t v)
     lv_obj_set_y(img_bub, v);
 }
 
-static void wave_anim_cb(void *args, int32_t v)
+static void wave_anim_cb(void* args, int32_t v)
 {
     lv_obj_set_x(img_wave1, img_wave1_x + LV_ABS(v));
     lv_obj_set_x(img_wave2, img_wave2_x - LV_ABS(v));
 }
 
-static void wave_run_anim_cb(void *args, int32_t v)
+static void wave_run_anim_cb(void* args, int32_t v)
 {
     if (WASH_MODE_RUN == wash_mode) {
         lv_obj_set_x(img_run_wave1, img_run_wave1_x + LV_ABS(v));
@@ -275,20 +291,20 @@ static void wave_run_anim_cb(void *args, int32_t v)
     }
 }
 
-static void shirt_anim_cb(void *args, int32_t v)
+static void shirt_anim_cb(void* args, int32_t v)
 {
-    lv_obj_t *img_shirt = (lv_obj_t *)args;
+    lv_obj_t* img_shirt = (lv_obj_t*)args;
     lv_img_set_pivot(img_shirt, 58 / 2, 2 * 58 / 3);
     lv_img_set_angle(img_shirt, v);
 }
 
-static void underwear_anim_cb(void *args, int32_t v)
+static void underwear_anim_cb(void* args, int32_t v)
 {
     lv_img_set_angle(img_anmi_underwear1, v);
     lv_img_set_angle(img_anmi_underwear2, -v);
 }
 
-static void mask_event_cb(lv_event_t *e)
+static void mask_event_cb(lv_event_t* e)
 {
     lv_event_code_t code = lv_event_get_code(e);
 
@@ -296,24 +312,26 @@ static void mask_event_cb(lv_event_t *e)
 
     if (code == LV_EVENT_COVER_CHECK) {
         lv_event_set_cover_res(e, LV_COVER_RES_MASKED);
-    } else if (code == LV_EVENT_DRAW_MAIN_BEGIN) {
+    }
+    else if (code == LV_EVENT_DRAW_MAIN_BEGIN) {
         /* add mask */
         lv_area_t win_area;
         lv_obj_get_coords(img_bg_wash, &win_area);
-        lv_draw_mask_radius_param_t *mask_out_param = lv_mem_buf_get(sizeof(lv_draw_mask_radius_param_t));
+        lv_draw_mask_radius_param_t* mask_out_param = lv_mem_buf_get(sizeof(lv_draw_mask_radius_param_t));
         lv_draw_mask_radius_init(mask_out_param, &win_area, LV_RADIUS_CIRCLE, 0);
         mask_id = lv_draw_mask_add(mask_out_param, NULL);
-    } else if (code == LV_EVENT_DRAW_POST_END) {
-        lv_draw_mask_radius_param_t *mask = lv_draw_mask_remove_id(mask_id);
+    }
+    else if (code == LV_EVENT_DRAW_POST_END) {
+        lv_draw_mask_radius_param_t* mask = lv_draw_mask_remove_id(mask_id);
         lv_draw_mask_free_param(mask);
         lv_mem_buf_release(mask);
         mask_id = -1;
     }
 }
 
-void ui_washing_init(lv_obj_t *parent)
+void ui_washing_init(lv_obj_t* parent)
 {
-    sys_param_t *param = settings_get_parameter();
+    sys_param_t* param = settings_get_parameter();
 
     page_background = lv_obj_create(parent);
     lv_obj_set_size(page_background, LV_HOR_RES, LV_VER_RES);
@@ -355,12 +373,13 @@ void ui_washing_init(lv_obj_t *parent)
     lv_label_set_text(label_leftTime_unit, ":");
     lv_obj_align(label_leftTime_unit, LV_ALIGN_CENTER, -8, -23);
 
-    lv_obj_t *label_info = lv_label_create(page_run);
+    lv_obj_t* label_info = lv_label_create(page_run);
     lv_obj_set_style_text_color(label_info, lv_color_hex(COLOUR_GREY_4F), 0);
     if (LANGUAGE_CN == param->language) {
         lv_obj_set_style_text_font(label_info, &font_SourceHanSansCN_20, 0);
         lv_label_set_text(label_info, "长按结束");
-    } else {
+    }
+    else {
         lv_obj_set_style_text_font(label_info, &HelveticaNeue_Regular_20, 0);
         lv_label_set_text(label_info, "long press to end");
     }
@@ -407,10 +426,10 @@ void ui_washing_init(lv_obj_t *parent)
     lv_obj_add_event_cb(img_wave1, mask_event_cb, LV_EVENT_ALL, NULL);
     lv_obj_add_event_cb(img_wave2, mask_event_cb, LV_EVENT_ALL, NULL);
 
-    lv_obj_t *img_bub1 = lv_img_create(img_bg_wash);
+    lv_obj_t* img_bub1 = lv_img_create(img_bg_wash);
     lv_img_set_src(img_bub1, &img_washing_bubble1);
     lv_obj_center(img_bub1);
-    lv_obj_t *img_bub2 = lv_img_create(img_bg_wash);
+    lv_obj_t* img_bub2 = lv_img_create(img_bg_wash);
     lv_img_set_src(img_bub2, &img_washing_bubble2);
     lv_obj_center(img_bub2);
 
@@ -438,7 +457,8 @@ void ui_washing_init(lv_obj_t *parent)
         img_funcs[i] = lv_img_create(page_standby);
         if (LANGUAGE_CN == param->language) {
             lv_img_set_src(img_funcs[i], wash_cycle[i].wash_funcs_CN);
-        } else {
+        }
+        else {
             lv_img_set_src(img_funcs[i], wash_cycle[i].wash_funcs_EN);
         }
         x = 40;
@@ -517,12 +537,12 @@ void ui_washing_init(lv_obj_t *parent)
     menu_position_reset();
 }
 
-static bool washing_layer_enter_cb(void *layer)
+static bool washing_layer_enter_cb(void* layer)
 {
     bool ret = false;
 
     LV_LOG_USER("");
-    lv_layer_t *create_layer = layer;
+    lv_layer_t* create_layer = layer;
     if (NULL == create_layer->lv_obj_layer) {
         ret = true;
         create_layer->lv_obj_layer = lv_obj_create(lv_scr_act());
@@ -536,16 +556,16 @@ static bool washing_layer_enter_cb(void *layer)
     return ret;
 }
 
-static bool washing_layer_exit_cb(void *layer)
+static bool washing_layer_exit_cb(void* layer)
 {
     LV_LOG_USER("");
     return true;
 }
 
-static void washing_layer_timer_cb(lv_timer_t *tmr)
+static void washing_layer_timer_cb(lv_timer_t* tmr)
 {
     feed_clock_time();
-    sys_param_t *param = settings_get_parameter();
+    sys_param_t* param = settings_get_parameter();
 
     if (wash_mode_xor ^ wash_mode) {
         switch (wash_mode) {
@@ -553,7 +573,7 @@ static void washing_layer_timer_cb(lv_timer_t *tmr)
             lv_obj_add_flag(page_run, LV_OBJ_FLAG_HIDDEN);
             lv_obj_clear_flag(page_standby, LV_OBJ_FLAG_HIDDEN);
         }
-        break;
+                              break;
         case WASH_MODE_RUN: {
             if (WASH_MODE_STANDBY == wash_mode_xor) {
                 wash_demo_left = 8;
@@ -564,18 +584,18 @@ static void washing_layer_timer_cb(lv_timer_t *tmr)
             lv_obj_clear_flag(page_run, LV_OBJ_FLAG_HIDDEN);
             lv_obj_add_flag(page_standby, LV_OBJ_FLAG_HIDDEN);
         }
-        break;
+                          break;
         case WASH_MODE_PAUSE: {
             lv_obj_clear_flag(label_leftTime_unit, LV_OBJ_FLAG_HIDDEN);
         }
-        break;
+                            break;
         case WASH_MODE_EOC: {
             lv_obj_add_flag(label_leftTime_unit, LV_OBJ_FLAG_HIDDEN);
             lv_label_set_text(label_leftTimeH, "-");
             lv_label_set_text(label_leftTimeL, "-");
             audio_handle_info((LANGUAGE_CN == param->language) ? SOUND_TYPE_WASH_END_CN : SOUND_TYPE_WASH_END_EN);
         }
-        break;
+                          break;
         default:
             break;
         }
@@ -586,14 +606,16 @@ static void washing_layer_timer_cb(lv_timer_t *tmr)
         if (wash_demo_left) {
             if (wash_time_left % 2) {
                 lv_obj_add_flag(label_leftTime_unit, LV_OBJ_FLAG_HIDDEN);
-            } else {
+            }
+            else {
                 lv_obj_clear_flag(label_leftTime_unit, LV_OBJ_FLAG_HIDDEN);
             }
             lv_label_set_text_fmt(label_leftTimeH, "%d", (wash_time_left + 59) / 3600);
             lv_label_set_text_fmt(label_leftTimeL, "%02d", ((wash_time_left + 59) % 3600) / 60);
             wash_time_left--;
             wash_demo_left--;
-        } else {
+        }
+        else {
             wash_mode = WASH_MODE_EOC;
         }
     }

@@ -11,49 +11,48 @@
 #include "esp_log.h"
 #endif
 
-#include "ui_light_2color.h"
 #include "settings.h"
 #include "lv_example_pub.h"
 #include "lv_example_image.h"
 
 #include "app_audio.h"
 
-static const char *TAG = "main_menu";
+static const char* TAG = "main_menu";
 
-static bool main_layer_enter_cb(void *layer);
-static bool main_layer_exit_cb(void *layer);
-static void main_layer_timer_cb(lv_timer_t *tmr);
+static bool main_layer_enter_cb(void* layer);
+static bool main_layer_exit_cb(void* layer);
+static void main_layer_timer_cb(lv_timer_t* tmr);
 
 lv_layer_t menu_layer = {
-    .lv_obj_name    = "main_menu_Layer",
-    .lv_obj_parent  = NULL,
-    .lv_obj_layer   = NULL,
-    .lv_show_layer  = NULL,
-    .enter_cb       = main_layer_enter_cb,
-    .exit_cb        = main_layer_exit_cb,
-    .timer_cb       = main_layer_timer_cb,
+    .lv_obj_name = "main_menu_Layer",
+    .lv_obj_parent = NULL,
+    .lv_obj_layer = NULL,
+    .lv_show_layer = NULL,
+    .enter_cb = main_layer_enter_cb,
+    .exit_cb = main_layer_exit_cb,
+    .timer_cb = main_layer_timer_cb,
 };
 typedef struct {
-    const char *name_CN;
-    const char *name_EN;
-    const lv_img_dsc_t *icon;
-    const lv_img_dsc_t *icon_ns;
+    const char* name_CN;
+    const char* name_EN;
+    const lv_img_dsc_t* icon;
+    const lv_img_dsc_t* icon_ns;
     lv_color_t theme_color;
-    void *layer;
+    void* layer;
 } ui_menu_app_t;
 
 static ui_menu_app_t menu[] = {
     {"洗衣模式",    "Washing",     &icon_washing,      &icon_washing_ns,       LV_COLOR_MAKE(36, 163, 235), &washing_Layer},
     {"恒温器",      "Thermostat",  &icon_thermostat,   &icon_thermostat_ns,    LV_COLOR_MAKE(249, 139, 122), &thermostat_Layer},
-    {"照明模式",    "Light",       &icon_light,        &icon_light_ns,         LV_COLOR_MAKE(255, 229, 147), & light_2color_Layer},
+    {"照明模式",    "Light",       &icon_light,        &icon_light_ns,         LV_COLOR_MAKE(255, 229, 147), &light_2color_Layer},
 };
 
 #define APP_NUM 3//(sizeof(menu) / sizeof(ui_menu_app_t))
-static lv_obj_t *icons[APP_NUM];
+static lv_obj_t* icons[APP_NUM];
 static uint8_t app_index = 0;
-static lv_obj_t *page;
-static lv_obj_t *label_name;
-static lv_obj_t *tips_btn, *tips_label;
+static lv_obj_t* page;
+static lv_obj_t* label_name;
+static lv_obj_t* tips_btn, * tips_label;
 
 static uint8_t tips_delay;
 static uint8_t factory_Enter;
@@ -70,7 +69,8 @@ static uint32_t ui_get_num_offset(uint32_t num, int32_t max, int32_t offset)
     uint32_t i;
     if (offset >= 0) {
         i = (num + offset) % max;
-    } else {
+    }
+    else {
         offset = max + (offset % max);
         i = (num + offset) % max;
     }
@@ -89,25 +89,26 @@ void set_tips_info()
     lv_obj_clear_flag(tips_btn, LV_OBJ_FLAG_HIDDEN);
 }
 
-static void arc_path_by_theta(int16_t theta, int16_t *x, int16_t *y)
+static void arc_path_by_theta(int16_t theta, int16_t* x, int16_t* y)
 {
     const int ox = 0, oy = 0;
     *x = ox + ((lv_trigo_sin(theta) * 45) >> LV_TRIGO_SHIFT);
     *y = oy + ((lv_trigo_sin(theta + 90) * 45) >> LV_TRIGO_SHIFT);
 }
 
-static void obj_set_to_hightlight(lv_obj_t *obj, bool enable)
+static void obj_set_to_hightlight(lv_obj_t* obj, bool enable)
 {
     if (enable) {
         lv_obj_set_style_shadow_width(obj, 15, 0);
         lv_obj_set_style_shadow_spread(obj, 3, 0);
-    } else {
+    }
+    else {
         lv_obj_set_style_shadow_width(obj, 0, 0);
         lv_obj_set_style_shadow_spread(obj, 0, 0);
     }
 }
 
-static void menu_event_cb(lv_event_t *e)
+static void menu_event_cb(lv_event_t* e)
 {
     static uint8_t forbidden_sec_trigger = false;
 
@@ -115,13 +116,15 @@ static void menu_event_cb(lv_event_t *e)
 
     if (LV_EVENT_FOCUSED == code) {
         lv_group_set_editing(lv_group_get_default(), true);
-    } else if (LV_EVENT_KEY == code) {
+    }
+    else if (LV_EVENT_KEY == code) {
         uint32_t key = lv_event_get_key(e);
         if (is_time_out(&time_100ms)) {
             int8_t last_index = app_index;
             if (LV_KEY_RIGHT == key) {
                 app_index = get_app_index(-1);
-            } else if (LV_KEY_LEFT == key) {
+            }
+            else if (LV_KEY_LEFT == key) {
                 app_index = get_app_index(1);
             }
             if ((factory_Enter < 6) && (app_index == 2)) {
@@ -147,29 +150,33 @@ static void menu_event_cb(lv_event_t *e)
             lv_img_set_src(icons[get_app_index(0)], menu[get_app_index(0)].icon);
             lv_obj_set_style_border_color(page, menu[get_app_index(0)].theme_color, 0);
 
-            sys_param_t *param = settings_get_parameter();
+            sys_param_t* param = settings_get_parameter();
             if (LANGUAGE_CN == param->language) {
                 lv_label_set_text(label_name, menu[get_app_index(0)].name_CN);
-            } else {
+            }
+            else {
                 lv_label_set_text(label_name, menu[get_app_index(0)].name_EN);
             }
         }
         feed_clock_time();
 
-    } else if (LV_EVENT_CLICKED == code) {
+    }
+    else if (LV_EVENT_CLICKED == code) {
         if (false == forbidden_sec_trigger) {
             if (menu[get_app_index(0)].layer) {
                 lv_group_set_editing(lv_group_get_default(), false);
                 ui_remove_all_objs_from_encoder_group();
                 lv_func_goto_layer(menu[get_app_index(0)].layer);
             }
-        } else {
+        }
+        else {
             forbidden_sec_trigger = false;
         }
         feed_clock_time();
-    } else if (LV_EVENT_LONG_PRESSED == code) {
+    }
+    else if (LV_EVENT_LONG_PRESSED == code) {
         forbidden_sec_trigger = true;
-        sys_param_t *param = settings_get_parameter();
+        sys_param_t* param = settings_get_parameter();
         if (false == param->need_hint) {
             param->need_hint = true;
             settings_write_parameter_to_nvs();
@@ -178,7 +185,7 @@ static void menu_event_cb(lv_event_t *e)
     }
 }
 
-void ui_menu_init(lv_obj_t *parent)
+void ui_menu_init(lv_obj_t* parent)
 {
     page = lv_obj_create(parent);
     lv_obj_set_size(page, LV_HOR_RES, LV_VER_RES);
@@ -196,7 +203,8 @@ void ui_menu_init(lv_obj_t *parent)
         icons[i] = lv_img_create(page);
         if (i == app_index) {
             lv_img_set_src(icons[i], menu[i].icon);
-        } else {
+        }
+        else {
             lv_img_set_src(icons[i], menu[i].icon_ns);
         }
         lv_obj_align(icons[i], LV_ALIGN_CENTER, x, y);
@@ -212,11 +220,12 @@ void ui_menu_init(lv_obj_t *parent)
     }
 
     label_name = lv_label_create(page);
-    sys_param_t *param = settings_get_parameter();
+    sys_param_t* param = settings_get_parameter();
     if (LANGUAGE_CN == param->language) {
         lv_obj_set_style_text_font(label_name, &font_SourceHanSansCN_20, 0);
         lv_label_set_text(label_name, menu[app_index].name_CN);
-    } else {
+    }
+    else {
         lv_obj_set_style_text_font(label_name, &HelveticaNeue_Regular_24, 0);
         lv_label_set_text(label_name, menu[app_index].name_EN);
     }
@@ -238,7 +247,8 @@ void ui_menu_init(lv_obj_t *parent)
     if (LANGUAGE_CN == param->language) {
         lv_obj_set_style_text_font(tips_label, &font_SourceHanSansCN_Medium_22, 0);
         lv_label_set_text(tips_label, "已恢复出厂");
-    } else {
+    }
+    else {
         lv_obj_set_style_text_font(tips_label, &HelveticaNeue_Regular_24, 0);
         lv_label_set_text(tips_label, "factory default");
     }
@@ -251,13 +261,13 @@ void ui_menu_init(lv_obj_t *parent)
     ui_add_obj_to_encoder_group(page);
 }
 
-static bool main_layer_enter_cb(void *layer)
+static bool main_layer_enter_cb(void* layer)
 {
     bool ret = false;
 
     LV_LOG_USER("");
     factory_Enter = 0;
-    lv_layer_t *create_layer = layer;
+    lv_layer_t* create_layer = layer;
 
     if (NULL == create_layer->lv_obj_layer) {
         ret = true;
@@ -276,13 +286,13 @@ static bool main_layer_enter_cb(void *layer)
 }
 
 
-static bool main_layer_exit_cb(void *layer)
+static bool main_layer_exit_cb(void* layer)
 {
     LV_LOG_USER("");
     return true;
 }
 
-static void main_layer_timer_cb(lv_timer_t *tmr)
+static void main_layer_timer_cb(lv_timer_t* tmr)
 {
     if (is_time_out(&time_500ms)) {
         if (tips_delay) {

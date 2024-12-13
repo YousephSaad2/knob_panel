@@ -7,7 +7,6 @@ file(GLOB_RECURSE IMAGE_SOURCES "ui/imgs/*.c")
 idf_component_register(
     SRCS
         "app_main.c"
-        "voice_announcement.c"
         "settings.c"
         "app_audio.c"
         ${UI_SOURCES}

@@ -4,7 +4,6 @@
  * SPDX-License-Identifier: CC0-1.0
  */
 
-#include <dirent.h>
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
@@ -20,55 +19,9 @@
 #include "settings.h"
 #include "lv_example_pub.h"
 #include "bsp/esp-bsp.h"
-#include "voice_announcement.h"
 
-#include "esp_spiffs.h"
+static const char* TAG = "main";
 
-static const char *TAG = "main";
-
-int current_brightness = 50;  // Example default brightness level
-
-void update_brightness(int brightness) {
-    current_brightness = brightness;  // Update the brightness level
-    ESP_LOGI("Brightness", "Updated brightness to: %d", brightness);
-    xEventGroupSetBits(event_group, EVENT_BIT_BRIGHTNESS_CHANGED);  // Notify tasks
-}
-
-void list_files_in_spiffs(void) {
-    ESP_LOGI(TAG, "Listing files in /spiffs:");
-
-    DIR* dir = opendir("/spiffs");
-    if (dir == NULL) {
-        ESP_LOGE(TAG, "Failed to open /spiffs directory");
-        return;
-    }
-
-    struct dirent* entry;
-    while ((entry = readdir(dir)) != NULL) {
-        ESP_LOGI(TAG, "File: %s", entry->d_name);
-    }
-
-    closedir(dir);
-}
-
-void initialize_spiffs(void) {
-    ESP_LOGI(TAG, "Initializing SPIFFS");
-
-    esp_vfs_spiffs_conf_t conf = {
-        .base_path = "/spiffs",
-        .partition_label = NULL,
-        .max_files = 5,
-        .format_if_mount_failed = true
-    };
-
-    esp_err_t ret = esp_vfs_spiffs_register(&conf);
-    if (ret != ESP_OK) {
-        ESP_LOGE(TAG, "Failed to mount or format SPIFFS (%s)", esp_err_to_name(ret));
-        return;
-    }
-
-    ESP_LOGI(TAG, "SPIFFS initialized successfully");
-}
 
 #define MEMORY_MONITOR 0
 
@@ -101,7 +54,7 @@ void initialize_spiffs(void) {
  */
 static esp_err_t print_real_time_stats(TickType_t xTicksToWait)
 {
-    TaskStatus_t *start_array = NULL, *end_array = NULL;
+    TaskStatus_t* start_array = NULL, * end_array = NULL;
     UBaseType_t start_array_size, end_array_size;
     uint32_t start_run_time, end_run_time;
     esp_err_t ret;
@@ -183,28 +136,29 @@ exit:    //Common return path
     return ret;
 }
 
-static void monitor_task(void *arg)
+static void monitor_task(void* arg)
 {
-    (void) arg;
+    (void)arg;
     const int STATS_TICKS = pdMS_TO_TICKS(2 * 1000);
 
     while (true) {
         ESP_LOGI(TAG, "System Info Trace");
         printf("\tDescription\tInternal\tSPIRAM\n");
         printf("Current Free Memory\t%d\t\t%d\n",
-               heap_caps_get_free_size(MALLOC_CAP_8BIT | MALLOC_CAP_INTERNAL),
-               heap_caps_get_free_size(MALLOC_CAP_SPIRAM));
+            heap_caps_get_free_size(MALLOC_CAP_8BIT | MALLOC_CAP_INTERNAL),
+            heap_caps_get_free_size(MALLOC_CAP_SPIRAM));
         printf("Largest Free Block\t%d\t\t%d\n",
-               heap_caps_get_largest_free_block(MALLOC_CAP_8BIT | MALLOC_CAP_INTERNAL),
-               heap_caps_get_largest_free_block(MALLOC_CAP_SPIRAM));
+            heap_caps_get_largest_free_block(MALLOC_CAP_8BIT | MALLOC_CAP_INTERNAL),
+            heap_caps_get_largest_free_block(MALLOC_CAP_SPIRAM));
         printf("Min. Ever Free Size\t%d\t\t%d\n",
-               heap_caps_get_minimum_free_size(MALLOC_CAP_8BIT | MALLOC_CAP_INTERNAL),
-               heap_caps_get_minimum_free_size(MALLOC_CAP_SPIRAM));
+            heap_caps_get_minimum_free_size(MALLOC_CAP_8BIT | MALLOC_CAP_INTERNAL),
+            heap_caps_get_minimum_free_size(MALLOC_CAP_SPIRAM));
 
         printf("Getting real time stats over %d ticks\n", STATS_TICKS);
         if (print_real_time_stats(STATS_TICKS) == ESP_OK) {
             printf("Real time stats obtained\n");
-        } else {
+        }
+        else {
             printf("Error getting real time stats\n");
         }
 
@@ -229,13 +183,10 @@ esp_err_t bsp_board_init(void)
     return ESP_OK;
 }
 
-EventGroupHandle_t event_group;
-
 void app_main(void)
 {
     ESP_LOGI(TAG, "Compile time: %s %s", __DATE__, __TIME__);
-
-    // Initialize NVS
+    /* Initialize NVS. */
     esp_err_t err = nvs_flash_init();
     if (err == ESP_ERR_NVS_NO_FREE_PAGES || err == ESP_ERR_NVS_NEW_VERSION_FOUND) {
         ESP_ERROR_CHECK(nvs_flash_erase());
@@ -244,72 +195,21 @@ void app_main(void)
     ESP_ERROR_CHECK(err);
     ESP_ERROR_CHECK(settings_read_parameter_from_nvs());
 
-    // Initialize SPIFFS
-    initialize_spiffs();
-
-    // List files in SPIFFS
-    list_files_in_spiffs();
-
-    // Initialize board peripherals and display
     bsp_display_start();
-
-    // Log heap space before LVGL initialization
-    ESP_LOGI("Heap Info", "Total Free Heap: %d bytes", heap_caps_get_free_size(MALLOC_CAP_8BIT));
-    ESP_LOGI("Heap Info", "Minimum Free Heap: %d bytes", heap_caps_get_minimum_free_size(MALLOC_CAP_8BIT));
 
     ESP_LOGI(TAG, "Display LVGL demo");
     ui_obj_to_encoder_init();
     lv_create_home(&boot_Layer);
     lv_create_clock(&clock_screen_layer, TIME_ENTER_CLOCK_2MIN);
     bsp_display_unlock();
+
     vTaskDelay(pdMS_TO_TICKS(500));
     bsp_display_backlight_on();
 
-    // Initialize board components
     bsp_board_init();
     audio_play_start();
 
-    // Initialize event group for voice announcements
-    event_group = xEventGroupCreate();
-    if (!event_group) {
-        ESP_LOGE(TAG, "Failed to create event group");
-        return;
-    }
-
-    // Start the voice announcement task
-    BaseType_t task_created = xTaskCreate(
-        voice_announcement_task,
-        "Voice Announcement Task",
-        TASK_STACK_SIZE,
-        NULL,
-        TASK_PRIORITY,
-        NULL
-    );
-    if (task_created != pdPASS) {
-        ESP_LOGE(TAG, "Failed to create voice announcement task");
-        return;
-    }
-
-    // Optional: Start memory monitoring (if enabled)
 #if MEMORY_MONITOR
     sys_monitor_start();
 #endif
-
-
-    // Log stack usage of all tasks
-    TaskStatus_t* tasks;
-    UBaseType_t num_tasks;
-    num_tasks = uxTaskGetNumberOfTasks();
-    tasks = pvPortMalloc(num_tasks * sizeof(TaskStatus_t));
-
-    if (tasks) {
-        num_tasks = uxTaskGetSystemState(tasks, num_tasks, NULL);
-        for (int i = 0; i < num_tasks; i++) {
-            ESP_LOGI("Task Info", "Task: %s, Stack High Water Mark: %d",
-                tasks[i].pcTaskName, tasks[i].usStackHighWaterMark);
-        }
-        vPortFree(tasks);
-    }
-
-    ESP_LOGI(TAG, "System initialized successfully!");
 }

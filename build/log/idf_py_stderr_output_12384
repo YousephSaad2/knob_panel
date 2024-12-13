@@ -1,0 +1,22 @@
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository: C:/Espressif/frameworks/esp-idf-v5.3.1/components/openthread/openthread/../../../.git/modules/components/openthread/openthread
+CMake Error at C:/Espressif/frameworks/esp-idf-v5.3.1/tools/cmake/component.cmake:480 (add_library):
+  Cannot find source file:
+
+    C:/Espressif/frameworks/esp-idf-v5.3.1/esp-dev-kits-master/esp32-c3-lcdkit/examples/knob_panel/main/voice_announcement.c
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+  .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+Call Stack (most recent call first):
+  main/CMakeLists.txt:7 (idf_component_register)
+
+
+CMake Error at C:/Espressif/frameworks/esp-idf-v5.3.1/tools/cmake/component.cmake:480 (add_library):
+  No SOURCES given to target: __idf_main
+Call Stack (most recent call first):
+  main/CMakeLists.txt:7 (idf_component_register)
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
+ninja: error: rebuilding 'build.ninja': subcommand failed

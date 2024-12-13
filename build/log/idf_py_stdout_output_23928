@@ -1,0 +1,2147 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c728
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x18a8
+load:0x403cc710,len:0xd68
+load:0x403ce710,len:0x2f40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Dec 12 2024 19:31:45[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (28) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : QIO[0m
+[0;32mI (43) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 fctry            WiFi data        01 02 00010000 00006000[0m
+[0;32mI (87) boot:  3 factory          factory app      00 00 00020000 00352000[0m
+[0;32mI (94) boot:  4 storage          Unknown data     01 82 00372000 00026000[0m
+[0;32mI (101) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00020020 vaddr=3c080020 size=2755b8h (2577848) map[0m
+[0;32mI (484) esp_image: segment 1: paddr=002955e0 vaddr=3fc8d000 size=01f88h (  8072) load[0m
+[0;32mI (486) esp_image: segment 2: paddr=00297570 vaddr=40380000 size=08aa8h ( 35496) load[0m
+[0;32mI (496) esp_image: segment 3: paddr=002a0020 vaddr=42000020 size=7e3b4h (517044) map[0m
+[0;32mI (573) esp_image: segment 4: paddr=0031e3dc vaddr=40388aa8 size=044e0h ( 17632) load[0m
+[0;32mI (576) esp_image: segment 5: paddr=003228c4 vaddr=50000200 size=00004h (     4) load[0m
+[0;32mI (582) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (585) boot: Disabling RNG early entropy source...[0m
+[0;32mI (602) cpu_start: Unicore app[0m
+D (602) cpu_start: Pro cpu up[0m
+D (610) clk: RTC_SLOW_CLK calibration value: 3275827[0m
+D (615) cpu_start: calling init function: 0x42000236 on core: 0[0m
+D (616) cpu_start: calling init function: 0x4200094e on core: 0[0m
+[0;32mI (616) cpu_start: Pro cpu start user code[0m
+[0;32mI (621) cpu_start: cpu freq: 160000000 Hz[0m
+D (626) cpu_start: calling init function: 0x420000e0 on core: 0[0m
+[0;32mI (632) app_init: Application information:[0m
+[0;32mI (636) app_init: Project name:     c3_knob_panel[0m
+[0;32mI (642) app_init: App version:      f6bb581-dirty[0m
+[0;32mI (647) app_init: Compile time:     Dec 12 2024 20:48:12[0m
+[0;32mI (653) app_init: ELF file SHA256:  89448d573...[0m
+[0;32mI (658) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+D (664) cpu_start: calling init function: 0x42000248 on core: 0[0m
+[0;32mI (670) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (675) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (680) efuse_init: Chip rev:         v0.4[0m
+D (685) cpu_start: calling init function: 0x420028bc on core: 0[0m
+D (691) memory_layout: Checking 5 reserved memory ranges:[0m
+D (696) memory_layout: Reserved memory range 0x3fc80000 - 0x3fc8d000[0m
+D (703) memory_layout: Reserved memory range 0x3fc8d000 - 0x3fc98900[0m
+D (709) memory_layout: Reserved memory range 0x3fcdf060 - 0x3fce0000[0m
+D (715) memory_layout: Reserved memory range 0x50000000 - 0x50000204[0m
+D (722) memory_layout: Reserved memory range 0x50001fe8 - 0x50002000[0m
+D (728) memory_layout: Building list of available memory regions:[0m
+D (734) memory_layout: Available memory region 0x3fc98900 - 0x3fca0000[0m
+D (741) memory_layout: Available memory region 0x3fca0000 - 0x3fcc0000[0m
+D (748) memory_layout: Available memory region 0x3fcc0000 - 0x3fcdc710[0m
+D (754) memory_layout: Available memory region 0x3fcdc710 - 0x3fcdf060[0m
+D (761) memory_layout: Available memory region 0x50000204 - 0x50001fe8[0m
+[0;32mI (767) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (775) heap_init: New heap initialised at 0x3fc98900[0m
+[0;32mI (780) heap_init: At 3FC98900 len 00027700 (157 KiB): RAM[0m
+D (786) heap_init: New heap initialised at 0x3fcc0000[0m
+[0;32mI (791) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (798) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+D (805) heap_init: New heap initialised at 0x50000204[0m
+[0;32mI (810) heap_init: At 50000204 len 00001DE4 (7 KiB): RTCRAM[0m
+D (816) cpu_start: calling init function: 0x420087ce on core: 0[0m
+D (822) cpu_start: calling init function: 0x42007dc4 on core: 0[0m
+D (828) cpu_start: calling init function: 0x420009c6 on core: 0[0m
+D (835) intr_alloc: Connected src 27 to int 2 (cpu 0)[0m
+D (839) cpu_start: calling init function: 0x420009d4 on core: 0[0m
+D (845) cpu_start: calling init function: 0x42009c0e on core: 0[0m
+D (851) cpu_start: calling init function: 0x4200ac3a on core: 0[0m
+D (857) cpu_start: calling init function: 0x4200ae6a on core: 0[0m
+D (863) cpu_start: calling init function: 0x42007e62 on core: 0[0m
+D (870) cpu_start: calling init function: 0x420083a6 on core: 0[0m
+D (875) cpu_start: calling init function: 0x420009e4 on core: 0[0m
+D (881) spi_flash: trying chip: issi[0m
+D (885) spi_flash: trying chip: gd[0m
+D (889) spi_flash: trying chip: mxic[0m
+D (892) spi_flash: trying chip: winbond[0m
+D (896) spi_flash: trying chip: boya[0m
+D (900) spi_flash: trying chip: th[0m
+D (903) spi_flash: trying chip: generic[0m
+[0;32mI (907) spi_flash: detected chip: generic[0m
+[0;32mI (912) spi_flash: flash io: qio[0m
+D (916) chip_generic: set_io_mode: status before 0x200[0m
+D (921) cpu_start: calling init function: 0x42000320 on core: 0[0m
+D (927) cpu_start: calling init function: 0x4206ee04[0m
+D (932) cpu_start: calling init function: 0x4206ed88[0m
+D (937) cpu_start: calling init function: 0x4206e8cc[0m
+D (942) cpu_start: calling init function: 0x4206e7a6[0m
+D (947) efuse: In EFUSE_BLK2__DATA4_REG is used 2 bits starting with 0 bit[0m
+D (954) efuse: In EFUSE_BLK2__DATA5_REG is used 10 bits starting with 18 bit[0m
+D (961) cpu_start: calling init function: 0x4206e764[0m
+D (966) cpu_start: calling init function: 0x4206b57e[0m
+D (971) efuse: In EFUSE_BLK2__DATA4_REG is used 2 bits starting with 0 bit[0m
+D (978) efuse: In EFUSE_BLK2__DATA4_REG is used 10 bits starting with 20 bit[0m
+D (985) efuse: In EFUSE_BLK2__DATA4_REG is used 2 bits starting with 0 bit[0m
+D (992) efuse: In EFUSE_BLK2__DATA4_REG is used 2 bits starting with 30 bit[0m
+D (999) efuse: In EFUSE_BLK2__DATA5_REG is used 8 bits starting with 0 bit[0m
+D (1006) efuse: In EFUSE_BLK2__DATA4_REG is used 2 bits starting with 0 bit[0m
+D (1013) efuse: In EFUSE_BLK2__DATA5_REG is used 10 bits starting with 8 bit[0m
+D (1020) efuse: In EFUSE_BLK2__DATA4_REG is used 2 bits starting with 0 bit[0m
+D (1027) efuse: In EFUSE_BLK2__DATA5_REG is used 10 bits starting with 18 bit[0m
+D (1035) efuse: In EFUSE_BLK2__DATA4_REG is used 2 bits starting with 0 bit[0m
+D (1042) efuse: In EFUSE_BLK2__DATA4_REG is used 10 bits starting with 20 bit[0m
+D (1049) efuse: In EFUSE_BLK2__DATA4_REG is used 2 bits starting with 0 bit[0m
+D (1056) efuse: In EFUSE_BLK2__DATA4_REG is used 2 bits starting with 30 bit[0m
+D (1063) efuse: In EFUSE_BLK2__DATA5_REG is used 8 bits starting with 0 bit[0m
+D (1070) efuse: In EFUSE_BLK2__DATA4_REG is used 2 bits starting with 0 bit[0m
+D (1077) efuse: In EFUSE_BLK2__DATA5_REG is used 10 bits starting with 8 bit[0m
+D (1084) cpu_start: calling init function: 0x4038513a[0m
+D (1089) cpu_start: calling init function: 0x42000fde[0m
+D (1094) cpu_start: calling init function: 0x4205c2d8 on core: 0[0m
+D (1101) intr_alloc: Connected src 39 to int 3 (cpu 0)[0m
+D (1106) cpu_start: calling init function: 0x42001e5e on core: 0[0m
+D (1112) cpu_start: calling init function: 0x4200635a on core: 0[0m
+[0;32mI (1118) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1125) sleep: Enable automatic switching of GPIO sleep configuration[0m
+D (1132) cpu_start: calling init function: 0x42000a26 on core: 0[0m
+D (1138) cpu_start: calling init function: 0x4200a77c on core: 0[0m
+D (1144) cpu_start: calling init function: 0x42000a34 on core: 0[0m
+D (1150) intr_alloc: Connected src 50 to int 4 (cpu 0)[0m
+D (1155) app_start: Starting scheduler on CPU0[0m
+D (1160) intr_alloc: Connected src 37 to int 5 (cpu 0)[0m
+[0;32mI (1160) main_task: Started on CPU0[0m
+D (1164) heap_init: New heap initialised at 0x3fcdc710[0m
+D (1169) intr_alloc: Connected src 33 to int 7 (cpu 0)[0m
+[0;32mI (1174) main_task: Calling app_main()[0m
+[0;32mI (1179) main: Compile time: Dec 12 2024 21:03:55[0m
+D (1188) nvs: nvs_open_from_partition sys_param 0[0m
+D (1189) nvs: nvs_get_str_or_blob param[0m
+D (1193) nvs: nvs_close 1[0m
+[0;32mI (1196) LVGL: Starting LVGL task[0m
+D (1200) ledc: Using clock source 4 (in slow mode), divisor: 0xfa0[0m
+D (1206) ledc: In slow speed mode, global clk set: 4[0m
+D (1211) ledc: LEDC_PWM CHANNEL 1|GPIO 05|Duty 0000|Time 1[0m
+D (1216) ledc: Using clock source 4 (in slow mode), divisor: 0xfa0[0m
+D (1223) ledc: In slow speed mode, global clk set: 4[0m
+D (1228) ledc: LEDC_PWM CHANNEL 1|GPIO 05|Duty 0000|Time 1[0m
+D (1233) ESP32-C3-LCDKit: Initialize SPI bus[0m
+D (1238) gdma: new group (0) at 0x3fc9e894[0m
+D (1242) gdma: new pair (0,0) at 0x3fc9e910[0m
+D (1246) gdma: new tx channel (0,0) at 0x3fc9e85c[0m
+D (1251) gdma: new rx channel (0,0) at 0x3fc9e930[0m
+D (1256) spi: SPI2 use gpio matrix.[0m
+D (1259) ESP32-C3-LCDKit: Install panel IO[0m
+D (1263) intr_alloc: Connected src 19 to int 8 (cpu 0)[0m
+D (1268) spi_hal: eff: 80000, limit: 80000k(/0), 0 dummy, -1 delay[0m
+D (1275) spi_master: SPI2: New device added to CS0, effective clock: 80000000 Hz[0m
+[0;32mI (1283) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+D (1292) lcd_panel.io.spi: new spi lcd panel io @0x3fc9eaa8, max_trans_bytes: 32768[0m
+D (1299) ESP32-C3-LCDKit: Install LCD driver[0m
+D (1303) gc9a01: new gc9a01 panel @0x3fc9f0c8[0m
+[0;32mI (1308) gc9a01: LCD panel create success, version: 1.2.0[0m
+D (1315) spi_master: device0 locked the bus[0m
+D (1318) spi_master: device0 release bus[0m
+D (1342) spi_master: device0 locked the bus[0m
+D (1342) spi_master: device0 release bus[0m
+D (1442) spi_master: device0 locked the bus[0m
+D (1442) spi_master: device0 release bus[0m
+D (1442) spi_master: device0 locked the bus[0m
+D (1443) spi_master: device0 release bus[0m
+D (1447) spi_master: device0 locked the bus[0m
+D (1451) spi_master: device0 release bus[0m
+D (1455) spi_master: device0 locked the bus[0m
+D (1460) spi_master: device0 release bus[0m
+D (1463) spi_master: device0 locked the bus[0m
+D (1468) spi_master: device0 release bus[0m
+D (1472) spi_master: device0 locked the bus[0m
+D (1476) spi_master: device0 release bus[0m
+D (1480) spi_master: device0 locked the bus[0m
+D (1484) spi_master: device0 release bus[0m
+D (1488) spi_master: device0 locked the bus[0m
+D (1492) spi_master: device0 release bus[0m
+D (1496) spi_master: device0 locked the bus[0m
+D (1501) spi_master: device0 release bus[0m
+D (1505) spi_master: device0 locked the bus[0m
+D (1509) spi_master: device0 release bus[0m
+D (1513) spi_master: device0 locked the bus[0m
+D (1517) spi_master: device0 release bus[0m
+D (1521) spi_master: device0 locked the bus[0m
+D (1525) spi_master: device0 release bus[0m
+D (1529) spi_master: device0 locked the bus[0m
+D (1534) spi_master: device0 release bus[0m
+D (1538) spi_master: device0 locked the bus[0m
+D (1542) spi_master: device0 release bus[0m
+D (1546) spi_master: device0 locked the bus[0m
+D (1550) spi_master: device0 release bus[0m
+D (1554) spi_master: device0 locked the bus[0m
+D (1558) spi_master: device0 release bus[0m
+D (1562) spi_master: device0 locked the bus[0m
+D (1567) spi_master: device0 release bus[0m
+D (1571) spi_master: device0 locked the bus[0m
+D (1575) spi_master: device0 release bus[0m
+D (1579) spi_master: device0 locked the bus[0m
+D (1583) spi_master: device0 release bus[0m
+D (1587) spi_master: device0 locked the bus[0m
+D (1591) spi_master: device0 release bus[0m
+D (1595) spi_master: device0 locked the bus[0m
+D (1600) spi_master: device0 release bus[0m
+D (1604) spi_master: device0 locked the bus[0m
+D (1608) spi_master: device0 release bus[0m
+D (1612) spi_master: device0 locked the bus[0m
+D (1616) spi_master: device0 release bus[0m
+D (1620) spi_master: device0 locked the bus[0m
+D (1624) spi_master: device0 release bus[0m
+D (1628) spi_master: device0 locked the bus[0m
+D (1633) spi_master: device0 release bus[0m
+D (1637) spi_master: device0 locked the bus[0m
+D (1641) spi_master: device0 release bus[0m
+D (1645) spi_master: device0 locked the bus[0m
+D (1649) spi_master: device0 release bus[0m
+D (1653) spi_master: device0 locked the bus[0m
+D (1657) spi_master: device0 release bus[0m
+D (1661) spi_master: device0 locked the bus[0m
+D (1666) spi_master: device0 release bus[0m
+D (1670) spi_master: device0 locked the bus[0m
+D (1674) spi_master: device0 release bus[0m
+D (1678) spi_master: device0 locked the bus[0m
+D (1682) spi_master: device0 release bus[0m
+D (1686) spi_master: device0 locked the bus[0m
+D (1690) spi_master: device0 release bus[0m
+D (1694) spi_master: device0 locked the bus[0m
+D (1699) spi_master: device0 release bus[0m
+D (1703) spi_master: device0 locked the bus[0m
+D (1707) spi_master: device0 release bus[0m
+D (1711) spi_master: device0 locked the bus[0m
+D (1715) spi_master: device0 release bus[0m
+D (1719) spi_master: device0 locked the bus[0m
+D (1723) spi_master: device0 release bus[0m
+D (1727) spi_master: device0 locked the bus[0m
+D (1732) spi_master: device0 release bus[0m
+D (1736) spi_master: device0 locked the bus[0m
+D (1740) spi_master: device0 release bus[0m
+D (1744) spi_master: device0 locked the bus[0m
+D (1748) spi_master: device0 release bus[0m
+D (1752) spi_master: device0 locked the bus[0m
+D (1756) spi_master: device0 release bus[0m
+D (1760) spi_master: device0 locked the bus[0m
+D (1765) spi_master: device0 release bus[0m
+D (1769) spi_master: device0 locked the bus[0m
+D (1773) spi_master: device0 release bus[0m
+D (1777) spi_master: device0 locked the bus[0m
+D (1781) spi_master: device0 release bus[0m
+D (1785) spi_master: device0 locked the bus[0m
+D (1789) spi_master: device0 release bus[0m
+D (1793) gc9a01: send init commands success[0m
+D (1798) spi_master: device0 locked the bus[0m
+D (1802) spi_master: device0 release bus[0m
+D (1806) spi_master: device0 locked the bus[0m
+D (1810) spi_master: device0 release bus[0m
+D (1814) spi_master: device0 locked the bus[0m
+D (1818) spi_master: device0 release bus[0m
+D (1822) spi_master: device0 locked the bus[0m
+D (1827) spi_master: device0 release bus[0m
+D (1831) ESP32-C3-LCDKit: Add LCD screen[0m
+D (1835) LVGL: Register display driver to LVGL[0m
+[0;32mI (1842) gpio: GPIO[10]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1849) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1858) Knob: Iot Knob Config Succeed, encoder A:10, encoder B:6, direction:0, Version: 0.1.5[0m
+[0;32mI (1867) button: IoT Button Version: 3.4.0[0m
+[0;32mI (1872) gpio: GPIO[9]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1882) main: Display LVGL demo[0m
+[0;32mI (1885) LVGL_PUB: add group for encoder[0m
+[0;32mI (1890) lvgl_basic: Enter home page[0m
+[0;32mI (1900) lvgl_basic: Init clock time ok, 0x3fc91390[0m
+D (2206) spi_master: device0 locked the bus[0m
+D (2206) spi_master: device0 release bus[0m
+D (2207) spi_master: device0 locked the bus[0m
+D (2207) spi_master: device0 release bus[0m
+D (2211) spi_master: device0 locked the bus[0m
+D (2216) spi_master: device0 release bus[0m
+D (2235) spi_master: device0 locked the bus[0m
+D (2235) spi_master: device0 release bus[0m
+D (2236) spi_master: device0 locked the bus[0m
+D (2237) spi_master: device0 release bus[0m
+D (2241) spi_master: device0 locked the bus[0m
+D (2245) spi_master: device0 release bus[0m
+D (2264) spi_master: device0 locked the bus[0m
+D (2264) spi_master: device0 release bus[0m
+D (2265) spi_master: device0 locked the bus[0m
+D (2266) spi_master: device0 release bus[0m
+D (2270) spi_master: device0 locked the bus[0m
+D (2274) spi_master: device0 release bus[0m
+D (2297) spi_master: device0 locked the bus[0m
+D (2298) spi_master: device0 release bus[0m
+D (2298) spi_master: device0 locked the bus[0m
+D (2299) spi_master: device0 release bus[0m
+D (2303) spi_master: device0 locked the bus[0m
+D (2307) spi_master: device0 release bus[0m
+D (2329) spi_master: device0 locked the bus[0m
+D (2330) spi_master: device0 release bus[0m
+D (2330) spi_master: device0 locked the bus[0m
+D (2331) spi_master: device0 release bus[0m
+D (2335) spi_master: device0 locked the bus[0m
+D (2339) spi_master: device0 release bus[0m
+D (2361) spi_master: device0 locked the bus[0m
+D (2362) spi_master: device0 release bus[0m
+D (2362) spi_master: device0 locked the bus[0m
+D (2363) spi_master: device0 release bus[0m
+D (2367) spi_master: device0 locked the bus[0m
+D (2371) spi_master: device0 release bus[0m
+D (2389) spi_master: device0 locked the bus[0m
+D (2390) spi_master: device0 release bus[0m
+D (2390) spi_master: device0 locked the bus[0m
+D (2391) spi_master: device0 release bus[0m
+D (2395) spi_master: device0 locked the bus[0m
+D (2399) spi_master: device0 release bus[0m
+D (2403) ESP32-C3-LCDKit: Setting LCD backlight: 100%[0m
+[0;32mI (2408) ESP32-C3-LCDKit: BLINK_GPIO setting 8[0m
+D (2413) rmt: new group(0) at 0x3fcbb7f8, occupy=fffffff0[0m
+D (2422) spi_master: device0 locked the bus[0m
+D (2423) spi_master: device0 release bus[0m
+D (2427) spi_master: device0 locked the bus[0m
+D (2431) spi_master: device0 release bus[0m
+D (2435) spi_master: device0 locked the bus[0m
+D (2440) spi_master: device0 release bus[0m
+D (2444) intr_aD (2457) spi_master: device0 locked the bus[0m
+D (2458) spi_master: device0 release bus[0m
+D (2458) spi_master: device0 locked the bus[0m
+D (2459) spi_master: device0 release bus[0m
+D (2463) spi_master: device0 locked the bus[0m
+D (2467) spi_master: device0 release bus[0m
+lloc: Connected src 28 to int 9 (cpu 0)[0m
+D (2475) rmt: group clock resolution:80000000[0m
+D (2485) spi_master: device0 locked the bus[0m
+D (2486) spi_master: device0 release bus[0m
+D (2488) spi_master: device0 locked the bus[0m
+D (2492) spi_master: device0 release bus[0m
+D (2496) spi_master: device0 locked the bus[0m
+D (2501) spi_master: device0 release bus[0m
+[0;32mI (2505) gpio: GPIO[8]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+D (2519) spi_master: device0 locked the bus[0m
+D (2520) spi_master: device0 release bus[0m
+D (2524) spi_master: device0 locked the bus[0m
+D (2528) spi_master: device0 release bus[0m
+D (2532) spi_master: device0 locked the bus[0m
+D (2537) spi_master: device0 release bus[0m
+D (2541) rmt: new tx channel(0,0) at 0x3fcbb544, gpio=8, res=10000000Hz, hw_mem_base=0x60016400, dma_mem_base=0x0, dma_nodes=0x0, ping_pong_size=24, queue_depth=4[0m
+D (2555) spi_master: device0 locked the bus[0m
+D (2562) spi_master: device0 release bus[0m
+D (2566) spi_master: device0 locked the bus[0m
+D (2570) spi_master: device0 release bus[0m
+D (2574) spi_master: device0 locked the bus[0m
+D (2578) spi_master: device0 release bus[0m
+D (2597) spi_master: device0 locked the bus[0m
+D (2597) spi_master: device0 release bus[0m
+D (2597) spi_master: device0 locked the bus[0m
+D (2598) spi_master: device0 release bus[0m
+D (2602) spi_master: device0 locked the bus[0m
+D (2607) spi_master: device0 release bus[0m
+D (2611) rmt: new bytes encoder @0x3fcbb88c[0m
+D (2625) spi_master: device0 locked the bus[0m
+D (2626) spi_master: device0 release bus[0m
+D (2626) spi_master: device0 locked the bus[0m
+D (2630) spi_master: device0 release bus[0m
+D (2634) spi_master: device0 locked the bus[0m
+D (2638) spi_master: device0 release bus[0m
+D (2642) rmt: new copy encoder @0x3fcbb8b0[0m
+D (2656) spi_master: device0 locked the bus[0m
+D (2657) spi_master: device0 release bus[0m
+D (2658) spi_master: device0 locked the bus[0m
+D (2662) spi_master: device0 release bus[0m
+D (2665) spi_master: device0 locked the bus[0m
+D (2670) spi_master: device0 release bus[0m
+D (2688) spi_master: device0 locked the bus[0m
+D (2689) spi_master: device0 release bus[0m
+D (2689) spi_master: device0 locked the bus[0m
+D (2690) spi_master: device0 release bus[0m
+D (2694) spi_master: device0 locked the bus[0m
+D (2698) spi_master: device0 release bus[0m
+[0;32mI (2708) ESP32-C3-LCDKit: Partition size: total: 135791, used: 105671[0m
+D (2717) spi_master: device0 locked the bus[0m
+D (2718) spi_master: device0 release bus[0m
+D (2718) spi_master: device0 locked the bus[0m
+D (2722) spi_master: device0 release bus[0m
+D (2726) spi_master: device0 locked the bus[0m
+D (2730) spi_master: device0 release bus[0m
+D (2734) i2s_common: tx channel is registered on I2S0 successfully[0m
+D (2749) spi_master: device0 locked the bus[0m
+D (2750) spi_master: device0 release bus[0m
+D (2752) spi_master: device0 locked the bus[0m
+D (2757) spi_master: device0 release bus[0m
+D (2761) spi_master: device0 locked the bus[0m
+D (2765) spi_master: device0 release bus[0m
+D (2769) i2s_common: DMA malloc info: dma_desc_num = 6, dma_desc_buf_size = dma_frame_num * slot_num * data_bit_width = 480[0m
+D (2785) i2s_pdm: Clock division info: [sclk] 160000000 Hz [mdiv] 3 [mclk] 45158400 Hz [bdiv] 8 [bclk] 5644800 Hz[0m
+D (2794) gdma: new pair (0,1) at 0x3fcbd190[0m
+D (2798) gdma: new tx channel (0,1) at 0x3fcbd158[0m
+D (2803) intr_alloc: Connected src 45 to int D (2784) spi_maste9 (cr: device0 locked the bus[0m
+pu 0)[0m
+D (2811) spi_master: device0 release bus[0m
+D (2816) spi_master: device0 locked the bus[0m
+D (2820) spi_master: device0 release bus[0m
+D (2824) spi_master: device0 locked the bus[0m
+D (2814) gdma: install interrupt service for tx channel (0,1)[0m
+D (2830) spi_master: device0 release bus[0m
+D (2838) i2s_pdm: The tx channel on I2S0 has been initialized to PDM TX mode successfully[0m
+D (2848) spi_master: device0 locked the bus[0m
+D (2851) spi_master: device0 release bus[0m
+D (2855) spi_master: device0 locked the bus[0m
+D (2859) spi_master: device0 release bus[0m
+D (2863) spi_master: device0 locked the bus[0m
+D (2867) spi_master: device0 release bus[0m
+D (2871) i2s_common: i2s tx channel enabled[0m
+D (2886) spi_master: device0 locked the bus[0m
+D (2887) spi_master: device0 release bus[0m
+D (2888) spi_master: device0 locked the bus[0m
+D (2892) spi_master: device0 release bus[0m
+D (2896) spi_master: device0 locked the bus[0m
+D (2900) spi_master: device0 release bus[0m
+D (2919) spi_master: device0 locked the bus[0m
+D (2920) spi_master: device0 release bus[0m
+D (2920) spi_master: device0 locked the bus[0m
+D (2921) spi_master: device0 release bus[0m
+D (2925) spi_master: device0 locked the bus[0m
+D (2929) spi_master: device0 release bus[0m
+[0;32mI (2936) main_task: Returned from app_main()[0m
+D (2949) spi_master: device0 locked the bus[0m
+D (2949) spi_master: device0 release bus[0m
+D (2950) spi_master: device0 locked the bus[0m
+D (2951) spi_master: device0 release bus[0m
+D (2955) spi_master: device0 locked the bus[0m
+D (2959) spi_master: device0 release bus[0m
+D (2979) spi_master: device0 locked the bus[0m
+D (2979) spi_master: device0 release bus[0m
+D (2979) spi_master: device0 locked the bus[0m
+D (2980) spi_master: device0 release bus[0m
+D (2984) spi_master: device0 locked the bus[0m
+D (2989) spi_master: device0 release bus[0m
+D (3008) spi_master: device0 locked the bus[0m
+D (3009) spi_master: device0 release bus[0m
+D (3009) spi_master: device0 locked the bus[0m
+D (3010) spi_master: device0 release bus[0m
+D (3014) spi_master: device0 locked the bus[0m
+D (3018) spi_master: device0 release bus[0m
+D (3038) spi_master: device0 locked the bus[0m
+D (3039) spi_master: device0 release bus[0m
+D (3039) spi_master: device0 locked the bus[0m
+D (3040) spi_master: device0 release bus[0m
+D (3044) spi_master: device0 locked the bus[0m
+D (3048) spi_master: device0 release bus[0m
+D (3068) spi_master: device0 locked the bus[0m
+D (3068) spi_master: device0 release bus[0m
+D (3069) spi_master: device0 locked the bus[0m
+D (3070) spi_master: device0 release bus[0m
+D (3074) spi_master: device0 locked the bus[0m
+D (3078) spi_master: device0 release bus[0m
+D (3098) spi_master: device0 locked the bus[0m
+D (3099) spi_master: device0 release bus[0m
+D (3099) spi_master: device0 locked the bus[0m
+D (3100) spi_master: device0 release bus[0m
+D (3104) spi_master: device0 locked the bus[0m
+D (3108) spi_master: device0 release bus[0m
+D (3129) spi_master: device0 locked the bus[0m
+D (3129) spi_master: device0 release bus[0m
+D (3129) spi_master: device0 locked the bus[0m
+D (3130) spi_master: device0 release bus[0m
+D (3134) spi_master: device0 locked the bus[0m
+D (3139) spi_master: device0 release bus[0m
+D (3159) spi_master: device0 locked the bus[0m
+D (3160) spi_master: device0 release bus[0m
+D (3160) spi_master: device0 locked the bus[0m
+D (3161) spi_master: device0 release bus[0m
+D (3165) spi_master: device0 locked the bus[0m
+D (3169) spi_master: device0 release bus[0m
+D (3190) spi_master: device0 locked the bus[0m
+D (3190) spi_master: device0 release bus[0m
+D (3191) spi_master: device0 locked the bus[0m
+D (3192) spi_master: device0 release bus[0m
+D (3196) spi_master: device0 locked the bus[0m
+D (3200) spi_master: device0 release bus[0m
+D (3221) spi_master: device0 locked the bus[0m
+D (3221) spi_master: device0 release bus[0m
+D (3222) spi_master: device0 locked the bus[0m
+D (3223) spi_master: device0 release bus[0m
+D (3227) spi_master: device0 locked the bus[0m
+D (3231) spi_master: device0 release bus[0m
+D (3252) spi_master: device0 locked the bus[0m
+D (3253) spi_master: device0 release bus[0m
+D (3253) spi_master: device0 locked the bus[0m
+D (3254) spi_master: device0 release bus[0m
+D (3258) spi_master: device0 locked the bus[0m
+D (3262) spi_master: device0 release bus[0m
+D (3283) spi_master: device0 locked the bus[0m
+D (3284) spi_master: device0 release bus[0m
+D (3284) spi_master: device0 locked the bus[0m
+D (3285) spi_master: device0 release bus[0m
+D (3289) spi_master: device0 locked the bus[0m
+D (3293) spi_master: device0 release bus[0m
+D (3315) spi_master: device0 locked the bus[0m
+D (3316) spi_master: device0 release bus[0m
+D (3316) spi_master: device0 locked the bus[0m
+D (3317) spi_master: device0 release bus[0m
+D (3321) spi_master: device0 locked the bus[0m
+D (3325) spi_master: device0 release bus[0m
+D (3347) spi_master: device0 locked the bus[0m
+D (3347) spi_master: device0 release bus[0m
+D (3348) spi_master: device0 locked the bus[0m
+D (3349) spi_master: device0 release bus[0m
+D (3352) spi_master: device0 locked the bus[0m
+D (3357) spi_master: device0 release bus[0m
+D (3379) spi_master: device0 locked the bus[0m
+D (3379) spi_master: device0 release bus[0m
+D (3380) spi_master: device0 locked the bus[0m
+D (3381) spi_master: device0 release bus[0m
+D (3385) spi_master: device0 locked the bus[0m
+D (3389) spi_master: device0 release bus[0m
+D (3411) spi_master: device0 locked the bus[0m
+D (3412) spi_master: device0 release bus[0m
+D (3412) spi_master: device0 locked the bus[0m
+D (3413) spi_master: device0 release bus[0m
+D (3417) spi_master: device0 locked the bus[0m
+D (3421) spi_master: device0 release bus[0m
+D (3444) spi_master: device0 locked the bus[0m
+D (3444) spi_master: device0 release bus[0m
+D (3444) spi_master: device0 locked the bus[0m
+D (3445) spi_master: device0 release bus[0m
+D (3449) spi_master: device0 locked the bus[0m
+D (3454) spi_master: device0 release bus[0m
+D (3477) spi_master: device0 locked the bus[0m
+D (3477) spi_master: device0 release bus[0m
+D (3477) spi_master: device0 locked the bus[0m
+D (3478) spi_master: device0 release bus[0m
+D (3482) spi_master: device0 locked the bus[0m
+D (3487) spi_master: device0 release bus[0m
+D (3510) spi_master: device0 locked the bus[0m
+D (3510) spi_master: device0 release bus[0m
+D (3510) spi_master: device0 locked the bus[0m
+D (3511) spi_master: device0 release bus[0m
+D (3515) spi_master: device0 locked the bus[0m
+D (3519) spi_master: device0 release bus[0m
+D (3543) spi_master: device0 locked the bus[0m
+D (3543) spi_master: device0 release bus[0m
+D (3543) spi_master: device0 locked the bus[0m
+D (3544) spi_master: device0 release bus[0m
+D (3548) spi_master: device0 locked the bus[0m
+D (3553) spi_master: device0 release bus[0m
+D (3576) spi_master: device0 locked the bus[0m
+D (3577) spi_master: device0 release bus[0m
+D (3577) spi_master: device0 locked the bus[0m
+D (3578) spi_master: device0 release bus[0m
+D (3582) spi_master: device0 locked the bus[0m
+D (3586) spi_master: device0 release bus[0m
+D (3610) spi_master: device0 locked the bus[0m
+D (3610) spi_master: device0 release bus[0m
+D (3611) spi_master: device0 locked the bus[0m
+D (3612) spi_master: device0 release bus[0m
+D (3616) spi_master: device0 locked the bus[0m
+D (3620) spi_master: device0 release bus[0m
+D (3644) spi_master: device0 locked the bus[0m
+D (3644) spi_master: device0 release bus[0m
+D (3645) spi_master: device0 locked the bus[0m
+D (3646) spi_master: device0 release bus[0m
+D (3650) spi_master: device0 locked the bus[0m
+D (3654) spi_master: device0 release bus[0m
+D (3678) spi_master: device0 locked the bus[0m
+D (3678) spi_master: device0 release bus[0m
+D (3679) spi_master: device0 locked the bus[0m
+D (3679) spi_master: device0 release bus[0m
+D (3683) spi_master: device0 locked the bus[0m
+D (3688) spi_master: device0 release bus[0m
+D (3712) spi_master: device0 locked the bus[0m
+D (3713) spi_master: device0 release bus[0m
+D (3713) spi_master: device0 locked the bus[0m
+D (3714) spi_master: device0 release bus[0m
+D (3718) spi_master: device0 locked the bus[0m
+D (3722) spi_master: device0 release bus[0m
+D (3747) spi_master: device0 locked the bus[0m
+D (3747) spi_master: device0 release bus[0m
+D (3748) spi_master: device0 locked the bus[0m
+D (3749) spi_master: device0 release bus[0m
+D (3752) spi_master: device0 locked the bus[0m
+D (3757) spi_master: device0 release bus[0m
+D (3782) spi_master: device0 locked the bus[0m
+D (3782) spi_master: device0 release bus[0m
+D (3782) spi_master: device0 locked the bus[0m
+D (3783) spi_master: device0 release bus[0m
+D (3787) spi_master: device0 locked the bus[0m
+D (3792) spi_master: device0 release bus[0m
+D (3817) spi_master: device0 locked the bus[0m
+D (3817) spi_master: device0 release bus[0m
+D (3817) spi_master: device0 locked the bus[0m
+D (3818) spi_master: device0 release bus[0m
+D (3822) spi_master: device0 locked the bus[0m
+D (3827) spi_master: device0 release bus[0m
+D (3852) spi_master: device0 locked the bus[0m
+D (3852) spi_master: device0 release bus[0m
+D (3852) spi_master: device0 locked the bus[0m
+D (3853) spi_master: device0 release bus[0m
+D (3857) spi_master: device0 locked the bus[0m
+D (3862) spi_master: device0 release bus[0m
+D (3887) spi_master: device0 locked the bus[0m
+D (3887) spi_master: device0 release bus[0m
+D (3887) spi_master: device0 locked the bus[0m
+D (3888) spi_master: device0 release bus[0m
+D (3892) spi_master: device0 locked the bus[0m
+D (3897) spi_master: device0 release bus[0m
+D (3922) spi_master: device0 locked the bus[0m
+D (3923) spi_master: device0 release bus[0m
+D (3923) spi_master: device0 locked the bus[0m
+D (3924) spi_master: device0 release bus[0m
+D (3928) spi_master: device0 locked the bus[0m
+D (3932) spi_master: device0 release bus[0m
+D (3958) spi_master: device0 locked the bus[0m
+D (3958) spi_master: device0 release bus[0m
+D (3958) spi_master: device0 locked the bus[0m
+D (3959) spi_master: device0 release bus[0m
+D (3963) spi_master: device0 locked the bus[0m
+D (3968) spi_master: device0 release bus[0m
+D (3993) spi_master: device0 locked the bus[0m
+D (3993) spi_master: device0 release bus[0m
+D (3993) spi_master: device0 locked the bus[0m
+D (3994) spi_master: device0 release bus[0m
+D (3998) spi_master: device0 locked the bus[0m
+D (4003) spi_master: device0 release bus[0m
+D (4028) spi_master: device0 locked the bus[0m
+D (4029) spi_master: device0 release bus[0m
+D (4029) spi_master: device0 locked the bus[0m
+D (4030) spi_master: device0 release bus[0m
+D (4034) spi_master: device0 locked the bus[0m
+D (4038) spi_master: device0 release bus[0m
+D (4064) spi_master: device0 locked the bus[0m
+D (4064) spi_master: device0 release bus[0m
+D (4064) spi_master: device0 locked the bus[0m
+D (4065) spi_master: device0 release bus[0m
+D (4069) spi_master: device0 locked the bus[0m
+D (4074) spi_master: device0 release bus[0m
+D (4099) spi_master: device0 locked the bus[0m
+D (4100) spi_master: device0 release bus[0m
+D (4100) spi_master: device0 locked the bus[0m
+D (4101) spi_master: device0 release bus[0m
+D (4105) spi_master: device0 locked the bus[0m
+D (4109) spi_master: device0 release bus[0m
+D (4135) spi_master: device0 locked the bus[0m
+D (4135) spi_master: device0 release bus[0m
+D (4135) spi_master: device0 locked the bus[0m
+D (4136) spi_master: device0 release bus[0m
+D (4140) spi_master: device0 locked the bus[0m
+D (4145) spi_master: device0 release bus[0m
+D (4170) spi_master: device0 locked the bus[0m
+D (4171) spi_master: device0 release bus[0m
+D (4171) spi_master: device0 locked the bus[0m
+D (4172) spi_master: device0 release bus[0m
+D (4176) spi_master: device0 locked the bus[0m
+D (4180) spi_master: device0 release bus[0m
+D (4206) spi_master: device0 locked the bus[0m
+D (4206) spi_master: device0 release bus[0m
+D (4206) spi_master: device0 locked the bus[0m
+D (4207) spi_master: device0 release bus[0m
+D (4211) spi_master: device0 locked the bus[0m
+D (4216) spi_master: device0 release bus[0m
+D (4241) spi_master: device0 locked the bus[0m
+D (4242) spi_master: device0 release bus[0m
+D (4242) spi_master: device0 locked the bus[0m
+D (4243) spi_master: device0 release bus[0m
+D (4247) spi_master: device0 locked the bus[0m
+D (4251) spi_master: device0 release bus[0m
+D (4276) spi_master: device0 locked the bus[0m
+D (4277) spi_master: device0 release bus[0m
+D (4277) spi_master: device0 locked the bus[0m
+D (4278) spi_master: device0 release bus[0m
+D (4282) spi_master: device0 locked the bus[0m
+D (4286) spi_master: device0 release bus[0m
+D (4312) spi_master: device0 locked the bus[0m
+D (4312) spi_master: device0 release bus[0m
+D (4312) spi_master: device0 locked the bus[0m
+D (4313) spi_master: device0 release bus[0m
+D (4317) spi_master: device0 locked the bus[0m
+D (4322) spi_master: device0 release bus[0m
+D (4347) spi_master: device0 locked the bus[0m
+D (4347) spi_master: device0 release bus[0m
+D (4347) spi_master: device0 locked the bus[0m
+D (4348) spi_master: device0 release bus[0m
+D (4352) spi_master: device0 locked the bus[0m
+D (4357) spi_master: device0 release bus[0m
+D (4382) spi_master: device0 locked the bus[0m
+D (4382) spi_master: device0 release bus[0m
+D (4382) spi_master: device0 locked the bus[0m
+D (4383) spi_master: device0 release bus[0m
+D (4387) spi_master: device0 locked the bus[0m
+D (4392) spi_master: device0 release bus[0m
+D (4417) spi_master: device0 locked the bus[0m
+D (4417) spi_master: device0 release bus[0m
+D (4417) spi_master: device0 locked the bus[0m
+D (4418) spi_master: device0 release bus[0m
+D (4422) spi_master: device0 locked the bus[0m
+D (4427) spi_master: device0 release bus[0m
+D (4451) spi_master: device0 locked the bus[0m
+D (4452) spi_master: device0 release bus[0m
+D (4452) spi_master: device0 locked the bus[0m
+D (4453) spi_master: device0 release bus[0m
+D (4457) spi_master: device0 locked the bus[0m
+D (4461) spi_master: device0 release bus[0m
+D (4486) spi_master: device0 locked the bus[0m
+D (4487) spi_master: device0 release bus[0m
+D (4487) spi_master: device0 locked the bus[0m
+D (4488) spi_master: device0 release bus[0m
+D (4492) spi_master: device0 locked the bus[0m
+D (4496) spi_master: device0 release bus[0m
+D (4521) spi_master: device0 locked the bus[0m
+D (4521) spi_master: device0 release bus[0m
+D (4521) spi_master: device0 locked the bus[0m
+D (4522) spi_master: device0 release bus[0m
+D (4526) spi_master: device0 locked the bus[0m
+D (4531) spi_master: device0 release bus[0m
+D (4555) spi_master: device0 locked the bus[0m
+D (4556) spi_master: device0 release bus[0m
+D (4556) spi_master: device0 locked the bus[0m
+D (4557) spi_master: device0 release bus[0m
+D (4561) spi_master: device0 locked the bus[0m
+D (4565) spi_master: device0 release bus[0m
+D (4589) spi_master: device0 locked the bus[0m
+D (4590) spi_master: device0 release bus[0m
+D (4590) spi_master: device0 locked the bus[0m
+D (4591) spi_master: device0 release bus[0m
+D (4595) spi_master: device0 locked the bus[0m
+D (4599) spi_master: device0 release bus[0m
+D (4623) spi_master: device0 locked the bus[0m
+D (4624) spi_master: device0 release bus[0m
+D (4624) spi_master: device0 locked the bus[0m
+D (4625) spi_master: device0 release bus[0m
+D (4629) spi_master: device0 locked the bus[0m
+D (4633) spi_master: device0 release bus[0m
+D (4657) spi_master: device0 locked the bus[0m
+D (4658) spi_master: device0 release bus[0m
+D (4658) spi_master: device0 locked the bus[0m
+D (4659) spi_master: device0 release bus[0m
+D (4663) spi_master: device0 locked the bus[0m
+D (4667) spi_master: device0 release bus[0m
+D (4691) spi_master: device0 locked the bus[0m
+D (4691) spi_master: device0 release bus[0m
+D (4691) spi_master: device0 locked the bus[0m
+D (4692) spi_master: device0 release bus[0m
+D (4696) spi_master: device0 locked the bus[0m
+D (4701) spi_master: device0 release bus[0m
+D (4724) spi_master: device0 locked the bus[0m
+D (4725) spi_master: device0 release bus[0m
+D (4725) spi_master: device0 locked the bus[0m
+D (4726) spi_master: device0 release bus[0m
+D (4730) spi_master: device0 locked the bus[0m
+D (4734) spi_master: device0 release bus[0m
+D (4757) spi_master: device0 locked the bus[0m
+D (4758) spi_master: device0 release bus[0m
+D (4758) spi_master: device0 locked the bus[0m
+D (4759) spi_master: device0 release bus[0m
+D (4763) spi_master: device0 locked the bus[0m
+D (4767) spi_master: device0 release bus[0m
+D (4790) spi_master: device0 locked the bus[0m
+D (4790) spi_master: device0 release bus[0m
+D (4791) spi_master: device0 locked the bus[0m
+D (4792) spi_master: device0 release bus[0m
+D (4796) spi_master: device0 locked the bus[0m
+D (4800) spi_master: device0 release bus[0m
+D (4822) spi_master: device0 locked the bus[0m
+D (4823) spi_master: device0 release bus[0m
+D (4823) spi_master: device0 locked the bus[0m
+D (4824) spi_master: device0 release bus[0m
+D (4828) spi_master: device0 locked the bus[0m
+D (4832) spi_master: device0 release bus[0m
+D (4854) spi_master: device0 locked the bus[0m
+D (4855) spi_master: device0 release bus[0m
+D (4855) spi_master: device0 locked the bus[0m
+D (4856) spi_master: device0 release bus[0m
+D (4860) spi_master: device0 locked the bus[0m
+D (4864) spi_master: device0 release bus[0m
+D (4886) spi_master: device0 locked the bus[0m
+D (4887) spi_master: device0 release bus[0m
+D (4887) spi_master: device0 locked the bus[0m
+D (4888) spi_master: device0 release bus[0m
+D (4892) spi_master: device0 locked the bus[0m
+D (4896) spi_master: device0 release bus[0m
+D (4917) spi_master: device0 locked the bus[0m
+D (4918) spi_master: device0 release bus[0m
+D (4918) spi_master: device0 locked the bus[0m
+D (4919) spi_master: device0 release bus[0m
+D (4923) spi_master: device0 locked the bus[0m
+D (4927) spi_master: device0 release bus[0m
+D (4948) spi_master: device0 locked the bus[0m
+D (4949) spi_master: device0 release bus[0m
+D (4949) spi_master: device0 locked the bus[0m
+D (4950) spi_master: device0 release bus[0m
+D (4954) spi_master: device0 locked the bus[0m
+D (4958) spi_master: device0 release bus[0m
+D (4979) spi_master: device0 locked the bus[0m
+D (4979) spi_master: device0 release bus[0m
+D (4980) spi_master: device0 locked the bus[0m
+D (4981) spi_master: device0 release bus[0m
+D (4985) spi_master: device0 locked the bus[0m
+D (4989) spi_master: device0 release bus[0m
+D (5009) spi_master: device0 locked the bus[0m
+D (5010) spi_master: device0 release bus[0m
+D (5010) spi_master: device0 locked the bus[0m
+D (5011) spi_master: device0 release bus[0m
+D (5015) spi_master: device0 locked the bus[0m
+D (5019) spi_master: device0 release bus[0m
+D (5039) spi_master: device0 locked the bus[0m
+D (5040) spi_master: device0 release bus[0m
+D (5040) spi_master: device0 locked the bus[0m
+D (5041) spi_master: device0 release bus[0m
+D (5045) spi_master: device0 locked the bus[0m
+D (5049) spi_master: device0 release bus[0m
+D (5069) spi_master: device0 locked the bus[0m
+D (5069) spi_master: device0 release bus[0m
+D (5070) spi_master: device0 locked the bus[0m
+D (5071) spi_master: device0 release bus[0m
+D (5074) spi_master: device0 locked the bus[0m
+D (5079) spi_master: device0 release bus[0m
+D (5098) spi_master: device0 locked the bus[0m
+D (5098) spi_master: device0 release bus[0m
+D (5099) spi_master: device0 locked the bus[0m
+D (5099) spi_master: device0 release bus[0m
+D (5103) spi_master: device0 locked the bus[0m
+D (5108) spi_master: device0 release bus[0m
+D (5127) spi_master: device0 locked the bus[0m
+D (5128) spi_master: device0 release bus[0m
+D (5128) spi_master: device0 locked the bus[0m
+D (5129) spi_master: device0 release bus[0m
+D (5133) spi_master: device0 locked the bus[0m
+D (5137) spi_master: device0 release bus[0m
+D (5156) spi_master: device0 locked the bus[0m
+D (5156) spi_master: device0 release bus[0m
+D (5156) spi_master: device0 locked the bus[0m
+D (5157) spi_master: device0 release bus[0m
+D (5161) spi_master: device0 locked the bus[0m
+D (5166) spi_master: device0 release bus[0m
+D (5183) spi_master: device0 locked the bus[0m
+D (5184) spi_master: device0 release bus[0m
+D (5184) spi_master: device0 locked the bus[0m
+D (5185) spi_master: device0 release bus[0m
+D (5189) spi_master: device0 locked the bus[0m
+D (5193) spi_master: device0 release bus[0m
+D (5337) spi_master: device0 locked the bus[0m
+D (5338) spi_master: device0 release bus[0m
+D (5338) spi_master: device0 locked the bus[0m
+D (5339) spi_master: device0 release bus[0m
+D (5343) spi_master: device0 locked the bus[0m
+D (5347) spi_master: device0 release bus[0m
+[0;32mI (7902) main_menu: Invalid Enter factory[0m
+D (7937) spi_master: device0 locked the bus[0m
+D (7938) spi_master: device0 release bus[0m
+D (7938) spi_master: device0 locked the bus[0m
+D (7939) spi_master: device0 release bus[0m
+D (7943) spi_master: device0 locked the bus[0m
+D (7947) spi_master: device0 release bus[0m
+D (9232) spi_master: device0 locked the bus[0m
+D (9233) spi_master: device0 release bus[0m
+D (9233) spi_master: device0 locked the bus[0m
+D (9234) spi_master: device0 release bus[0m
+D (9238) spi_master: device0 locked the bus[0m
+D (9242) spi_master: device0 release bus[0m
+[0;32mI (9248) audio_handle_info: Playing file: /spiffs/brightness_50.mp3[0m
+[0;32mI (9254) app_audio: PLAYING[0m
+D (9298) spi_master: device0 locked the bus[0m
+D (9298) spi_master: device0 release bus[0m
+D (9299) spi_master: device0 locked the bus[0m
+D (9300) spi_master: device0 release bus[0m
+D (9304) spi_master: device0 locked the bus[0m
+D (9308) spi_master: device0 release bus[0m
+D (15152) spi_master: device0 locked the bus[0m
+D (15153) spi_master: device0 release bus[0m
+D (15153) spi_master: device0 locked the bus[0m
+D (15154) spi_master: device0 release bus[0m
+D (15158) spi_master: device0 locked the bus[0m
+D (15163) spi_master: device0 release bus[0m
+[0;32mI (39957) WAKEUP: code:14[0m
+D (39996) spi_master: device0 locked the bus[0m
+D (39997) spi_master: device0 release bus[0m
+D (39997) spi_master: device0 locked the bus[0m
+D (39998) spi_master: device0 release bus[0m
+D (40002) spi_master: device0 locked the bus[0m
+D (40007) spi_master: device0 release bus[0m
+D (40034) spi_master: device0 locked the bus[0m
+D (40034) spi_master: device0 release bus[0m
+D (40034) spi_master: device0 locked the bus[0m
+D (40036) spi_master: device0 release bus[0m
+D (40040) spi_master: device0 locked the bus[0m
+D (40044) spi_master: device0 release bus[0m
+D (40053) spi_master: device0 locked the bus[0m
+D (40054) spi_master: device0 release bus[0m
+D (40056) spi_master: device0 locked the bus[0m
+D (40061) spi_master: device0 release bus[0m
+D (40065) spi_master: device0 locked the bus[0m
+D (40069) spi_master: device0 release bus[0m
+D (40089) spi_master: device0 locked the bus[0m
+D (40089) spi_master: device0 release bus[0m
+D (40089) spi_master: device0 locked the bus[0m
+D (40091) spi_master: device0 release bus[0m
+D (40095) spi_master: device0 locked the bus[0m
+D (40099) spi_master: device0 release bus[0m
+D (40169) spi_master: device0 locked the bus[0m
+D (40169) spi_master: device0 release bus[0m
+D (40169) spi_master: device0 locked the bus[0m
+D (40171) spi_master: device0 release bus[0m
+D (40175) spi_master: device0 locked the bus[0m
+D (40179) spi_master: device0 release bus[0m
+D (40186) spi_master: device0 locked the bus[0m
+D (40188) spi_master: device0 release bus[0m
+D (40192) spi_master: device0 locked the bus[0m
+D (40196) spi_master: device0 release bus[0m
+D (40200) spi_master: device0 locked the bus[0m
+D (40204) spi_master: device0 release bus[0m
+D (40245) spi_master: device0 locked the bus[0m
+D (40245) spi_master: device0 release bus[0m
+D (40245) spi_master: device0 locked the bus[0m
+D (40247) spi_master: device0 release bus[0m
+D (40251) spi_master: device0 locked the bus[0m
+D (40255) spi_master: device0 release bus[0m
+D (40262) spi_master: device0 locked the bus[0m
+D (40264) spi_master: device0 release bus[0m
+D (40267) spi_master: device0 locked the bus[0m
+D (40272) spi_master: device0 release bus[0m
+D (40276) spi_master: device0 locked the bus[0m
+D (40280) spi_master: device0 release bus[0m
+D (40320) spi_master: device0 locked the bus[0m
+D (40320) spi_master: device0 release bus[0m
+D (40320) spi_master: device0 locked the bus[0m
+D (40322) spi_master: device0 release bus[0m
+D (40326) spi_master: device0 locked the bus[0m
+D (40330) spi_master: device0 release bus[0m
+D (40337) spi_master: device0 locked the bus[0m
+D (40339) spi_master: device0 release bus[0m
+D (40342) spi_master: device0 locked the bus[0m
+D (40347) spi_master: device0 release bus[0m
+D (40351) spi_master: device0 locked the bus[0m
+D (40355) spi_master: device0 release bus[0m
+D (40365) spi_master: device0 locked the bus[0m
+D (40365) spi_master: device0 release bus[0m
+D (40368) spi_master: device0 locked the bus[0m
+D (40372) spi_master: device0 release bus[0m
+D (40376) spi_master: device0 locked the bus[0m
+D (40381) spi_master: device0 release bus[0m
+D (40388) spi_master: device0 locked the bus[0m
+D (40389) spi_master: device0 release bus[0m
+D (40393) spi_master: device0 locked the bus[0m
+D (40397) spi_master: device0 release bus[0m
+D (40401) spi_master: device0 locked the bus[0m
+D (40406) spi_master: device0 release bus[0m
+D (40415) spi_master: device0 locked the bus[0m
+D (40415) spi_master: device0 release bus[0m
+D (40418) spi_master: device0 locked the bus[0m
+D (40423) spi_master: device0 release bus[0m
+D (40427) spi_master: device0 locked the bus[0m
+D (40431) spi_master: device0 release bus[0m
+D (40439) spi_master: device0 locked the bus[0m
+D (40440) spi_master: device0 release bus[0m
+D (40444) spi_master: device0 locked the bus[0m
+D (40448) spi_master: device0 release bus[0m
+D (40452) spi_master: device0 locked the bus[0m
+D (40456) spi_master: device0 release bus[0m
+D (40466) spi_master: device0 locked the bus[0m
+D (40466) spi_master: device0 release bus[0m
+D (40469) spi_master: device0 locked the bus[0m
+D (40473) spi_master: device0 release bus[0m
+D (40477) spi_master: device0 locked the bus[0m
+D (40482) spi_master: device0 release bus[0m
+D (40489) spi_master: device0 locked the bus[0m
+D (40490) spi_master: device0 release bus[0m
+D (40494) spi_master: device0 locked the bus[0m
+D (40498) spi_master: device0 release bus[0m
+D (40502) spi_master: device0 locked the bus[0m
+D (40507) spi_master: device0 release bus[0m
+D (40516) spi_master: device0 locked the bus[0m
+D (40516) spi_master: device0 release bus[0m
+D (40519) spi_master: device0 locked the bus[0m
+D (40524) spi_master: device0 release bus[0m
+D (40528) spi_master: device0 locked the bus[0m
+D (40532) spi_master: device0 release bus[0m
+D (40540) spi_master: device0 locked the bus[0m
+D (40541) spi_master: device0 release bus[0m
+D (40545) spi_master: device0 locked the bus[0m
+D (40549) spi_master: device0 release bus[0m
+D (40553) spi_master: device0 locked the bus[0m
+D (40557) spi_master: device0 release bus[0m
+D (40567) spi_master: device0 locked the bus[0m
+D (40567) spi_master: device0 release bus[0m
+D (40570) spi_master: device0 locked the bus[0m
+D (40574) spi_master: device0 release bus[0m
+D (40578) spi_master: device0 locked the bus[0m
+D (40583) spi_master: device0 release bus[0m
+D (40590) spi_master: device0 locked the bus[0m
+D (40591) spi_master: device0 release bus[0m
+D (40595) spi_master: device0 locked the bus[0m
+D (40599) spi_master: device0 release bus[0m
+D (40603) spi_master: device0 locked the bus[0m
+D (40608) spi_master: device0 release bus[0m
+D (40617) spi_master: device0 locked the bus[0m
+D (40617) spi_master: device0 release bus[0m
+D (40620) spi_master: device0 locked the bus[0m
+D (40625) spi_master: device0 release bus[0m
+D (40629) spi_master: device0 locked the bus[0m
+D (40633) spi_master: device0 release bus[0m
+D (40640) spi_master: device0 locked the bus[0m
+D (40642) spi_master: device0 release bus[0m
+D (40646) spi_master: device0 locked the bus[0m
+D (40650) spi_master: device0 release bus[0m
+D (40654) spi_master: device0 locked the bus[0m
+D (40658) spi_master: device0 release bus[0m
+D (40668) spi_master: device0 locked the bus[0m
+D (40668) spi_master: device0 release bus[0m
+D (40671) spi_master: device0 locked the bus[0m
+D (40675) spi_master: device0 release bus[0m
+D (40679) spi_master: device0 locked the bus[0m
+D (40684) spi_master: device0 release bus[0m
+D (40691) spi_master: device0 locked the bus[0m
+D (40692) spi_master: device0 release bus[0m
+D (40696) spi_master: device0 locked the bus[0m
+D (40700) spi_master: device0 release bus[0m
+D (40705) spi_master: device0 locked the bus[0m
+D (40709) spi_master: device0 release bus[0m
+D (40718) spi_master: device0 locked the bus[0m
+D (40718) spi_master: device0 release bus[0m
+D (40721) spi_master: device0 locked the bus[0m
+D (40726) spi_master: device0 release bus[0m
+D (40730) spi_master: device0 locked the bus[0m
+D (40734) spi_master: device0 release bus[0m
+D (40742) spi_master: device0 locked the bus[0m
+D (40743) spi_master: device0 release bus[0m
+D (40747) spi_master: device0 locked the bus[0m
+D (40751) spi_master: device0 release bus[0m
+D (40755) spi_master: device0 locked the bus[0m
+D (40759) spi_master: device0 release bus[0m
+D (40769) spi_master: device0 locked the bus[0m
+D (40769) spi_master: device0 release bus[0m
+D (40772) spi_master: device0 locked the bus[0m
+D (40776) spi_master: device0 release bus[0m
+D (40780) spi_master: device0 locked the bus[0m
+D (40785) spi_master: device0 release bus[0m
+D (40792) spi_master: device0 locked the bus[0m
+D (40793) spi_master: device0 release bus[0m
+D (40797) spi_master: device0 locked the bus[0m
+D (40802) spi_master: device0 release bus[0m
+D (40806) spi_master: device0 locked the bus[0m
+D (40810) spi_master: device0 release bus[0m
+D (40819) spi_master: device0 locked the bus[0m
+D (40819) spi_master: device0 release bus[0m
+D (40822) spi_master: device0 locked the bus[0m
+D (40827) spi_master: device0 release bus[0m
+D (40831) spi_master: device0 locked the bus[0m
+D (40835) spi_master: device0 release bus[0m
+D (40843) spi_master: device0 locked the bus[0m
+D (40844) spi_master: device0 release bus[0m
+D (40848) spi_master: device0 locked the bus[0m
+D (40852) spi_master: device0 release bus[0m
+D (40856) spi_master: device0 locked the bus[0m
+D (40860) spi_master: device0 release bus[0m
+D (40870) spi_master: device0 locked the bus[0m
+D (40870) spi_master: device0 release bus[0m
+D (40873) spi_master: device0 locked the bus[0m
+D (40877) spi_master: device0 release bus[0m
+D (40881) spi_master: device0 locked the bus[0m
+D (40886) spi_master: device0 release bus[0m
+D (40893) spi_master: device0 locked the bus[0m
+D (40894) spi_master: device0 release bus[0m
+D (40898) spi_master: device0 locked the bus[0m
+D (40903) spi_master: device0 release bus[0m
+D (40907) spi_master: device0 locked the bus[0m
+D (40911) spi_master: device0 release bus[0m
+D (40921) spi_master: device0 locked the bus[0m
+D (40921) spi_master: device0 release bus[0m
+D (40923) spi_master: device0 locked the bus[0m
+D (40928) spi_master: device0 release bus[0m
+D (40932) spi_master: device0 locked the bus[0m
+D (40936) spi_master: device0 release bus[0m
+D (40944) spi_master: device0 locked the bus[0m
+D (40945) spi_master: device0 release bus[0m
+D (40949) spi_master: device0 locked the bus[0m
+D (40953) spi_master: device0 release bus[0m
+D (40957) spi_master: device0 locked the bus[0m
+D (40962) spi_master: device0 release bus[0m
+D (40971) spi_master: device0 locked the bus[0m
+D (40971) spi_master: device0 release bus[0m
+D (40974) spi_master: device0 locked the bus[0m
+D (40978) spi_master: device0 release bus[0m
+D (40982) spi_master: device0 locked the bus[0m
+D (40987) spi_master: device0 release bus[0m
+D (40994) spi_master: device0 locked the bus[0m
+D (40995) spi_master: device0 release bus[0m
+D (40999) spi_master: device0 locked the bus[0m
+D (41004) spi_master: device0 release bus[0m
+D (41008) spi_master: device0 locked the bus[0m
+D (41012) spi_master: device0 release bus[0m
+D (41022) spi_master: device0 locked the bus[0m
+D (41022) spi_master: device0 release bus[0m
+D (41024) spi_master: device0 locked the bus[0m
+D (41029) spi_master: device0 release bus[0m
+D (41033) spi_master: device0 locked the bus[0m
+D (41037) spi_master: device0 release bus[0m
+D (41045) spi_master: device0 locked the bus[0m
+D (41046) spi_master: device0 release bus[0m
+D (41050) spi_master: device0 locked the bus[0m
+D (41054) spi_master: device0 release bus[0m
+D (41058) spi_master: device0 locked the bus[0m
+D (41063) spi_master: device0 release bus[0m
+D (41072) spi_master: device0 locked the bus[0m
+D (41072) spi_master: device0 release bus[0m
+D (41075) spi_master: device0 locked the bus[0m
+D (41079) spi_master: device0 release bus[0m
+D (41083) spi_master: device0 locked the bus[0m
+D (41088) spi_master: device0 release bus[0m
+D (41095) spi_master: device0 locked the bus[0m
+D (41096) spi_master: device0 release bus[0m
+D (41100) spi_master: device0 locked the bus[0m
+D (41105) spi_master: device0 release bus[0m
+D (41109) spi_master: device0 locked the bus[0m
+D (41113) spi_master: device0 release bus[0m
+D (41123) spi_master: device0 locked the bus[0m
+D (41123) spi_master: device0 release bus[0m
+D (41125) spi_master: device0 locked the bus[0m
+D (41130) spi_master: device0 release bus[0m
+D (41134) spi_master: device0 locked the bus[0m
+D (41138) spi_master: device0 release bus[0m
+D (41146) spi_master: device0 locked the bus[0m
+D (41147) spi_master: device0 release bus[0m
+D (41151) spi_master: device0 locked the bus[0m
+D (41155) spi_master: device0 release bus[0m
+D (41159) spi_master: device0 locked the bus[0m
+D (41164) spi_master: device0 release bus[0m
+D (41173) spi_master: device0 locked the bus[0m
+D (41173) spi_master: device0 release bus[0m
+D (41176) spi_master: device0 locked the bus[0m
+D (41180) spi_master: device0 release bus[0m
+D (41184) spi_master: device0 locked the bus[0m
+D (41189) spi_master: device0 release bus[0m
+D (41196) spi_master: device0 locked the bus[0m
+D (41197) spi_master: device0 release bus[0m
+D (41201) spi_master: device0 locked the bus[0m
+D (41206) spi_master: device0 release bus[0m
+D (41210) spi_master: device0 locked the bus[0m
+D (41214) spi_master: device0 release bus[0m
+D (41224) spi_master: device0 locked the bus[0m
+D (41224) spi_master: device0 release bus[0m
+D (41227) spi_master: device0 locked the bus[0m
+D (41231) spi_master: device0 release bus[0m
+D (41235) spi_master: device0 locked the bus[0m
+D (41239) spi_master: device0 release bus[0m
+D (41247) spi_master: device0 locked the bus[0m
+D (41248) spi_master: device0 release bus[0m
+D (41252) spi_master: device0 locked the bus[0m
+D (41256) spi_master: device0 release bus[0m
+D (41260) spi_master: device0 locked the bus[0m
+D (41265) spi_master: device0 release bus[0m
+D (41274) spi_master: device0 locked the bus[0m
+D (41274) spi_master: device0 release bus[0m
+D (41277) spi_master: device0 locked the bus[0m
+D (41281) spi_master: device0 release bus[0m
+D (41285) spi_master: device0 locked the bus[0m
+D (41290) spi_master: device0 release bus[0m
+D (41297) spi_master: device0 locked the bus[0m
+D (41298) spi_master: device0 release bus[0m
+D (41302) spi_master: device0 locked the bus[0m
+D (41307) spi_master: device0 release bus[0m
+D (41311) spi_master: device0 locked the bus[0m
+D (41315) spi_master: device0 release bus[0m
+D (41325) spi_master: device0 locked the bus[0m
+D (41325) spi_master: device0 release bus[0m
+D (41328) spi_master: device0 locked the bus[0m
+D (41332) spi_master: device0 release bus[0m
+D (41336) spi_master: device0 locked the bus[0m
+D (41340) spi_master: device0 release bus[0m
+D (41348) spi_master: device0 locked the bus[0m
+D (41349) spi_master: device0 release bus[0m
+D (41353) spi_master: device0 locked the bus[0m
+D (41357) spi_master: device0 release bus[0m
+D (41361) spi_master: device0 locked the bus[0m
+D (41366) spi_master: device0 release bus[0m
+D (41375) spi_master: device0 locked the bus[0m
+D (41375) spi_master: device0 release bus[0m
+D (41378) spi_master: device0 locked the bus[0m
+D (41382) spi_master: device0 release bus[0m
+D (41386) spi_master: device0 locked the bus[0m
+D (41391) spi_master: device0 release bus[0m
+D (41398) spi_master: device0 locked the bus[0m
+D (41399) spi_master: device0 release bus[0m
+D (41403) spi_master: device0 locked the bus[0m
+D (41408) spi_master: device0 release bus[0m
+D (41412) spi_master: device0 locked the bus[0m
+D (41416) spi_master: device0 release bus[0m
+D (41426) spi_master: device0 locked the bus[0m
+D (41426) spi_master: device0 release bus[0m
+D (41429) spi_master: device0 locked the bus[0m
+D (41433) spi_master: device0 release bus[0m
+D (41437) spi_master: device0 locked the bus[0m
+D (41441) spi_master: device0 release bus[0m
+D (41449) spi_master: device0 locked the bus[0m
+D (41450) spi_master: device0 release bus[0m
+D (41454) spi_master: device0 locked the bus[0m
+D (41458) spi_master: device0 release bus[0m
+D (41462) spi_master: device0 locked the bus[0m
+D (41467) spi_master: device0 release bus[0m
+D (41476) spi_master: device0 locked the bus[0m
+D (41476) spi_master: device0 release bus[0m
+D (41479) spi_master: device0 locked the bus[0m
+D (41483) spi_master: device0 release bus[0m
+D (41488) spi_master: device0 locked the bus[0m
+D (41492) spi_master: device0 release bus[0m
+D (41499) spi_master: device0 locked the bus[0m
+D (41500) spi_master: device0 release bus[0m
+D (41504) spi_master: device0 locked the bus[0m
+D (41509) spi_master: device0 release bus[0m
+D (41513) spi_master: device0 locked the bus[0m
+D (41517) spi_master: device0 release bus[0m
+D (41527) spi_master: device0 locked the bus[0m
+D (41527) spi_master: device0 release bus[0m
+D (41530) spi_master: device0 locked the bus[0m
+D (41534) spi_master: device0 release bus[0m
+D (41538) spi_master: device0 locked the bus[0m
+D (41542) spi_master: device0 release bus[0m
+D (41550) spi_master: device0 locked the bus[0m
+D (41551) spi_master: device0 release bus[0m
+D (41555) spi_master: device0 locked the bus[0m
+D (41559) spi_master: device0 release bus[0m
+D (41563) spi_master: device0 locked the bus[0m
+D (41568) spi_master: device0 release bus[0m
+D (41577) spi_master: device0 locked the bus[0m
+D (41577) spi_master: device0 release bus[0m
+D (41580) spi_master: device0 locked the bus[0m
+D (41585) spi_master: device0 release bus[0m
+D (41589) spi_master: device0 locked the bus[0m
+D (41593) spi_master: device0 release bus[0m
+D (41600) spi_master: device0 locked the bus[0m
+D (41601) spi_master: device0 release bus[0m
+D (41605) spi_master: device0 locked the bus[0m
+D (41610) spi_master: device0 release bus[0m
+D (41614) spi_master: device0 locked the bus[0m
+D (41618) spi_master: device0 release bus[0m
+D (41628) spi_master: device0 locked the bus[0m
+D (41628) spi_master: device0 release bus[0m
+D (41631) spi_master: device0 locked the bus[0m
+D (41635) spi_master: device0 release bus[0m
+D (41639) spi_master: device0 locked the bus[0m
+D (41643) spi_master: device0 release bus[0m
+D (41651) spi_master: device0 locked the bus[0m
+D (41652) spi_master: device0 release bus[0m
+D (41656) spi_master: device0 locked the bus[0m
+D (41660) spi_master: device0 release bus[0m
+D (41664) spi_master: device0 locked the bus[0m
+D (41669) spi_master: device0 release bus[0m
+D (41678) spi_master: device0 locked the bus[0m
+D (41678) spi_master: device0 release bus[0m
+D (41681) spi_master: device0 locked the bus[0m
+D (41686) spi_master: device0 release bus[0m
+D (41690) spi_master: device0 locked the bus[0m
+D (41694) spi_master: device0 release bus[0m
+D (41701) spi_master: device0 locked the bus[0m
+D (41703) spi_master: device0 release bus[0m
+D (41706) spi_master: device0 locked the bus[0m
+D (41711) spi_master: device0 release bus[0m
+D (41715) spi_master: device0 locked the bus[0m
+D (41719) spi_master: device0 release bus[0m
+D (41729) spi_master: device0 locked the bus[0m
+D (41729) spi_master: device0 release bus[0m
+D (41732) spi_master: device0 locked the bus[0m
+D (41736) spi_master: device0 release bus[0m
+D (41740) spi_master: device0 locked the bus[0m
+D (41745) spi_master: device0 release bus[0m
+D (41752) spi_master: device0 locked the bus[0m
+D (41753) spi_master: device0 release bus[0m
+D (41757) spi_master: device0 locked the bus[0m
+D (41761) spi_master: device0 release bus[0m
+D (41765) spi_master: device0 locked the bus[0m
+D (41770) spi_master: device0 release bus[0m
+D (41779) spi_master: device0 locked the bus[0m
+D (41779) spi_master: device0 release bus[0m
+D (41782) spi_master: device0 locked the bus[0m
+D (41787) spi_master: device0 release bus[0m
+D (41791) spi_master: device0 locked the bus[0m
+D (41795) spi_master: device0 release bus[0m
+D (41802) spi_master: device0 locked the bus[0m
+D (41804) spi_master: device0 release bus[0m
+D (41807) spi_master: device0 locked the bus[0m
+D (41812) spi_master: device0 release bus[0m
+D (41816) spi_master: device0 locked the bus[0m
+D (41820) spi_master: device0 release bus[0m
+D (41830) spi_master: device0 locked the bus[0m
+D (41830) spi_master: device0 release bus[0m
+D (41833) spi_master: device0 locked the bus[0m
+D (41837) spi_master: device0 release bus[0m
+D (41841) spi_master: device0 locked the bus[0m
+D (41846) spi_master: device0 release bus[0m
+D (41853) spi_master: device0 locked the bus[0m
+D (41854) spi_master: device0 release bus[0m
+D (41858) spi_master: device0 locked the bus[0m
+D (41862) spi_master: device0 release bus[0m
+D (41866) spi_master: device0 locked the bus[0m
+D (41871) spi_master: device0 release bus[0m
+D (41880) spi_master: device0 locked the bus[0m
+D (41880) spi_master: device0 release bus[0m
+D (41883) spi_master: device0 locked the bus[0m
+D (41888) spi_master: device0 release bus[0m
+D (41892) spi_master: device0 locked the bus[0m
+D (41896) spi_master: device0 release bus[0m
+D (41903) spi_master: device0 locked the bus[0m
+D (41905) spi_master: device0 release bus[0m
+D (41908) spi_master: device0 locked the bus[0m
+D (41913) spi_master: device0 release bus[0m
+D (41917) spi_master: device0 locked the bus[0m
+D (41921) spi_master: device0 release bus[0m
+D (41931) spi_master: device0 locked the bus[0m
+D (41931) spi_master: device0 release bus[0m
+D (41934) spi_master: device0 locked the bus[0m
+D (41938) spi_master: device0 release bus[0m
+D (41942) spi_master: device0 locked the bus[0m
+D (41947) spi_master: device0 release bus[0m
+D (41954) spi_master: device0 locked the bus[0m
+D (41955) spi_master: device0 release bus[0m
+D (41959) spi_master: device0 locked the bus[0m
+D (41963) spi_master: device0 release bus[0m
+D (41967) spi_master: device0 locked the bus[0m
+D (41972) spi_master: device0 release bus[0m
+D (42041) spi_master: device0 locked the bus[0m
+D (42042) spi_master: device0 release bus[0m
+D (42042) spi_master: device0 locked the bus[0m
+D (42043) spi_master: device0 release bus[0m
+D (42047) spi_master: device0 locked the bus[0m
+D (42052) spi_master: device0 release bus[0m
+D (42101) spi_master: device0 locked the bus[0m
+D (42101) spi_master: device0 release bus[0m
+D (42101) spi_master: device0 locked the bus[0m
+D (42102) spi_master: device0 release bus[0m
+D (42106) spi_master: device0 locked the bus[0m
+D (42111) spi_master: device0 release bus[0m
+D (42135) spi_master: device0 locked the bus[0m
+D (42135) spi_master: device0 release bus[0m
+D (42135) spi_master: device0 locked the bus[0m
+D (42137) spi_master: device0 release bus[0m
+D (42141) spi_master: device0 locked the bus[0m
+D (42145) spi_master: device0 release bus[0m
+D (42152) spi_master: device0 locked the bus[0m
+D (42154) spi_master: device0 release bus[0m
+D (42158) spi_master: device0 locked the bus[0m
+D (42162) spi_master: device0 release bus[0m
+D (42166) spi_master: device0 locked the bus[0m
+D (42170) spi_master: device0 release bus[0m
+D (42180) spi_master: device0 locked the bus[0m
+D (42180) spi_master: device0 release bus[0m
+D (42183) spi_master: device0 locked the bus[0m
+D (42187) spi_master: device0 release bus[0m
+D (42191) spi_master: device0 locked the bus[0m
+D (42196) spi_master: device0 release bus[0m
+D (42203) spi_master: device0 locked the bus[0m
+D (42204) spi_master: device0 release bus[0m
+D (42208) spi_master: device0 locked the bus[0m
+D (42212) spi_master: device0 release bus[0m
+D (42217) spi_master: device0 locked the bus[0m
+D (42221) spi_master: device0 release bus[0m
+D (42230) spi_master: device0 locked the bus[0m
+D (42230) spi_master: device0 release bus[0m
+D (42233) spi_master: device0 locked the bus[0m
+D (42238) spi_master: device0 release bus[0m
+D (42242) spi_master: device0 locked the bus[0m
+D (42246) spi_master: device0 release bus[0m
+D (42254) spi_master: device0 locked the bus[0m
+D (42255) spi_master: device0 release bus[0m
+D (42259) spi_master: device0 locked the bus[0m
+D (42263) spi_master: device0 release bus[0m
+D (42267) spi_master: device0 locked the bus[0m
+D (42271) spi_master: device0 release bus[0m
+D (42281) spi_master: device0 locked the bus[0m
+D (42281) spi_master: device0 release bus[0m
+D (42284) spi_master: device0 locked the bus[0m
+D (42288) spi_master: device0 release bus[0m
+D (42292) spi_master: device0 locked the bus[0m
+D (42297) spi_master: device0 release bus[0m
+D (42304) spi_master: device0 locked the bus[0m
+D (42305) spi_master: device0 release bus[0m
+D (42309) spi_master: device0 locked the bus[0m
+D (42314) spi_master: device0 release bus[0m
+D (42318) spi_master: device0 locked the bus[0m
+D (42322) spi_master: device0 release bus[0m
+D (42331) spi_master: device0 locked the bus[0m
+D (42331) spi_master: device0 release bus[0m
+D (42334) spi_master: device0 locked the bus[0m
+D (42339) spi_master: device0 release bus[0m
+D (42343) spi_master: device0 locked the bus[0m
+D (42347) spi_master: device0 release bus[0m
+D (42355) spi_master: device0 locked the bus[0m
+D (42356) spi_master: device0 release bus[0m
+D (42360) spi_master: device0 locked the bus[0m
+D (42364) spi_master: device0 release bus[0m
+D (42368) spi_master: device0 locked the bus[0m
+D (42372) spi_master: device0 release bus[0m
+D (42382) spi_master: device0 locked the bus[0m
+D (42382) spi_master: device0 release bus[0m
+D (42385) spi_master: device0 locked the bus[0m
+D (42389) spi_master: device0 release bus[0m
+D (42393) spi_master: device0 locked the bus[0m
+D (42398) spi_master: device0 release bus[0m
+D (42405) spi_master: device0 locked the bus[0m
+D (42406) spi_master: device0 release bus[0m
+D (42410) spi_master: device0 locked the bus[0m
+D (42415) spi_master: device0 release bus[0m
+D (42419) spi_master: device0 locked the bus[0m
+D (42423) spi_master: device0 release bus[0m
+D (42433) spi_master: device0 locked the bus[0m
+D (42433) spi_master: device0 release bus[0m
+D (42435) spi_master: device0 locked the bus[0m
+D (42440) spi_master: device0 release bus[0m
+D (42444) spi_master: device0 locked the bus[0m
+D (42448) spi_master: device0 release bus[0m
+D (42456) spi_master: device0 locked the bus[0m
+D (42457) spi_master: device0 release bus[0m
+D (42461) spi_master: device0 locked the bus[0m
+D (42465) spi_master: device0 release bus[0m
+D (42469) spi_master: device0 locked the bus[0m
+D (42474) spi_master: device0 release bus[0m
+D (42483) spi_master: device0 locked the bus[0m
+D (42483) spi_master: device0 release bus[0m
+D (42486) spi_master: device0 locked the bus[0m
+D (42490) spi_master: device0 release bus[0m
+D (42494) spi_master: device0 locked the bus[0m
+D (42499) spi_master: device0 release bus[0m
+D (42506) spi_master: device0 locked the bus[0m
+D (42507) spi_master: device0 release bus[0m
+D (42511) spi_master: device0 locked the bus[0m
+D (42516) spi_master: device0 release bus[0m
+D (42520) spi_master: device0 locked the bus[0m
+D (42524) spi_master: device0 release bus[0m
+D (42534) spi_master: device0 locked the bus[0m
+D (42534) spi_master: device0 release bus[0m
+D (42536) spi_master: device0 locked the bus[0m
+D (42541) spi_master: device0 release bus[0m
+D (42545) spi_master: device0 locked the bus[0m
+D (42549) spi_master: device0 release bus[0m
+D (42557) spi_master: device0 locked the bus[0m
+D (42558) spi_master: device0 release bus[0m
+D (42562) spi_master: device0 locked the bus[0m
+D (42566) spi_master: device0 release bus[0m
+D (42570) spi_master: device0 locked the bus[0m
+D (42575) spi_master: device0 release bus[0m
+D (42584) spi_master: device0 locked the bus[0m
+D (42584) spi_master: device0 release bus[0m
+D (42587) spi_master: device0 locked the bus[0m
+D (42591) spi_master: device0 release bus[0m
+D (42595) spi_master: device0 locked the bus[0m
+D (42600) spi_master: device0 release bus[0m
+D (42607) spi_master: device0 locked the bus[0m
+D (42608) spi_master: device0 release bus[0m
+D (42612) spi_master: device0 locked the bus[0m
+D (42617) spi_master: device0 release bus[0m
+D (42621) spi_master: device0 locked the bus[0m
+D (42625) spi_master: device0 release bus[0m
+D (42635) spi_master: device0 locked the bus[0m
+D (42635) spi_master: device0 release bus[0m
+D (42637) spi_master: device0 locked the bus[0m
+D (42642) spi_master: device0 release bus[0m
+D (42646) spi_master: device0 locked the bus[0m
+D (42650) spi_master: device0 release bus[0m
+D (42658) spi_master: device0 locked the bus[0m
+D (42659) spi_master: device0 release bus[0m
+D (42663) spi_master: device0 locked the bus[0m
+D (42667) spi_master: device0 release bus[0m
+D (42671) spi_master: device0 locked the bus[0m
+D (42676) spi_master: device0 release bus[0m
+D (42685) spi_master: device0 locked the bus[0m
+D (42685) spi_master: device0 release bus[0m
+D (42688) spi_master: device0 locked the bus[0m
+D (42692) spi_master: device0 release bus[0m
+D (42696) spi_master: device0 locked the bus[0m
+D (42701) spi_master: device0 release bus[0m
+D (42708) spi_master: device0 locked the bus[0m
+D (42709) spi_master: device0 release bus[0m
+D (42713) spi_master: device0 locked the bus[0m
+D (42718) spi_master: device0 release bus[0m
+D (42722) spi_master: device0 locked the bus[0m
+D (42726) spi_master: device0 release bus[0m
+D (42736) spi_master: device0 locked the bus[0m
+D (42736) spi_master: device0 release bus[0m
+D (42739) spi_master: device0 locked the bus[0m
+D (42743) spi_master: device0 release bus[0m
+D (42747) spi_master: device0 locked the bus[0m
+D (42751) spi_master: device0 release bus[0m
+D (42759) spi_master: device0 locked the bus[0m
+D (42760) spi_master: device0 release bus[0m
+D (42764) spi_master: device0 locked the bus[0m
+D (42768) spi_master: device0 release bus[0m
+D (42772) spi_master: device0 locked the bus[0m
+D (42777) spi_master: device0 release bus[0m
+D (42786) spi_master: device0 locked the bus[0m
+D (42786) spi_master: device0 release bus[0m
+D (42789) spi_master: device0 locked the bus[0m
+D (42793) spi_master: device0 release bus[0m
+D (42797) spi_master: device0 locked the bus[0m
+D (42802) spi_master: device0 release bus[0m
+D (42809) spi_master: device0 locked the bus[0m
+D (42810) spi_master: device0 release bus[0m
+D (42814) spi_master: device0 locked the bus[0m
+D (42819) spi_master: device0 release bus[0m
+D (42823) spi_master: device0 locked the bus[0m
+D (42827) spi_master: device0 release bus[0m
+D (42837) spi_master: device0 locked the bus[0m
+D (42837) spi_master: device0 release bus[0m
+D (42840) spi_master: device0 locked the bus[0m
+D (42844) spi_master: device0 release bus[0m
+D (42848) spi_master: device0 locked the bus[0m
+D (42852) spi_master: device0 release bus[0m
+D (42860) spi_master: device0 locked the bus[0m
+D (42861) spi_master: device0 release bus[0m
+D (42865) spi_master: device0 locked the bus[0m
+D (42869) spi_master: device0 release bus[0m
+D (42873) spi_master: device0 locked the bus[0m
+D (42878) spi_master: device0 release bus[0m
+D (42887) spi_master: device0 locked the bus[0m
+D (42887) spi_master: device0 release bus[0m
+D (42890) spi_master: device0 locked the bus[0m
+D (42894) spi_master: device0 release bus[0m
+D (42898) spi_master: device0 locked the bus[0m
+D (42903) spi_master: device0 release bus[0m
+D (42910) spi_master: device0 locked the bus[0m
+D (42911) spi_master: device0 release bus[0m
+D (42915) spi_master: device0 locked the bus[0m
+D (42920) spi_master: device0 release bus[0m
+D (42924) spi_master: device0 locked the bus[0m
+D (42928) spi_master: device0 release bus[0m
+D (42938) spi_master: device0 locked the bus[0m
+D (42938) spi_master: device0 release bus[0m
+D (42941) spi_master: device0 locked the bus[0m
+D (42945) spi_master: device0 release bus[0m
+D (42949) spi_master: device0 locked the bus[0m
+D (42953) spi_master: device0 release bus[0m
+D (42961) spi_master: device0 locked the bus[0m
+D (42962) spi_master: device0 release bus[0m
+D (42966) spi_master: device0 locked the bus[0m
+D (42970) spi_master: device0 release bus[0m
+D (42974) spi_master: device0 locked the bus[0m
+D (42979) spi_master: device0 release bus[0m
+D (42988) spi_master: device0 locked the bus[0m
+D (42988) spi_master: device0 release bus[0m
+D (42991) spi_master: device0 locked the bus[0m
+D (42995) spi_master: device0 release bus[0m
+D (43000) spi_master: device0 locked the bus[0m
+D (43004) spi_master: device0 release bus[0m
+D (43011) spi_master: device0 locked the bus[0m
+D (43012) spi_master: device0 release bus[0m
+D (43016) spi_master: device0 locked the bus[0m
+D (43021) spi_master: device0 release bus[0m
+D (43025) spi_master: device0 locked the bus[0m
+D (43029) spi_master: device0 release bus[0m
+D (43039) spi_master: device0 locked the bus[0m
+D (43039) spi_master: device0 release bus[0m
+D (43042) spi_master: device0 locked the bus[0m
+D (43046) spi_master: device0 release bus[0m
+D (43050) spi_master: device0 locked the bus[0m
+D (43054) spi_master: device0 release bus[0m
+D (43062) spi_master: device0 locked the bus[0m
+D (43063) spi_master: device0 release bus[0m
+D (43067) spi_master: device0 locked the bus[0m
+D (43071) spi_master: device0 release bus[0m
+D (43075) spi_master: device0 locked the bus[0m
+D (43080) spi_master: device0 release bus[0m
+D (43089) spi_master: device0 locked the bus[0m
+D (43089) spi_master: device0 release bus[0m
+D (43092) spi_master: device0 locked the bus[0m
+D (43097) spi_master: device0 release bus[0m
+D (43101) spi_master: device0 locked the bus[0m
+D (43105) spi_master: device0 release bus[0m
+D (43149) spi_master: device0 locked the bus[0m
+D (43149) spi_master: device0 release bus[0m
+D (43149) spi_master: device0 locked the bus[0m
+D (43151) spi_master: device0 release bus[0m
+D (43155) spi_master: device0 locked the bus[0m
+D (43159) spi_master: device0 release bus[0m
+D (43259) spi_master: device0 locked the bus[0m
+D (43259) spi_master: device0 release bus[0m
+D (43260) spi_master: device0 locked the bus[0m
+D (43261) spi_master: device0 release bus[0m
+D (43265) spi_master: device0 locked the bus[0m
+D (43269) spi_master: device0 release bus[0m
+D (43276) spi_master: device0 locked the bus[0m
+D (43278) spi_master: device0 release bus[0m
+D (43282) spi_master: device0 locked the bus[0m
+D (43286) spi_master: device0 release bus[0m
+D (43290) spi_master: device0 locked the bus[0m
+D (43294) spi_master: device0 release bus[0m
+D (43335) spi_master: device0 locked the bus[0m
+D (43335) spi_master: device0 release bus[0m
+D (43336) spi_master: device0 locked the bus[0m
+D (43337) spi_master: device0 release bus[0m
+D (43341) spi_master: device0 locked the bus[0m
+D (43345) spi_master: device0 release bus[0m
+D (43352) spi_master: device0 locked the bus[0m
+D (43354) spi_master: device0 release bus[0m
+D (43357) spi_master: device0 locked the bus[0m
+D (43362) spi_master: device0 release bus[0m
+D (43366) spi_master: device0 locked the bus[0m
+D (43370) spi_master: device0 release bus[0m
+D (43380) spi_master: device0 locked the bus[0m
+D (43380) spi_master: device0 release bus[0m
+D (43383) spi_master: device0 locked the bus[0m
+D (43387) spi_master: device0 release bus[0m
+D (43391) spi_master: device0 locked the bus[0m
+D (43396) spi_master: device0 release bus[0m
+D (43403) spi_master: device0 locked the bus[0m
+D (43404) spi_master: device0 release bus[0m
+D (43408) spi_master: device0 locked the bus[0m
+D (43412) spi_master: device0 release bus[0m
+D (43416) spi_master: device0 locked the bus[0m
+D (43421) spi_master: device0 release bus[0m
+D (43430) spi_master: device0 locked the bus[0m
+D (43430) spi_master: device0 release bus[0m
+D (43433) spi_master: device0 locked the bus[0m
+D (43438) spi_master: device0 release bus[0m
+D (43442) spi_master: device0 locked the bus[0m
+D (43446) spi_master: device0 release bus[0m
+D (43453) spi_master: device0 locked the bus[0m
+D (43455) spi_master: device0 release bus[0m
+D (43459) spi_master: device0 locked the bus[0m
+D (43463) spi_master: device0 release bus[0m
+D (43467) spi_master: device0 locked the bus[0m
+D (43471) spi_master: device0 release bus[0m
+D (43481) spi_master: device0 locked the bus[0m
+D (43481) spi_master: device0 release bus[0m
+D (43484) spi_master: device0 locked the bus[0m
+D (43488) spi_master: device0 release bus[0m
+D (43492) spi_master: device0 locked the bus[0m
+D (43497) spi_master: device0 release bus[0m
+D (43504) spi_master: device0 locked the bus[0m
+D (43505) spi_master: device0 release bus[0m
+D (43509) spi_master: device0 locked the bus[0m
+D (43513) spi_master: device0 release bus[0m
+D (43517) spi_master: device0 locked the bus[0m
+D (43522) spi_master: device0 release bus[0m
+D (43531) spi_master: device0 locked the bus[0m
+D (43531) spi_master: device0 release bus[0m
+D (43534) spi_master: device0 locked the bus[0m
+D (43539) spi_master: device0 release bus[0m
+D (43543) spi_master: device0 locked the bus[0m
+D (43547) spi_master: device0 release bus[0m
+D (43554) spi_master: device0 locked the bus[0m
+D (43556) spi_master: device0 release bus[0m
+D (43560) spi_master: device0 locked the bus[0m
+D (43564) spi_master: device0 release bus[0m
+D (43568) spi_master: device0 locked the bus[0m
+D (43572) spi_master: device0 release bus[0m
+D (43582) spi_master: device0 locked the bus[0m
+D (43582) spi_master: device0 release bus[0m
+D (43585) spi_master: device0 locked the bus[0m
+D (43589) spi_master: device0 release bus[0m
+D (43593) spi_master: device0 locked the bus[0m
+D (43598) spi_master: device0 release bus[0m
+D (43605) spi_master: device0 locked the bus[0m
+D (43606) spi_master: device0 release bus[0m
+D (43610) spi_master: device0 locked the bus[0m
+D (43614) spi_master: device0 release bus[0m
+D (43618) spi_master: device0 locked the bus[0m
+D (43623) spi_master: device0 release bus[0m
+D (43632) spi_master: device0 locked the bus[0m
+D (43632) spi_master: device0 release bus[0m
+D (43635) spi_master: device0 locked the bus[0m
+D (43640) spi_master: device0 release bus[0m
+D (43644) spi_master: device0 locked the bus[0m
+D (43648) spi_master: device0 release bus[0m
+D (43656) spi_master: device0 locked the bus[0m
+D (43657) spi_master: device0 release bus[0m
+D (43661) spi_master: device0 locked the bus[0m
+D (43665) spi_master: device0 release bus[0m
+D (43669) spi_master: device0 locked the bus[0m
+D (43673) spi_master: device0 release bus[0m
+D (43683) spi_master: device0 locked the bus[0m
+D (43683) spi_master: device0 release bus[0m
+D (43686) spi_master: device0 locked the bus[0m
+D (43690) spi_master: device0 release bus[0m
+D (43694) spi_master: device0 locked the bus[0m
+D (43699) spi_master: device0 release bus[0m
+D (43706) spi_master: device0 locked the bus[0m
+D (43707) spi_master: device0 release bus[0m
+D (43711) spi_master: device0 locked the bus[0m
+D (43715) spi_master: device0 release bus[0m
+D (43720) spi_master: device0 locked the bus[0m
+D (43724) spi_master: device0 release bus[0m
+D (43733) spi_master: device0 locked the bus[0m
+D (43733) spi_master: device0 release bus[0m
+D (43736) spi_master: device0 locked the bus[0m
+D (43741) spi_master: device0 release bus[0m
+D (43745) spi_master: device0 locked the bus[0m
+D (43749) spi_master: device0 release bus[0m
+D (43757) spi_master: device0 locked the bus[0m
+D (43758) spi_master: device0 release bus[0m
+D (43762) spi_master: device0 locked the bus[0m
+D (43766) spi_master: device0 release bus[0m
+D (43770) spi_master: device0 locked the bus[0m
+D (43774) spi_master: device0 release bus[0m
+D (43784) spi_master: device0 locked the bus[0m
+D (43784) spi_master: device0 release bus[0m
+D (43787) spi_master: device0 locked the bus[0m
+D (43791) spi_master: device0 release bus[0m
+D (43795) spi_master: device0 locked the bus[0m
+D (43800) spi_master: device0 release bus[0m
+D (43807) spi_master: device0 locked the bus[0m
+D (43808) spi_master: device0 release bus[0m
+D (43812) spi_master: device0 locked the bus[0m
+D (43817) spi_master: device0 release bus[0m
+D (43821) spi_master: device0 locked the bus[0m
+D (43825) spi_master: device0 release bus[0m
+D (43834) spi_master: device0 locked the bus[0m
+D (43834) spi_master: device0 release bus[0m
+D (43837) spi_master: device0 locked the bus[0m
+D (43842) spi_master: device0 release bus[0m
+D (43846) spi_master: device0 locked the bus[0m
+D (43850) spi_master: device0 release bus[0m
+D (43858) spi_master: device0 locked the bus[0m
+D (43859) spi_master: device0 release bus[0m
+D (43863) spi_master: device0 locked the bus[0m
+D (43867) spi_master: device0 release bus[0m
+D (43871) spi_master: device0 locked the bus[0m
+D (43875) spi_master: device0 release bus[0m
+D (43885) spi_master: device0 locked the bus[0m
+D (43885) spi_master: device0 release bus[0m
+D (43888) spi_master: device0 locked the bus[0m
+D (43892) spi_master: device0 release bus[0m
+D (43896) spi_master: device0 locked the bus[0m
+D (43901) spi_master: device0 release bus[0m
+D (43908) spi_master: device0 locked the bus[0m
+D (43909) spi_master: device0 release bus[0m
+D (43913) spi_master: device0 locked the bus[0m
+D (43918) spi_master: device0 release bus[0m
+D (43922) spi_master: device0 locked the bus[0m
+D (43926) spi_master: device0 release bus[0m
+D (43936) spi_master: device0 locked the bus[0m
+D (43936) spi_master: device0 release bus[0m
+D (43938) spi_master: device0 locked the bus[0m
+D (43943) spi_master: device0 release bus[0m
+D (43947) spi_master: device0 locked the bus[0m
+D (43951) spi_master: device0 release bus[0m
+D (43959) spi_master: device0 locked the bus[0m
+D (43960) spi_master: device0 release bus[0m
+D (43964) spi_master: device0 locked the bus[0m
+D (43968) spi_master: device0 release bus[0m
+D (43972) spi_master: device0 locked the bus[0m
+D (43977) spi_master: device0 release bus[0m
+D (43986) spi_master: device0 locked the bus[0m
+D (43986) spi_master: device0 release bus[0m
+D (43989) spi_master: device0 locked the bus[0m
+D (43993) spi_master: device0 release bus[0m
+D (43997) spi_master: device0 locked the bus[0m
+D (44002) spi_master: device0 release bus[0m
+D (44009) spi_master: device0 locked the bus[0m
+D (44010) spi_master: device0 release bus[0m
+D (44014) spi_master: device0 locked the bus[0m
+D (44019) spi_master: device0 release bus[0m
+D (44023) spi_master: device0 locked the bus[0m
+D (44027) spi_master: device0 release bus[0m
+D (44037) spi_master: device0 locked the bus[0m
+D (44037) spi_master: device0 release bus[0m
+D (44039) spi_master: device0 locked the bus[0m
+D (44044) spi_master: device0 release bus[0m
+D (44048) spi_master: device0 locked the bus[0m
+D (44052) spi_master: device0 release bus[0m
+D (44060) spi_master: device0 locked the bus[0m
+D (44061) spi_master: device0 release bus[0m
+D (44065) spi_master: device0 locked the bus[0m
+D (44069) spi_master: device0 release bus[0m
+D (44073) spi_master: device0 locked the bus[0m
+D (44078) spi_master: device0 release bus[0m
+D (44087) spi_master: device0 locked the bus[0m
+D (44087) spi_master: device0 release bus[0m
+D (44090) spi_master: device0 locked the bus[0m
+D (44094) spi_master: device0 release bus[0m
+D (44098) spi_master: device0 locked the bus[0m
+D (44103) spi_master: device0 release bus[0m
+D (44110) spi_master: device0 locked the bus[0m
+D (44111) spi_master: device0 release bus[0m
+D (44115) spi_master: device0 locked the bus[0m
+D (44120) spi_master: device0 release bus[0m
+D (44124) spi_master: device0 locked the bus[0m
+D (44128) spi_master: device0 release bus[0m
+D (44138) spi_master: device0 locked the bus[0m
+D (44138) spi_master: device0 release bus[0m
+D (44140) spi_master: device0 locked the bus[0m
+D (44145) spi_master: device0 release bus[0m
+D (44149) spi_master: device0 locked the bus[0m
+D (44153) spi_master: device0 release bus[0m
+D (44161) spi_master: device0 locked the bus[0m
+D (44162) spi_master: device0 release bus[0m
+D (44166) spi_master: device0 locked the bus[0m
+D (44170) spi_master: device0 release bus[0m
+D (44174) spi_master: device0 locked the bus[0m
+D (44179) spi_master: device0 release bus[0m
+D (44188) spi_master: device0 locked the bus[0m
+D (44188) spi_master: device0 release bus[0m
+D (44191) spi_master: device0 locked the bus[0m
+D (44195) spi_master: device0 release bus[0m
+D (44199) spi_master: device0 locked the bus[0m
+D (44204) spi_master: device0 release bus[0m
+D (44211) spi_master: device0 locked the bus[0m
+D (44212) spi_master: device0 release bus[0m
+D (44216) spi_master: device0 locked the bus[0m
+D (44221) spi_master: device0 release bus[0m
+D (44225) spi_master: device0 locked the bus[0m
+D (44229) spi_master: device0 release bus[0m
+D (44239) spi_master: device0 locked the bus[0m
+D (44239) spi_master: device0 release bus[0m
+D (44242) spi_master: device0 locked the bus[0m
+D (44246) spi_master: device0 release bus[0m
+D (44250) spi_master: device0 locked the bus[0m
+D (44254) spi_master: device0 release bus[0m
+D (44262) spi_master: device0 locked the bus[0m
+D (44263) spi_master: device0 release bus[0m
+D (44267) spi_master: device0 locked the bus[0m
+D (44271) spi_master: device0 release bus[0m
+D (44275) spi_master: device0 locked the bus[0m
+D (44280) spi_master: device0 release bus[0m
+D (44289) spi_master: device0 locked the bus[0m
+D (44289) spi_master: device0 release bus[0m
+D (44292) spi_master: device0 locked the bus[0m
+D (44296) spi_master: device0 release bus[0m
+D (44300) spi_master: device0 locked the bus[0m
+D (44305) spi_master: device0 release bus[0m
+D (44312) spi_master: device0 locked the bus[0m
+D (44313) spi_master: device0 release bus[0m
+D (44317) spi_master: device0 locked the bus[0m
+D (44322) spi_master: device0 release bus[0m
+D (44326) spi_master: device0 locked the bus[0m
+D (44330) spi_master: device0 release bus[0m
+D (44340) spi_master: device0 locked the bus[0m
+D (44341) spi_master: device0 release bus[0m
+D (44343) spi_master: device0 locked the bus[0m
+D (44347) spi_master: device0 release bus[0m
+D (44351) spi_master: device0 locked the bus[0m
+D (44355) spi_master: device0 release bus[0m
+D (44363) spi_master: device0 locked the bus[0m
+D (44364) spi_master: device0 release bus[0m
+D (44368) spi_master: device0 locked the bus[0m
+D (44372) spi_master: device0 release bus[0m
+D (44376) spi_master: device0 locked the bus[0m
+D (44381) spi_master: device0 release bus[0m
+D (44400) spi_master: device0 locked the bus[0m
+D (44400) spi_master: device0 release bus[0m
+D (44400) spi_master: device0 locked the bus[0m
+D (44402) spi_master: device0 release bus[0m
+D (44406) spi_master: device0 locked the bus[0m
+D (44410) spi_master: device0 release bus[0m
+D (44420) spi_master: device0 locked the bus[0m
+D (44421) spi_master: device0 release bus[0m
+D (44423) spi_master: device0 locked the bus[0m
+D (44427) spi_master: device0 release bus[0m
+D (44431) spi_master: device0 locked the bus[0m
+D (44435) spi_master: device0 release bus[0m
+D (44443) spi_master: device0 locked the bus[0m
+D (44444) spi_master: device0 release bus[0m
+D (44448) spi_master: device0 locked the bus[0m
+D (44452) spi_master: device0 release bus[0m
+D (44456) spi_master: device0 locked the bus[0m
+D (44461) spi_master: device0 release bus[0m
+D (44480) spi_master: device0 locked the bus[0m
+D (44480) spi_master: device0 release bus[0m
+D (44481) spi_master: device0 locked the bus[0m
+D (44482) spi_master: device0 release bus[0m
+D (44486) spi_master: device0 locked the bus[0m
+D (44490) spi_master: device0 release bus[0m
+D (44500) spi_master: device0 locked the bus[0m
+D (44501) spi_master: device0 release bus[0m
+D (44503) spi_master: device0 locked the bus[0m
+D (44507) spi_master: device0 release bus[0m
+D (44511) spi_master: device0 locked the bus[0m
+D (44515) spi_master: device0 release bus[0m
+D (44523) spi_master: device0 locked the bus[0m
+D (44524) spi_master: device0 release bus[0m
+D (44528) spi_master: device0 locked the bus[0m
+D (44532) spi_master: device0 release bus[0m
+D (44536) spi_master: device0 locked the bus[0m
+D (44541) spi_master: device0 release bus[0m
+D (44560) spi_master: device0 locked the bus[0m
+D (44560) spi_master: device0 release bus[0m
+D (44561) spi_master: device0 locked the bus[0m
+D (44562) spi_master: device0 release bus[0m
+D (44566) spi_master: device0 locked the bus[0m
+D (44570) spi_master: device0 release bus[0m
+D (44580) spi_master: device0 locked the bus[0m
+D (44581) spi_master: device0 release bus[0m
+D (44583) spi_master: device0 locked the bus[0m
+D (44587) spi_master: device0 release bus[0m
+D (44591) spi_master: device0 locked the bus[0m
+D (44595) spi_master: device0 release bus[0m
+D (44603) spi_master: device0 locked the bus[0m
+D (44604) spi_master: device0 release bus[0m
+D (44608) spi_master: device0 locked the bus[0m
+D (44612) spi_master: device0 release bus[0m
+D (44616) spi_master: device0 locked the bus[0m
+D (44621) spi_master: device0 release bus[0m
+D (44640) spi_master: device0 locked the bus[0m
+D (44640) spi_master: device0 release bus[0m
+D (44640) spi_master: device0 locked the bus[0m
+D (44642) spi_master: device0 release bus[0m
+D (44646) spi_master: device0 locked the bus[0m
+D (44650) spi_master: device0 release bus[0m
+D (44660) spi_master: device0 locked the bus[0m
+D (44661) spi_master: device0 release bus[0m
+D (44663) spi_master: device0 locked the bus[0m
+D (44667) spi_master: device0 release bus[0m
+D (44671) spi_master: device0 locked the bus[0m
+D (44675) spi_master: device0 release bus[0m
+D (44683) spi_master: device0 locked the bus[0m
+D (44684) spi_master: device0 release bus[0m
+D (44688) spi_master: device0 locked the bus[0m
+D (44692) spi_master: device0 release bus[0m
+D (44696) spi_master: device0 locked the bus[0m
+D (44701) spi_master: device0 release bus[0m
+D (44720) spi_master: device0 locked the bus[0m
+D (44720) spi_master: device0 release bus[0m
+D (44721) spi_master: device0 locked the bus[0m
+D (44722) spi_master: device0 release bus[0m
+D (44726) spi_master: device0 locked the bus[0m
+D (44730) spi_master: device0 release bus[0m
+D (44740) spi_master: device0 locked the bus[0m
+D (44741) spi_master: device0 release bus[0m
+D (44743) spi_master: device0 locked the bus[0m
+D (44747) spi_master: device0 release bus[0m
+D (44751) spi_master: device0 locked the bus[0m
+D (44755) spi_master: device0 release bus[0m
+D (44763) spi_master: device0 locked the bus[0m
+D (44764) spi_master: device0 release bus[0m
+D (44768) spi_master: device0 locked the bus[0m
+D (44772) spi_master: device0 release bus[0m
+D (44776) spi_master: device0 locked the bus[0m
+D (44781) spi_master: device0 release bus[0m
+D (44800) spi_master: device0 locked the bus[0m
+D (44800) spi_master: device0 release bus[0m
+D (44801) spi_master: device0 locked the bus[0m
+D (44802) spi_master: device0 release bus[0m
+D (44806) spi_master: device0 locked the bus[0m
+D (44810) spi_master: device0 release bus[0m
+D (44820) spi_master: device0 locked the bus[0m
+D (44821) spi_master: device0 release bus[0m
+D (44823) spi_master: device0 locked the bus[0m
+D (44827) spi_master: device0 release bus[0m
+D (44831) spi_master: device0 locked the bus[0m
+D (44835) spi_master: device0 release bus[0m
+D (44843) spi_master: device0 locked the bus[0m
+D (44844) spi_master: device0 release bus[0m
+D (44848) spi_master: device0 locked the bus[0m
+D (44852) spi_master: device0 release bus[0m
+D (44856) spi_master: device0 locked the bus[0m
+D (44861) spi_master: device0 release bus[0m
+D (44880) spi_master: device0 locked the bus[0m
+D (44880) spi_master: device0 release bus[0m
+D (44881) spi_master: device0 locked the bus[0m
+D (44882) spi_master: device0 release bus[0m
+D (44886) spi_master: device0 locked the bus[0m
+D (44890) spi_master: device0 release bus[0m
+D (44900) spi_master: device0 locked the bus[0m
+D (44901) spi_master: device0 release bus[0m
+D (44903) spi_master: device0 locked the bus[0m
+D (44907) spi_master: device0 release bus[0m
+D (44911) spi_master: device0 locked the bus[0m
+D (44915) spi_master: device0 release bus[0m
+D (44923) spi_master: device0 locked the bus[0m
+D (44924) spi_master: device0 release bus[0m
+D (44928) spi_master: device0 locked the bus[0m
+D (44932) spi_master: device0 release bus[0m
+D (44936) spi_master: device0 locked the bus[0m
+D (44941) spi_master: device0 release bus[0m
+D (44960) spi_master: device0 locked the bus[0m
+D (44960) spi_master: device0 release bus[0m
+D (44961) spi_master: device0 locked the bus[0m
+D (44962) spi_master: device0 release bus[0m
+D (44966) spi_master: device0 locked the bus[0m
+D (44970) spi_master: device0 release bus[0m
+D (44980) spi_master: device0 locked the bus[0m
+D (44981) spi_master: device0 release bus[0m
+D (44983) spi_master: device0 locked the bus[0m
+D (44987) spi_master: device0 release bus[0m
+D (44991) spi_master: device0 locked the bus[0m
+D (44996) spi_master: device0 release bus[0m
+D (45003) spi_master: device0 locked the bus[0m
+D (45004) spi_master: device0 release bus[0m
+D (45008) spi_master: device0 locked the bus[0m
+D (45012) spi_master: device0 release bus[0m
+D (45016) spi_master: device0 locked the bus[0m
+D (45021) spi_master: device0 release bus[0m
+D (45040) spi_master: device0 locked the bus[0m
+D (45040) spi_master: device0 release bus[0m
+D (45041) spi_master: device0 locked the bus[0m
+D (45042) spi_master: device0 release bus[0m
+D (45046) spi_master: device0 locked the bus[0m
+D (45050) spi_master: device0 release bus[0m
+D (45060) spi_master: device0 locked the bus[0m
+D (45061) spi_master: device0 release bus[0m
+D (45063) spi_master: device0 locked the bus[0m
+D (45067) spi_master: device0 release bus[0m
+D (45071) spi_master: device0 locked the bus[0m
+D (45075) spi_master: device0 release bus[0m
+D (45083) spi_master: device0 locked the bus[0m
+D (45084) spi_master: device0 release bus[0m
+D (45088) spi_master: device0 locked the bus[0m
+D (45092) spi_master: device0 release bus[0m
+D (45096) spi_master: device0 locked the bus[0m
+D (45101) spi_master: device0 release bus[0m
+D (45120) spi_master: device0 locked the bus[0m
+D (45120) spi_master: device0 release bus[0m
+D (45121) spi_master: device0 locked the bus[0m
+D (45122) spi_master: device0 release bus[0m
+D (45126) spi_master: device0 locked the bus[0m
+D (45130) spi_master: device0 release bus[0m
+D (45140) spi_master: device0 locked the bus[0m
+D (45141) spi_master: device0 release bus[0m
+D (45143) spi_master: device0 locked the bus[0m
+D (45147) spi_master: device0 release bus[0m
+D (45151) spi_master: device0 locked the bus[0m
+D (45156) spi_master: device0 release bus[0m
+D (45175) spi_master: device0 locked the bus[0m
+D (45175) spi_master: device0 release bus[0m
+D (45175) spi_master: device0 locked the bus[0m
+D (45177) spi_master: device0 release bus[0m
+D (45181) spi_master: device0 locked the bus[0m
+D (45185) spi_master: device0 release bus[0m
+D (45194) spi_master: device0 locked the bus[0m
+D (45195) spi_master: device0 release bus[0m
+D (45197) spi_master: device0 locked the bus[0m
+D (45202) spi_master: device0 release bus[0m
+D (45206) spi_master: device0 locked the bus[0m
+D (45210) spi_master: device0 release bus[0m
+D (45229) spi_master: device0 locked the bus[0m
+D (45230) spi_master: device0 release bus[0m
+D (45230) spi_master: device0 locked the bus[0m
+D (45231) spi_master: device0 release bus[0m
+D (45235) spi_master: device0 locked the bus[0m
+D (45240) spi_master: device0 release bus[0m
+D (45249) spi_master: device0 locked the bus[0m
+D (45250) spi_master: device0 release bus[0m
+D (45252) spi_master: device0 locked the bus[0m
+D (45257) spi_master: device0 release bus[0m
+D (45261) spi_master: device0 locked the bus[0m
+D (45265) spi_master: device0 release bus[0m
+D (45273) spi_master: device0 locked the bus[0m
+D (45274) spi_master: device0 release bus[0m
+D (45277) spi_master: device0 locked the bus[0m
+D (45282) spi_master: device0 release bus[0m
+D (45286) spi_master: device0 locked the bus[0m
+D (45290) spi_master: device0 release bus[0m
+D (45309) spi_master: device0 locked the bus[0m
+D (45310) spi_master: device0 release bus[0m
+D (45310) spi_master: device0 locked the bus[0m
+D (45311) spi_master: device0 release bus[0m
+D (45315) spi_master: device0 locked the bus[0m
+D (45320) spi_master: device0 release bus[0m
+D (45329) spi_master: device0 locked the bus[0m
+D (45330) spi_master: device0 release bus[0m
+D (45332) spi_master: device0 locked the bus[0m
+D (45337) spi_master: device0 release bus[0m
+D (45341) spi_master: device0 locked the bus[0m
+D (45345) spi_master: device0 release bus[0m
+D (45353) spi_master: device0 locked the bus[0m
+D (45354) spi_master: device0 release bus[0m
+D (45357) spi_master: device0 locked the bus[0m
+D (45362) spi_master: device0 release bus[0m
+D (45366) spi_master: device0 locked the bus[0m
+D (45370) spi_master: device0 release bus[0m
+D (45389) spi_master: device0 locked the bus[0m
+D (45390) spi_master: device0 release bus[0m
+D (45390) spi_master: device0 locked the bus[0m
+D (45391) spi_master: device0 release bus[0m
+D (45395) spi_master: device0 locked the bus[0m
+D (45400) spi_master: device0 release bus[0m
+D (45409) spi_master: device0 locked the bus[0m
+D (45410) spi_master: device0 release bus[0m
+D (45412) spi_master: device0 locked the bus[0m
+D (45417) spi_master: device0 release bus[0m
+D (45421) spi_master: device0 locked the bus[0m
+D (45425) spi_master: device0 release bus[0m
+D (45433) spi_master: device0 locked the bus[0m
+D (45434) spi_master: device0 release bus[0m
+D (45437) spi_master: device0 locked the bus[0m
+D (45442) spi_master: device0 release bus[0m
+D (45446) spi_master: device0 locked the bus[0m
+D (45450) spi_master: device0 release bus[0m
+D (45469) spi_master: device0 locked the bus[0m
+D (45470) spi_master: device0 release bus[0m
+D (45470) spi_master: device0 locked the bus[0m
+D (45471) spi_master: device0 release bus[0m
+D (45475) spi_master: device0 locked the bus[0m
+D (45480) spi_master: device0 release bus[0m
+D (45489) spi_master: device0 locked the bus[0m
+D (45490) spi_master: device0 release bus[0m
+D (45492) spi_master: device0 locked the bus[0m
+D (45497) spi_master: device0 release bus[0m
+D (45501) spi_master: device0 locked the bus[0m
+D (45505) spi_master: device0 release bus[0m
+D (45513) spi_master: device0 locked the bus[0m
+D (45514) spi_master: device0 release bus[0m
+D (45517) spi_master: device0 locked the bus[0m
+D (45522) spi_master: device0 release bus[0m
+D (45526) spi_master: device0 locked the bus[0m
+D (45530) spi_master: device0 release bus[0m
+D (45549) spi_master: device0 locked the bus[0m
+D (45550) spi_master: device0 release bus[0m
+D (45550) spi_master: device0 locked the bus[0m
+D (45551) spi_master: device0 release bus[0m
+D (45555) spi_master: device0 locked the bus[0m
+D (45560) spi_master: device0 release bus[0m
+D (45570) spi_master: device0 locked the bus[0m
+D (45570) spi_master: device0 release bus[0m
+D (45572) spi_master: device0 locked the bus[0m
+D (45577) spi_master: device0 release bus[0m
+D (45581) spi_master: device0 locked the bus[0m
+D (45585) spi_master: device0 release bus[0m
+D (45593) spi_master: device0 locked the bus[0m
+D (45594) spi_master: device0 release bus[0m
+D (45597) spi_master: device0 locked the bus[0m
+D (45602) spi_master: device0 release bus[0m
+D (45606) spi_master: device0 locked the bus[0m
+D (45610) spi_master: device0 release bus[0m
+D (45629) spi_master: device0 locked the bus[0m
+D (45630) spi_master: device0 release bus[0m
+D (45630) spi_master: device0 locked the bus[0m
+D (45631) spi_master: device0 release bus[0m
+D (45635) spi_master: device0 locked the bus[0m
+D (45640) spi_master: device0 release bus[0m
+D (45649) spi_master: device0 locked the bus[0m
+D (45650) spi_master: device0 release bus[0m
+D (45652) spi_master: device0 locked the bus[0m
+D (45657) spi_master: device0 release bus[0m
+D (45661) spi_master: device0 locked the bus[0m
+D (45665) spi_master: device0 release bus[0m
+D (45673) spi_master: device0 locked the bus[0m
+D (45674) spi_master: device0 release bus[0m
+D (45678) spi_master: device0 locked the bus[0m
+D (45682) spi_master: device0 release bus[0m
+D (45686) spi_master: device0 locked the bus[0m
+D (45690) spi_master: device0 release bus[0m
+D (45709) spi_master: device0 locked the bus[0m
+D (45710) spi_master: device0 release bus[0m
+D (45710) spi_master: device0 locked the bus[0m
+D (45711) spi_master: device0 release bus[0m
+D (45715) spi_master: device0 locked the bus[0m
+D (45720) spi_master: device0 release bus[0m
+D (45729) spi_master: device0 locked the bus[0m
+D (45730) spi_master: device0 release bus[0m
+D (45732) spi_master: device0 locked the bus[0m
+D (45737) spi_master: device0 release bus[0m
+D (45741) spi_master: device0 locked the bus[0m
+D (45745) spi_master: device0 release bus[0m
+D (45753) spi_master: device0 locked the bus[0m
+D (45754) spi_master: device0 release bus[0m
+D (45758) spi_master: device0 locked the bus[0m
+D (45762) spi_master: device0 release bus[0m
+D (45766) spi_master: device0 locked the bus[0m
+D (45770) spi_master: device0 release bus[0m

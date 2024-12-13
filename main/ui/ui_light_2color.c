@@ -125,8 +125,8 @@ void ui_light_2color_init(lv_obj_t* parent)
     light_xor.light_pwm = 0xFF; // Set to an invalid value to trigger the first update
     light_xor.light_cck = LIGHT_CCK_MAX; // Invalid state to trigger update
 
-    // Set default light settings (50% brightness and warm color temperature)
-    light_set_conf.light_pwm = 50;
+    // Set default light settings (0% brightness and warm color temperature)
+    light_set_conf.light_pwm = 0;
     light_set_conf.light_cck = LIGHT_CCK_WARM;
 
     // Create the main page object

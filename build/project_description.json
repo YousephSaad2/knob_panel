@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "c3_knob_panel",
-    "project_version":    "f6bb581-dirty",
+    "project_version":    "364ea8e-dirty",
     "project_path":       "C:/Espressif/frameworks/esp-idf-v5.3.1/esp-dev-kits-master/esp32-c3-lcdkit/examples/knob_panel",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.3.1",
     "build_dir":          "C:/Espressif/frameworks/esp-idf-v5.3.1/esp-dev-kits-master/esp32-c3-lcdkit/examples/knob_panel/build",

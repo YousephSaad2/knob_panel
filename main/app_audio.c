@@ -1,5 +1,6 @@
 /*
- * SPDX-FileCopyrightText: 2023 Espressif Systems (Shanghai) CO LTD
+ * SPDX-FileCopyrightText: 2023 Espressif Systems (Shanghai)
+ * CO LTD
  *
  * SPDX-License-Identifier: CC0-1.0
  */
@@ -21,36 +22,19 @@
 #include "audio_player.h"
 #include "bsp/esp-bsp.h"
 
-static const char *TAG = "app_audio";
+static const char* TAG = "app_audio";
 
 static esp_codec_dev_handle_t play_dev_handle;
 
 static esp_err_t bsp_audio_reconfig_clk(uint32_t rate, uint32_t bits_cfg, i2s_slot_mode_t ch);
-static esp_err_t bsp_audio_write(void *audio_buffer, size_t len, size_t *bytes_written, uint32_t timeout_ms);
-
-// Function to play an audio file
-esp_err_t play_audio_file(const char* filepath) {
-    if (!filepath) {
-        ESP_LOGE(TAG, "Filepath is NULL");
-        return ESP_ERR_INVALID_ARG;
-    }
-
-    ESP_LOGI(TAG, "Playing audio file: %s", filepath);
-
-    // TODO: Add the actual implementation for playing the audio file
-    // For example, using ESP-ADF or any audio playback API available in the project.
-
-    // Simulating successful playback for now
-    ESP_LOGI(TAG, "Audio playback successful for file: %s", filepath);
-    return ESP_OK;
-}
+static esp_err_t bsp_audio_write(void* audio_buffer, size_t len, size_t* bytes_written, uint32_t timeout_ms);
 
 esp_err_t audio_force_quite(bool ret)
 {
     return audio_player_stop();
 }
 
-esp_err_t app_audio_write(void *audio_buffer, size_t len, size_t *bytes_written, uint32_t timeout_ms)
+esp_err_t app_audio_write(void* audio_buffer, size_t len, size_t* bytes_written, uint32_t timeout_ms)
 {
     esp_err_t ret = ESP_OK;
 
@@ -62,41 +46,42 @@ esp_err_t app_audio_write(void *audio_buffer, size_t len, size_t *bytes_written,
     return ret;
 }
 
-esp_err_t audio_handle_info(PDM_SOUND_TYPE voice) {
+esp_err_t audio_handle_info(PDM_SOUND_TYPE voice)
+{
     char filepath[50];
-    esp_err_t ret = ESP_OK;
+    esp_err_t ret = ESP_OK; // Declare 'ret' only once here
 
+    // Map each PDM_SOUND_TYPE to a specific brightness MP3 file
     switch (voice) {
     case SOUND_TYPE_BRIGHTNESS_0:
-        sprintf(filepath, "%s/%s", CONFIG_BSP_SPIFFS_MOUNT_POINT, "brightness_0.mp3");
+        sprintf(filepath, "%s/brightness_0.mp3", CONFIG_BSP_SPIFFS_MOUNT_POINT);
         break;
     case SOUND_TYPE_BRIGHTNESS_25:
-        sprintf(filepath, "%s/%s", CONFIG_BSP_SPIFFS_MOUNT_POINT, "brightness_25.mp3");
+        sprintf(filepath, "%s/brightness_25.mp3", CONFIG_BSP_SPIFFS_MOUNT_POINT);
         break;
     case SOUND_TYPE_BRIGHTNESS_50:
-        sprintf(filepath, "%s/%s", CONFIG_BSP_SPIFFS_MOUNT_POINT, "brightness_50.mp3");
+        sprintf(filepath, "%s/brightness_50.mp3", CONFIG_BSP_SPIFFS_MOUNT_POINT);
         break;
     case SOUND_TYPE_BRIGHTNESS_75:
-        sprintf(filepath, "%s/%s", CONFIG_BSP_SPIFFS_MOUNT_POINT, "brightness_75.mp3");
+        sprintf(filepath, "%s/brightness_75.mp3", CONFIG_BSP_SPIFFS_MOUNT_POINT);
         break;
     case SOUND_TYPE_BRIGHTNESS_100:
-        sprintf(filepath, "%s/%s", CONFIG_BSP_SPIFFS_MOUNT_POINT, "brightness_100.mp3");
+        sprintf(filepath, "%s/brightness_100.mp3", CONFIG_BSP_SPIFFS_MOUNT_POINT);
         break;
     default:
-        ESP_LOGE("audio_handle_info", "Unknown sound type");
+        ESP_LOGE(TAG, "Unknown voice type");
         return ESP_FAIL;
     }
 
     FILE* fp = fopen(filepath, "r");
     if (!fp) {
-        ESP_LOGE("audio_handle_info", "Failed to open file: %s", filepath);
+        ESP_LOGE(TAG, "Failed to open file: %s", filepath);
         return ESP_FAIL;
     }
 
-    ESP_LOGI("audio_handle_info", "Playing file: %s", filepath);
+    ESP_LOGI(TAG, "Playing file: %s", filepath);
     ret = audio_player_play(fp);
     fclose(fp);
-
     return ret;
 }
 
@@ -105,10 +90,10 @@ static esp_err_t app_mute_function(AUDIO_PLAYER_MUTE_SETTING setting)
     return ESP_OK;
 }
 
-static void audio_callback(audio_player_cb_ctx_t *ctx)
+static void audio_callback(audio_player_cb_ctx_t* ctx)
 {
     switch (ctx->audio_event) {
-    case AUDIO_PLAYER_CALLBACK_EVENT_IDLE: /**< Player is idle, not playing audio */
+    case AUDIO_PLAYER_CALLBACK_EVENT_IDLE:
         ESP_LOGI(TAG, "IDLE");
         break;
     case AUDIO_PLAYER_CALLBACK_EVENT_COMPLETED_PLAYING_NEXT:
@@ -143,15 +128,22 @@ static esp_err_t bsp_audio_reconfig_clk(uint32_t rate, uint32_t bits_cfg, i2s_sl
     };
 
     ret = esp_codec_dev_close(play_dev_handle);
+    if (ret != ESP_OK) {
+        ESP_LOGE(TAG, "Failed to close codec dev");
+        return ret;
+    }
+
     ret = esp_codec_dev_open(play_dev_handle, &fs);
+    if (ret != ESP_OK) {
+        ESP_LOGE(TAG, "Failed to open codec dev with new config");
+    }
     return ret;
 }
 
-static esp_err_t bsp_audio_write(void *audio_buffer, size_t len, size_t *bytes_written, uint32_t timeout_ms)
+static esp_err_t bsp_audio_write(void* audio_buffer, size_t len, size_t* bytes_written, uint32_t timeout_ms)
 {
-    esp_err_t ret = ESP_OK;
-    ret = esp_codec_dev_write(play_dev_handle, audio_buffer, len);
-    *bytes_written = len;
+    esp_err_t ret = esp_codec_dev_write(play_dev_handle, audio_buffer, len);
+    *bytes_written = (ret == ESP_OK) ? len : 0;
     return ret;
 }
 

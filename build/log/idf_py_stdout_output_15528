@@ -1,0 +1,99 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c51a
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x18a8
+load:0x403cc710,len:0xd68
+load:0x403ce710,len:0x2f40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Dec 12 2024 21:25:09[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (28) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : QIO[0m
+[0;32mI (43) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 fctry            WiFi data        01 02 00010000 00006000[0m
+[0;32mI (87) boot:  3 factory          factory app      00 00 00020000 00352000[0m
+[0;32mI (94) boot:  4 storage          Unknown data     01 82 00372000 00026000[0m
+[0;32mI (101) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00020020 vaddr=3c080020 size=274258h (2572888) map[0m
+[0;32mI (484) esp_image: segment 1: paddr=00294280 vaddr=3fc8d000 size=01f24h (  7972) load[0m
+[0;32mI (486) esp_image: segment 2: paddr=002961ac vaddr=40380000 size=09e6ch ( 40556) load[0m
+[0;32mI (496) esp_image: segment 3: paddr=002a0020 vaddr=42000020 size=7d240h (512576) map[0m
+[0;32mI (571) esp_image: segment 4: paddr=0031d268 vaddr=40389e6c size=0306ch ( 12396) load[0m
+[0;32mI (574) esp_image: segment 5: paddr=003202dc vaddr=50000200 size=00004h (     4) load[0m
+[0;32mI (581) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (583) boot: Disabling RNG early entropy source...[0m
+[0;32mI (600) cpu_start: Unicore app[0m
+[0;32mI (609) cpu_start: Pro cpu start user code[0m
+[0;32mI (609) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (609) app_init: Application information:[0m
+[0;32mI (612) app_init: Project name:     c3_knob_panel[0m
+[0;32mI (617) app_init: App version:      364ea8e-dirty[0m
+[0;32mI (622) app_init: Compile time:     Dec 12 2024 21:44:50[0m
+[0;32mI (628) app_init: ELF file SHA256:  967e220a5...[0m
+[0;32mI (634) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (640) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (644) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (649) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (654) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (661) heap_init: At 3FC988A0 len 00027760 (157 KiB): RAM[0m
+[0;32mI (667) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (674) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (681) heap_init: At 50000204 len 00001DE4 (7 KiB): RTCRAM[0m
+[0;32mI (688) spi_flash: detected chip: generic[0m
+[0;32mI (692) spi_flash: flash io: qio[0m
+[0;32mI (697) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (703) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (710) main_task: Started on CPU0[0m
+[0;32mI (714) main_task: Calling app_main()[0m
+[0;32mI (718) main: Compile time: Dec 12 2024 21:44:57[0m
+[0;32mI (728) LVGL: Starting LVGL task[0m
+[0;32mI (729) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (736) gc9a01: LCD panel create success, version: 1.2.0[0m
+[0;32mI (868) gpio: GPIO[10]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (868) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (875) Knob: Iot Knob Config Succeed, encoder A:10, encoder B:6, direction:0, Version: 0.1.5[0m
+[0;32mI (885) button: IoT Button Version: 3.4.0[0m
+[0;32mI (889) gpio: GPIO[9]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (899) main: Display LVGL demo[0m
+[0;32mI (902) LVGL_PUB: add group for encoder[0m
+[0;32mI (907) lvgl_basic: Enter home page[0m
+[0;32mI (916) lvgl_basic: Init clock time ok, 0x3fc91330[0m
+[0;32mI (1420) ESP32-C3-LCDKit: BLINK_GPIO setting 8[0m
+[0;32mI (1421) gpio: GPIO[8]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1429) ESP32-C3-LCDKit: Partition size: total: 135791, used: 105671[0m
+[0;32mI (1434) main_task: Returned from app_main()[0m
+[0;32mI (4417) main_menu: Invalid Enter factory[0m
+[0;32mI (5167) audio_handle_info: Playing file: /spiffs/brightness_50.mp3[0m
+[0;32mI (5168) app_audio: PLAYING[0m
+[0;32mI (6398) audio_handle_info: Playing file: /spiffs/brightness_75.mp3[0m
+[0;32mI (8860) audio_handle_info: Playing file: /spiffs/brightness_100.mp3[0m
+[0;32mI (11595) audio_handle_info: Playing file: /spiffs/brightness_75.mp3[0m
+[0;32mI (11958) audio_handle_info: Playing file: /spiffs/brightness_50.mp3[0m
+[0;32mI (12317) audio_handle_info: Playing file: /spiffs/brightness_25.mp3[0m
+[0;31mE (12318) audio: audio_send_event(473): The last event has not been processed yet[0m
+[0;32mI (13377) audio_handle_info: Playing file: /spiffs/brightness_0.mp3[0m
+[0;31mE (13377) audio: audio_send_event(473): The last event has not been processed yet[0m
+[0;32mI (14372) audio_handle_info: Playing file: /spiffs/brightness_25.mp3[0m
+[0;31mE (14373) audio: audio_send_event(473): The last event has not been processed yet[0m
+[0;32mI (15581) audio_handle_info: Playing file: /spiffs/brightness_50.mp3[0m
+[0;31mE (15582) audio: audio_send_event(473): The last event has not been processed yet[0m
+[0;32mI (16239) audio_handle_info: Playing file: /spiffs/brightness_75.mp3[0m
+[0;31mE (16240) audio: audio_send_event(473): The last event has not been processed yet[0m
+[0;32mI (456074) audio_handle_info: Playing file: /spiffs/brightness_50.mp3[0m
+[0;31mE (456074) audio: audio_send_event(473): The last event has not been processed yet[0m
+[0;32mI (457875) audio_handle_info: Playing file: /spiffs/brightness_25.mp3[0m
+[0;31mE (457876) audio: audio_send_event(473): The last event has not been processed yet[0m
+[0;32mI (458213) audio_handle_info: Playing file: /spiffs/brightness_0.mp3[0m
+[0;31mE (458213) audio: audio_send_event(473): The last event has not been processed yet[0m
+[0;32mI (1047917) WAKEUP: code:14[0m
+[0;31mE (1047917) audio: audio_send_event(473): The last event has not been processed yet[0m

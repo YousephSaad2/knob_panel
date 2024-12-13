@@ -1,0 +1,2321 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c72e
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x18a8
+load:0x403cc710,len:0xd68
+load:0x403ce710,len:0x2f40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Dec 12 2024 19:31:45[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (28) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : QIO[0m
+[0;32mI (43) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 fctry            WiFi data        01 02 00010000 00006000[0m
+[0;32mI (87) boot:  3 factory          factory app      00 00 00020000 00352000[0m
+[0;32mI (94) boot:  4 storage          Unknown data     01 82 00372000 00026000[0m
+[0;32mI (101) boot: End of partition table[0m
+[0;32mI (106) esp_image: segment 0: paddr=00020020 vaddr=3c080020 size=173d98h (1523096) map[0m
+[0;32mI (333) esp_image: segment 1: paddr=00193dc0 vaddr=3fc8d200 size=01f88h (  8072) load[0m
+[0;32mI (335) esp_image: segment 2: paddr=00195d50 vaddr=40380000 size=0a2c8h ( 41672) load[0m
+[0;32mI (346) esp_image: segment 3: paddr=001a0020 vaddr=42000020 size=7e490h (517264) map[0m
+[0;32mI (421) esp_image: segment 4: paddr=0021e4b8 vaddr=4038a2c8 size=02d9ch ( 11676) load[0m
+[0;32mI (424) esp_image: segment 5: paddr=0022125c vaddr=50000200 size=00004h (     4) load[0m
+[0;32mI (431) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (433) boot: Disabling RNG early entropy source...[0m
+[0;32mI (450) cpu_start: Unicore app[0m
+D (451) cpu_start: Pro cpu up[0m
+D (459) clk: RTC_SLOW_CLK calibration value: 3266445[0m
+D (464) cpu_start: calling init function: 0x42000236 on core: 0[0m
+D (464) cpu_start: calling init function: 0x4200094e on core: 0[0m
+[0;32mI (465) cpu_start: Pro cpu start user code[0m
+[0;32mI (469) cpu_start: cpu freq: 160000000 Hz[0m
+D (474) cpu_start: calling init function: 0x420000e0 on core: 0[0m
+[0;32mI (480) app_init: Application information:[0m
+[0;32mI (485) app_init: Project name:     c3_knob_panel[0m
+[0;32mI (490) app_init: App version:      cefdf8f-dirty[0m
+[0;32mI (496) app_init: Compile time:     Dec 12 2024 19:35:47[0m
+[0;32mI (502) app_init: ELF file SHA256:  28022e2cb...[0m
+[0;32mI (507) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+D (513) cpu_start: calling init function: 0x42000248 on core: 0[0m
+[0;32mI (519) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (524) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (529) efuse_init: Chip rev:         v0.4[0m
+D (533) cpu_start: calling init function: 0x42002934 on core: 0[0m
+D (539) memory_layout: Checking 5 reserved memory ranges:[0m
+D (545) memory_layout: Reserved memory range 0x3fc80000 - 0x3fc8d200[0m
+D (551) memory_layout: Reserved memory range 0x3fc8d200 - 0x3fc98ac0[0m
+D (558) memory_layout: Reserved memory range 0x3fcdf060 - 0x3fce0000[0m
+D (564) memory_layout: Reserved memory range 0x50000000 - 0x50000204[0m
+D (570) memory_layout: Reserved memory range 0x50001fe8 - 0x50002000[0m
+D (577) memory_layout: Building list of available memory regions:[0m
+D (583) memory_layout: Available memory region 0x3fc98ac0 - 0x3fca0000[0m
+D (590) memory_layout: Available memory region 0x3fca0000 - 0x3fcc0000[0m
+D (596) memory_layout: Available memory region 0x3fcc0000 - 0x3fcdc710[0m
+D (603) memory_layout: Available memory region 0x3fcdc710 - 0x3fcdf060[0m
+D (609) memory_layout: Available memory region 0x50000204 - 0x50001fe8[0m
+[0;32mI (616) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (623) heap_init: New heap initialised at 0x3fc98ac0[0m
+[0;32mI (628) heap_init: At 3FC98AC0 len 00027540 (157 KiB): RAM[0m
+D (635) heap_init: New heap initialised at 0x3fcc0000[0m
+[0;32mI (640) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (647) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+D (654) heap_init: New heap initialised at 0x50000204[0m
+[0;32mI (659) heap_init: At 50000204 len 00001DE4 (7 KiB): RTCRAM[0m
+D (665) cpu_start: calling init function: 0x4200885e on core: 0[0m
+D (671) cpu_start: calling init function: 0x42007e54 on core: 0[0m
+D (677) cpu_start: calling init function: 0x420009c6 on core: 0[0m
+D (683) intr_alloc: Connected src 27 to int 2 (cpu 0)[0m
+D (688) cpu_start: calling init function: 0x420009d4 on core: 0[0m
+D (694) cpu_start: calling init function: 0x42009c9e on core: 0[0m
+D (700) cpu_start: calling init function: 0x4200acca on core: 0[0m
+D (706) cpu_start: calling init function: 0x4200aefa on core: 0[0m
+D (712) cpu_start: calling init function: 0x42007ef2 on core: 0[0m
+D (718) cpu_start: calling init function: 0x42008436 on core: 0[0m
+D (724) cpu_start: calling init function: 0x420009e4 on core: 0[0m
+D (730) spi_flash: trying chip: issi[0m
+D (734) spi_flash: trying chip: gd[0m
+D (737) spi_flash: trying chip: mxic[0m
+D (741) spi_flash: trying chip: winbond[0m
+D (745) spi_flash: trying chip: boya[0m
+D (748) spi_flash: trying chip: th[0m
+D (752) spi_flash: trying chip: generic[0m
+[0;32mI (756) spi_flash: detected chip: generic[0m
+[0;32mI (760) spi_flash: flash io: qio[0m
+D (764) chip_generic: set_io_mode: status before 0x200[0m
+D (769) cpu_start: calling init function: 0x42000320 on core: 0[0m
+D (775) cpu_start: calling init function: 0x4206eee0[0m
+D (781) cpu_start: calling init function: 0x4206ee64[0m
+D (786) cpu_start: calling init function: 0x4206e9a8[0m
+D (791) cpu_start: calling init function: 0x4206e882[0m
+D (796) efuse: In EFUSE_BLK2__DATA4_REG is used 2 bits starting with 0 bit[0m
+D (803) efuse: In EFUSE_BLK2__DATA5_REG is used 10 bits starting with 18 bit[0m
+D (810) cpu_start: calling init function: 0x4206e840[0m
+D (815) cpu_start: calling init function: 0x4206b65a[0m
+D (820) efuse: In EFUSE_BLK2__DATA4_REG is used 2 bits starting with 0 bit[0m
+D (827) efuse: In EFUSE_BLK2__DATA4_REG is used 10 bits starting with 20 bit[0m
+D (834) efuse: In EFUSE_BLK2__DATA4_REG is used 2 bits starting with 0 bit[0m
+D (841) efuse: In EFUSE_BLK2__DATA4_REG is used 2 bits starting with 30 bit[0m
+D (848) efuse: In EFUSE_BLK2__DATA5_REG is used 8 bits starting with 0 bit[0m
+D (855) efuse: In EFUSE_BLK2__DATA4_REG is used 2 bits starting with 0 bit[0m
+D (862) efuse: In EFUSE_BLK2__DATA5_REG is used 10 bits starting with 8 bit[0m
+D (869) efuse: In EFUSE_BLK2__DATA4_REG is used 2 bits starting with 0 bit[0m
+D (876) efuse: In EFUSE_BLK2__DATA5_REG is used 10 bits starting with 18 bit[0m
+D (883) efuse: In EFUSE_BLK2__DATA4_REG is used 2 bits starting with 0 bit[0m
+D (890) efuse: In EFUSE_BLK2__DATA4_REG is used 10 bits starting with 20 bit[0m
+D (897) efuse: In EFUSE_BLK2__DATA4_REG is used 2 bits starting with 0 bit[0m
+D (904) efuse: In EFUSE_BLK2__DATA4_REG is used 2 bits starting with 30 bit[0m
+D (911) efuse: In EFUSE_BLK2__DATA5_REG is used 8 bits starting with 0 bit[0m
+D (918) efuse: In EFUSE_BLK2__DATA4_REG is used 2 bits starting with 0 bit[0m
+D (925) efuse: In EFUSE_BLK2__DATA5_REG is used 10 bits starting with 8 bit[0m
+D (932) cpu_start: calling init function: 0x4038513a[0m
+D (937) cpu_start: calling init function: 0x42000fde[0m
+D (942) cpu_start: calling init function: 0x4205c3b4 on core: 0[0m
+D (948) intr_alloc: Connected src 39 to int 3 (cpu 0)[0m
+D (953) cpu_start: calling init function: 0x42001e5e on core: 0[0m
+D (959) cpu_start: calling init function: 0x420063ea on core: 0[0m
+[0;32mI (965) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (972) sleep: Enable automatic switching of GPIO sleep configuration[0m
+D (979) cpu_start: calling init function: 0x42000a26 on core: 0[0m
+D (985) cpu_start: calling init function: 0x4200a80c on core: 0[0m
+D (991) cpu_start: calling init function: 0x42000a34 on core: 0[0m
+D (997) intr_alloc: Connected src 50 to int 4 (cpu 0)[0m
+D (1002) app_start: Starting scheduler on CPU0[0m
+D (1006) intr_alloc: Connected src 37 to int 5 (cpu 0)[0m
+[0;32mI (1006) main_task: Started on CPU0[0m
+D (1010) heap_init: New heap initialised at 0x3fcdc710[0m
+D (1015) intr_alloc: Connected src 33 to int 7 (cpu 0)[0m
+[0;32mI (1020) main_task: Calling app_main()[0m
+[0;32mI (1025) main: Compile time: Dec 12 2024 19:32:07[0m
+D (1034) nvs: nvs_open_from_partition sys_param 0[0m
+D (1035) nvs: nvs_get_str_or_blob param[0m
+D (1039) nvs: nvs_close 1[0m
+[0;32mI (1041) main: Initializing SPIFFS[0m
+[0;32mI (1049) main: SPIFFS initialized successfully[0m
+[0;32mI (1051) main: Listing files in /spiffs:[0m
+[0;32mI (1055) main: File: brightness_0.mp3[0m
+[0;32mI (1060) main: File: brightness_100.mp3[0m
+[0;32mI (1064) main: File: brightness_25.mp3[0m
+[0;32mI (1069) main: File: brightness_50.mp3[0m
+[0;32mI (1073) main: File: brightness_75.mp3[0m
+[0;32mI (1078) main: File: factory.mp3[0m
+[0;32mI (1081) main: File: knob_1ch.mp3[0m
+[0;32mI (1086) LVGL: Starting LVGL task[0m
+D (1089) ledc: Using clock source 4 (in slow mode), divisor: 0xfa0[0m
+D (1096) ledc: In slow speed mode, global clk set: 4[0m
+D (1101) ledc: LEDC_PWM CHANNEL 1|GPIO 05|Duty 0000|Time 1[0m
+D (1106) ledc: Using clock source 4 (in slow mode), divisor: 0xfa0[0m
+D (1113) ledc: In slow speed mode, global clk set: 4[0m
+D (1117) ledc: LEDC_PWM CHANNEL 1|GPIO 05|Duty 0000|Time 1[0m
+D (1123) ESP32-C3-LCDKit: Initialize SPI bus[0m
+D (1127) gdma: new group (0) at 0x3fc9f4bc[0m
+D (1131) gdma: new pair (0,0) at 0x3fc9f538[0m
+D (1136) gdma: new tx channel (0,0) at 0x3fc9f484[0m
+D (1140) gdma: new rx channel (0,0) at 0x3fc9f558[0m
+D (1145) spi: SPI2 use gpio matrix.[0m
+D (1149) ESP32-C3-LCDKit: Install panel IO[0m
+D (1153) intr_alloc: Connected src 19 to int 8 (cpu 0)[0m
+D (1158) spi_hal: eff: 80000, limit: 80000k(/0), 0 dummy, -1 delay[0m
+D (1165) spi_master: SPI2: New device added to CS0, effective clock: 80000000 Hz[0m
+[0;32mI (1172) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+D (1181) lcd_panel.io.spi: new spi lcd panel io @0x3fc9f6d0, max_trans_bytes: 32768[0m
+D (1189) ESP32-C3-LCDKit: Install LCD driver[0m
+D (1193) gc9a01: new gc9a01 panel @0x3fc9fcf0[0m
+[0;32mI (1198) gc9a01: LCD panel create success, version: 1.2.0[0m
+D (1204) spi_master: device0 locked the bus[0m
+D (1208) spi_master: device0 release bus[0m
+D (1232) spi_master: device0 locked the bus[0m
+D (1232) spi_master: device0 release bus[0m
+D (1332) spi_master: device0 locked the bus[0m
+D (1332) spi_master: device0 release bus[0m
+D (1332) spi_master: device0 locked the bus[0m
+D (1333) spi_master: device0 release bus[0m
+D (1337) spi_master: device0 locked the bus[0m
+D (1341) spi_master: device0 release bus[0m
+D (1345) spi_master: device0 locked the bus[0m
+D (1349) spi_master: device0 release bus[0m
+D (1353) spi_master: device0 locked the bus[0m
+D (1358) spi_master: device0 release bus[0m
+D (1362) spi_master: device0 locked the bus[0m
+D (1366) spi_master: device0 release bus[0m
+D (1370) spi_master: device0 locked the bus[0m
+D (1374) spi_master: device0 release bus[0m
+D (1378) spi_master: device0 locked the bus[0m
+D (1382) spi_master: device0 release bus[0m
+D (1386) spi_master: device0 locked the bus[0m
+D (1391) spi_master: device0 release bus[0m
+D (1395) spi_master: device0 locked the bus[0m
+D (1399) spi_master: device0 release bus[0m
+D (1403) spi_master: device0 locked the bus[0m
+D (1407) spi_master: device0 release bus[0m
+D (1411) spi_master: device0 locked the bus[0m
+D (1415) spi_master: device0 release bus[0m
+D (1419) spi_master: device0 locked the bus[0m
+D (1424) spi_master: device0 release bus[0m
+D (1428) spi_master: device0 locked the bus[0m
+D (1432) spi_master: device0 release bus[0m
+D (1436) spi_master: device0 locked the bus[0m
+D (1440) spi_master: device0 release bus[0m
+D (1444) spi_master: device0 locked the bus[0m
+D (1448) spi_master: device0 release bus[0m
+D (1452) spi_master: device0 locked the bus[0m
+D (1457) spi_master: device0 release bus[0m
+D (1461) spi_master: device0 locked the bus[0m
+D (1465) spi_master: device0 release bus[0m
+D (1469) spi_master: device0 locked the bus[0m
+D (1473) spi_master: device0 release bus[0m
+D (1477) spi_master: device0 locked the bus[0m
+D (1481) spi_master: device0 release bus[0m
+D (1485) spi_master: device0 locked the bus[0m
+D (1490) spi_master: device0 release bus[0m
+D (1494) spi_master: device0 locked the bus[0m
+D (1498) spi_master: device0 release bus[0m
+D (1502) spi_master: device0 locked the bus[0m
+D (1506) spi_master: device0 release bus[0m
+D (1510) spi_master: device0 locked the bus[0m
+D (1514) spi_master: device0 release bus[0m
+D (1518) spi_master: device0 locked the bus[0m
+D (1523) spi_master: device0 release bus[0m
+D (1527) spi_master: device0 locked the bus[0m
+D (1531) spi_master: device0 release bus[0m
+D (1535) spi_master: device0 locked the bus[0m
+D (1539) spi_master: device0 release bus[0m
+D (1543) spi_master: device0 locked the bus[0m
+D (1547) spi_master: device0 release bus[0m
+D (1551) spi_master: device0 locked the bus[0m
+D (1556) spi_master: device0 release bus[0m
+D (1560) spi_master: device0 locked the bus[0m
+D (1564) spi_master: device0 release bus[0m
+D (1568) spi_master: device0 locked the bus[0m
+D (1572) spi_master: device0 release bus[0m
+D (1576) spi_master: device0 locked the bus[0m
+D (1580) spi_master: device0 release bus[0m
+D (1584) spi_master: device0 locked the bus[0m
+D (1589) spi_master: device0 release bus[0m
+D (1593) spi_master: device0 locked the bus[0m
+D (1597) spi_master: device0 release bus[0m
+D (1601) spi_master: device0 locked the bus[0m
+D (1605) spi_master: device0 release bus[0m
+D (1609) spi_master: device0 locked the bus[0m
+D (1613) spi_master: device0 release bus[0m
+D (1617) spi_master: device0 locked the bus[0m
+D (1622) spi_master: device0 release bus[0m
+D (1626) spi_master: device0 locked the bus[0m
+D (1630) spi_master: device0 release bus[0m
+D (1634) spi_master: device0 locked the bus[0m
+D (1638) spi_master: device0 release bus[0m
+D (1642) spi_master: device0 locked the bus[0m
+D (1646) spi_master: device0 release bus[0m
+D (1650) spi_master: device0 locked the bus[0m
+D (1655) spi_master: device0 release bus[0m
+D (1659) spi_master: device0 locked the bus[0m
+D (1663) spi_master: device0 release bus[0m
+D (1667) spi_master: device0 locked the bus[0m
+D (1671) spi_master: device0 release bus[0m
+D (1675) spi_master: device0 locked the bus[0m
+D (1679) spi_master: device0 release bus[0m
+D (1683) gc9a01: send init commands success[0m
+D (1688) spi_master: device0 locked the bus[0m
+D (1692) spi_master: device0 release bus[0m
+D (1696) spi_master: device0 locked the bus[0m
+D (1700) spi_master: device0 release bus[0m
+D (1704) spi_master: device0 locked the bus[0m
+D (1708) spi_master: device0 release bus[0m
+D (1712) spi_master: device0 locked the bus[0m
+D (1717) spi_master: device0 release bus[0m
+D (1721) ESP32-C3-LCDKit: Add LCD screen[0m
+D (1725) LVGL: Register display driver to LVGL[0m
+[0;32mI (1732) gpio: GPIO[10]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1739) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1748) Knob: Iot Knob Config Succeed, encoder A:10, encoder B:6, direction:0, Version: 0.1.5[0m
+[0;32mI (1757) button: IoT Button Version: 3.4.0[0m
+[0;32mI (1762) gpio: GPIO[9]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1772) Heap Info: Total Free Heap: 149124 bytes[0m
+[0;32mI (1776) Heap Info: Minimum Free Heap: 149124 bytes[0m
+[0;32mI (1782) main: Display LVGL demo[0m
+[0;32mI (1786) LVGL_PUB: add group for encoder[0m
+[0;32mI (1791) lvgl_basic: Enter home page[0m
+[0;32mI (1801) lvgl_basic: Init clock time ok, 0x3fc91590[0m
+D (2096) spi_master: device0 locked the bus[0m
+D (2096) spi_master: device0 release bus[0m
+D (2097) spi_master: device0 locked the bus[0m
+D (2098) spi_master: device0 release bus[0m
+D (2102) spi_master: device0 locked the bus[0m
+D (2106) spi_master: device0 release bus[0m
+D (2125) spi_master: device0 locked the bus[0m
+D (2125) spi_master: device0 release bus[0m
+D (2126) spi_master: device0 locked the bus[0m
+D (2127) spi_master: device0 release bus[0m
+D (2131) spi_master: device0 locked the bus[0m
+D (2135) spi_master: device0 release bus[0m
+D (2158) spi_master: device0 locked the bus[0m
+D (2159) spi_master: device0 release bus[0m
+D (2159) spi_master: device0 locked the bus[0m
+D (2160) spi_master: device0 release bus[0m
+D (2164) spi_master: device0 locked the bus[0m
+D (2168) spi_master: device0 release bus[0m
+D (2186) spi_master: device0 locked the bus[0m
+D (2187) spi_master: device0 release bus[0m
+D (2187) spi_master: device0 locked the bus[0m
+D (2188) spi_master: device0 release bus[0m
+D (2192) spi_master: device0 locked the bus[0m
+D (2196) spi_master: device0 release bus[0m
+D (2218) spi_master: device0 locked the bus[0m
+D (2219) spi_master: device0 release bus[0m
+D (2219) spi_master: device0 locked the bus[0m
+D (2220) spi_master: device0 release bus[0m
+D (2224) spi_master: device0 locked the bus[0m
+D (2228) spi_master: device0 release bus[0m
+D (2250) spi_master: device0 locked the bus[0m
+D (2251) spi_master: device0 release bus[0m
+D (2251) spi_master: device0 locked the bus[0m
+D (2252) spi_master: device0 release bus[0m
+D (2256) spi_master: device0 locked the bus[0m
+D (2260) spi_master: device0 release bus[0m
+D (2282) spi_master: device0 locked the bus[0m
+D (2283) spi_master: device0 release bus[0m
+D (2283) spi_master: device0 locked the bus[0m
+D (2284) spi_master: device0 release bus[0m
+D (2288) spi_master: device0 locked the bus[0m
+D (2292) spi_master: device0 release bus[0m
+D (2301) ESP32-C3-LCDKit: Setting LCD backlight: 100%[0m
+[0;32mI (2302) ESP32-C3-LCDKit: BLINK_GPIO setting 8[0m
+D (2311) spi_master: device0 locked the bus[0m
+D (2311) spi_master: device0 release bus[0m
+D (2315) spi_master: device0 locked the bus[0m
+D (2319) spi_master: device0 release bus[0m
+D (2323) spi_master: device0 locked the bus[0m
+D (2327) spi_master: device0 release bus[0m
+D (2332) rmt: new group(0) at 0x3fcbc420, occupy=fffffff0[0m
+D (2345) spi_master: device0 locked the bus[0m
+D (2346) spi_master: device0 release bus[0m
+D (2347) spi_master: device0 locked the bus[0m
+D (2351) spi_master: device0 release bus[0m
+D (2355) spi_master: device0 locked the bus[0m
+D (2360) spi_master: device0 release bus[0m
+D (2364) intr_D (2378) spi_master: device0 locked the bus[0m
+D (2378) spi_master: device0 release bus[0m
+D (2379) spi_master: device0 locked the bus[0m
+D (2379) spi_master: device0 release bus[0m
+D (2383) spi_master: device0 locked the bus[0m
+D (2388) spi_master: device0 release bus[0m
+alloc: Connected src 28 to int 9 (cpu 0)[0m
+D (2396) rmt: group clock resolution:80000000[0m
+D (2406) spi_master: device0 locked the bus[0m
+D (2407) spi_master: device0 release bus[0m
+D (2408) spi_master: device0 locked the bus[0m
+D (2413) spi_master: device0 release bus[0m
+D (2417) spi_master: device0 locked the bus[0m
+D (2421) spi_master: device0 release bus[0m
+[0;32mI (2425) gpio: GPIO[8]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+D (2439) spi_master: device0 locked the bus[0m
+D (2441) spi_master: device0 release bus[0m
+D (2445) spi_master: device0 locked the bus[0m
+D (2449) spi_master: device0 release bus[0m
+D (2453) spi_master: device0 locked the bus[0m
+D (2458) spi_master: device0 release bus[0m
+D (2462) rmt: new tx channel(0,0) at 0x3fcbc16c, gpio=8, res=10000000Hz, hw_mem_base=0x60016400, dma_mem_base=0x0, dma_nodes=0x0, ping_pong_size=24, queue_depth=4[0m
+D (2476) spi_master: device0 locked the bus[0m
+D (2483) spi_master: device0 release bus[0m
+D (2487) spi_master: device0 locked the bus[0m
+D (2491) spi_master: device0 release bus[0m
+D (2495) spi_master: device0 locked the bus[0m
+D (2499) spi_master: device0 release bus[0m
+D (2503) rmt: new bytes encoder @0x3fcbc4b4[0m
+D (2518) spi_master: device0 locked the bus[0m
+D (2518) spi_master: device0 release bus[0m
+D (2519) spi_master: device0 locked the bus[0m
+D (2523) spi_master: device0 release bus[0m
+D (2527) spi_master: device0 locked the bus[0m
+D (2531) spi_master: device0 release bus[0m
+D (2535) rmt: new copy encoder @0x3fcbc4d8[0m
+D (2550) spi_master: device0 locked the bus[0m
+D (2550) spi_master: device0 release bus[0m
+D (2551) spi_master: device0 locked the bus[0m
+D (2555) spi_master: device0 release bus[0m
+D (2559) spi_master: device0 locked the bus[0m
+D (2563) spi_master: device0 release bus[0m
+D (2582) spi_master: device0 locked the bus[0m
+D (2582) spi_master: device0 release bus[0m
+D (2583) spi_master: device0 locked the bus[0m
+D (2584) spi_master: device0 release bus[0m
+D (2588) spi_master: device0 locked the bus[0m
+D (2592) spi_master: device0 release bus[0m
+D (2611) spi_master: device0 locked the bus[0m
+D (2611) spi_master: device0 release bus[0m
+D (2611) spi_master: device0 locked the bus[0m
+D (2612) spi_master: device0 release bus[0m
+D (2616) spi_master: device0 locked the bus[0m
+D (2621) spi_master: device0 release bus[0m
+D (2639) spi_master: device0 locked the bus[0m
+D (2640) spi_master: device0 release bus[0m
+D (2640) spi_master: device0 locked the bus[0m
+D (2641) spi_master: device0 release bus[0m
+D (2645) spi_master: device0 locked the bus[0m
+D (2649) spi_master: device0 release bus[0m
+[0;32mI (2658) ESP32-C3-LCDKit: Partition size: total: 135791, used: 105671[0m
+D (2668) spi_master: device0 locked the bus[0m
+D (2670) spi_master: device0 release bus[0m
+D (2670) spi_master: device0 locked the bus[0m
+D (2673) spi_master: device0 release bus[0m
+D (2677) spi_master: device0 locked the bus[0m
+D (2681) spi_master: device0 release bus[0m
+D (2685) i2s_common: tx channel is registered on I2S0 successfully[0m
+D (2700) spi_master: device0 locked the bus[0m
+D (2701) spi_master: device0 release bus[0m
+D (2704) spi_master: device0 locked the bus[0m
+D (2708) spi_master: device0 release bus[0m
+D (2712) spi_master: device0 locked the bus[0m
+D (2717) spi_master: device0 release bus[0m
+D (2721) i2s_common: DMA malloc info: dma_desc_num = 6, dma_desc_buf_size = dma_frame_num * slot_num * data_bit_width = 480[0m
+D (2737) i2s_pdm: Clock division info: [sclk] 160000000 Hz [mdiv] 3 [mclk] 45158400 Hz [bdiv] 8 [bclk] 5644800 Hz[0m
+D (2746) gdma: new pair (0,1) at 0x3fcbddb8[0m
+D (2750) gdma: new tx channel (0,1) at 0x3fcbdd80[0m
+D (2756) intr_alloc: Connected src 45 to int 9 (cpu 0)[0m
+D (2736) spi_master: device0 locked the bus[0m
+D (2764) spi_master: device0 release bus[0m
+D (2768) spi_master: device0 locked the bus[0m
+D (2772) spi_master: device0 release bus[0m
+D (2776) spi_master: device0 locked the bus[0m
+D (2780) spi_master: device0 release bus[0m
+D (2763) gdma: install interrupt service for tx channel (0,1)[0m
+D (2800) spi_master: device0 locked the bus[0m
+D (2800) spi_master: device0 release bus[0m
+D (2801) spi_master: device0 locked the bus[0m
+D (2803) spi_master: device0 release bus[0m
+D (2807) spi_master: device0 locked the bus[0m
+D (2811) spi_master: device0 release bus[0m
+D (2815) i2s_pdm: The tx channel on I2S0 has been initialized to PDM TX mode successfully[0m
+D (2830) spi_master: device0 locked the bus[0m
+D (2832) spi_master: device0 release bus[0m
+D (2835) spi_master: device0 locked the bus[0m
+D (2839) spi_master: device0 release bus[0m
+D (2843) spi_master: device0 locked the bus[0m
+D (2848) spi_master: device0 release bus[0m
+D (2852) i2s_common: i2s tx channel enabled[0m
+D (2867) spi_master: device0 locked the bus[0m
+D (2868) spi_master: device0 release bus[0m
+D (2868) spi_master: device0 locked the bus[0m
+D (2872) spi_master: device0 release bus[0m
+D (2876) spi_master: device0 locked the bus[0m
+D (2881) spi_master: device0 release bus[0m
+D (2900) spi_master: device0 locked the bus[0m
+D (2901) spi_master: device0 release bus[0m
+D (2901) spi_master: device0 locked the bus[0m
+D (2902) spi_master: device0 release bus[0m
+D (2906) spi_master: device0 locked the bus[0m
+D (2910) spi_master: device0 release bus[0m
+D (2930) spi_master: device0 locked the bus[0m
+D (2931) spi_master: device0 release bus[0m
+D (2931) spi_master: device0 locked the bus[0m
+D (2932) spi_master: device0 release bus[0m
+D (2936) spi_master: device0 locked the bus[0m
+D (2940) spi_master: device0 release bus[0m
+D (2960) spi_master: device0 locked the bus[0m
+D (2961) spi_master: device0 release bus[0m
+D (2961) spi_master: device0 locked the bus[0m
+D (2962) spi_master: device0 release bus[0m
+D (2966) spi_master: device0 locked the bus[0m
+D (2970) spi_master: device0 release bus[0m
+D (2991) spi_master: device0 locked the bus[0m
+D (2991) spi_master: device0 release bus[0m
+D (2991) spi_master: device0 locked the bus[0m
+D (2992) spi_master: device0 release bus[0m
+D (2996) spi_master: device0 locked the bus[0m
+D (3001) spi_master: device0 release bus[0m
+[0;32mI (3005) voice_announcement: Voice Announcement Task started[0m
+[0;32mI (3011) voice_announcement: Waiting for EVENT_BIT_BRIGHTNESS_CHANGED...[0m
+D (3030) spi_master: device0 locked the bus[0m
+D (3030) spi_master: device0 release bus[0m
+D (3031) spi_master: device0 locked the bus[0m
+D (3032) spi_master: device0 release bus[0m
+D (3035) spi_master: device0 locked the bus[0m
+D (3040) spi_master: device0 release bus[0m
+D (3060) spi_master: device0 locked the bus[0m
+D (3061) spi_master: device0 release bus[0m
+D (3061) spi_master: device0 locked the bus[0m
+D (3062) spi_master: device0 release bus[0m
+D (3066) spi_master: device0 locked the bus[0m
+D (3070) spi_master: device0 release bus[0m
+[0;32mI (3075) Task Info: Task: main, Stack High Water Mark: 2296[0m
+D (3091) spi_master: device0 locked the bus[0m
+D (3092) spi_master: device0 release bus[0m
+D (3094) spi_master: device0 locked the bus[0m
+D (3098) spi_master: device0 release bus[0m
+D (3102) spi_master: device0 locked the bus[0m
+D (3106) spi_master: device0 release bus[0m
+[0;32mI (3110) Task Info: Task: IDLE, Stack High Water Mark: 784[0m
+D (3127) spi_master: device0 locked the bus[0m
+D (3128) spi_master: device0 release bus[0m
+D (3130) spi_master: device0 locked the bus[0m
+D (3135) spi_master: device0 release bus[0m
+D (3138) spi_master: device0 locked the bus[0m
+D (3143) spi_master: device0 release bus[0m
+[0;32mI (3147) Task Info: Task: LVGL task, Stack High Water Mark: 1856[0m
+D (3164) spi_master: device0 locked the bus[0m
+D (3165) spi_master: device0 release bus[0m
+D (3167) spi_master: device0 locked the bus[0m
+D (3172) spi_master: device0 release bus[0m
+D (3176) spi_master: device0 locked the bus[0m
+D (3180) spi_master: device0 release bus[0m
+[0;32mI (3184) Task Info: Task: Audio Task, Stack High Water Mark: 3812[0m
+D (3201) spi_master: device0 locked the bus[0m
+D (3203) spi_master: device0 release bus[0m
+D (3205) spi_master: device0 locked the bus[0m
+D (3209) spi_master: device0 release bus[0m
+D (3213) spi_master: device0 locked the bus[0m
+D (3217) spi_master: device0 release bus[0m
+[0;32mI (3221) Task Info: Task: Voice Announcem, Stack High Water Mark: 2384[0m
+D (3239) spi_master: device0 locked the bus[0m
+D (3240) spi_master: device0 release bus[0m
+D (3243) spi_master: device0 locked the bus[0m
+D (3247) spi_master: device0 release bus[0m
+D (3251) spi_master: device0 locked the bus[0m
+D (3256) spi_master: device0 release bus[0m
+[0;32mI (3260) Task Info: Task: esp_timer, Stack High Water Mark: 3816[0m
+D (3278) spi_master: device0 locked the bus[0m
+D (3279) spi_master: device0 release bus[0m
+D (3281) spi_master: device0 locked the bus[0m
+D (3285) spi_master: device0 release bus[0m
+D (3289) spi_master: device0 locked the bus[0m
+D (3293) spi_master: device0 release bus[0m
+[0;32mI (3297) Task Info: Task: Tmr Svc, Stack High Water Mark: 2860[0m
+D (3315) spi_master: device0 locked the bus[0m
+D (3317) spi_master: device0 release bus[0m
+D (3319) spi_master: device0 locked the bus[0m
+D (3323) spi_master: device0 release bus[0m
+D (3327) spi_master: device0 locked the bus[0m
+D (3331) spi_master: device0 release bus[0m
+D (3354) spi_master: device0 locked the bus[0m
+D (3354) spi_master: device0 release bus[0m
+D (3354) spi_master: device0 locked the bus[0m
+D (3355) spi_master: device0 release bus[0m
+D (3359) spi_master: device0 locked the bus[0m
+D (3364) spi_master: device0 release bus[0m
+[0;32mI (3368) main: System initialized successfully![0m
+D (3386) spi_master: device0 locked the bus[0m
+D (3387) spi_master: device0 release bus[0m
+D (3388) spi_master: device0 locked the bus[0m
+D (3392) spi_master: device0 release bus[0m
+D (3396) spi_master: device0 locked the bus[0m
+D (3400) spi_master: device0 release bus[0m
+[0;32mI (3404) main_task: Returned from app_main()[0m
+D (3423) spi_master: device0 locked the bus[0m
+D (3424) spi_master: device0 release bus[0m
+D (3426) spi_master: device0 locked the bus[0m
+D (3430) spi_master: device0 release bus[0m
+D (3434) spi_master: device0 locked the bus[0m
+D (3438) spi_master: device0 release bus[0m
+D (3461) spi_master: device0 locked the bus[0m
+D (3462) spi_master: device0 release bus[0m
+D (3462) spi_master: device0 locked the bus[0m
+D (3463) spi_master: device0 release bus[0m
+D (3467) spi_master: device0 locked the bus[0m
+D (3471) spi_master: device0 release bus[0m
+D (3495) spi_master: device0 locked the bus[0m
+D (3495) spi_master: device0 release bus[0m
+D (3495) spi_master: device0 locked the bus[0m
+D (3496) spi_master: device0 release bus[0m
+D (3500) spi_master: device0 locked the bus[0m
+D (3505) spi_master: device0 release bus[0m
+D (3528) spi_master: device0 locked the bus[0m
+D (3529) spi_master: device0 release bus[0m
+D (3529) spi_master: device0 locked the bus[0m
+D (3530) spi_master: device0 release bus[0m
+D (3534) spi_master: device0 locked the bus[0m
+D (3538) spi_master: device0 release bus[0m
+D (3562) spi_master: device0 locked the bus[0m
+D (3563) spi_master: device0 release bus[0m
+D (3563) spi_master: device0 locked the bus[0m
+D (3564) spi_master: device0 release bus[0m
+D (3568) spi_master: device0 locked the bus[0m
+D (3572) spi_master: device0 release bus[0m
+D (3596) spi_master: device0 locked the bus[0m
+D (3597) spi_master: device0 release bus[0m
+D (3597) spi_master: device0 locked the bus[0m
+D (3598) spi_master: device0 release bus[0m
+D (3602) spi_master: device0 locked the bus[0m
+D (3606) spi_master: device0 release bus[0m
+D (3630) spi_master: device0 locked the bus[0m
+D (3631) spi_master: device0 release bus[0m
+D (3631) spi_master: device0 locked the bus[0m
+D (3632) spi_master: device0 release bus[0m
+D (3636) spi_master: device0 locked the bus[0m
+D (3640) spi_master: device0 release bus[0m
+D (3665) spi_master: device0 locked the bus[0m
+D (3665) spi_master: device0 release bus[0m
+D (3665) spi_master: device0 locked the bus[0m
+D (3666) spi_master: device0 release bus[0m
+D (3670) spi_master: device0 locked the bus[0m
+D (3675) spi_master: device0 release bus[0m
+D (3699) spi_master: device0 locked the bus[0m
+D (3700) spi_master: device0 release bus[0m
+D (3700) spi_master: device0 locked the bus[0m
+D (3701) spi_master: device0 release bus[0m
+D (3705) spi_master: device0 locked the bus[0m
+D (3709) spi_master: device0 release bus[0m
+D (3734) spi_master: device0 locked the bus[0m
+D (3735) spi_master: device0 release bus[0m
+D (3735) spi_master: device0 locked the bus[0m
+D (3736) spi_master: device0 release bus[0m
+D (3740) spi_master: device0 locked the bus[0m
+D (3744) spi_master: device0 release bus[0m
+D (3769) spi_master: device0 locked the bus[0m
+D (3770) spi_master: device0 release bus[0m
+D (3770) spi_master: device0 locked the bus[0m
+D (3771) spi_master: device0 release bus[0m
+D (3775) spi_master: device0 locked the bus[0m
+D (3779) spi_master: device0 release bus[0m
+D (3804) spi_master: device0 locked the bus[0m
+D (3805) spi_master: device0 release bus[0m
+D (3805) spi_master: device0 locked the bus[0m
+D (3806) spi_master: device0 release bus[0m
+D (3810) spi_master: device0 locked the bus[0m
+D (3814) spi_master: device0 release bus[0m
+D (3840) spi_master: device0 locked the bus[0m
+D (3840) spi_master: device0 release bus[0m
+D (3840) spi_master: device0 locked the bus[0m
+D (3841) spi_master: device0 release bus[0m
+D (3845) spi_master: device0 locked the bus[0m
+D (3849) spi_master: device0 release bus[0m
+D (3875) spi_master: device0 locked the bus[0m
+D (3875) spi_master: device0 release bus[0m
+D (3876) spi_master: device0 locked the bus[0m
+D (3877) spi_master: device0 release bus[0m
+D (3881) spi_master: device0 locked the bus[0m
+D (3885) spi_master: device0 release bus[0m
+D (3910) spi_master: device0 locked the bus[0m
+D (3911) spi_master: device0 release bus[0m
+D (3911) spi_master: device0 locked the bus[0m
+D (3912) spi_master: device0 release bus[0m
+D (3916) spi_master: device0 locked the bus[0m
+D (3920) spi_master: device0 release bus[0m
+D (3946) spi_master: device0 locked the bus[0m
+D (3946) spi_master: device0 release bus[0m
+D (3946) spi_master: device0 locked the bus[0m
+D (3947) spi_master: device0 release bus[0m
+D (3951) spi_master: device0 locked the bus[0m
+D (3956) spi_master: device0 release bus[0m
+D (3981) spi_master: device0 locked the bus[0m
+D (3982) spi_master: device0 release bus[0m
+D (3982) spi_master: device0 locked the bus[0m
+D (3983) spi_master: device0 release bus[0m
+D (3987) spi_master: device0 locked the bus[0m
+D (3991) spi_master: device0 release bus[0m
+D (4017) spi_master: device0 locked the bus[0m
+D (4017) spi_master: device0 release bus[0m
+D (4017) spi_master: device0 locked the bus[0m
+D (4018) spi_master: device0 release bus[0m
+D (4022) spi_master: device0 locked the bus[0m
+D (4027) spi_master: device0 release bus[0m
+D (4052) spi_master: device0 locked the bus[0m
+D (4053) spi_master: device0 release bus[0m
+D (4053) spi_master: device0 locked the bus[0m
+D (4054) spi_master: device0 release bus[0m
+D (4058) spi_master: device0 locked the bus[0m
+D (4062) spi_master: device0 release bus[0m
+D (4088) spi_master: device0 locked the bus[0m
+D (4089) spi_master: device0 release bus[0m
+D (4089) spi_master: device0 locked the bus[0m
+D (4090) spi_master: device0 release bus[0m
+D (4094) spi_master: device0 locked the bus[0m
+D (4098) spi_master: device0 release bus[0m
+D (4124) spi_master: device0 locked the bus[0m
+D (4124) spi_master: device0 release bus[0m
+D (4125) spi_master: device0 locked the bus[0m
+D (4126) spi_master: device0 release bus[0m
+D (4130) spi_master: device0 locked the bus[0m
+D (4134) spi_master: device0 release bus[0m
+D (4159) spi_master: device0 locked the bus[0m
+D (4160) spi_master: device0 release bus[0m
+D (4160) spi_master: device0 locked the bus[0m
+D (4161) spi_master: device0 release bus[0m
+D (4165) spi_master: device0 locked the bus[0m
+D (4169) spi_master: device0 release bus[0m
+D (4195) spi_master: device0 locked the bus[0m
+D (4195) spi_master: device0 release bus[0m
+D (4196) spi_master: device0 locked the bus[0m
+D (4197) spi_master: device0 release bus[0m
+D (4201) spi_master: device0 locked the bus[0m
+D (4205) spi_master: device0 release bus[0m
+D (4230) spi_master: device0 locked the bus[0m
+D (4231) spi_master: device0 release bus[0m
+D (4231) spi_master: device0 locked the bus[0m
+D (4232) spi_master: device0 release bus[0m
+D (4236) spi_master: device0 locked the bus[0m
+D (4240) spi_master: device0 release bus[0m
+D (4266) spi_master: device0 locked the bus[0m
+D (4266) spi_master: device0 release bus[0m
+D (4266) spi_master: device0 locked the bus[0m
+D (4267) spi_master: device0 release bus[0m
+D (4271) spi_master: device0 locked the bus[0m
+D (4276) spi_master: device0 release bus[0m
+D (4301) spi_master: device0 locked the bus[0m
+D (4302) spi_master: device0 release bus[0m
+D (4302) spi_master: device0 locked the bus[0m
+D (4303) spi_master: device0 release bus[0m
+D (4307) spi_master: device0 locked the bus[0m
+D (4311) spi_master: device0 release bus[0m
+D (4336) spi_master: device0 locked the bus[0m
+D (4336) spi_master: device0 release bus[0m
+D (4337) spi_master: device0 locked the bus[0m
+D (4338) spi_master: device0 release bus[0m
+D (4342) spi_master: device0 locked the bus[0m
+D (4346) spi_master: device0 release bus[0m
+D (4371) spi_master: device0 locked the bus[0m
+D (4371) spi_master: device0 release bus[0m
+D (4372) spi_master: device0 locked the bus[0m
+D (4373) spi_master: device0 release bus[0m
+D (4377) spi_master: device0 locked the bus[0m
+D (4381) spi_master: device0 release bus[0m
+D (4406) spi_master: device0 locked the bus[0m
+D (4406) spi_master: device0 release bus[0m
+D (4407) spi_master: device0 locked the bus[0m
+D (4407) spi_master: device0 release bus[0m
+D (4411) spi_master: device0 locked the bus[0m
+D (4416) spi_master: device0 release bus[0m
+D (4441) spi_master: device0 locked the bus[0m
+D (4441) spi_master: device0 release bus[0m
+D (4441) spi_master: device0 locked the bus[0m
+D (4442) spi_master: device0 release bus[0m
+D (4446) spi_master: device0 locked the bus[0m
+D (4451) spi_master: device0 release bus[0m
+D (4475) spi_master: device0 locked the bus[0m
+D (4476) spi_master: device0 release bus[0m
+D (4476) spi_master: device0 locked the bus[0m
+D (4477) spi_master: device0 release bus[0m
+D (4481) spi_master: device0 locked the bus[0m
+D (4485) spi_master: device0 release bus[0m
+D (4510) spi_master: device0 locked the bus[0m
+D (4510) spi_master: device0 release bus[0m
+D (4511) spi_master: device0 locked the bus[0m
+D (4512) spi_master: device0 release bus[0m
+D (4516) spi_master: device0 locked the bus[0m
+D (4520) spi_master: device0 release bus[0m
+D (4544) spi_master: device0 locked the bus[0m
+D (4545) spi_master: device0 release bus[0m
+D (4545) spi_master: device0 locked the bus[0m
+D (4546) spi_master: device0 release bus[0m
+D (4550) spi_master: device0 locked the bus[0m
+D (4554) spi_master: device0 release bus[0m
+D (4578) spi_master: device0 locked the bus[0m
+D (4579) spi_master: device0 release bus[0m
+D (4579) spi_master: device0 locked the bus[0m
+D (4580) spi_master: device0 release bus[0m
+D (4584) spi_master: device0 locked the bus[0m
+D (4588) spi_master: device0 release bus[0m
+D (4612) spi_master: device0 locked the bus[0m
+D (4613) spi_master: device0 release bus[0m
+D (4613) spi_master: device0 locked the bus[0m
+D (4614) spi_master: device0 release bus[0m
+D (4618) spi_master: device0 locked the bus[0m
+D (4622) spi_master: device0 release bus[0m
+D (4646) spi_master: device0 locked the bus[0m
+D (4647) spi_master: device0 release bus[0m
+D (4647) spi_master: device0 locked the bus[0m
+D (4648) spi_master: device0 release bus[0m
+D (4652) spi_master: device0 locked the bus[0m
+D (4656) spi_master: device0 release bus[0m
+D (4680) spi_master: device0 locked the bus[0m
+D (4680) spi_master: device0 release bus[0m
+D (4680) spi_master: device0 locked the bus[0m
+D (4681) spi_master: device0 release bus[0m
+D (4685) spi_master: device0 locked the bus[0m
+D (4690) spi_master: device0 release bus[0m
+D (4713) spi_master: device0 locked the bus[0m
+D (4713) spi_master: device0 release bus[0m
+D (4713) spi_master: device0 locked the bus[0m
+D (4714) spi_master: device0 release bus[0m
+D (4718) spi_master: device0 locked the bus[0m
+D (4723) spi_master: device0 release bus[0m
+D (4746) spi_master: device0 locked the bus[0m
+D (4746) spi_master: device0 release bus[0m
+D (4746) spi_master: device0 locked the bus[0m
+D (4747) spi_master: device0 release bus[0m
+D (4751) spi_master: device0 locked the bus[0m
+D (4756) spi_master: device0 release bus[0m
+D (4778) spi_master: device0 locked the bus[0m
+D (4778) spi_master: device0 release bus[0m
+D (4779) spi_master: device0 locked the bus[0m
+D (4780) spi_master: device0 release bus[0m
+D (4784) spi_master: device0 locked the bus[0m
+D (4788) spi_master: device0 release bus[0m
+D (4810) spi_master: device0 locked the bus[0m
+D (4811) spi_master: device0 release bus[0m
+D (4811) spi_master: device0 locked the bus[0m
+D (4812) spi_master: device0 release bus[0m
+D (4816) spi_master: device0 locked the bus[0m
+D (4820) spi_master: device0 release bus[0m
+D (4842) spi_master: device0 locked the bus[0m
+D (4843) spi_master: device0 release bus[0m
+D (4843) spi_master: device0 locked the bus[0m
+D (4844) spi_master: device0 release bus[0m
+D (4848) spi_master: device0 locked the bus[0m
+D (4852) spi_master: device0 release bus[0m
+D (4873) spi_master: device0 locked the bus[0m
+D (4874) spi_master: device0 release bus[0m
+D (4874) spi_master: device0 locked the bus[0m
+D (4875) spi_master: device0 release bus[0m
+D (4879) spi_master: device0 locked the bus[0m
+D (4883) spi_master: device0 release bus[0m
+D (4905) spi_master: device0 locked the bus[0m
+D (4905) spi_master: device0 release bus[0m
+D (4905) spi_master: device0 locked the bus[0m
+D (4906) spi_master: device0 release bus[0m
+D (4910) spi_master: device0 locked the bus[0m
+D (4915) spi_master: device0 release bus[0m
+D (4935) spi_master: device0 locked the bus[0m
+D (4936) spi_master: device0 release bus[0m
+D (4936) spi_master: device0 locked the bus[0m
+D (4937) spi_master: device0 release bus[0m
+D (4941) spi_master: device0 locked the bus[0m
+D (4945) spi_master: device0 release bus[0m
+D (4965) spi_master: device0 locked the bus[0m
+D (4966) spi_master: device0 release bus[0m
+D (4966) spi_master: device0 locked the bus[0m
+D (4967) spi_master: device0 release bus[0m
+D (4971) spi_master: device0 locked the bus[0m
+D (4975) spi_master: device0 release bus[0m
+D (4995) spi_master: device0 locked the bus[0m
+D (4996) spi_master: device0 release bus[0m
+D (4996) spi_master: device0 locked the bus[0m
+D (4997) spi_master: device0 release bus[0m
+D (5001) spi_master: device0 locked the bus[0m
+D (5005) spi_master: device0 release bus[0m
+D (5025) spi_master: device0 locked the bus[0m
+D (5025) spi_master: device0 release bus[0m
+D (5025) spi_master: device0 locked the bus[0m
+D (5026) spi_master: device0 release bus[0m
+D (5030) spi_master: device0 locked the bus[0m
+D (5035) spi_master: device0 release bus[0m
+D (5054) spi_master: device0 locked the bus[0m
+D (5054) spi_master: device0 release bus[0m
+D (5054) spi_master: device0 locked the bus[0m
+D (5055) spi_master: device0 release bus[0m
+D (5059) spi_master: device0 locked the bus[0m
+D (5064) spi_master: device0 release bus[0m
+D (5083) spi_master: device0 locked the bus[0m
+D (5084) spi_master: device0 release bus[0m
+D (5084) spi_master: device0 locked the bus[0m
+D (5085) spi_master: device0 release bus[0m
+D (5089) spi_master: device0 locked the bus[0m
+D (5093) spi_master: device0 release bus[0m
+D (5112) spi_master: device0 locked the bus[0m
+D (5112) spi_master: device0 release bus[0m
+D (5112) spi_master: device0 locked the bus[0m
+D (5113) spi_master: device0 release bus[0m
+D (5117) spi_master: device0 locked the bus[0m
+D (5122) spi_master: device0 release bus[0m
+D (5135) spi_master: device0 locked the bus[0m
+D (5136) spi_master: device0 release bus[0m
+D (5136) spi_master: device0 locked the bus[0m
+D (5138) spi_master: device0 release bus[0m
+D (5142) spi_master: device0 locked the bus[0m
+D (5147) spi_master: device0 release bus[0m
+D (5292) spi_master: device0 locked the bus[0m
+D (5292) spi_master: device0 release bus[0m
+D (5292) spi_master: device0 locked the bus[0m
+D (5293) spi_master: device0 release bus[0m
+D (5297) spi_master: device0 locked the bus[0m
+D (5302) spi_master: device0 release bus[0m
+[0;32mI (6147) main_menu: Invalid Enter factory[0m
+D (6182) spi_master: device0 locked the bus[0m
+D (6183) spi_master: device0 release bus[0m
+D (6183) spi_master: device0 locked the bus[0m
+D (6184) spi_master: device0 release bus[0m
+D (6188) spi_master: device0 locked the bus[0m
+D (6192) spi_master: device0 release bus[0m
+D (6916) spi_master: device0 locked the bus[0m
+D (6916) spi_master: device0 release bus[0m
+D (6916) spi_master: device0 locked the bus[0m
+D (6917) spi_master: device0 release bus[0m
+D (6921) spi_master: device0 locked the bus[0m
+D (6925) spi_master: device0 release bus[0m
+[0;32mI (6931) light_2color: Timer callback triggered[0m
+[0;32mI (6940) light_2color: Timer callback triggered[0m
+[0;32mI (6950) light_2color: Timer callback triggered[0m
+[0;32mI (6960) light_2color: Timer callback triggered[0m
+[0;32mI (6970) light_2color: Timer callback triggered[0m
+[0;32mI (6980) light_2color: Timer callback triggered[0m
+[0;32mI (6990) light_2color: Timer callback triggered[0m
+[0;32mI (7000) light_2color: Timer callback triggered[0m
+[0;32mI (7010) light_2color: Timer callback triggered[0m
+[0;32mI (7020) light_2color: Timer callback triggered[0m
+[0;32mI (7030) light_2color: Timer callback triggered[0m
+[0;32mI (7040) light_2color: Timer callback triggered[0m
+[0;32mI (7050) light_2color: Timer callback triggered[0m
+[0;32mI (7060) light_2color: Timer callback triggered[0m
+[0;32mI (7070) light_2color: Timer callback triggered[0m
+[0;32mI (7080) light_2color: Timer callback triggered[0m
+[0;32mI (7090) light_2color: Timer callback triggered[0m
+[0;32mI (7100) light_2color: Timer callback triggered[0m
+[0;32mI (7110) light_2color: Timer callback triggered[0m
+[0;32mI (7120) light_2color: Timer callback triggered[0m
+[0;32mI (7130) light_2color: Timer callback triggered[0m
+[0;32mI (7140) light_2color: Timer callback triggered[0m
+[0;32mI (7150) light_2color: Timer callback triggered[0m
+[0;32mI (7160) light_2color: Timer callback triggered[0m
+[0;32mI (7170) light_2color: Timer callback triggered[0m
+[0;32mI (7180) light_2color: Timer callback triggered[0m
+[0;32mI (7190) light_2color: Timer callback triggered[0m
+[0;32mI (7200) light_2color: Timer callback triggered[0m
+[0;32mI (7210) light_2color: Timer callback triggered[0m
+[0;32mI (7220) light_2color: Timer callback triggered[0m
+[0;32mI (7230) light_2color: Timer callback triggered[0m
+[0;32mI (7240) light_2color: Timer callback triggered[0m
+[0;32mI (7250) light_2color: Timer callback triggered[0m
+[0;32mI (7260) light_2color: Timer callback triggered[0m
+[0;32mI (7270) light_2color: Timer callback triggered[0m
+[0;32mI (7280) light_2color: Timer callback triggered[0m
+[0;32mI (7290) light_2color: Timer callback triggered[0m
+[0;32mI (7300) light_2color: Timer callback triggered[0m
+[0;32mI (7310) light_2color: Timer callback triggered[0m
+[0;32mI (7320) light_2color: Timer callback triggered[0m
+[0;32mI (7330) light_2color: Timer callback triggered[0m
+[0;32mI (7340) light_2color: Timer callback triggered[0m
+[0;32mI (7350) light_2color: Timer callback triggered[0m
+[0;32mI (7360) light_2color: Timer callback triggered[0m
+[0;32mI (7370) light_2color: Timer callback triggered[0m
+[0;32mI (7380) light_2color: Timer callback triggered[0m
+[0;32mI (7390) light_2color: Timer callback triggered[0m
+[0;32mI (7400) light_2color: Timer callback triggered[0m
+[0;32mI (7410) light_2color: Timer callback triggered[0m
+[0;32mI (7420) light_2color: Timer callback triggered[0m
+[0;32mI (7430) light_2color: Timer callback triggered[0m
+[0;32mI (7440) light_2color: Timer callback triggered[0m
+[0;32mI (7450) light_2color: Timer callback triggered[0m
+[0;32mI (7460) light_2color: Timer callback triggered[0m
+[0;32mI (7470) light_2color: Timer callback triggered[0m
+[0;32mI (7480) light_2color: Timer callback triggered[0m
+[0;32mI (7490) light_2color: Timer callback triggered[0m
+[0;32mI (7500) light_2color: Timer callback triggered[0m
+[0;32mI (7510) light_2color: Timer callback triggered[0m
+[0;32mI (7520) light_2color: Timer callback triggered[0m
+[0;32mI (7530) light_2color: Timer callback triggered[0m
+[0;32mI (7540) light_2color: Timer callback triggered[0m
+[0;32mI (7550) light_2color: Timer callback triggered[0m
+[0;32mI (7560) light_2color: Timer callback triggered[0m
+[0;32mI (7570) light_2color: Timer callback triggered[0m
+[0;32mI (7580) light_2color: Timer callback triggered[0m
+[0;32mI (7590) light_2color: Timer callback triggered[0m
+[0;32mI (7600) light_2color: Timer callback triggered[0m
+[0;32mI (7610) light_2color: Timer callback triggered[0m
+[0;32mI (7620) light_2color: Timer callback triggered[0m
+[0;32mI (7630) light_2color: Timer callback triggered[0m
+[0;32mI (7640) light_2color: Timer callback triggered[0m
+[0;32mI (7650) light_2color: Timer callback triggered[0m
+[0;32mI (7660) light_2color: Timer callback triggered[0m
+[0;32mI (7670) light_2color: Timer callback triggered[0m
+[0;32mI (7680) light_2color: Timer callback triggered[0m
+[0;32mI (7690) light_2color: Timer callback triggered[0m
+[0;32mI (7700) light_2color: Timer callback triggered[0m
+[0;32mI (7710) light_2color: Timer callback triggered[0m
+[0;32mI (7720) light_2color: Timer callback triggered[0m
+[0;32mI (7730) light_2color: Timer callback triggered[0m
+[0;32mI (7740) light_2color: Timer callback triggered[0m
+[0;32mI (7750) light_2color: Timer callback triggered[0m
+[0;32mI (7760) light_2color: Timer callback triggered[0m
+[0;32mI (7770) light_2color: Timer callback triggered[0m
+[0;32mI (7780) light_2color: Timer callback triggered[0m
+[0;32mI (7790) light_2color: Timer callback triggered[0m
+[0;32mI (7800) light_2color: Timer callback triggered[0m
+[0;32mI (7810) light_2color: Timer callback triggered[0m
+[0;32mI (7820) light_2color: Timer callback triggered[0m
+[0;32mI (7830) light_2color: Timer callback triggered[0m
+[0;32mI (7840) light_2color: Timer callback triggered[0m
+[0;32mI (7850) light_2color: Timer callback triggered[0m
+[0;32mI (7860) light_2color: Timer callback triggered[0m
+[0;32mI (7870) light_2color: Timer callback triggered[0m
+[0;32mI (7880) light_2color: Timer callback triggered[0m
+[0;32mI (7890) light_2color: Timer callback triggered[0m
+[0;32mI (7900) light_2color: Timer callback triggered[0m
+[0;32mI (7910) light_2color: Timer callback triggered[0m
+[0;32mI (7920) light_2color: Timer callback triggered[0m
+[0;32mI (7930) light_2color: Timer callback triggered[0m
+[0;32mI (7940) light_2color: Timer callback triggered[0m
+[0;32mI (7950) light_2color: Timer callback triggered[0m
+[0;32mI (7960) light_2color: Timer callback triggered[0m
+[0;32mI (7970) light_2color: Timer callback triggered[0m
+[0;32mI (7980) light_2color: Timer callback triggered[0m
+[0;32mI (7990) light_2color: Timer callback triggered[0m
+[0;32mI (8000) light_2color: Timer callback triggered[0m
+[0;32mI (8010) light_2color: Timer callback triggered[0m
+[0;32mI (8020) light_2color: Timer callback triggered[0m
+[0;32mI (8030) light_2color: Timer callback triggered[0m
+[0;32mI (8040) light_2color: Timer callback triggered[0m
+[0;32mI (8050) light_2color: Timer callback triggered[0m
+[0;32mI (8060) light_2color: Timer callback triggered[0m
+[0;32mI (8070) light_2color: Timer callback triggered[0m
+[0;32mI (8080) light_2color: Timer callback triggered[0m
+[0;32mI (8090) light_2color: Timer callback triggered[0m
+[0;32mI (8100) light_2color: Timer callback triggered[0m
+[0;32mI (8110) light_2color: Timer callback triggered[0m
+[0;32mI (8120) light_2color: Timer callback triggered[0m
+[0;32mI (8130) light_2color: Timer callback triggered[0m
+[0;32mI (8140) light_2color: Timer callback triggered[0m
+[0;32mI (8150) light_2color: Timer callback triggered[0m
+[0;32mI (8160) light_2color: Timer callback triggered[0m
+[0;32mI (8170) light_2color: Timer callback triggered[0m
+[0;32mI (8180) light_2color: Timer callback triggered[0m
+[0;32mI (8190) light_2color: Timer callback triggered[0m
+[0;32mI (8200) light_2color: Timer callback triggered[0m
+[0;32mI (8210) light_2color: Timer callback triggered[0m
+[0;32mI (8220) light_2color: Timer callback triggered[0m
+[0;32mI (8230) light_2color: Timer callback triggered[0m
+[0;32mI (8240) light_2color: Timer callback triggered[0m
+[0;32mI (8250) light_2color: Timer callback triggered[0m
+[0;32mI (8260) light_2color: Timer callback triggered[0m
+[0;32mI (8270) light_2color: Timer callback triggered[0m
+[0;32mI (8280) light_2color: Timer callback triggered[0m
+[0;32mI (8290) light_2color: Timer callback triggered[0m
+[0;32mI (8300) light_2color: Timer callback triggered[0m
+[0;32mI (8310) light_2color: Timer callback triggered[0m
+[0;32mI (8320) light_2color: Timer callback triggered[0m
+[0;32mI (8330) light_2color: Timer callback triggered[0m
+[0;32mI (8340) light_2color: Timer callback triggered[0m
+[0;32mI (8350) light_2color: Timer callback triggered[0m
+[0;32mI (8360) light_2color: Timer callback triggered[0m
+[0;32mI (8370) light_2color: Timer callback triggered[0m
+[0;32mI (8380) light_2color: Timer callback triggered[0m
+[0;32mI (8390) light_2color: Timer callback triggered[0m
+[0;32mI (8400) light_2color: Timer callback triggered[0m
+[0;32mI (8410) light_2color: Timer callback triggered[0m
+[0;32mI (8420) light_2color: Timer callback triggered[0m
+[0;32mI (8430) light_2color: Timer callback triggered[0m
+[0;32mI (8440) light_2color: Timer callback triggered[0m
+[0;32mI (8450) light_2color: Timer callback triggered[0m
+[0;32mI (8460) light_2color: Timer callback triggered[0m
+[0;32mI (8470) light_2color: Timer callback triggered[0m
+[0;32mI (8480) light_2color: Timer callback triggered[0m
+[0;32mI (8490) light_2color: Timer callback triggered[0m
+[0;32mI (8500) light_2color: Timer callback triggered[0m
+[0;32mI (8510) light_2color: Timer callback triggered[0m
+[0;32mI (8520) light_2color: Timer callback triggered[0m
+[0;32mI (8530) light_2color: Timer callback triggered[0m
+[0;32mI (8540) light_2color: Timer callback triggered[0m
+[0;32mI (8550) light_2color: Timer callback triggered[0m
+[0;32mI (8560) light_2color: Timer callback triggered[0m
+[0;32mI (8570) light_2color: Timer callback triggered[0m
+[0;32mI (8580) light_2color: Timer callback triggered[0m
+[0;32mI (8590) light_2color: Timer callback triggered[0m
+[0;32mI (8600) light_2color: Timer callback triggered[0m
+[0;32mI (8610) light_2color: Timer callback triggered[0m
+[0;32mI (8620) light_2color: Timer callback triggered[0m
+[0;32mI (8630) light_2color: Timer callback triggered[0m
+[0;32mI (8640) light_2color: Timer callback triggered[0m
+[0;32mI (8650) light_2color: Timer callback triggered[0m
+[0;32mI (8660) light_2color: Timer callback triggered[0m
+[0;32mI (8670) light_2color: Timer callback triggered[0m
+[0;32mI (8680) light_2color: Timer callback triggered[0m
+[0;32mI (8690) light_2color: Timer callback triggered[0m
+[0;32mI (8700) light_2color: Timer callback triggered[0m
+[0;32mI (8710) light_2color: Timer callback triggered[0m
+[0;32mI (8720) light_2color: Timer callback triggered[0m
+[0;32mI (8730) light_2color: Timer callback triggered[0m
+[0;32mI (8740) light_2color: Timer callback triggered[0m
+[0;32mI (8750) light_2color: Timer callback triggered[0m
+[0;32mI (8760) light_2color: Timer callback triggered[0m
+[0;32mI (8770) light_2color: Timer callback triggered[0m
+[0;32mI (8780) light_2color: Timer callback triggered[0m
+[0;32mI (8790) light_2color: Timer callback triggered[0m
+[0;32mI (8800) light_2color: Timer callback triggered[0m
+[0;32mI (8810) light_2color: Timer callback triggered[0m
+[0;32mI (8820) light_2color: Timer callback triggered[0m
+[0;32mI (8830) light_2color: Timer callback triggered[0m
+[0;32mI (8840) light_2color: Timer callback triggered[0m
+[0;32mI (8850) light_2color: Timer callback triggered[0m
+[0;32mI (8860) light_2color: Timer callback triggered[0m
+[0;32mI (8870) light_2color: Timer callback triggered[0m
+[0;32mI (8880) light_2color: Timer callback triggered[0m
+[0;32mI (8890) light_2color: Timer callback triggered[0m
+[0;32mI (8900) light_2color: Timer callback triggered[0m
+[0;32mI (8910) light_2color: Timer callback triggered[0m
+[0;32mI (8920) light_2color: Timer callback triggered[0m
+[0;32mI (8930) light_2color: Timer callback triggered[0m
+[0;32mI (8940) light_2color: Timer callback triggered[0m
+[0;32mI (8950) light_2color: Timer callback triggered[0m
+[0;32mI (8960) light_2color: Timer callback triggered[0m
+[0;32mI (8970) light_2color: Timer callback triggered[0m
+[0;32mI (8980) light_2color: Timer callback triggered[0m
+[0;32mI (8990) light_2color: Timer callback triggered[0m
+[0;32mI (9000) light_2color: Timer callback triggered[0m
+[0;32mI (9010) light_2color: Timer callback triggered[0m
+[0;32mI (9020) light_2color: Timer callback triggered[0m
+[0;32mI (9030) light_2color: Timer callback triggered[0m
+[0;32mI (9040) light_2color: Timer callback triggered[0m
+[0;32mI (9050) light_2color: Timer callback triggered[0m
+[0;32mI (9060) light_2color: Timer callback triggered[0m
+[0;32mI (9070) light_2color: Timer callback triggered[0m
+[0;32mI (9080) light_2color: Timer callback triggered[0m
+[0;32mI (9090) light_2color: Timer callback triggered[0m
+[0;32mI (9100) light_2color: Timer callback triggered[0m
+[0;32mI (9110) light_2color: Timer callback triggered[0m
+[0;32mI (9120) light_2color: Timer callback triggered[0m
+[0;32mI (9130) light_2color: Timer callback triggered[0m
+[0;32mI (9140) light_2color: Timer callback triggered[0m
+[0;32mI (9150) light_2color: Timer callback triggered[0m
+[0;32mI (9160) light_2color: Timer callback triggered[0m
+[0;32mI (9170) light_2color: Timer callback triggered[0m
+[0;32mI (9180) light_2color: Timer callback triggered[0m
+[0;32mI (9190) light_2color: Timer callback triggered[0m
+[0;32mI (9200) light_2color: Timer callback triggered[0m
+[0;32mI (9210) light_2color: Timer callback triggered[0m
+[0;32mI (9220) light_2color: Timer callback triggered[0m
+[0;32mI (9230) light_2color: Timer callback triggered[0m
+[0;32mI (9240) light_2color: Timer callback triggered[0m
+[0;32mI (9250) light_2color: Timer callback triggered[0m
+[0;32mI (9260) light_2color: Timer callback triggered[0m
+[0;32mI (9270) light_2color: Timer callback triggered[0m
+[0;32mI (9280) light_2color: Timer callback triggered[0m
+[0;32mI (9290) light_2color: Timer callback triggered[0m
+[0;32mI (9300) light_2color: Timer callback triggered[0m
+[0;32mI (9310) light_2color: Timer callback triggered[0m
+[0;32mI (9320) light_2color: Timer callback triggered[0m
+[0;32mI (9330) light_2color: Timer callback triggered[0m
+[0;32mI (9340) light_2color: Timer callback triggered[0m
+[0;32mI (9350) light_2color: Timer callback triggered[0m
+[0;32mI (9360) light_2color: Timer callback triggered[0m
+[0;32mI (9370) light_2color: Timer callback triggered[0m
+[0;32mI (9380) light_2color: Timer callback triggered[0m
+[0;32mI (9390) light_2color: Timer callback triggered[0m
+[0;32mI (9400) light_2color: Timer callback triggered[0m
+[0;32mI (9410) light_2color: Timer callback triggered[0m
+[0;32mI (9420) light_2color: Timer callback triggered[0m
+[0;32mI (9430) light_2color: Timer callback triggered[0m
+[0;32mI (9440) light_2color: Timer callback triggered[0m
+[0;32mI (9450) light_2color: Timer callback triggered[0m
+[0;32mI (9460) light_2color: Timer callback triggered[0m
+[0;32mI (9470) light_2color: Timer callback triggered[0m
+[0;32mI (9480) light_2color: Timer callback triggered[0m
+[0;32mI (9490) light_2color: Timer callback triggered[0m
+[0;32mI (9500) light_2color: Timer callback triggered[0m
+[0;32mI (9510) light_2color: Timer callback triggered[0m
+[0;32mI (9520) light_2color: Timer callback triggered[0m
+[0;32mI (9530) light_2color: Timer callback triggered[0m
+[0;32mI (9540) light_2color: Timer callback triggered[0m
+[0;32mI (9550) light_2color: Timer callback triggered[0m
+[0;32mI (9560) light_2color: Timer callback triggered[0m
+[0;32mI (9570) light_2color: Timer callback triggered[0m
+[0;32mI (9580) light_2color: Timer callback triggered[0m
+[0;32mI (9590) light_2color: Timer callback triggered[0m
+[0;32mI (9600) light_2color: Timer callback triggered[0m
+[0;32mI (9610) light_2color: Timer callback triggered[0m
+[0;32mI (9620) light_2color: Timer callback triggered[0m
+[0;32mI (9630) light_2color: Timer callback triggered[0m
+[0;32mI (9640) light_2color: Timer callback triggered[0m
+[0;32mI (9650) light_2color: Timer callback triggered[0m
+[0;32mI (9660) light_2color: Timer callback triggered[0m
+[0;32mI (9670) light_2color: Timer callback triggered[0m
+[0;32mI (9680) light_2color: Timer callback triggered[0m
+[0;32mI (9690) light_2color: Timer callback triggered[0m
+[0;32mI (9700) light_2color: Timer callback triggered[0m
+[0;32mI (9710) light_2color: Timer callback triggered[0m
+[0;32mI (9720) light_2color: Timer callback triggered[0m
+[0;32mI (9730) light_2color: Timer callback triggered[0m
+[0;32mI (9740) light_2color: Timer callback triggered[0m
+[0;32mI (9750) light_2color: Timer callback triggered[0m
+[0;32mI (9760) light_2color: Timer callback triggered[0m
+[0;32mI (9770) light_2color: Timer callback triggered[0m
+[0;32mI (9780) light_2color: Timer callback triggered[0m
+[0;32mI (9790) light_2color: Timer callback triggered[0m
+[0;32mI (9800) light_2color: Timer callback triggered[0m
+[0;32mI (9810) light_2color: Timer callback triggered[0m
+[0;32mI (9820) light_2color: Timer callback triggered[0m
+[0;32mI (9830) light_2color: Timer callback triggered[0m
+[0;32mI (9840) light_2color: Timer callback triggered[0m
+[0;32mI (9850) light_2color: Timer callback triggered[0m
+[0;32mI (9860) light_2color: Timer callback triggered[0m
+[0;32mI (9870) light_2color: Timer callback triggered[0m
+[0;32mI (9880) light_2color: Timer callback triggered[0m
+[0;32mI (9890) light_2color: Timer callback triggered[0m
+[0;32mI (9900) light_2color: Timer callback triggered[0m
+[0;32mI (9910) light_2color: Timer callback triggered[0m
+[0;32mI (9920) light_2color: Timer callback triggered[0m
+[0;32mI (9930) light_2color: Timer callback triggered[0m
+[0;32mI (9940) light_2color: Timer callback triggered[0m
+[0;32mI (9950) light_2color: Timer callback triggered[0m
+[0;32mI (9960) light_2color: Timer callback triggered[0m
+[0;32mI (9970) light_2color: Timer callback triggered[0m
+[0;32mI (9980) light_2color: Timer callback triggered[0m
+[0;32mI (9990) light_2color: Timer callback triggered[0m
+[0;32mI (10000) light_2color: Timer callback triggered[0m
+[0;32mI (10010) light_2color: Timer callback triggered[0m
+[0;32mI (10020) light_2color: Timer callback triggered[0m
+[0;32mI (10030) light_2color: Timer callback triggered[0m
+[0;32mI (10040) light_2color: Timer callback triggered[0m
+[0;32mI (10050) light_2color: Timer callback triggered[0m
+[0;32mI (10060) light_2color: Timer callback triggered[0m
+[0;32mI (10070) light_2color: Timer callback triggered[0m
+[0;32mI (10080) light_2color: Timer callback triggered[0m
+[0;32mI (10090) light_2color: Timer callback triggered[0m
+[0;32mI (10100) light_2color: Timer callback triggered[0m
+[0;32mI (10110) light_2color: Timer callback triggered[0m
+[0;32mI (10120) light_2color: Timer callback triggered[0m
+[0;32mI (10130) light_2color: Timer callback triggered[0m
+[0;32mI (10140) light_2color: Timer callback triggered[0m
+[0;32mI (10150) light_2color: Timer callback triggered[0m
+[0;32mI (10160) light_2color: Timer callback triggered[0m
+[0;32mI (10170) light_2color: Timer callback triggered[0m
+[0;32mI (10180) light_2color: Timer callback triggered[0m
+[0;32mI (10190) light_2color: Timer callback triggered[0m
+[0;32mI (10200) light_2color: Timer callback triggered[0m
+[0;32mI (10210) light_2color: Timer callback triggered[0m
+[0;32mI (10220) light_2color: Timer callback triggered[0m
+[0;32mI (10230) light_2color: Timer callback triggered[0m
+[0;32mI (10240) light_2color: Timer callback triggered[0m
+[0;32mI (10250) light_2color: Timer callback triggered[0m
+[0;32mI (10260) light_2color: Timer callback triggered[0m
+[0;32mI (10270) light_2color: Timer callback triggered[0m
+[0;32mI (10280) light_2color: Timer callback triggered[0m
+[0;32mI (10290) light_2color: Timer callback triggered[0m
+[0;32mI (10300) light_2color: Timer callback triggered[0m
+[0;32mI (10310) light_2color: Timer callback triggered[0m
+[0;32mI (10320) light_2color: Timer callback triggered[0m
+[0;32mI (10330) light_2color: Timer callback triggered[0m
+[0;32mI (10340) light_2color: Timer callback triggered[0m
+[0;32mI (10350) light_2color: Timer callback triggered[0m
+[0;32mI (10360) light_2color: Timer callback triggered[0m
+[0;32mI (10370) light_2color: Timer callback triggered[0m
+[0;32mI (10380) light_2color: Timer callback triggered[0m
+[0;32mI (10390) light_2color: Timer callback triggered[0m
+[0;32mI (10400) light_2color: Timer callback triggered[0m
+[0;32mI (10410) light_2color: Timer callback triggered[0m
+[0;32mI (10420) light_2color: Timer callback triggered[0m
+[0;32mI (10430) light_2color: Timer callback triggered[0m
+[0;32mI (10440) light_2color: Timer callback triggered[0m
+[0;32mI (10450) light_2color: Timer callback triggered[0m
+[0;32mI (10460) light_2color: Timer callback triggered[0m
+[0;32mI (10470) light_2color: Timer callback triggered[0m
+[0;32mI (10480) light_2color: Timer callback triggered[0m
+[0;32mI (10490) light_2color: Timer callback triggered[0m
+[0;32mI (10500) light_2color: Timer callback triggered[0m
+[0;32mI (10510) light_2color: Timer callback triggered[0m
+[0;32mI (10520) light_2color: Timer callback triggered[0m
+[0;32mI (10530) light_2color: Timer callback triggered[0m
+[0;32mI (10540) light_2color: Timer callback triggered[0m
+[0;32mI (10550) light_2color: Timer callback triggered[0m
+[0;32mI (10560) light_2color: Timer callback triggered[0m
+[0;32mI (10570) light_2color: Timer callback triggered[0m
+[0;32mI (10580) light_2color: Timer callback triggered[0m
+[0;32mI (10590) light_2color: Timer callback triggered[0m
+[0;32mI (10600) light_2color: Timer callback triggered[0m
+[0;32mI (10610) light_2color: Timer callback triggered[0m
+[0;32mI (10620) light_2color: Timer callback triggered[0m
+[0;32mI (10630) light_2color: Timer callback triggered[0m
+[0;32mI (10640) light_2color: Timer callback triggered[0m
+[0;32mI (10650) light_2color: Timer callback triggered[0m
+[0;32mI (10660) light_2color: Timer callback triggered[0m
+[0;32mI (10670) light_2color: Timer callback triggered[0m
+[0;32mI (10680) light_2color: Timer callback triggered[0m
+[0;32mI (10690) light_2color: Timer callback triggered[0m
+[0;32mI (10700) light_2color: Timer callback triggered[0m
+[0;32mI (10710) light_2color: Timer callback triggered[0m
+[0;32mI (10720) light_2color: Timer callback triggered[0m
+[0;32mI (10730) light_2color: Timer callback triggered[0m
+[0;32mI (10740) light_2color: Timer callback triggered[0m
+[0;32mI (10750) light_2color: Timer callback triggered[0m
+[0;32mI (10760) light_2color: Timer callback triggered[0m
+[0;32mI (10770) light_2color: Timer callback triggered[0m
+[0;32mI (10780) light_2color: Timer callback triggered[0m
+[0;32mI (10790) light_2color: Timer callback triggered[0m
+[0;32mI (10800) light_2color: Timer callback triggered[0m
+[0;32mI (10810) light_2color: Timer callback triggered[0m
+[0;32mI (10820) light_2color: Timer callback triggered[0m
+[0;32mI (10830) light_2color: Timer callback triggered[0m
+[0;32mI (10840) light_2color: Timer callback triggered[0m
+[0;32mI (10850) light_2color: Timer callback triggered[0m
+[0;32mI (10860) light_2color: Timer callback triggered[0m
+[0;32mI (10870) light_2color: Timer callback triggered[0m
+[0;32mI (10880) light_2color: Timer callback triggered[0m
+[0;32mI (10890) light_2color: Timer callback triggered[0m
+[0;32mI (10900) light_2color: Timer callback triggered[0m
+[0;32mI (10910) light_2color: Timer callback triggered[0m
+[0;32mI (10920) light_2color: Timer callback triggered[0m
+[0;32mI (10930) light_2color: Timer callback triggered[0m
+[0;32mI (10940) light_2color: Timer callback triggered[0m
+[0;32mI (10950) light_2color: Timer callback triggered[0m
+[0;32mI (10960) light_2color: Timer callback triggered[0m
+[0;32mI (10970) light_2color: Timer callback triggered[0m
+[0;32mI (10980) light_2color: Timer callback triggered[0m
+[0;32mI (10990) light_2color: Timer callback triggered[0m
+[0;32mI (11000) light_2color: Timer callback triggered[0m
+[0;32mI (11010) light_2color: Timer callback triggered[0m
+[0;32mI (11020) light_2color: Timer callback triggered[0m
+[0;32mI (11030) light_2color: Timer callback triggered[0m
+[0;32mI (11040) light_2color: Timer callback triggered[0m
+[0;32mI (11050) light_2color: Timer callback triggered[0m
+[0;32mI (11060) light_2color: Timer callback triggered[0m
+[0;32mI (11070) light_2color: Timer callback triggered[0m
+[0;32mI (11080) light_2color: Timer callback triggered[0m
+[0;32mI (11090) light_2color: Timer callback triggered[0m
+[0;32mI (11100) light_2color: Timer callback triggered[0m
+[0;32mI (11110) light_2color: Timer callback triggered[0m
+[0;32mI (11120) light_2color: Timer callback triggered[0m
+[0;32mI (11130) light_2color: Timer callback triggered[0m
+[0;32mI (11140) light_2color: Timer callback triggered[0m
+[0;32mI (11150) light_2color: Timer callback triggered[0m
+[0;32mI (11160) light_2color: Timer callback triggered[0m
+[0;32mI (11170) light_2color: Timer callback triggered[0m
+[0;32mI (11180) light_2color: Timer callback triggered[0m
+[0;32mI (11190) light_2color: Timer callback triggered[0m
+[0;32mI (11200) light_2color: Timer callback triggered[0m
+[0;32mI (11210) light_2color: Timer callback triggered[0m
+[0;32mI (11220) light_2color: Timer callback triggered[0m
+[0;32mI (11230) light_2color: Timer callback triggered[0m
+[0;32mI (11240) light_2color: Timer callback triggered[0m
+[0;32mI (11250) light_2color: Timer callback triggered[0m
+[0;32mI (11260) light_2color: Timer callback triggered[0m
+[0;32mI (11270) light_2color: Timer callback triggered[0m
+[0;32mI (11280) light_2color: Timer callback triggered[0m
+[0;32mI (11290) light_2color: Timer callback triggered[0m
+[0;32mI (11300) light_2color: Timer callback triggered[0m
+[0;32mI (11310) light_2color: Timer callback triggered[0m
+[0;32mI (11320) light_2color: Timer callback triggered[0m
+[0;32mI (11330) light_2color: Timer callback triggered[0m
+[0;32mI (11340) light_2color: Timer callback triggered[0m
+[0;32mI (11350) light_2color: Timer callback triggered[0m
+[0;32mI (11360) light_2color: Timer callback triggered[0m
+[0;32mI (11370) light_2color: Timer callback triggered[0m
+[0;32mI (11380) light_2color: Timer callback triggered[0m
+[0;32mI (11390) light_2color: Timer callback triggered[0m
+[0;32mI (11400) light_2color: Timer callback triggered[0m
+[0;32mI (11410) light_2color: Timer callback triggered[0m
+[0;32mI (11420) light_2color: Timer callback triggered[0m
+[0;32mI (11430) light_2color: Timer callback triggered[0m
+[0;32mI (11440) light_2color: Timer callback triggered[0m
+[0;32mI (11450) light_2color: Timer callback triggered[0m
+[0;32mI (11460) light_2color: Timer callback triggered[0m
+[0;32mI (11470) light_2color: Timer callback triggered[0m
+[0;32mI (11480) light_2color: Timer callback triggered[0m
+[0;32mI (11490) light_2color: Timer callback triggered[0m
+[0;32mI (11500) light_2color: Timer callback triggered[0m
+[0;32mI (11510) light_2color: Timer callback triggered[0m
+[0;32mI (11520) light_2color: Timer callback triggered[0m
+[0;32mI (11530) light_2color: Timer callback triggered[0m
+[0;32mI (11540) light_2color: Timer callback triggered[0m
+[0;32mI (11550) light_2color: Timer callback triggered[0m
+[0;32mI (11560) light_2color: Timer callback triggered[0m
+[0;32mI (11570) light_2color: Timer callback triggered[0m
+[0;32mI (11580) light_2color: Timer callback triggered[0m
+[0;32mI (11590) light_2color: Timer callback triggered[0m
+[0;32mI (11600) light_2color: Timer callback triggered[0m
+[0;32mI (11610) light_2color: Timer callback triggered[0m
+[0;32mI (11620) light_2color: Timer callback triggered[0m
+[0;32mI (11630) light_2color: Timer callback triggered[0m
+[0;32mI (11640) light_2color: Timer callback triggered[0m
+[0;32mI (11650) light_2color: Timer callback triggered[0m
+[0;32mI (11660) light_2color: Timer callback triggered[0m
+[0;32mI (11670) light_2color: Timer callback triggered[0m
+[0;32mI (11680) light_2color: Timer callback triggered[0m
+[0;32mI (11690) light_2color: Timer callback triggered[0m
+[0;32mI (11700) light_2color: Timer callback triggered[0m
+[0;32mI (11710) light_2color: Timer callback triggered[0m
+[0;32mI (11720) light_2color: Timer callback triggered[0m
+[0;32mI (11730) light_2color: Timer callback triggered[0m
+[0;32mI (11740) light_2color: Timer callback triggered[0m
+[0;32mI (11750) light_2color: Timer callback triggered[0m
+[0;32mI (11760) light_2color: Timer callback triggered[0m
+[0;32mI (11770) light_2color: Timer callback triggered[0m
+[0;32mI (11780) light_2color: Timer callback triggered[0m
+[0;32mI (11790) light_2color: Timer callback triggered[0m
+[0;32mI (11800) light_2color: Timer callback triggered[0m
+[0;32mI (11810) light_2color: Timer callback triggered[0m
+[0;32mI (11820) light_2color: Timer callback triggered[0m
+[0;32mI (11830) light_2color: Timer callback triggered[0m
+[0;32mI (11840) light_2color: Timer callback triggered[0m
+[0;32mI (11850) light_2color: Timer callback triggered[0m
+[0;32mI (11860) light_2color: Timer callback triggered[0m
+[0;32mI (11870) light_2color: Timer callback triggered[0m
+[0;32mI (11880) light_2color: Timer callback triggered[0m
+[0;32mI (11890) light_2color: Timer callback triggered[0m
+[0;32mI (11900) light_2color: Timer callback triggered[0m
+[0;32mI (11910) light_2color: Timer callback triggered[0m
+[0;32mI (11920) light_2color: Timer callback triggered[0m
+[0;32mI (11930) light_2color: Timer callback triggered[0m
+[0;32mI (11940) light_2color: Timer callback triggered[0m
+[0;32mI (11950) light_2color: Timer callback triggered[0m
+[0;32mI (11960) light_2color: Timer callback triggered[0m
+[0;32mI (11970) light_2color: Timer callback triggered[0m
+[0;32mI (11980) light_2color: Timer callback triggered[0m
+[0;32mI (11990) light_2color: Timer callback triggered[0m
+[0;32mI (12000) light_2color: Timer callback triggered[0m
+[0;32mI (12010) light_2color: Timer callback triggered[0m
+[0;32mI (12020) light_2color: Timer callback triggered[0m
+[0;32mI (12030) light_2color: Timer callback triggered[0m
+[0;32mI (12040) light_2color: Timer callback triggered[0m
+[0;32mI (12050) light_2color: Timer callback triggered[0m
+[0;32mI (12060) light_2color: Timer callback triggered[0m
+[0;32mI (12070) light_2color: Timer callback triggered[0m
+[0;32mI (12080) light_2color: Timer callback triggered[0m
+[0;32mI (12090) light_2color: Timer callback triggered[0m
+[0;32mI (12100) light_2color: Timer callback triggered[0m
+[0;32mI (12110) light_2color: Timer callback triggered[0m
+[0;32mI (12120) light_2color: Timer callback triggered[0m
+[0;32mI (12130) light_2color: Timer callback triggered[0m
+[0;32mI (12140) light_2color: Timer callback triggered[0m
+[0;32mI (12150) light_2color: Timer callback triggered[0m
+[0;32mI (12160) light_2color: Timer callback triggered[0m
+[0;32mI (12170) light_2color: Timer callback triggered[0m
+[0;32mI (12180) light_2color: Timer callback triggered[0m
+[0;32mI (12190) light_2color: Timer callback triggered[0m
+[0;32mI (12200) light_2color: Timer callback triggered[0m
+[0;32mI (12210) light_2color: Timer callback triggered[0m
+[0;32mI (12220) light_2color: Timer callback triggered[0m
+[0;32mI (12230) light_2color: Timer callback triggered[0m
+[0;32mI (12240) light_2color: Timer callback triggered[0m
+[0;32mI (12250) light_2color: Timer callback triggered[0m
+[0;32mI (12260) light_2color: Timer callback triggered[0m
+[0;32mI (12270) light_2color: Timer callback triggered[0m
+[0;32mI (12280) light_2color: Timer callback triggered[0m
+[0;32mI (12290) light_2color: Timer callback triggered[0m
+[0;32mI (12300) light_2color: Timer callback triggered[0m
+[0;32mI (12310) light_2color: Timer callback triggered[0m
+[0;32mI (12320) light_2color: Timer callback triggered[0m
+[0;32mI (12330) light_2color: Timer callback triggered[0m
+[0;32mI (12340) light_2color: Timer callback triggered[0m
+[0;32mI (12350) light_2color: Timer callback triggered[0m
+[0;32mI (12360) light_2color: Timer callback triggered[0m
+[0;32mI (12370) light_2color: Timer callback triggered[0m
+[0;32mI (12380) light_2color: Timer callback triggered[0m
+[0;32mI (12390) light_2color: Timer callback triggered[0m
+[0;32mI (12400) light_2color: Timer callback triggered[0m
+[0;32mI (12410) light_2color: Timer callback triggered[0m
+[0;32mI (12420) light_2color: Timer callback triggered[0m
+[0;32mI (12430) light_2color: Timer callback triggered[0m
+[0;32mI (12440) light_2color: Timer callback triggered[0m
+[0;32mI (12450) light_2color: Timer callback triggered[0m
+[0;32mI (12460) light_2color: Timer callback triggered[0m
+[0;32mI (12470) light_2color: Timer callback triggered[0m
+[0;32mI (12480) light_2color: Timer callback triggered[0m
+[0;32mI (12490) light_2color: Timer callback triggered[0m
+[0;32mI (12500) light_2color: Timer callback triggered[0m
+[0;32mI (12510) light_2color: Timer callback triggered[0m
+[0;32mI (12520) light_2color: Timer callback triggered[0m
+[0;32mI (12530) light_2color: Timer callback triggered[0m
+[0;32mI (12540) light_2color: Timer callback triggered[0m
+[0;32mI (12550) light_2color: Timer callback triggered[0m
+[0;32mI (12560) light_2color: Timer callback triggered[0m
+[0;32mI (12570) light_2color: Timer callback triggered[0m
+[0;32mI (12580) light_2color: Timer callback triggered[0m
+[0;32mI (12590) light_2color: Timer callback triggered[0m
+[0;32mI (12600) light_2color: Timer callback triggered[0m
+[0;32mI (12610) light_2color: Timer callback triggered[0m
+[0;32mI (12620) light_2color: Timer callback triggered[0m
+[0;32mI (12630) light_2color: Timer callback triggered[0m
+[0;32mI (12640) light_2color: Timer callback triggered[0m
+[0;32mI (12650) light_2color: Timer callback triggered[0m
+[0;32mI (12660) light_2color: Timer callback triggered[0m
+[0;32mI (12670) light_2color: Timer callback triggered[0m
+[0;32mI (12680) light_2color: Timer callback triggered[0m
+[0;32mI (12690) light_2color: Timer callback triggered[0m
+[0;32mI (12700) light_2color: Timer callback triggered[0m
+[0;32mI (12710) light_2color: Timer callback triggered[0m
+[0;32mI (12720) light_2color: Timer callback triggered[0m
+[0;32mI (12730) light_2color: Timer callback triggered[0m
+[0;32mI (12740) light_2color: Timer callback triggered[0m
+[0;32mI (12750) light_2color: Timer callback triggered[0m
+[0;32mI (12760) light_2color: Timer callback triggered[0m
+[0;32mI (12770) light_2color: Timer callback triggered[0m
+[0;32mI (12780) light_2color: Timer callback triggered[0m
+[0;32mI (12790) light_2color: Timer callback triggered[0m
+[0;32mI (12800) light_2color: Timer callback triggered[0m
+[0;32mI (12810) light_2color: Timer callback triggered[0m
+[0;32mI (12820) light_2color: Timer callback triggered[0m
+[0;32mI (12830) light_2color: Timer callback triggered[0m
+[0;32mI (12840) light_2color: Timer callback triggered[0m
+[0;32mI (12850) light_2color: Timer callback triggered[0m
+[0;32mI (12860) light_2color: Timer callback triggered[0m
+[0;32mI (12870) light_2color: Timer callback triggered[0m
+[0;32mI (12880) light_2color: Timer callback triggered[0m
+[0;32mI (12890) light_2color: Timer callback triggered[0m
+[0;32mI (12900) light_2color: Timer callback triggered[0m
+[0;32mI (12910) light_2color: Timer callback triggered[0m
+[0;32mI (12920) light_2color: Timer callback triggered[0m
+[0;32mI (12930) light_2color: Timer callback triggered[0m
+[0;32mI (12940) light_2color: Timer callback triggered[0m
+[0;32mI (12950) light_2color: Timer callback triggered[0m
+[0;32mI (12960) light_2color: Timer callback triggered[0m
+[0;32mI (12970) light_2color: Timer callback triggered[0m
+[0;32mI (12980) light_2color: Timer callback triggered[0m
+[0;32mI (12990) light_2color: Timer callback triggered[0m
+[0;32mI (13000) light_2color: Timer callback triggered[0m
+[0;32mI (13010) light_2color: Timer callback triggered[0m
+[0;32mI (13020) light_2color: Timer callback triggered[0m
+[0;32mI (13030) light_2color: Timer callback triggered[0m
+[0;32mI (13040) light_2color: Timer callback triggered[0m
+[0;32mI (13050) light_2color: Timer callback triggered[0m
+[0;32mI (13060) light_2color: Timer callback triggered[0m
+[0;32mI (13070) light_2color: Timer callback triggered[0m
+[0;32mI (13080) light_2color: Timer callback triggered[0m
+[0;32mI (13090) light_2color: Timer callback triggered[0m
+[0;32mI (13100) light_2color: Timer callback triggered[0m
+[0;32mI (13110) light_2color: Timer callback triggered[0m
+[0;32mI (13120) light_2color: Timer callback triggered[0m
+[0;32mI (13130) light_2color: Timer callback triggered[0m
+[0;32mI (13140) light_2color: Timer callback triggered[0m
+[0;32mI (13150) light_2color: Timer callback triggered[0m
+[0;32mI (13160) light_2color: Timer callback triggered[0m
+[0;32mI (13170) light_2color: Timer callback triggered[0m
+[0;32mI (13180) light_2color: Timer callback triggered[0m
+[0;32mI (13190) light_2color: Timer callback triggered[0m
+[0;32mI (13200) light_2color: Timer callback triggered[0m
+[0;32mI (13210) light_2color: Timer callback triggered[0m
+[0;32mI (13220) light_2color: Timer callback triggered[0m
+[0;32mI (13230) light_2color: Timer callback triggered[0m
+[0;32mI (13240) light_2color: Timer callback triggered[0m
+[0;32mI (13250) light_2color: Timer callback triggered[0m
+[0;32mI (13260) light_2color: Timer callback triggered[0m
+[0;32mI (13270) light_2color: Timer callback triggered[0m
+[0;32mI (13280) light_2color: Timer callback triggered[0m
+[0;32mI (13290) light_2color: Timer callback triggered[0m
+[0;32mI (13300) light_2color: Timer callback triggered[0m
+[0;32mI (13310) light_2color: Timer callback triggered[0m
+[0;32mI (13320) light_2color: Timer callback triggered[0m
+[0;32mI (13330) light_2color: Timer callback triggered[0m
+[0;32mI (13340) light_2color: Timer callback triggered[0m
+[0;32mI (13350) light_2color: Timer callback triggered[0m
+[0;32mI (13360) light_2color: Timer callback triggered[0m
+[0;32mI (13370) light_2color: Timer callback triggered[0m
+[0;32mI (13380) light_2color: Timer callback triggered[0m
+[0;32mI (13390) light_2color: Timer callback triggered[0m
+[0;32mI (13400) light_2color: Timer callback triggered[0m
+[0;32mI (13410) light_2color: Timer callback triggered[0m
+[0;32mI (13420) light_2color: Timer callback triggered[0m
+[0;32mI (13430) light_2color: Timer callback triggered[0m
+[0;32mI (13440) light_2color: Timer callback triggered[0m
+[0;32mI (13450) light_2color: Timer callback triggered[0m
+[0;32mI (13460) light_2color: Timer callback triggered[0m
+[0;32mI (13470) light_2color: Timer callback triggered[0m
+[0;32mI (13480) light_2color: Timer callback triggered[0m
+[0;32mI (13490) light_2color: Timer callback triggered[0m
+[0;32mI (13500) light_2color: Timer callback triggered[0m
+[0;32mI (13510) light_2color: Timer callback triggered[0m
+[0;32mI (13520) light_2color: Timer callback triggered[0m
+[0;32mI (13530) light_2color: Timer callback triggered[0m
+[0;32mI (13540) light_2color: Timer callback triggered[0m
+[0;32mI (13550) light_2color: Timer callback triggered[0m
+[0;32mI (13560) light_2color: Timer callback triggered[0m
+[0;32mI (13570) light_2color: Timer callback triggered[0m
+[0;32mI (13580) light_2color: Timer callback triggered[0m
+[0;32mI (13590) light_2color: Timer callback triggered[0m
+[0;32mI (13600) light_2color: Timer callback triggered[0m
+[0;32mI (13610) light_2color: Timer callback triggered[0m
+[0;32mI (13620) light_2color: Timer callback triggered[0m
+[0;32mI (13630) light_2color: Timer callback triggered[0m
+[0;32mI (13640) light_2color: Timer callback triggered[0m
+[0;32mI (13650) light_2color: Timer callback triggered[0m
+[0;32mI (13660) light_2color: Timer callback triggered[0m
+[0;32mI (13670) light_2color: Timer callback triggered[0m
+[0;32mI (13680) light_2color: Timer callback triggered[0m
+[0;32mI (13690) light_2color: Timer callback triggered[0m
+[0;32mI (13700) light_2color: Timer callback triggered[0m
+[0;32mI (13710) light_2color: Timer callback triggered[0m
+[0;32mI (13720) light_2color: Timer callback triggered[0m
+[0;32mI (13730) light_2color: Timer callback triggered[0m
+[0;32mI (13740) light_2color: Timer callback triggered[0m
+[0;32mI (13750) light_2color: Timer callback triggered[0m
+[0;32mI (13760) light_2color: Timer callback triggered[0m
+[0;32mI (13770) light_2color: Timer callback triggered[0m
+[0;32mI (13780) light_2color: Timer callback triggered[0m
+[0;32mI (13790) light_2color: Timer callback triggered[0m
+[0;32mI (13800) light_2color: Timer callback triggered[0m
+[0;32mI (13810) light_2color: Timer callback triggered[0m
+[0;32mI (13820) light_2color: Timer callback triggered[0m
+[0;32mI (13830) light_2color: Timer callback triggered[0m
+[0;32mI (13840) light_2color: Timer callback triggered[0m
+[0;32mI (13850) light_2color: Timer callback triggered[0m
+[0;32mI (13860) light_2color: Timer callback triggered[0m
+[0;32mI (13870) light_2color: Timer callback triggered[0m
+[0;32mI (13880) light_2color: Timer callback triggered[0m
+[0;32mI (13890) light_2color: Timer callback triggered[0m
+[0;32mI (13900) light_2color: Timer callback triggered[0m
+[0;32mI (13910) light_2color: Timer callback triggered[0m
+[0;32mI (13920) light_2color: Timer callback triggered[0m
+[0;32mI (13930) light_2color: Timer callback triggered[0m
+[0;32mI (13940) light_2color: Timer callback triggered[0m
+[0;32mI (13950) light_2color: Timer callback triggered[0m
+[0;32mI (13960) light_2color: Timer callback triggered[0m
+[0;32mI (13970) light_2color: Timer callback triggered[0m
+[0;32mI (13980) light_2color: Timer callback triggered[0m
+[0;32mI (13990) light_2color: Timer callback triggered[0m
+[0;32mI (14000) light_2color: Timer callback triggered[0m
+[0;32mI (14010) light_2color: Timer callback triggered[0m
+[0;32mI (14020) light_2color: Timer callback triggered[0m
+[0;32mI (14030) light_2color: Timer callback triggered[0m
+[0;32mI (14040) light_2color: Timer callback triggered[0m
+[0;32mI (14050) light_2color: Timer callback triggered[0m
+[0;32mI (14060) light_2color: Timer callback triggered[0m
+[0;32mI (14070) light_2color: Timer callback triggered[0m
+[0;32mI (14080) light_2color: Timer callback triggered[0m
+[0;32mI (14090) light_2color: Timer callback triggered[0m
+[0;32mI (14100) light_2color: Timer callback triggered[0m
+[0;32mI (14110) light_2color: Timer callback triggered[0m
+[0;32mI (14120) light_2color: Timer callback triggered[0m
+[0;32mI (14130) light_2color: Timer callback triggered[0m
+[0;32mI (14140) light_2color: Timer callback triggered[0m
+[0;32mI (14150) light_2color: Timer callback triggered[0m
+[0;32mI (14160) light_2color: Timer callback triggered[0m
+[0;32mI (14170) light_2color: Timer callback triggered[0m
+[0;32mI (14180) light_2color: Timer callback triggered[0m
+[0;32mI (14190) light_2color: Timer callback triggered[0m
+[0;32mI (14200) light_2color: Timer callback triggered[0m
+[0;32mI (14210) light_2color: Timer callback triggered[0m
+[0;32mI (14220) light_2color: Timer callback triggered[0m
+[0;32mI (14230) light_2color: Timer callback triggered[0m
+[0;32mI (14240) light_2color: Timer callback triggered[0m
+[0;32mI (14250) light_2color: Timer callback triggered[0m
+[0;32mI (14260) light_2color: Timer callback triggered[0m
+[0;32mI (14270) light_2color: Timer callback triggered[0m
+[0;32mI (14280) light_2color: Timer callback triggered[0m
+[0;32mI (14290) light_2color: Timer callback triggered[0m
+[0;32mI (14300) light_2color: Timer callback triggered[0m
+[0;32mI (14310) light_2color: Timer callback triggered[0m
+[0;32mI (14320) light_2color: Timer callback triggered[0m
+[0;32mI (14330) light_2color: Timer callback triggered[0m
+[0;32mI (14340) light_2color: Timer callback triggered[0m
+[0;32mI (14350) light_2color: Timer callback triggered[0m
+[0;32mI (14360) light_2color: Timer callback triggered[0m
+[0;32mI (14370) light_2color: Timer callback triggered[0m
+[0;32mI (14380) light_2color: Timer callback triggered[0m
+[0;32mI (14390) light_2color: Timer callback triggered[0m
+[0;32mI (14400) light_2color: Timer callback triggered[0m
+[0;32mI (14410) light_2color: Timer callback triggered[0m
+[0;32mI (14420) light_2color: Timer callback triggered[0m
+[0;32mI (14430) light_2color: Timer callback triggered[0m
+[0;32mI (14440) light_2color: Timer callback triggered[0m
+[0;32mI (14450) light_2color: Timer callback triggered[0m
+[0;32mI (14460) light_2color: Timer callback triggered[0m
+[0;32mI (14470) light_2color: Timer callback triggered[0m
+[0;32mI (14480) light_2color: Timer callback triggered[0m
+[0;32mI (14490) light_2color: Timer callback triggered[0m
+[0;32mI (14500) light_2color: Timer callback triggered[0m
+[0;32mI (14510) light_2color: Timer callback triggered[0m
+[0;32mI (14520) light_2color: Timer callback triggered[0m
+[0;32mI (14530) light_2color: Timer callback triggered[0m
+[0;32mI (14540) light_2color: Timer callback triggered[0m
+[0;32mI (14550) light_2color: Timer callback triggered[0m
+[0;32mI (14560) light_2color: Timer callback triggered[0m
+[0;32mI (14570) light_2color: Timer callback triggered[0m
+[0;32mI (14580) light_2color: Timer callback triggered[0m
+[0;32mI (14590) light_2color: Timer callback triggered[0m
+[0;32mI (14600) light_2color: Timer callback triggered[0m
+[0;32mI (14610) light_2color: Timer callback triggered[0m
+[0;32mI (14620) light_2color: Timer callback triggered[0m
+[0;32mI (14630) light_2color: Timer callback triggered[0m
+[0;32mI (14640) light_2color: Timer callback triggered[0m
+[0;32mI (14650) light_2color: Timer callback triggered[0m
+[0;32mI (14660) light_2color: Timer callback triggered[0m
+[0;32mI (14670) light_2color: Timer callback triggered[0m
+[0;32mI (14680) light_2color: Timer callback triggered[0m
+[0;32mI (14690) light_2color: Timer callback triggered[0m
+[0;32mI (14700) light_2color: Timer callback triggered[0m
+[0;32mI (14710) light_2color: Timer callback triggered[0m
+[0;32mI (14720) light_2color: Timer callback triggered[0m
+[0;32mI (14730) light_2color: Timer callback triggered[0m
+[0;32mI (14740) light_2color: Timer callback triggered[0m
+[0;32mI (14750) light_2color: Timer callback triggered[0m
+[0;32mI (14760) light_2color: Timer callback triggered[0m
+[0;32mI (14770) light_2color: Timer callback triggered[0m
+[0;32mI (14780) light_2color: Timer callback triggered[0m
+[0;32mI (14790) light_2color: Timer callback triggered[0m
+[0;32mI (14800) light_2color: Timer callback triggered[0m
+[0;32mI (14810) light_2color: Timer callback triggered[0m
+[0;32mI (14820) light_2color: Timer callback triggered[0m
+[0;32mI (14830) light_2color: Timer callback triggered[0m
+[0;32mI (14840) light_2color: Timer callback triggered[0m
+[0;32mI (14850) light_2color: Timer callback triggered[0m
+[0;32mI (14860) light_2color: Timer callback triggered[0m
+[0;32mI (14870) light_2color: Timer callback triggered[0m
+[0;32mI (14880) light_2color: Timer callback triggered[0m
+[0;32mI (14890) light_2color: Timer callback triggered[0m
+[0;32mI (14900) light_2color: Timer callback triggered[0m
+[0;32mI (14910) light_2color: Timer callback triggered[0m
+[0;32mI (14920) light_2color: Timer callback triggered[0m
+[0;32mI (14930) light_2color: Timer callback triggered[0m
+[0;32mI (14940) light_2color: Timer callback triggered[0m
+[0;32mI (14950) light_2color: Timer callback triggered[0m
+[0;32mI (14960) light_2color: Timer callback triggered[0m
+[0;32mI (14970) light_2color: Timer callback triggered[0m
+[0;32mI (14980) light_2color: Timer callback triggered[0m
+[0;32mI (14990) light_2color: Timer callback triggered[0m
+[0;32mI (15000) light_2color: Timer callback triggered[0m
+[0;32mI (15010) light_2color: Timer callback triggered[0m
+[0;32mI (15020) light_2color: Timer callback triggered[0m
+[0;32mI (15030) light_2color: Timer callback triggered[0m
+[0;32mI (15040) light_2color: Timer callback triggered[0m
+[0;32mI (15050) light_2color: Timer callback triggered[0m
+[0;32mI (15060) light_2color: Timer callback triggered[0m
+[0;32mI (15070) light_2color: Timer callback triggered[0m
+[0;32mI (15080) light_2color: Timer callback triggered[0m
+[0;32mI (15090) light_2color: Timer callback triggered[0m
+[0;32mI (15100) light_2color: Timer callback triggered[0m
+[0;32mI (15110) light_2color: Timer callback triggered[0m
+[0;32mI (15120) light_2color: Timer callback triggered[0m
+[0;32mI (15130) light_2color: Timer callback triggered[0m
+[0;32mI (15140) light_2color: Timer callback triggered[0m
+[0;32mI (15150) light_2color: Timer callback triggered[0m
+[0;32mI (15160) light_2color: Timer callback triggered[0m
+[0;32mI (15170) light_2color: Timer callback triggered[0m
+[0;32mI (15180) light_2color: Timer callback triggered[0m
+[0;32mI (15190) light_2color: Timer callback triggered[0m
+[0;32mI (15200) light_2color: Timer callback triggered[0m
+[0;32mI (15210) light_2color: Timer callback triggered[0m
+[0;32mI (15220) light_2color: Timer callback triggered[0m
+[0;32mI (15230) light_2color: Timer callback triggered[0m
+[0;32mI (15240) light_2color: Timer callback triggered[0m
+[0;32mI (15250) light_2color: Timer callback triggered[0m
+[0;32mI (15260) light_2color: Timer callback triggered[0m
+[0;32mI (15270) light_2color: Timer callback triggered[0m
+[0;32mI (15280) light_2color: Timer callback triggered[0m
+[0;32mI (15290) light_2color: Timer callback triggered[0m
+[0;32mI (15300) light_2color: Timer callback triggered[0m
+[0;32mI (15310) light_2color: Timer callback triggered[0m
+[0;32mI (15320) light_2color: Timer callback triggered[0m
+[0;32mI (15330) light_2color: Timer callback triggered[0m
+[0;32mI (15340) light_2color: Timer callback triggered[0m
+[0;32mI (15350) light_2color: Timer callback triggered[0m
+[0;32mI (15360) light_2color: Timer callback triggered[0m
+[0;32mI (15370) light_2color: Timer callback triggered[0m
+[0;32mI (15380) light_2color: Timer callback triggered[0m
+[0;32mI (15390) light_2color: Timer callback triggered[0m
+[0;32mI (15400) light_2color: Timer callback triggered[0m
+[0;32mI (15410) light_2color: Timer callback triggered[0m
+[0;32mI (15420) light_2color: Timer callback triggered[0m
+[0;32mI (15430) light_2color: Timer callback triggered[0m
+[0;32mI (15440) light_2color: Timer callback triggered[0m
+[0;32mI (15450) light_2color: Timer callback triggered[0m
+[0;32mI (15460) light_2color: Timer callback triggered[0m
+[0;32mI (15470) light_2color: Timer callback triggered[0m
+[0;32mI (15480) light_2color: Timer callback triggered[0m
+[0;32mI (15490) light_2color: Timer callback triggered[0m
+[0;32mI (15500) light_2color: Timer callback triggered[0m
+[0;32mI (15510) light_2color: Timer callback triggered[0m
+[0;32mI (15520) light_2color: Timer callback triggered[0m
+[0;32mI (15530) light_2color: Timer callback triggered[0m
+[0;32mI (15540) light_2color: Timer callback triggered[0m
+[0;32mI (15550) light_2color: Timer callback triggered[0m
+[0;32mI (15560) light_2color: Timer callback triggered[0m
+[0;32mI (15570) light_2color: Timer callback triggered[0m
+[0;32mI (15580) light_2color: Timer callback triggered[0m
+[0;32mI (15590) light_2color: Timer callback triggered[0m
+[0;32mI (15600) light_2color: Timer callback triggered[0m
+[0;32mI (15610) light_2color: Timer callback triggered[0m
+[0;32mI (15620) light_2color: Timer callback triggered[0m
+[0;32mI (15630) light_2color: Timer callback triggered[0m
+[0;32mI (15640) light_2color: Timer callback triggered[0m
+[0;32mI (15650) light_2color: Timer callback triggered[0m
+[0;32mI (15660) light_2color: Timer callback triggered[0m
+[0;32mI (15670) light_2color: Timer callback triggered[0m
+[0;32mI (15680) light_2color: Timer callback triggered[0m
+[0;32mI (15690) light_2color: Timer callback triggered[0m
+[0;32mI (15700) light_2color: Timer callback triggered[0m
+[0;32mI (15710) light_2color: Timer callback triggered[0m
+[0;32mI (15720) light_2color: Timer callback triggered[0m
+[0;32mI (15730) light_2color: Timer callback triggered[0m
+[0;32mI (15740) light_2color: Timer callback triggered[0m
+[0;32mI (15750) light_2color: Timer callback triggered[0m
+[0;32mI (15760) light_2color: Timer callback triggered[0m
+[0;32mI (15770) light_2color: Timer callback triggered[0m
+[0;32mI (15780) light_2color: Timer callback triggered[0m
+[0;32mI (15790) light_2color: Timer callback triggered[0m
+[0;32mI (15800) light_2color: Timer callback triggered[0m
+[0;32mI (15810) light_2color: Timer callback triggered[0m
+[0;32mI (15820) light_2color: Timer callback triggered[0m
+[0;32mI (15830) light_2color: Timer callback triggered[0m
+[0;32mI (15840) light_2color: Timer callback triggered[0m
+[0;32mI (15850) light_2color: Timer callback triggered[0m
+[0;32mI (15860) light_2color: Timer callback triggered[0m
+[0;32mI (15870) light_2color: Timer callback triggered[0m
+[0;32mI (15880) light_2color: Timer callback triggered[0m
+[0;32mI (15890) light_2color: Timer callback triggered[0m
+[0;32mI (15900) light_2color: Timer callback triggered[0m
+[0;32mI (15910) light_2color: Timer callback triggered[0m
+[0;32mI (15920) light_2color: Timer callback triggered[0m
+[0;32mI (15930) light_2color: Timer callback triggered[0m
+[0;32mI (15940) light_2color: Timer callback triggered[0m
+[0;32mI (15950) light_2color: Timer callback triggered[0m
+[0;32mI (15960) light_2color: Timer callback triggered[0m
+[0;32mI (15970) light_2color: Timer callback triggered[0m
+[0;32mI (15980) light_2color: Timer callback triggered[0m
+[0;32mI (15990) light_2color: Timer callback triggered[0m
+[0;32mI (16000) light_2color: Timer callback triggered[0m
+[0;32mI (16010) light_2color: Timer callback triggered[0m
+[0;32mI (16020) light_2color: Timer callback triggered[0m
+[0;32mI (16030) light_2color: Timer callback triggered[0m
+[0;32mI (16040) light_2color: Timer callback triggered[0m
+[0;32mI (16050) light_2color: Timer callback triggered[0m
+[0;32mI (16060) light_2color: Timer callback triggered[0m
+[0;32mI (16070) light_2color: Timer callback triggered[0m
+[0;32mI (16080) light_2color: Timer callback triggered[0m
+[0;32mI (16090) light_2color: Timer callback triggered[0m
+[0;32mI (16100) light_2color: Timer callback triggered[0m
+[0;32mI (16110) light_2color: Timer callback triggered[0m
+[0;32mI (16120) light_2color: Timer callback triggered[0m
+[0;32mI (16130) light_2color: Timer callback triggered[0m
+[0;32mI (16140) light_2color: Timer callback triggered[0m
+[0;32mI (16150) light_2color: Timer callback triggered[0m
+[0;32mI (16160) light_2color: Timer callback triggered[0m
+[0;32mI (16170) light_2color: Timer callback triggered[0m
+[0;32mI (16180) light_2color: Timer callback triggered[0m
+[0;32mI (16190) light_2color: Timer callback triggered[0m
+[0;32mI (16200) light_2color: Timer callback triggered[0m
+[0;32mI (16210) light_2color: Timer callback triggered[0m
+[0;32mI (16220) light_2color: Timer callback triggered[0m
+[0;32mI (16230) light_2color: Timer callback triggered[0m
+[0;32mI (16240) light_2color: Timer callback triggered[0m
+[0;32mI (16250) light_2color: Timer callback triggered[0m
+[0;32mI (16260) light_2color: Timer callback triggered[0m
+[0;32mI (16270) light_2color: Timer callback triggered[0m
+[0;32mI (16280) light_2color: Timer callback triggered[0m
+[0;32mI (16290) light_2color: Timer callback triggered[0m
+[0;32mI (16300) light_2color: Timer callback triggered[0m
+[0;32mI (16310) light_2color: Timer callback triggered[0m
+[0;32mI (16320) light_2color: Timer callback triggered[0m
+[0;32mI (16330) light_2color: Timer callback triggered[0m
+[0;32mI (16340) light_2color: Timer callback triggered[0m
+[0;32mI (16350) light_2color: Timer callback triggered[0m
+[0;32mI (16360) light_2color: Timer callback triggered[0m
+[0;32mI (16370) light_2color: Timer callback triggered[0m
+[0;32mI (16380) light_2color: Timer callback triggered[0m
+[0;32mI (16390) light_2color: Timer callback triggered[0m
+[0;32mI (16400) light_2color: Timer callback triggered[0m
+[0;32mI (16410) light_2color: Timer callback triggered[0m
+[0;32mI (16420) light_2color: Timer callback triggered[0m
+[0;32mI (16430) light_2color: Timer callback triggered[0m
+[0;32mI (16440) light_2color: Timer callback triggered[0m
+[0;32mI (16450) light_2color: Timer callback triggered[0m
+[0;32mI (16460) light_2color: Timer callback triggered[0m
+[0;32mI (16470) light_2color: Timer callback triggered[0m
+[0;32mI (16480) light_2color: Timer callback triggered[0m
+[0;32mI (16490) light_2color: Timer callback triggered[0m
+[0;32mI (16500) light_2color: Timer callback triggered[0m
+[0;32mI (16510) light_2color: Timer callback triggered[0m
+[0;32mI (16520) light_2color: Timer callback triggered[0m
+[0;32mI (16530) light_2color: Timer callback triggered[0m
+[0;32mI (16540) light_2color: Timer callback triggered[0m
+[0;32mI (16550) light_2color: Timer callback triggered[0m
+[0;32mI (16560) light_2color: Timer callback triggered[0m
+[0;32mI (16570) light_2color: Timer callback triggered[0m
+[0;32mI (16580) light_2color: Timer callback triggered[0m
+[0;32mI (16590) light_2color: Timer callback triggered[0m
+[0;32mI (16600) light_2color: Timer callback triggered[0m
+[0;32mI (16610) light_2color: Timer callback triggered[0m
+[0;32mI (16620) light_2color: Timer callback triggered[0m
+[0;32mI (16630) light_2color: Timer callback triggered[0m
+[0;32mI (16640) light_2color: Timer callback triggered[0m
+[0;32mI (16650) light_2color: Timer callback triggered[0m
+[0;32mI (16660) light_2color: Timer callback triggered[0m
+[0;32mI (16670) light_2color: Timer callback triggered[0m
+[0;32mI (16680) light_2color: Timer callback triggered[0m
+[0;32mI (16690) light_2color: Timer callback triggered[0m
+[0;32mI (16700) light_2color: Timer callback triggered[0m
+[0;32mI (16710) light_2color: Timer callback triggered[0m
+[0;32mI (16720) light_2color: Timer callback triggered[0m
+[0;32mI (16730) light_2color: Timer callback triggered[0m
+[0;32mI (16740) light_2color: Timer callback triggered[0m
+[0;32mI (16750) light_2color: Timer callback triggered[0m
+[0;32mI (16760) light_2color: Timer callback triggered[0m
+[0;32mI (16770) light_2color: Timer callback triggered[0m
+[0;32mI (16780) light_2color: Timer callback triggered[0m
+[0;32mI (16790) light_2color: Timer callback triggered[0m
+[0;32mI (16800) light_2color: Timer callback triggered[0m
+[0;32mI (16810) light_2color: Timer callback triggered[0m
+[0;32mI (16820) light_2color: Timer callback triggered[0m
+[0;32mI (16830) light_2color: Timer callback triggered[0m
+[0;32mI (16840) light_2color: Timer callback triggered[0m
+[0;32mI (16850) light_2color: Timer callback triggered[0m
+[0;32mI (16860) light_2color: Timer callback triggered[0m
+[0;32mI (16870) light_2color: Timer callback triggered[0m
+[0;32mI (16880) light_2color: Timer callback triggered[0m
+[0;32mI (16890) light_2color: Timer callback triggered[0m
+[0;32mI (16900) light_2color: Timer callback triggered[0m
+[0;32mI (16910) light_2color: Timer callback triggered[0m
+[0;32mI (16920) light_2color: Timer callback triggered[0m
+[0;32mI (16930) light_2color: Timer callback triggered[0m
+[0;32mI (16940) light_2color: Timer callback triggered[0m
+[0;32mI (16950) light_2color: Timer callback triggered[0m
+[0;32mI (16960) light_2color: Timer callback triggered[0m
+[0;32mI (16970) light_2color: Timer callback triggered[0m
+[0;32mI (16980) light_2color: Timer callback triggered[0m
+[0;32mI (16990) light_2color: Timer callback triggered[0m
+[0;32mI (17000) light_2color: Timer callback triggered[0m
+[0;32mI (17010) light_2color: Timer callback triggered[0m
+[0;32mI (17020) light_2color: Timer callback triggered[0m
+[0;32mI (17030) light_2color: Timer callback triggered[0m
+[0;32mI (17040) light_2color: Timer callback triggered[0m
+[0;32mI (17050) light_2color: Timer callback triggered[0m
+[0;32mI (17060) light_2color: Timer callback triggered[0m
+[0;32mI (17070) light_2color: Timer callback triggered[0m
+[0;32mI (17080) light_2color: Timer callback triggered[0m
+[0;32mI (17090) light_2color: Timer callback triggered[0m
+[0;32mI (17100) light_2color: Timer callback triggered[0m
+[0;32mI (17110) light_2color: Timer callback triggered[0m
+[0;32mI (17120) light_2color: Timer callback triggered[0m
+[0;32mI (17130) light_2color: Timer callback triggered[0m
+[0;32mI (17140) light_2color: Timer callback triggered[0m
+[0;32mI (17150) light_2color: Timer callback triggered[0m
+[0;32mI (17160) light_2color: Timer callback triggered[0m
+[0;32mI (17170) light_2color: Timer callback triggered[0m
+[0;32mI (17180) light_2color: Timer callback triggered[0m
+[0;32mI (17190) light_2color: Timer callback triggered[0m
+[0;32mI (17200) light_2color: Timer callback triggered[0m
+[0;32mI (17210) light_2color: Timer callback triggered[0m
+[0;32mI (17220) light_2color: Timer callback triggered[0m
+[0;32mI (17230) light_2color: Timer callback triggered[0m
+[0;32mI (17240) light_2color: Timer callback triggered[0m
+[0;32mI (17250) light_2color: Timer callback triggered[0m
+[0;32mI (17260) light_2color: Timer callback triggered[0m
+[0;32mI (17270) light_2color: Timer callback triggered[0m
+[0;32mI (17280) light_2color: Timer callback triggered[0m
+[0;32mI (17290) light_2color: Timer callback triggered[0m
+[0;32mI (17300) light_2color: Timer callback triggered[0m
+[0;32mI (17310) light_2color: Timer callback triggered[0m
+[0;32mI (17320) light_2color: Timer callback triggered[0m
+[0;32mI (17330) light_2color: Timer callback triggered[0m
+[0;32mI (17340) light_2color: Timer callback triggered[0m
+[0;32mI (17350) light_2color: Timer callback triggered[0m
+[0;32mI (17360) light_2color: Timer callback triggered[0m
+[0;32mI (17370) light_2color: Timer callback triggered[0m
+[0;32mI (17380) light_2color: Timer callback triggered[0m
+[0;32mI (17390) light_2color: Timer callback triggered[0m
+[0;32mI (17400) light_2color: Timer callback triggered[0m
+[0;32mI (17410) light_2color: Timer callback triggered[0m
+[0;32mI (17420) light_2color: Timer callback triggered[0m
+[0;32mI (17430) light_2color: Timer callback triggered[0m
+[0;32mI (17440) light_2color: Timer callback triggered[0m
+[0;32mI (17450) light_2color: Timer callback triggered[0m
+[0;32mI (17460) light_2color: Timer callback triggered[0m
+[0;32mI (17470) light_2color: Timer callback triggered[0m
+[0;32mI (17480) light_2color: Timer callback triggered[0m
+[0;32mI (17490) light_2color: Timer callback triggered[0m
+[0;32mI (17500) light_2color: Timer callback triggered[0m
+[0;32mI (17510) light_2color: Timer callback triggered[0m
+[0;32mI (17520) light_2color: Timer callback triggered[0m
+[0;32mI (17530) light_2color: Timer callback triggered[0m
+[0;32mI (17540) light_2color: Timer callback triggered[0m
+[0;32mI (17550) light_2color: Timer callback triggered[0m
+[0;32mI (17560) light_2color: Timer callback triggered[0m
+[0;32mI (17570) light_2color: Timer callback triggered[0m
+[0;32mI (17580) light_2color: Timer callback triggered[0m
+[0;32mI (17590) light_2color: Timer callback triggered[0m
+[0;32mI (17600) light_2color: Timer callback triggered[0m
+[0;32mI (17610) light_2color: Timer callback triggered[0m
+[0;32mI (17620) light_2color: Timer callback triggered[0m
+[0;32mI (17630) light_2color: Timer callback triggered[0m
+[0;32mI (17640) light_2color: Timer callback triggered[0m
+[0;32mI (17650) light_2color: Timer callback triggered[0m
+[0;32mI (17660) light_2color: Timer callback triggered[0m
+[0;32mI (17670) light_2color: Timer callback triggered[0m
+[0;32mI (17680) light_2color: Timer callback triggered[0m
+[0;32mI (17690) light_2color: Timer callback triggered[0m
+[0;32mI (17700) light_2color: Timer callback triggered[0m
+[0;32mI (17710) light_2color: Timer callback triggered[0m
+[0;32mI (17720) light_2color: Timer callback triggered[0m
+[0;32mI (17730) light_2color: Timer callback triggered[0m
+[0;32mI (17740) light_2color: Timer callback triggered[0m
+[0;32mI (17750) light_2color: Timer callback triggered[0m
+[0;32mI (17760) light_2color: Timer callback triggered[0m
+[0;32mI (17770) light_2color: Timer callback triggered[0m
+[0;32mI (17780) light_2color: Timer callback triggered[0m
+[0;32mI (17790) light_2color: Timer callback triggered[0m
+[0;32mI (17800) light_2color: Timer callback triggered[0m
+[0;32mI (17810) light_2color: Timer callback triggered[0m
+[0;32mI (17820) light_2color: Timer callback triggered[0m
+[0;32mI (17830) light_2color: Timer callback triggered[0m
+[0;32mI (17840) light_2color: Timer callback triggered[0m
+[0;32mI (17850) light_2color: Timer callback triggered[0m
+[0;32mI (17860) light_2color: Timer callback triggered[0m
+[0;32mI (17870) light_2color: Timer callback triggered[0m
+[0;32mI (17880) light_2color: Timer callback triggered[0m
+[0;32mI (17890) light_2color: Timer callback triggered[0m
+[0;32mI (17900) light_2color: Timer callback triggered[0m
+[0;32mI (17910) light_2color: Timer callback triggered[0m
+[0;32mI (17920) light_2color: Timer callback triggered[0m
+[0;32mI (17930) light_2color: Timer callback triggered[0m
+[0;32mI (17940) light_2color: Timer callback triggered[0m
+[0;32mI (17950) light_2color: Timer callback triggered[0m
+[0;32mI (17960) light_2color: Timer callback triggered[0m
+[0;32mI (17970) light_2color: Timer callback triggered[0m
+[0;32mI (17980) light_2color: Timer callback triggered[0m
+[0;32mI (17990) light_2color: Timer callback triggered[0m
+[0;32mI (18000) light_2color: Timer callback triggered[0m
+[0;32mI (18010) light_2color: Timer callback triggered[0m
+[0;32mI (18020) light_2color: Timer callback triggered[0m
+[0;32mI (18030) light_2color: Timer callback triggered[0m
+[0;32mI (18040) light_2color: Timer callback triggered[0m
+[0;32mI (18050) light_2color: Timer callback triggered[0m
+[0;32mI (18060) light_2color: Timer callback triggered[0m
+[0;32mI (18070) light_2color: Timer callback triggered[0m
+[0;32mI (18080) light_2color: Timer callback triggered[0m
+[0;32mI (18090) light_2color: Timer callback triggered[0m
+[0;32mI (18100) light_2color: Timer callback triggered[0m
+[0;32mI (18110) light_2color: Timer callback triggered[0m
+[0;32mI (18120) light_2color: Timer callback triggered[0m
+[0;32mI (18130) light_2color: Timer callback triggered[0m
+[0;32mI (18140) light_2color: Timer callback triggered[0m
+[0;32mI (18150) light_2color: Timer callback triggered[0m
+[0;32mI (18160) light_2color: Timer callback triggered[0m
+[0;32mI (18170) light_2color: Timer callback triggered[0m
+[0;32mI (18180) light_2color: Timer callback triggered[0m
+[0;32mI (18190) light_2color: Timer callback triggered[0m
+[0;32mI (18200) light_2color: Timer callback triggered[0m
+[0;32mI (18210) light_2color: Timer callback triggered[0m
+[0;32mI (18220) light_2color: Timer callback triggered[0m
+[0;32mI (18230) light_2color: Timer callback triggered[0m
+[0;32mI (18240) light_2color: Timer callback triggered[0m
+[0;32mI (18250) light_2color: Timer callback triggered[0m
+[0;32mI (18260) light_2color: Timer callback triggered[0m
+[0;32mI (18270) light_2color: Timer callback triggered[0m
+[0;32mI (18280) light_2color: Timer callback triggered[0m
+[0;32mI (18290) light_2color: Timer callback triggered[0m
+[0;32mI (18300) light_2color: Timer callback triggered[0m
+[0;32mI (18310) light_2color: Timer callback triggered[0m
+[0;32mI (18320) light_2color: Timer callback triggered[0m
+[0;32mI (18330) light_2color: Timer callback triggered[0m
+[0;32mI (18340) light_2color: Timer callback triggered[0m
+[0;32mI (18350) light_2color: Timer callback triggered[0m
+[0;32mI (18360) light_2color: Timer callback triggered[0m
+[0;32mI (18370) light_2color: Timer callback triggered[0m
+[0;32mI (18380) light_2color: Timer callback triggered[0m
+[0;32mI (18390) light_2color: Timer callback triggered[0m
+[0;32mI (18400) light_2color: Timer callback triggered[0m
+[0;32mI (18410) light_2color: Timer callback triggered[0m
+[0;32mI (18420) light_2color: Timer callback triggered[0m
+[0;32mI (18430) light_2color: Timer callback triggered[0m
+[0;32mI (18440) light_2color: Timer callback triggered[0m
+[0;32mI (18450) light_2color: Timer callback triggered[0m
+[0;32mI (18460) light_2color: Timer callback triggered[0m
+[0;32mI (18470) light_2color: Timer callback triggered[0m
+[0;32mI (18480) light_2color: Timer callback triggered[0m
+[0;32mI (18490) light_2color: Timer callback triggered[0m
+[0;32mI (18500) light_2color: Timer callback triggered[0m
+[0;32mI (18510) light_2color: Timer callback triggered[0m
+[0;32mI (18520) light_2color: Timer callback triggered[0m
+[0;32mI (18530) light_2color: Timer callback triggered[0m
+[0;32mI (18540) light_2color: Timer callback triggered[0m
+[0;32mI (18550) light_2color: Timer callback triggered[0m
+[0;32mI (18560) light_2color: Timer callback triggered[0m
+[0;32mI (18570) light_2color: Timer callback triggered[0m
+[0;32mI (18580) light_2color: Timer callback triggered[0m
+[0;32mI (18590) light_2color: Timer callback triggered[0m
+[0;32mI (18600) light_2color: Timer callback triggered[0m
+[0;32mI (18610) light_2color: Timer callback triggered[0m
+[0;32mI (18620) light_2color: Timer callback triggered[0m
+[0;32mI (18630) light_2color: Timer callback triggered[0m
+[0;32mI (18640) light_2color: Timer callback triggered[0m
+[0;32mI (18650) light_2color: Timer callback triggered[0m
+[0;32mI (18660) light_2color: Timer callback triggered[0m
+[0;32mI (18670) light_2color: Timer callback triggered[0m
+[0;32mI (18680) light_2color: Timer callback triggered[0m
+[0;32mI (18690) light_2color: Timer callback triggered[0m
+[0;32mI (18700) light_2color: Timer callback triggered[0m
+[0;32mI (18710) light_2color: Timer callback triggered[0m
+[0;32mI (18720) light_2color: Timer callback triggered[0m
+[0;32mI (18730) light_2color: Timer callback triggered[0m
+[0;32mI (18740) light_2color: Timer callback triggered[0m
+[0;32mI (18750) light_2color: Timer callback triggered[0m
+[0;32mI (18760) light_2color: Timer callback triggered[0m
+[0;32mI (18770) light_2color: Timer callback triggered[0m
+[0;32mI (18780) light_2color: Timer callback triggered[0m
+[0;32mI (18790) light_2color: Timer callback triggered[0m
+[0;32mI (18800) light_2color: Timer callback triggered[0m
+[0;32mI (18810) light_2color: Timer callback triggered[0m
+[0;32mI (18820) light_2color: Timer callback triggered[0m
+[0;32mI (18830) light_2color: Timer callback triggered[0m
+[0;32mI (18840) light_2color: Timer callback triggered[0m
+[0;32mI (18850) light_2color: Timer callback triggered[0m
+[0;32mI (18860) light_2color: Timer callback triggered[0m
+[0;32mI (18870) light_2color: Timer callback triggered[0m
+[0;32mI (18880) light_2color: Timer callback triggered[0m
+[0;32mI (18890) light_2color: Timer callback triggered[0m
+[0;32mI (18900) light_2color: Timer callback triggered[0m
+[0;32mI (18910) light_2color: Timer callback triggered[0m
+[0;32mI (18920) light_2color: Timer callback triggered[0m
+[0;32mI (18930) light_2color: Timer callback triggered[0m
+[0;32mI (18940) light_2color: Timer callback triggered[0m
+[0;32mI (18950) light_2color: Timer callback triggered[0m
+[0;32mI (18960) light_2color: Timer callback triggered[0m
+[0;32mI (18970) light_2color: Timer callback triggered[0m
+[0;32mI (18980) light_2color: Timer callback triggered[0m
+[0;32mI (18990) light_2color: Timer callback triggered[0m
+[0;32mI (19000) light_2color: Timer callback triggered[0m
+[0;32mI (19010) light_2color: Timer callback triggered[0m
+[0;32mI (19020) light_2color: Timer callback triggered[0m
+[0;32mI (19030) light_2color: Timer callback triggered[0m
+[0;32mI (19040) light_2color: Timer callback triggered[0m
+[0;32mI (19050) light_2color: Timer callback triggered[0m
+[0;32mI (19060) light_2color: Timer callback triggered[0m
+[0;32mI (19070) light_2color: Timer callback triggered[0m
+[0;32mI (19080) light_2color: Timer callback triggered[0m
+[0;32mI (19090) light_2color: Timer callback triggered[0m
+[0;32mI (19100) light_2color: Timer callback triggered[0m
+[0;32mI (19110) light_2color: Timer callback triggered[0m
+[0;32mI (19120) light_2color: Timer callback triggered[0m
+[0;32mI (19130) light_2color: Timer callback triggered[0m
+[0;32mI (19140) light_2color: Timer callback triggered[0m
+[0;32mI (19150) light_2color: Timer callback triggered[0m
+[0;32mI (19160) light_2color: Timer callback triggered[0m
+[0;32mI (19170) light_2color: Timer callback triggered[0m
+[0;32mI (19180) light_2color: Timer callback triggered[0m
+[0;32mI (19190) light_2color: Timer callback triggered[0m
+[0;32mI (19200) light_2color: Timer callback triggered[0m
+[0;32mI (19210) light_2color: Timer callback triggered[0m
+[0;32mI (19220) light_2color: Timer callback triggered[0m
+[0;32mI (19230) light_2color: Timer callback triggered[0m
+[0;32mI (19240) light_2color: Timer callback triggered[0m
+[0;32mI (19250) light_2color: Timer callback triggered[0m
+[0;32mI (19260) light_2color: Timer callback triggered[0m
+[0;32mI (19270) light_2color: Timer callback triggered[0m
+[0;32mI (19280) light_2color: Timer callback triggered[0m
+[0;32mI (19290) light_2color: Timer callback triggered[0m
+[0;32mI (19300) light_2color: Timer callback triggered[0m
+[0;32mI (19310) light_2color: Timer callback triggered[0m
+[0;32mI (19320) light_2color: Timer callback triggered[0m
+[0;32mI (19330) light_2color: Timer callback triggered[0m
+[0;32mI (19340) light_2color: Timer callback triggered[0m
+[0;32mI (19350) light_2color: Timer callback triggered[0m
+[0;32mI (19360) light_2color: Timer callback triggered[0m
+[0;32mI (19370) light_2color: Timer callback triggered[0m
+[0;32mI (19380) light_2color: Timer callback triggered[0m
+[0;32mI (19390) light_2color: Timer callback triggered[0m
+[0;32mI (19400) light_2color: Timer callback triggered[0m
+[0;32mI (19410) light_2color: Timer callback triggered[0m
+[0;32mI (19420) light_2color: Timer callback triggered[0m
+[0;32mI (19430) light_2color: Timer callback triggered[0m
+[0;32mI (19440) light_2color: Timer callback triggered[0m
+[0;32mI (19450) light_2color: Timer callback triggered[0m
+[0;32mI (19460) light_2color: Timer callback triggered[0m
+[0;32mI (19470) light_2color: Timer callback triggered[0m
+[0;32mI (19480) light_2color: Timer callback triggered[0m
+[0;32mI (19490) light_2color: Timer callback triggered[0m
+[0;32mI (19500) light_2color: Timer callback triggered[0m
+[0;32mI (19510) light_2color: Timer callback triggered[0m
+[0;32mI (19520) light_2color: Timer callback triggered[0m
+[0;32mI (19530) light_2color: Timer callback triggered[0m
+[0;32mI (19540) light_2color: Timer callback triggered[0m
+[0;32mI (19550) light_2color: Timer callback triggered[0m
+[0;32mI (19560) light_2color: Timer callback triggered[0m
+[0;32mI (19570) light_2color: Timer callback triggered[0m
+[0;32mI (19580) light_2color: Timer callback triggered[0m
+[0;32mI (19590) light_2color: Timer callback triggered[0m
+[0;32mI (19600) light_2color: Timer callback triggered[0m
+[0;32mI (19610) light_2color: Timer callback triggered[0m
+[0;32mI (19620) light_2color: Timer callback triggered[0m
+[0;32mI (19630) light_2color: Timer callback triggered[0m
+[0;32mI (19640) light_2color: Timer callback triggered[0m
+[0;32mI (19650) light_2color: Timer callback triggered[0m
+[0;32mI (19660) light_2color: Timer callback triggered[0m
+[0;32mI (19670) light_2color: Timer callback triggered[0m
+[0;32mI (19680) light_2color: Timer callback triggered[0m
+[0;32mI (19690) light_2color: Timer callback triggered[0m
+[0;32mI (19700) light_2color: Timer callback triggered[0m
+[0;32mI (19710) light_2color: Timer callback triggered[0m
+[0;32mI (19720) light_2color: Timer callback triggered[0m
+[0;32mI (19730) light_2color: Timer callback triggered[0m
+[0;32mI (19740) light_2color: Timer callback triggered[0m
+[0;32mI (19750) light_2color: Timer callback triggered[0m
+[0;32mI (19760) light_2color: Timer callback triggered[0m
+[0;32mI (19770) light_2color: Timer callback triggered[0m
+[0;32mI (19780) light_2color: Timer callback triggered[0m
+[0;32mI (19790) light_2color: Timer callback triggered[0m
+[0;32mI (19800) light_2color: Timer callback triggered[0m
+[0;32mI (19810) light_2color: Timer callback triggered[0m
+[0;32mI (19820) light_2color: Timer callback triggered[0m
+[0;32mI (19830) light_2color: Timer callback triggered[0m
+[0;32mI (19840) light_2color: Timer callback triggered[0m
+[0;32mI (19850) light_2color: Timer callback triggered[0m
+[0;32mI (19860) light_2color: Timer callback triggered[0m
+[0;32mI (19870) light_2color: Timer callback triggered[0m
+[0;32mI (19880) light_2color: Timer callback triggered[0m
+[0;32mI (19890) light_2color: Timer callback triggered[0m
+[0;32mI (19900) light_2color: Timer callback triggered[0m
+[0;32mI (19910) light_2color: Timer callback triggered[0m
+[0;32mI (19920) light_2color: Timer callback triggered[0m
+[0;32mI (19930) light_2color: Timer callback triggered[0m
+[0;32mI (19940) light_2color: Timer callback triggered[0m
+[0;32mI (19950) light_2color: Timer callback triggered[0m
+[0;32mI (19960) light_2color: Timer callback triggered[0m
+[0;32mI (19970) light_2color: Timer callback triggered[0m
+[0;32mI (19980) light_2color: Timer callback triggered[0m
+[0;32mI (19990) light_2color: Timer callback triggered[0m
+[0;32mI (20000) light_2color: Timer callback triggered[0m
+[0;32mI (20010) light_2color: Timer callback triggered[0m
+[0;32mI (20020) light_2color: Timer callback triggered[0m
+[0;32mI (20030) light_2color: Timer callback triggered[0m
+[0;32mI (20040) light_2color: Timer callback triggered[0m
+[0;32mI (20050) light_2color: Timer callback triggered[0m
+[0;32mI (20060) light_2color: Timer callback triggered[0m
+[0;32mI (20070) light_2color: Timer callback triggered[0m
+[0;32mI (20080) light_2color: Timer callback triggered[0m
+[0;32mI (20090) light_2color: Timer callback triggered[0m
+[0;32mI (20100) light_2color: Timer callback triggered[0m
+[0;32mI (20110) light_2color: Timer callback triggered[0m
+[0;32mI (20120) light_2color: Timer callback triggered[0m
+[0;32mI (20130) light_2color: Timer callback triggered[0m
+[0;32mI (20140) light_2color: Timer callback triggered[0m
+[0;32mI (20150) light_2color: Timer callback triggered[0m
+[0;32mI (20160) light_2color: Timer callback triggered[0m
+[0;32mI (20170) light_2color: Timer callback triggered[0m
+[0;32mI (20180) light_2color: Timer callback triggered[0m
+[0;32mI (20190) light_2color: Timer callback triggered[0m
+[0;32mI (20200) light_2color: Timer callback triggered[0m
+[0;32mI (20210) light_2color: Timer callback triggered[0m
+[0;32mI (20220) light_2color: Timer callback triggered[0m
+[0;32mI (20230) light_2color: Timer callback triggered[0m
+[0;32mI (20240) light_2color: Timer callback triggered[0m
+[0;32mI (20250) light_2color: Timer callback triggered[0m
+[0;32mI (20260) light_2color: Timer callback triggered[0m
+[0;32mI (20270) light_2color: Timer callback triggered[0m
+[0;32mI (20280) light_2color: Timer callback triggered[0m
+[0;32mI (20290) light_2color: Timer callback triggered[0m
+[0;32mI (20300) light_2color: Timer callback triggered[0m
+[0;32mI (20310) light_2color: Timer callback triggered[0m
+[0;32mI (20320) light_2color: Timer callback triggered[0m
+[0;32mI (20330) light_2color: Timer callback triggered[0m
+[0;32mI (20340) light_2color: Timer callback triggered[0m
+[0;32mI (20350) light_2color: Timer callback triggered[0m
+[0;32mI (20360) light_2color: Timer callback triggered[0m
+[0;32mI (20370) light_2color: Timer callback triggered[0m
+[0;32mI (20380) light_2color: Timer callback triggered[0m
+[0;32mI (20390) light_2color: Timer callback triggered[0m
+[0;32mI (20400) light_2color: Timer callback triggered[0m
+[0;32mI (20410) light_2color: Timer callback triggered[0m
+[0;32mI (20420) light_2color: Timer callback triggered[0m
+[0;32mI (20430) light_2color: Timer callback triggered[0m
+[0;32mI (20440) light_2color: Timer callback triggered[0m
+[0;32mI (20450) light_2color: Timer callback triggered[0m
+[0;32mI (20460) light_2color: Timer callback triggered[0m
+[0;32mI (20470) light_2color: Timer callback triggered[0m
+[0;32mI (20480) light_2color: Timer callback triggered[0m
+[0;32mI (20490) light_2color: Timer callback triggered[0m
+[0;32mI (20500) light_2color: Timer callback triggered[0m
+[0;32mI (20510) light_2color: Timer callback triggered[0m
+[0;32mI (20520) light_2color: Timer callback triggered[0m
+[0;32mI (20530) light_2color: Timer callback triggered[0m
+[0;32mI (20540) light_2color: Timer callback triggered[0m
+[0;32mI (20550) light_2color: Timer callback triggered[0m
+[0;32mI (20560) light_2color: Timer callback triggered[0m
+[0;32mI (20570) light_2color: Timer callback triggered[0m
+[0;32mI (20580) light_2color: Timer callback triggered[0m
+[0;32mI (20590) light_2color: Timer callback triggered[0m
+[0;32mI (20600) light_2color: Timer callback triggered[0m
+[0;32mI (20610) light_2color: Timer callback triggered[0m
+[0;32mI (20620) light_2color: Timer callback triggered[0m
+[0;32mI (20630) light_2color: Timer callback triggered[0m
+[0;32mI (20640) light_2color: Timer callback triggered[0m
+[0;32mI (20650) light_2color: Timer callback triggered[0m
+[0;32mI (20660) light_2color: Timer callback triggered[0m
+[0;32mI (20670) light_2color: Timer callback triggered[0m
+[0;32mI (20680) light_2color: Timer callback triggered[0m
+[0;32mI (20690) light_2color: Timer callback triggered[0m
+[0;32mI (20700) light_2color: Timer callback triggered[0m
+[0;32mI (20710) light_2color: Timer callback triggered[0m
+[0;32mI (20720) light_2color: Timer callback triggered[0m
+[0;32mI (20730) light_2color: Timer callback triggered[0m
+[0;32mI (20740) light_2color: Timer callback triggered[0m
+[0;32mI (20750) light_2color: Timer callback triggered[0m
+[0;32mI (20760) light_2color: Timer callback triggered[0m
+[0;32mI (20770) light_2color: Timer callback triggered[0m
+[0;32mI (20780) light_2color: Timer callback triggered[0m
+[0;32mI (20790) light_2color: Timer callback triggered[0m
+[0;32mI (20800) light_2color: Timer callback triggered[0m
+[0;32mI (20810) light_2color: Timer callback triggered[0m
+[0;32mI (20820) light_2color: Timer callback triggered[0m
+[0;32mI (20830) light_2color: Timer callback triggered[0m
+[0;32mI (20840) light_2color: Timer callback triggered[0m
+[0;32mI (20850) light_2color: Timer callback triggered[0m
+[0;32mI (20860) light_2color: Timer callback triggered[0m
+[0;32mI (20870) light_2color: Timer callback triggered[0m
+[0;32mI (20880) light_2color: Timer callback triggered[0m
+[0;32mI (20890) light_2color: Timer callback triggered[0m
+[0;32mI (20900) light_2color: Timer callback triggered[0m
+[0;32mI (20910) light_2color: Timer callback triggered[0m
+[0;32mI (20920) light_2color: Timer callback triggered[0m
+[0;32mI (20930) light_2color: Timer callback triggered[0m
+[0;32mI (20940) light_2color: Timer callback triggered[0m
+[0;32mI (20950) light_2color: Timer callback triggered[0m
+[0;32mI (20960) light_2color: Timer callback triggered[0m
+[0;32mI (20970) light_2color: Timer callback triggered[0m
+[0;32mI (20980) light_2color: Timer callback triggered[0m
+[0;32mI (20990) light_2color: Timer callback triggered[0m
+[0;32mI (21000) light_2color: Timer callback triggered[0m
+[0;32mI (21010) light_2color: Timer callback triggered[0m
+[0;32mI (21020) light_2color: Timer callback triggered[0m
+[0;32mI (21030) light_2color: Timer callback triggered[0m
+[0;32mI (21040) light_2color: Timer callback triggered[0m
+[0;32mI (21050) light_2color: Timer callback triggered[0m
+[0;32mI (21060) light_2color: Timer callback triggered[0m
+[0;32mI (21070) light_2color: Timer callback triggered[0m
+[0;32mI (21080) light_2color: Timer callback triggered[0m
+[0;32mI (21090) light_2color: Timer callback triggered[0m
+[0;32mI (21100) light_2color: Timer callback triggered[0m
+[0;32mI (21110) light_2color: Timer callback triggered[0m
+[0;32mI (21120) light_2color: Timer callback triggered[0m
+[0;32mI (21130) light_2color: Timer callback triggered[0m
+[0;32mI (21140) light_2color: Timer callback triggered[0m
+[0;32mI (21150) light_2color: Timer callback triggered[0m
+[0;32mI (21160) light_2color: Timer callback triggered[0m
+[0;32mI (21170) light_2color: Timer callback triggered[0m
+[0;32mI (21180) light_2color: Timer callback triggered[0m
+[0;32mI (21190) light_2color: Timer callback triggered[0m
+[0;32mI (21200) light_2color: Timer callback triggered[0m
+[0;32mI (21210) light_2color: Timer callback triggered[0m
+[0;32mI (21220) light_2color: Timer callback triggered[0m
+[0;32mI (21230) light_2color: Timer callback triggered[0m
+[0;32mI (21240) light_2color: Timer callback triggered[0m
+[0;32mI (21250) light_2color: Timer callback triggered[0m
+[0;32mI (21260) light_2color: Timer callback triggered[0m
+[0;32mI (21270) light_2color: Timer callback triggered[0m
+[0;32mI (21280) light_2color: Timer callback triggered[0m
+[0;32mI (21290) light_2color: Timer callback triggered[0m
+[0;32mI (21300) light_2color: Timer callback triggered[0m
+[0;32mI (21310) light_2color: Timer callback triggered[0m

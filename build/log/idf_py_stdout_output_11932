@@ -1,0 +1,22 @@
+[1/10] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.3.1\esp-dev-kits-master\esp32-c3-lcdkit\examples\knob_panel\build\esp-idf\main && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/spiffs/spiffsgen.py 0x26000 C:/Espressif/frameworks/esp-idf-v5.3.1/esp-dev-kits-master/esp32-c3-lcdkit/examples/knob_panel/spiffs C:/Espressif/frameworks/esp-idf-v5.3.1/esp-dev-kits-master/esp32-c3-lcdkit/examples/knob_panel/build/storage.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len"
+[2/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.3.1\esp-dev-kits-master\esp32-c3-lcdkit\examples\knob_panel\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Espressif/frameworks/esp-idf-v5.3.1/esp-dev-kits-master/esp32-c3-lcdkit/examples/knob_panel/build/bootloader/bootloader.bin"
+Bootloader binary size 0x55b0 bytes. 0x2a50 bytes (33%) free.
+[3/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/ui_light_2color.c.obj
+C:/Espressif/frameworks/esp-idf-v5.3.1/esp-dev-kits-master/esp32-c3-lcdkit/examples/knob_panel/main/ui/ui_light_2color.c:102:13: warning: 'light_2color_layer_timer_cb' defined but not used [-Wunused-function]
+  102 | static void light_2color_layer_timer_cb(lv_timer_t* tmr) {
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.3.1/esp-dev-kits-master/esp32-c3-lcdkit/examples/knob_panel/main/ui/ui_light_2color.c:79:13: warning: 'light_2color_layer_enter_cb' defined but not used [-Wunused-function]
+   79 | static bool light_2color_layer_enter_cb(void* layer) {
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Espressif/frameworks/esp-idf-v5.3.1/esp-dev-kits-master/esp32-c3-lcdkit/examples/knob_panel/main/ui/ui_light_2color.c:28:46: warning: 'light_xor' defined but not used [-Wunused-variable]
+   28 | static light_set_attribute_t light_set_conf, light_xor;
+      |                                              ^~~~~~~~~
+[4/8] Linking C static library esp-idf\main\libmain.a
+[5/8] Generating ld/sections.ld
+[6/8] Linking CXX executable c3_knob_panel.elf
+FAILED: c3_knob_panel.elf 
+cmd.exe /C "cd . && C:\Espressif\tools\riscv32-esp-elf\esp-13.2.0_20240530\riscv32-esp-elf\bin\riscv32-esp-elf-g++.exe -march=rv32imc_zicsr_zifencei -nostartfiles -march=rv32imc_zicsr_zifencei --specs=nosys.specs    -Wl,--cref -Wl,--defsym=IDF_TARGET_ESP32C3=0 -Wl,--Map=C:/Espressif/frameworks/esp-idf-v5.3.1/esp-dev-kits-master/esp32-c3-lcdkit/examples/knob_panel/build/c3_knob_panel.map -Wl,--no-warn-rwx-segments -fno-rtti -fno-lto -Wl,--gc-sections -Wl,--warn-common -T rom.api.ld -T esp32c3.peripherals.ld -T esp32c3.rom.ld -T esp32c3.rom.api.ld -T esp32c3.rom.libgcc.ld -T esp32c3.rom.version.ld -T esp32c3.rom.eco3.ld -T esp32c3.rom.newlib.ld -T memory.ld -T sections.ld @CMakeFiles\c3_knob_panel.elf.rsp -o c3_knob_panel.elf  && cd ."
+C:/Espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/../lib/gcc/riscv32-esp-elf/13.2.0/../../../../riscv32-esp-elf/bin/ld.exe: esp-idf/main/libmain.a(ui_menu_new.c.obj):(.rodata.menu+0x44): undefined reference to `light_2color_Layer'
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.

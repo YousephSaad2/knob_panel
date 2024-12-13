@@ -11,6 +11,7 @@
 #include "esp_log.h"
 #endif
 
+#include "ui_light_2color.h"
 #include "settings.h"
 #include "lv_example_pub.h"
 #include "lv_example_image.h"
@@ -44,7 +45,7 @@ typedef struct {
 static ui_menu_app_t menu[] = {
     {"洗衣模式",    "Washing",     &icon_washing,      &icon_washing_ns,       LV_COLOR_MAKE(36, 163, 235), &washing_Layer},
     {"恒温器",      "Thermostat",  &icon_thermostat,   &icon_thermostat_ns,    LV_COLOR_MAKE(249, 139, 122), &thermostat_Layer},
-    {"照明模式",    "Light",       &icon_light,        &icon_light_ns,         LV_COLOR_MAKE(255, 229, 147), &light_2color_Layer},
+    {"照明模式",    "Light",       &icon_light,        &icon_light_ns,         LV_COLOR_MAKE(255, 229, 147), (void*)& light_2color_Layer},
 };
 
 #define APP_NUM 3//(sizeof(menu) / sizeof(ui_menu_app_t))

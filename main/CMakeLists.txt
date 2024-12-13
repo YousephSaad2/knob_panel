@@ -1,29 +1,18 @@
-# Dynamically include all .c files from relevant directories
-file(GLOB_RECURSE UI_SOURCES "ui/*.c")
-file(GLOB_RECURSE IR_SOURCES "ir_nec/*.c")
-file(GLOB_RECURSE FONT_SOURCES "ui/fonts/*.c")
-file(GLOB_RECURSE IMAGE_SOURCES "ui/imgs/*.c")
-
-idf_component_register(
-    SRCS
-        "app_main.c"
-        "settings.c"
-        "app_audio.c"
-        ${UI_SOURCES}
-        ${IR_SOURCES}
-        ${FONT_SOURCES}
-        ${IMAGE_SOURCES}
-    INCLUDE_DIRS
-        "."
-        "ui"
-        "ui/fonts"
-        "ui/imgs"
-        "ui/layer_manage"
-        "ir_nec"
-    PRIV_REQUIRES
-        nvs_flash  # Added earlier for nvs_flash.h
-        esp_wifi   # Add esp_wifi for esp_wifi.h
-)
+idf_component_register(SRC_DIRS
+                    "."
+                    "./ir_nec"
+                    "ui/fonts"
+                    "ui/imgs"
+                    "ui/imgs/image_language"
+                    "ui/imgs/image_light"
+                    "ui/imgs/image_standby"
+                    "ui/imgs/image_wash"
+                    "ui"
+                    "ui/layer_manage"
+                    INCLUDE_DIRS
+                    "."
+                    "./ir_nec"
+                    "ui/layer_manage")
 
 spiffs_create_partition_image(storage ../spiffs FLASH_IN_PROJECT)
 

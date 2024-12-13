@@ -1,7 +1,11 @@
-#ifndef APP_AUDIO_H
-#define APP_AUDIO_H
 
-#include "esp_err.h"
+/*
+ * SPDX-FileCopyrightText: 2023 Espressif Systems (Shanghai) CO LTD
+ *
+ * SPDX-License-Identifier: CC0-1.0
+ */
+
+#pragma once
 
 typedef enum {
     SOUND_TYPE_KNOB,
@@ -14,15 +18,10 @@ typedef enum {
     SOUND_TYPE_BRIGHTNESS_50,
     SOUND_TYPE_BRIGHTNESS_75,
     SOUND_TYPE_BRIGHTNESS_100
-} PDM_SOUND_TYPE;
+}PDM_SOUND_TYPE;
 
 esp_err_t audio_force_quite(bool ret);
 
 esp_err_t audio_handle_info(PDM_SOUND_TYPE voice);
 
 esp_err_t audio_play_start();
-
-// Function to play an audio file from SPIFFS
-esp_err_t play_audio_file(const char* filepath);
-
-#endif // APP_AUDIO_H

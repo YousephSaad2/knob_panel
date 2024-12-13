@@ -1,0 +1,147 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM3 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x4004c634: uart_rx_readbuff in ROM
+[0m
+[0;33m0x42000236: __esp_system_init_fn_init_efuse_check at C:/Espressif/frameworks/esp-idf-v5.3.1/components/efuse/src/esp_efuse_startup.c:31
+[0m
+[0;33m0x4200094e: __esp_system_init_fn_init_show_cpu_freq at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:58
+[0m
+[0;33m0x420000e0: __esp_system_init_fn_init_show_app_info at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_app_format/esp_app_desc.c:104
+[0m
+[0;33m0x42000248: __esp_system_init_fn_init_efuse_show_app_info at C:/Espressif/frameworks/esp-idf-v5.3.1/components/efuse/src/esp_efuse_startup.c:41
+[0m
+[0;33m0x420028bc: __esp_system_init_fn_init_heap at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/heap_caps_init.c:25
+[0m
+[0;33m0x420087ce: __esp_system_init_fn_esp_timer_init_nonos at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_timer/src/esp_timer_init.c:28
+[0m
+[0;33m0x42007dc4: __esp_system_init_fn_init_newlib at C:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/newlib_init.c:162
+[0m
+[0;33m0x420009c6: __esp_system_init_fn_init_brownout at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:67
+[0m
+[0;33m0x420009d4: __esp_system_init_fn_init_newlib_time at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:81
+[0m
+[0;33m0x42009c0e: __esp_system_init_fn_init_vfs_uart at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c:1080
+[0m
+[0;33m0x4200ac3a: __esp_system_init_fn_init_vfs_usj_sec at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_usb_serial_jtag/src/usb_serial_jtag_vfs.c:405
+[0m
+[0;33m0x4200ae6a: __esp_system_init_fn_init_vfs_console at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_vfs_console/vfs_console.c:222
+[0m
+[0;33m0x42007e62: __esp_system_init_fn_init_newlib_stdio at C:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/newlib_init.c:207
+[0m
+[0;33m0x420083a6: __esp_system_init_fn_init_pthread at C:/Espressif/frameworks/esp-idf-v5.3.1/components/pthread/pthread.c:76
+[0m
+[0;33m0x420009e4: __esp_system_init_fn_init_flash at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:88
+[0m
+[0;33m0x42000320: __esp_system_init_fn_init_efuse at C:/Espressif/frameworks/esp-idf-v5.3.1/components/efuse/src/esp_efuse_startup.c:137
+[0m
+[0;33m0x4206ee40: _GLOBAL__sub_I__ZN10__cxxabiv111__terminateEPFvvE at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/riscv32-esp-elf/build/build-cc-gcc-final/riscv32-esp-elf/rv32imc_zicsr_zifencei/ilp32/no-rtti/libstdc++-v3/include/riscv32-esp-elf/bits/gthr-default.h:733
+ (inlined by) __gnu_cxx::__mutex::__mutex() at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/riscv32-esp-elf/build/build-cc-gcc-final/riscv32-esp-elf/rv32imc_zicsr_zifencei/ilp32/no-rtti/libstdc++-v3/include/ext/concurrence.h:132
+ (inlined by) __static_initialization_and_destruction_0 at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/riscv32-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_terminate.cc:37
+ (inlined by) _GLOBAL__sub_I__ZN10__cxxabiv111__terminateEPFvvE at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/riscv32-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_terminate.cc:133
+[0m
+[0;33m0x4206edc4: _GLOBAL__sub_I__ZN17__eh_globals_init7_S_initE at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/riscv32-esp-elf/build/build-cc-gcc-final/riscv32-esp-elf/rv32imc_zicsr_zifencei/ilp32/no-rtti/libstdc++-v3/include/riscv32-esp-elf/bits/gthr-default.h:708
+ (inlined by) __eh_globals_init::__eh_globals_init() at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/riscv32-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_globals.cc:105
+ (inlined by) __static_initialization_and_destruction_0 at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/riscv32-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_globals.cc:126
+ (inlined by) _GLOBAL__sub_I__ZN17__eh_globals_init7_S_initE at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/riscv32-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_globals.cc:162
+[0m
+[0;33m0x4206e908: _GLOBAL__sub_I__ZSt7nothrow at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/riscv32-esp-elf/build/build-cc-gcc-final/riscv32-esp-elf/rv32imc_zicsr_zifencei/ilp32/no-rtti/libstdc++-v3/include/riscv32-esp-elf/bits/gthr-default.h:733
+ (inlined by) __gnu_cxx::__mutex::__mutex() at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/riscv32-esp-elf/build/build-cc-gcc-final/riscv32-esp-elf/rv32imc_zicsr_zifencei/ilp32/no-rtti/libstdc++-v3/include/ext/concurrence.h:132
+ (inlined by) __static_initialization_and_destruction_0 at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/riscv32-esp-elf/src/gcc/libstdc++-v3/libsupc++/new_handler.cc:33
+ (inlined by) _GLOBAL__sub_I__ZSt7nothrow at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/riscv32-esp-elf/src/gcc/libstdc++-v3/libsupc++/new_handler.cc:71
+[0m
+[0;33m0x4206e7e2: adc2_init_code_calibration at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_hw_support/port/esp32c3/adc2_init_cal.c:23
+[0m
+[0;33m0x4206e7a0: s_set_default_wifi_log_level at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_init.c:89
+[0m
+[0;33m0x4206b5ba: adc_hw_calibration at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_adc/adc_common.c:58
+[0m
+[0;33m0x4038513a: enable_timer_group0_for_calibration at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_hw_support/port/esp32c3/rtc_time.c:200
+[0m
+[0;33m0x42000fde: esp_reset_reason_init at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/soc/esp32c3/reset_reason.c:66
+[0m
+[0;33m0x4205c314: __esp_system_init_fn_esp_timer_init_os at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_timer/src/esp_timer.c:587
+[0m
+[0;33m0x42001e5e: __esp_system_init_fn_esp_hw_stack_guard_init at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/hw_stack_guard.c:15
+[0m
+[0;33m0x4200635a: __esp_system_init_fn_esp_sleep_startup_init at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_hw_support/sleep_gpio.c:185
+[0m
+[0;33m0x42000a26: __esp_system_init_fn_init_apb_dma at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:125
+[0m
+[0;33m0x4200a77c: __esp_system_init_fn_usb_serial_jtag_conn_status_init at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_usb_serial_jtag/src/usb_serial_jtag_connection_monitor.c:75
+[0m
+[0;33m0x42000a34: __esp_system_init_fn_init_disable_rtc_wdt at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:143
+[0m
+[0;33m0x403807fc: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/soc/esp32c3/system_internal.c:110
+[0m
+[0;33m0x42000236: __esp_system_init_fn_init_efuse_check at C:/Espressif/frameworks/esp-idf-v5.3.1/components/efuse/src/esp_efuse_startup.c:31
+[0m
+[0;33m0x4200094e: __esp_system_init_fn_init_show_cpu_freq at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:58
+[0m
+[0;33m0x420000e0: __esp_system_init_fn_init_show_app_info at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_app_format/esp_app_desc.c:104
+[0m
+[0;33m0x42000248: __esp_system_init_fn_init_efuse_show_app_info at C:/Espressif/frameworks/esp-idf-v5.3.1/components/efuse/src/esp_efuse_startup.c:41
+[0m
+[0;33m0x420028bc: __esp_system_init_fn_init_heap at C:/Espressif/frameworks/esp-idf-v5.3.1/components/heap/heap_caps_init.c:25
+[0m
+[0;33m0x420087ce: __esp_system_init_fn_esp_timer_init_nonos at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_timer/src/esp_timer_init.c:28
+[0m
+[0;33m0x42007dc4: __esp_system_init_fn_init_newlib at C:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/newlib_init.c:162
+[0m
+[0;33m0x420009c6: __esp_system_init_fn_init_brownout at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:67
+[0m
+[0;33m0x420009d4: __esp_system_init_fn_init_newlib_time at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:81
+[0m
+[0;33m0x42009c0e: __esp_system_init_fn_init_vfs_uart at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_uart/src/uart_vfs.c:1080
+[0m
+[0;33m0x4200ac3a: __esp_system_init_fn_init_vfs_usj_sec at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_usb_serial_jtag/src/usb_serial_jtag_vfs.c:405
+[0m
+[0;33m0x4200ae6a: __esp_system_init_fn_init_vfs_console at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_vfs_console/vfs_console.c:222
+[0m
+[0;33m0x42007e62: __esp_system_init_fn_init_newlib_stdio at C:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/newlib_init.c:207
+[0m
+[0;33m0x420083a6: __esp_system_init_fn_init_pthread at C:/Espressif/frameworks/esp-idf-v5.3.1/components/pthread/pthread.c:76
+[0m
+[0;33m0x420009e4: __esp_system_init_fn_init_flash at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:88
+[0m
+[0;33m0x42000320: __esp_system_init_fn_init_efuse at C:/Espressif/frameworks/esp-idf-v5.3.1/components/efuse/src/esp_efuse_startup.c:137
+[0m
+[0;33m0x4206ee40: _GLOBAL__sub_I__ZN10__cxxabiv111__terminateEPFvvE at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/riscv32-esp-elf/build/build-cc-gcc-final/riscv32-esp-elf/rv32imc_zicsr_zifencei/ilp32/no-rtti/libstdc++-v3/include/riscv32-esp-elf/bits/gthr-default.h:733
+ (inlined by) __gnu_cxx::__mutex::__mutex() at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/riscv32-esp-elf/build/build-cc-gcc-final/riscv32-esp-elf/rv32imc_zicsr_zifencei/ilp32/no-rtti/libstdc++-v3/include/ext/concurrence.h:132
+ (inlined by) __static_initialization_and_destruction_0 at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/riscv32-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_terminate.cc:37
+ (inlined by) _GLOBAL__sub_I__ZN10__cxxabiv111__terminateEPFvvE at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/riscv32-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_terminate.cc:133
+[0m
+[0;33m0x4206edc4: _GLOBAL__sub_I__ZN17__eh_globals_init7_S_initE at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/riscv32-esp-elf/build/build-cc-gcc-final/riscv32-esp-elf/rv32imc_zicsr_zifencei/ilp32/no-rtti/libstdc++-v3/include/riscv32-esp-elf/bits/gthr-default.h:708
+ (inlined by) __eh_globals_init::__eh_globals_init() at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/riscv32-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_globals.cc:105
+ (inlined by) __static_initialization_and_destruction_0 at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/riscv32-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_globals.cc:126
+ (inlined by) _GLOBAL__sub_I__ZN17__eh_globals_init7_S_initE at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/riscv32-esp-elf/src/gcc/libstdc++-v3/libsupc++/eh_globals.cc:162
+[0m
+[0;33m0x4206e908: _GLOBAL__sub_I__ZSt7nothrow at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/riscv32-esp-elf/build/build-cc-gcc-final/riscv32-esp-elf/rv32imc_zicsr_zifencei/ilp32/no-rtti/libstdc++-v3/include/riscv32-esp-elf/bits/gthr-default.h:733
+ (inlined by) __gnu_cxx::__mutex::__mutex() at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/riscv32-esp-elf/build/build-cc-gcc-final/riscv32-esp-elf/rv32imc_zicsr_zifencei/ilp32/no-rtti/libstdc++-v3/include/ext/concurrence.h:132
+ (inlined by) __static_initialization_and_destruction_0 at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/riscv32-esp-elf/src/gcc/libstdc++-v3/libsupc++/new_handler.cc:33
+ (inlined by) _GLOBAL__sub_I__ZSt7nothrow at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/riscv32-esp-elf/src/gcc/libstdc++-v3/libsupc++/new_handler.cc:71
+[0m
+[0;33m0x4206e7e2: adc2_init_code_calibration at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_hw_support/port/esp32c3/adc2_init_cal.c:23
+[0m
+[0;33m0x4206e7a0: s_set_default_wifi_log_level at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_init.c:89
+[0m
+[0;33m0x4206b5ba: adc_hw_calibration at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_adc/adc_common.c:58
+[0m
+[0;33m0x4038513a: enable_timer_group0_for_calibration at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_hw_support/port/esp32c3/rtc_time.c:200
+[0m
+[0;33m0x42000fde: esp_reset_reason_init at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/soc/esp32c3/reset_reason.c:66
+[0m
+[0;33m0x4205c314: __esp_system_init_fn_esp_timer_init_os at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_timer/src/esp_timer.c:587
+[0m
+[0;33m0x42001e5e: __esp_system_init_fn_esp_hw_stack_guard_init at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/hw_stack_guard.c:15
+[0m
+[0;33m0x4200635a: __esp_system_init_fn_esp_sleep_startup_init at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_hw_support/sleep_gpio.c:185
+[0m
+[0;33m0x42000a26: __esp_system_init_fn_init_apb_dma at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:125
+[0m
+[0;33m0x4200a77c: __esp_system_init_fn_usb_serial_jtag_conn_status_init at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_driver_usb_serial_jtag/src/usb_serial_jtag_connection_monitor.c:75
+[0m
+[0;33m0x42000a34: __esp_system_init_fn_init_disable_rtc_wdt at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/startup_funcs.c:143
+[0m
+[0m

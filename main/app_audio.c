@@ -83,20 +83,19 @@ esp_err_t audio_handle_info(PDM_SOUND_TYPE voice) {
         sprintf(filepath, "%s/%s", CONFIG_BSP_SPIFFS_MOUNT_POINT, "brightness_100.mp3");
         break;
     default:
-        ret = ESP_FAIL;
-        break;
+        ESP_LOGE("audio_handle_info", "Unknown sound type");
+        return ESP_FAIL;
     }
 
-    if (ret == ESP_OK) {
-        FILE* fp = fopen(filepath, "r");
-        if (!fp) {
-            ESP_LOGE("audio_handle_info", "Failed to open file: %s", filepath);
-            return ESP_FAIL;
-        }
-
-        ESP_LOGI("audio_handle_info", "Playing: %s", filepath);
-        ret = audio_player_play(fp);
+    FILE* fp = fopen(filepath, "r");
+    if (!fp) {
+        ESP_LOGE("audio_handle_info", "Failed to open file: %s", filepath);
+        return ESP_FAIL;
     }
+
+    ESP_LOGI("audio_handle_info", "Playing file: %s", filepath);
+    ret = audio_player_play(fp);
+    fclose(fp);
 
     return ret;
 }

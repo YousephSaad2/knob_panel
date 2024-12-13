@@ -62,35 +62,42 @@ esp_err_t app_audio_write(void *audio_buffer, size_t len, size_t *bytes_written,
     return ret;
 }
 
-esp_err_t audio_handle_info(PDM_SOUND_TYPE voice)
-{
-    char filepath[30];
+esp_err_t audio_handle_info(PDM_SOUND_TYPE voice) {
+    char filepath[50];
     esp_err_t ret = ESP_OK;
 
     switch (voice) {
-    case SOUND_TYPE_KNOB:
-        sprintf(filepath, "%s/%s", CONFIG_BSP_SPIFFS_MOUNT_POINT, "knob_1ch.mp3");
+    case SOUND_TYPE_BRIGHTNESS_0:
+        sprintf(filepath, "%s/%s", CONFIG_BSP_SPIFFS_MOUNT_POINT, "brightness_0.mp3");
         break;
-    case SOUND_TYPE_SNORE:
-        sprintf(filepath, "%s/%s", CONFIG_BSP_SPIFFS_MOUNT_POINT, "snore_cute_1ch.mp3");
+    case SOUND_TYPE_BRIGHTNESS_25:
+        sprintf(filepath, "%s/%s", CONFIG_BSP_SPIFFS_MOUNT_POINT, "brightness_25.mp3");
         break;
-    case SOUND_TYPE_WASH_END_CN:
-        sprintf(filepath, "%s/%s", CONFIG_BSP_SPIFFS_MOUNT_POINT, "wash_end_zh_1ch.mp3");
+    case SOUND_TYPE_BRIGHTNESS_50:
+        sprintf(filepath, "%s/%s", CONFIG_BSP_SPIFFS_MOUNT_POINT, "brightness_50.mp3");
         break;
-    case SOUND_TYPE_WASH_END_EN:
-        sprintf(filepath, "%s/%s", CONFIG_BSP_SPIFFS_MOUNT_POINT, "wash_end_en_1ch.mp3");
+    case SOUND_TYPE_BRIGHTNESS_75:
+        sprintf(filepath, "%s/%s", CONFIG_BSP_SPIFFS_MOUNT_POINT, "brightness_75.mp3");
         break;
-    case SOUND_TYPE_FACTORY:
-        sprintf(filepath, "%s/%s", CONFIG_BSP_SPIFFS_MOUNT_POINT, "factory.mp3");
+    case SOUND_TYPE_BRIGHTNESS_100:
+        sprintf(filepath, "%s/%s", CONFIG_BSP_SPIFFS_MOUNT_POINT, "brightness_100.mp3");
+        break;
+    default:
+        ret = ESP_FAIL;
         break;
     }
 
-    FILE *fp = fopen(filepath, "r");
-    ESP_GOTO_ON_FALSE(fp, ESP_FAIL, err, TAG,  "Failed open file:%s", filepath);
+    if (ret == ESP_OK) {
+        FILE* fp = fopen(filepath, "r");
+        if (!fp) {
+            ESP_LOGE("audio_handle_info", "Failed to open file: %s", filepath);
+            return ESP_FAIL;
+        }
 
-    ESP_LOGI(TAG, "play: %s", filepath);
-    ret = audio_player_play(fp);
-err:
+        ESP_LOGI("audio_handle_info", "Playing: %s", filepath);
+        ret = audio_player_play(fp);
+    }
+
     return ret;
 }
 

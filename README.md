@@ -1,4 +1,4 @@
-# CIS-450 Group Project: Lighting Control Panel
+# CIS-450 Project: Lighting Control Panel
 
 ## Overview
 This project implements a lighting control system with synchronized audio feedback. The user can control brightness levels using a knob, with voice announcements reflecting the current brightness.
